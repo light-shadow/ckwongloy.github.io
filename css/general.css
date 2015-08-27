@@ -1,0 +1,32 @@
+﻿/* 全局通用样式控制 */
+
+		/* Basic CSS reset */
+		* { 
+				margin:0; 
+				padding:0;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+	
+		body {
+			/* 期待合适的背景图片以供使用 */
+			/* background:url(??.png) 0 0 repeat; */
+			margin-left: 5%;
+			background-color : #59A386;
+			padding:0 0 0;    /* 第一个参数决定了 body 上边沿与浏览器顶部的距离 */
+			margin-right:5%;
+		}
+
+		#center-please {
+			text-align:center;
+		}
+
+		table, caption, thead, tr, th, td {
+			text-align:center;
+		}
+
+		a:hover {
+			background:#59A386;
+		}
+		

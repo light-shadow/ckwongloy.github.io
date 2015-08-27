@@ -1,0 +1,72 @@
+	/* 导航条样式控制 -- 	立体飘带状菜单（上凸） */
+		
+		.navigation-bars {
+			margin-top:10px;
+			display:inline-block;
+		}
+	
+		/*  导航条左右样式控制 */
+		.navigation-bars:after, .navigation-bars:before {
+			margin-top:0.76em;    /* 导航条两端与上个组件的垂直距离 */
+			content: "";
+			float:left;
+			border:1.22195em solid #65BA99;     /* 导航条两边标签的高 */
+		}
+	
+		.navigation-bars:after {
+			border-right-color:transparent;
+		}
+	
+		.navigation-bars:before {
+			border-left-color:transparent;
+		}
+	
+		.navigation-bars a:link, .navigation-bars a:visited { 
+			color:white;    /* 导航条字体颜色 */
+			text-decoration:none;
+			float:left;	   
+			height:3.22em;     /* 导航条的高与下面组件的距离 */
+			overflow:hidden;
+		}
+	
+		.navigation-bars span {
+			background:#65BA99 ;    /* 导航条字体背景颜色 */
+			display:inline-block;
+			line-height:4em;
+			padding:0 0.5em;    /* 导航条相邻选项之间的间距 */
+			margin-top:1.2em;
+			position:relative;
+			text-transform : capitalize;
+			font-family : 'Georgia', "Mingliu", "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "MS Sans Serif", "Comic Sans MS", sans-serif;
+			font-size : 23px;      
+			letter-spacing : 0.5px;    /* 导航条选项字符之间的间距 */
+			/* 不同浏览器的过渡效果 */ 
+			-webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+			-moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+			-ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+			-o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+			transition: background-color 0.2s, margin-top 0.2s;
+		}
+	
+		.navigation-bars a:hover span {
+			background:#65BA99;    /* 鼠标在导航条上悬浮时导航条选项的背景颜色 */
+			margin-top:0;
+		}
+	
+		.navigation-bars span:before {
+			content: "";
+			position:absolute;
+			top:4em;    /* 控制选中导航选项后导航条 底部左边阴影的位置 */
+			left:0;
+			border-right:1em solid #59A386;
+			border-top:1em solid #65BA99;    /* 控制选中导航选项后导航条    底部左边阴影    的颜色 */
+		}
+	
+		.navigation-bars span:after {
+			content: "";
+			position:absolute;
+			top:4em;    /* 控制选中导航选项后导航条  底部右边阴影 的位置 */
+			right:0;
+			border-left:1em solid #59A386;
+			border-top:1em solid #65BA99;    /* 控制选中导航选项后导航条    底部右边阴影    的颜色 */
+		}
