@@ -9,6 +9,6 @@
 	
 	*{ padding:0; margin:0; list-style:none; }
 
-	.menu{ width:550px; height:30px; margin:100px auto; padding-left:10px; }
-	.menu li{ width:100px; height:30px; line-height:30px; text-align:center; float:left; margin-right:10px; _display:inline; position:relative }
+	.menu{ width:330px; height:30px; margin:100px auto; background-color:#E48D7C; padding-left:10px;font-family:'Comic Sans MS';color:#EFE3AF; font-size:18px;}
+	.menu li{ width:100px; height:30px; background-color:white;line-height:30px; text-align:center; float:left; margin-right:10px; _display:inline; position:relative }
 	.menu ul{ position:absolute; left:0; top:30px; display:none; } 
