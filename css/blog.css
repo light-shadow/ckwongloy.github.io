@@ -6,7 +6,3 @@
 	h1, h2, h3, h4, h5, h6 {	 text-align:center; }
 
 	p { font-size:20px;	}
-
-	.menu{ width:500px; height:30px; margin:50px auto; background-color:#E48D7C; padding-left:30%;font-family:'Comic Sans MS';color:#E48D7C; font-size:18px;}
-	.menu li{ width:80px; height:30px; background-color:white;line-height:30px; text-align:center; float:right; margin-right:10px; display:inline; position:relative }
-	.menu ul{ position:absolute; left:0; top:30px; display:none; } 
