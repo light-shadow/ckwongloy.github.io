@@ -41,19 +41,22 @@ kernel-2.6.34.8-68.fc13.x86_64
 
 ```
 # uname -r 
-```
-
 2.6.34.8-68.fc13.x86_64
+```
 
 3、确定要删除的内核
 
-这里为：kernel-2.6.34.7-66.fc13.x86_64
+这里为：`kernel-2.6.34.7-66.fc13.x86_64。
+
 
 4、删除内核
 
-# yum remove kernel-2.6.34.7-66.fc13.x86_64  <--推荐 或者： rpm -e kernel-2.6.34.7-66.fc13.x86
+```
+推荐：yum remove kernel-2.6.34.7-66.fc13.x86_64
+或者：rpm -e kernel-2.6.34.7-66.fc13.x86
+```
 
-6、说明： 
+5、说明： 
 
 _1.使用yum remove删除， yum 会自动移除 ： /boot/grub/menu.lst 中的相关启动项，不用再手动修改启动文件。 
 
@@ -111,3 +114,32 @@ Fedora上编程环境的搭建和配置
 ### Code::Blocks的下载安装和配置下载和安装
 
 同 Eclipse 配置：一开始安装好后提示没有合适的编译器，这时我们先在终端更新软件包：`yum update`。
+
+#### Q&A
+
++ 编译器控制台输出无法识别中文？
+
+原因分析：编码方案和解码方案不一致造成。
+
+解决步骤：
+
+找到：
+
+```
+Settings -> Compiler settings -> Global compiler settings -> Compiler setting -> Other options
+```
+
+添加:
+
+```
+-finput-charset=GBK
+-fexec-charset=GBK
+```
+
+完美解决。参考文章：*[Code：Blocks 中文乱码问题原因分析和解决方法](http://blog.csdn.net/softman11/article/details/6121538)* 。
+
++ 如何更改 Code::Blocks 默认的控制台为 GNOME 自带的终端输出？
+
++ 无法调试？
+
++ 为什么必须新建工程才可以启动调试？
