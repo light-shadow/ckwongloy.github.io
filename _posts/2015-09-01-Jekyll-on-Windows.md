@@ -6,7 +6,7 @@ tags: [Jekyll, Ruby, Windows]
 latest: 2015年09月03日 11:59:43
 ---
 
-GitHub 服务器上是运行着 Jekyll，但并不是说 Jekyll 专属于 GitHub。
+GitHub/GitCafe 的服务器上是运行着 Jekyll，但并不是说 Jekyll 专属于 GitHub/GitCafe。
 
 为什么需要在本地安装 Jekyll 服务？
 -
@@ -178,7 +178,13 @@ jekyll serve
 
 #### **建议**
 
++ 路径
+
 将引用资源的 URL 设置为通过访问，这样可以确保在本地和在 GitHub 服务器上获得一致的输出。
+
++ 禁止浏览器 Cookie
+
+测试的时候变动太频繁，为了消除浏览器缓存对测试的干扰，建议测试时关闭 Cookie，或者使用 *隐身模式* ( Chrome：Ctrl + Shift + N ) 。
 
 ### **本地测试 Jekyll 可能遇到的问题**
 
@@ -244,6 +250,12 @@ ruby dk.rb install
 
 ### **接下来**
 
-+ Jekyll 高级应用：分页、分类、标签等。
++ Jekyll 高级应用：分页、分类、标签、归档等。
 
 + Jekyll 博客的 SEO 。
+
++ 站内搜索。
+
++ 界面优化。
+
++ 移动设备视图。

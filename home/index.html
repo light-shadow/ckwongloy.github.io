@@ -1,5 +1,5 @@
 ---
-layout: index_backbone
+layout: blog_backbone
 title: Quieter you be, More you hear | @lamChuanJiang
 ---
 
@@ -25,7 +25,7 @@ Latest by @lamChuanJiang
 <a href="#" style="padding:10px;" title="Post">
 <i class="fa fa-paper-plane" style="font-size:30px;"></i></a>
 <i class="fa fa-calendar"></i>
-<a href="/archive.html/#{{ post.date | date: "%Y-%m" }}" title="Archive：{{ post.date | date: "%Y-%m" }}">
+<a href="/archive.html#{{ post.date | date: "%Y-%m" }}" title="Archive：{{ post.date | date: "%Y-%m" }}">
 {% assign d = post.date | date: "%-d" %} 
 {{ post.date | date: "%B" }}
 {% case d %}
@@ -43,7 +43,7 @@ Latest by @lamChuanJiang
 </strong></h1>
 <h4 style="text-align:center;">
 <i class="fa fa-heartbeat"></i>
-<a href="http://lamchuanjiang.github.io" target="_blank" title="Author：@lamChuanJiang">
+<a href="https://github.com/lamChuanJiang" target="_blank" title="Author：@lamChuanJiang">
 {% if site.id %}
 {{ site.id }}
 {% endif %}

@@ -27,11 +27,15 @@ Chome 使用 TIPs
 
 + 加载失败时游戏彩蛋：空格
 
-+ **审查元素**下载网页视频
++ **审查元素** 下载网页视频
 
 + 删除历史记录：Ctrl + Shift + Delete
 
 + Chome 缓存内容查看：**ChromeCacheView **
+
++ 隐身模式：Ctrl + Shift + N
+
++ 清除浏览记录：Ctrl + Shift + Delete
 
 #### **插件**
 
