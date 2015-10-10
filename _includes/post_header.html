@@ -1,0 +1,61 @@
+<section style="font-family:Georgia;">
+<header class="post-header" style="text-align:center;">
+<div class="wrapper">
+<div style="font-size:18px;background:#BBBBBB;margin-top:5px;">
+<a href="/home/" class="btn" style="margin-top:15px;" title="Home">
+<i class="fa fa-home"></i></a>
+<a href="/category.html" class="btn" title="Categories">
+<i class="fa fa-folder"> Category</i></a>
+<a href="/archive.html" class="btn" title="Archives">
+<i class="fa fa-archive"> Archive</i></a>
+<a href="/tag.html" class="btn" title="Tags">
+<i class="fa fa-tags"> Tag</i></a>
+<a href="/about_blog.html" class="btn" title="About This Blog">
+<i class="fa fa-info-circle"></i></a>
+<a href="https://github.com/lamChuanJiang" class="btn" title="GitHub" target="_blank">
+<i class="fa fa-github"></i></a>
+<a href="https://github.com/lamChuanJiang/Pointer/blob/gh-pages/README.wiki" class="btn" title="Pointer" target="_blank">
+<i class="fa fa-hand-pointer-o"></i></a></div>
+<h1 class="post-title">
+{{ page.title }}
+</h1>
+<p  class="post-meta">
+<i class="fa fa-heartbeat"></i>
+<a href="https://github.com/lamChuanJiang/" target="_blank" title="Author：@lamChuanJiang">
+{% if site.id %}
+{{ site.id }}
+{% endif %}
+</a>
+<i class="fa fa-calendar"></i>
+<a href="/archive.html#{{ page.date | date: "%Y-%m" }}" title="Archive：{{ page.date | date: "%Y-%m" }}">
+{% assign d = page.date | date: "%-d" %} 
+{{ page.date | date: "%b" }}.
+{% case d %}
+{% when '1' or '21' or '31' %}
+{{ d }}st
+{% when '2' or '22' %}{{ d }}nd
+{% when '3' or '23' %}{{ d }}rd
+{% else %}{{ d }}th
+{% endcase %}, 
+{{ page.date | date: "%Y, %a" }}.
+</a>
+<i class="fa fa-folder"></i>
+<a href="/category.html#{{ page.categories[0] }}" title="Category：{{ page.categories[0] }}">
+<b>
+{{ page.category }}
+</b></a>
+<i class="fa fa-tags"></i>
+<i>
+<b>
+{% for tag in page.tags %}
+<a href="/tag.html#{{ tag }}" title="Tag：{{ tag }}" style="background:#BFD9DB; margin:2px;">
+<i>
+{{ tag }}
+{{ tag | last }}
+</i></a>
+{% endfor %}
+</b></i>
+<i class="fa fa-pencil"></i>
+<a title="本文字数：{{ page.content | number_of_words }}">
+{{ page.content | number_of_words }}
+</a></p></div></header></section>

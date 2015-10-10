@@ -1,0 +1,43 @@
+# Site settings
+
+baseurl: / # the subpath of your site, e.g. /blog/
+
+encoding: utf-8
+
+title: Chuanjiang Li's Blog | @lamChuanJiang
+
+description: > # this means to ignore newlines until "baseurl:"
+
+ Chuanjiang Li's Blog, by @lamChuanJiang. 
+ 
+ Quiter you be, more you hear. 
+ 
+ Powered by Jekyll, Hosted on GitHub, Written with Markdown. 
+ 
+ Keep it simple, stupid, but serviceable. 
+
+url: "http://lamchuanjiang.github.io" # the base hostname & protocol for your site
+
+author: Chuanjiang Li
+
+id: lamChuanJiang
+
+email: lamchuanjiang@gmail.com
+
+# Build settings
+
+markdown: rdiscount
+
+# old version jekyll use pygments:true
+# pygments: true
+
+# if GitHub then pygments
+highlighter: pygments
+
+# if local test then rouge that can avoid pygments and python installing
+#highlighter: rouge
+
+paginate: 1
+paginate_path: "home/paginate-:num"
+
+production_url : http://lamchuanjiang.github.io

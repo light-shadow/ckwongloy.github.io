@@ -1,0 +1,36 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 移动设备支持待改进 -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<title>
+{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+</title>
+<meta name="Keywords" content="lamChuanJiang, Chuanjiang, Li, Blog, Jekyll, GitHub">
+<meta name="Description" content="Chuanjiang Li's Blog, lamChuanjiang's Blog, Quieter you be, More you hear, Keep it simple, stupid, but serviceable, {% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/github-light.css">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/stylesheet.css">
+<style type="text/css">
+
+	/* Back to top*/
+
+	#back-to-top {
+		font-size: 100px;
+		position: fixed;
+		bottom: 10em;
+		right: 5px;
+		text-decoration: none;
+		color: #F7F6F6;
+		background-color: #D9AC8B;
+		font-size: 16px;
+		padding: 1em;
+		display: none;
+	}
+
+	#back-to-top:hover {
+		color: #D9AC8B;
+		background-color: #F7F6F6;
+	}
+</style></head>
