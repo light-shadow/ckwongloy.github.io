@@ -3,7 +3,7 @@ layout: post
 title: 双系统常见问题：Windows + Linux
 category: Auxiliary
 tags: [Linux, Windows]
-latest: 2015年10月4日22:31:48
+latest: 2015年10月04日22:31:48
 ---
 
 这是以前在物理机上折腾双系统那段时间内遇到的一些问题和相关解决，删了觉得可惜，就整理一下放到这里吧。为需要的人提供便利。

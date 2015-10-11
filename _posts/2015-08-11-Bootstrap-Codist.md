@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 常用小功能
 category: Clipboard
 tags: [Bootstrap, 进度条, Front-End]
-latest: 2015年8月15日 17:19:48
+latest: 2015年08月15日 17:19:48
 ---
 
 Bootstrap 非常棒。总结几种本人用过的，个人觉得很常用的 Bootstrap 功能。

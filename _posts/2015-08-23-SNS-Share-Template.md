@@ -3,7 +3,7 @@ layout: post
 title: 社交网络分享模板
 category: Clipboard
 tags: [SNS, Javascript, 百度]
-latest: 2015年8月23日 19:57:13
+latest: 2015年08月23日 19:57:13
 ---
 
 很实用的各种社交网络分享模板，百度提供的 CDN。

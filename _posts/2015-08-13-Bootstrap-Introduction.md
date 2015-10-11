@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap 3 分钟入门
 category: Web
 tags: [Bootstrap, Front-End]
-latest: 2015年8月25日 17:19:48
+latest: 2015年08月25日 17:19:48
 ---
 
 Bootstrap 可以称为目前最火的前端框架，个人也比较喜欢。

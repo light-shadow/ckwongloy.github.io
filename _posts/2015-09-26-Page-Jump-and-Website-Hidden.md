@@ -3,7 +3,7 @@ layout: post
 title: 网页的自动跳转和隐藏
 category: Clipboard
 tags: [HTML, 建站]
-latest: 2015年9月26日 17:19:48
+latest: 2015年09月26日 17:19:48
 ---
 
 在浏览器地址栏上隐藏网站内部结构的代码。

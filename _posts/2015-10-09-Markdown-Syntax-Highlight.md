@@ -3,7 +3,7 @@ layout: post
 title: 使用 Markdown 需要注意的地方
 category: Auxiliary
 tag: Markdown
-latest: 2015年10月9日20:14:24
+latest: 2015年10月09日20:14:24
 ---
 
 Markdown 语法讲的不错的好几个，本文只是对我个人在使用过程中遇到的坑特意说明一下，已经炉火纯青的亲就不要在此文上浪费时间了。

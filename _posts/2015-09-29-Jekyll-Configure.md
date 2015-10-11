@@ -3,7 +3,7 @@ layout: post
 title: Jekyll 常用配置：YML
 category: Auxiliary
 tag: Jekyll
-latest: 2015年10月9日20:14:24
+latest: 2015年10月09日20:14:24
 ---
 
 配置 Jekyll 主要是按需修改 *_config.yml* 文件或者指定 YML 文件头。

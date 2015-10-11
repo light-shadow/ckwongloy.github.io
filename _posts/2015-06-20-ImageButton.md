@@ -3,7 +3,7 @@ layout: post
 title: 图片按钮
 category: Clipboard
 tags: [HTML, CSS, Front-End]
-latest: 2015年8月15日 17:19:48
+latest: 2015年08月15日 17:19:48
 ---
 
 图片按钮也比较实用，总结出几种主要的代码片段。

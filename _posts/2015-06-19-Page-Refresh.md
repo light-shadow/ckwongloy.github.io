@@ -3,7 +3,7 @@ layout: post
 title: 页面刷新
 category: Clipboard
 tags: [Javascript, 页面刷新]
-latest: 2015年6月19日 17:19:48
+latest: 2015年06月19日 17:19:48
 ---
 
 页面刷新也是经常用到的小功能，一般都是通过 Javascript 实现。

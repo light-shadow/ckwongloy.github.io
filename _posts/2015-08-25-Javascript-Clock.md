@@ -3,7 +3,7 @@ layout: post
 title: Javascript 时钟模板
 category: Clipboard
 tags: [Javascript, 时钟]
-latest: 2015年8月25日19:57:13
+latest: 2015年08月25日19:57:13
 ---
 
 很实用的时钟模板，使用 Javascript 写的，我用在了我的个人主页上。

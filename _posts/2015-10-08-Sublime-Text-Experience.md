@@ -3,7 +3,7 @@ layout: post
 title:  Sublime Text 个人经验
 category: Auxiliary
 tags: [Sublime Text, 注册表]
-latest: 2015-10-08 16:18:20
+latest: 2015年10月08 16:18:20
 ---
 
 编辑器本人使用最久的是 **EditPlus**，但据说 **Sublime Text** 十分强大，好奇心驱使下，使用了一段时间，现在发现我也喜欢上了它。
