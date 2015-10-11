@@ -1,0 +1,1035 @@
+<h1>Pointer</h1>
+
+<h4>Point to the most often used websites or up-growing tags. </h4>
+
+<h6>[http://lamchuanjiang.github.io/ lamChuanJiang]</h6>
+
+
+----
+== ''' 搜索 == '''
+
+* [https://zh.wikipedia.org/wiki/ Wikipedia ]
+
+* ''' Google 原版镜像 '''
+** [http://www.kb58.cn/ kb58]
+** [http://gc.ihuan.me/ ihuan]
+** [http://www.googlestable.cn/ googlestable]
+** [https://gg.wen.lu/ wenlu]
+
+* ''' Google Reverse Proxy '''
+** [https://www.google.com/?gws_rd=ssl Google]
+** [http://www.getyii.com/topic/default/view/15 我有一万种上谷歌的方法]
+** [http://nan.so/ 南搜]
+** [http://www.xiexingwen.com/ Google 非官方镜像( 广告较多 )]
+** [http://gufensoso.com/ 谷粉搜搜]
+** [http://i.forbook.net/ 谷歌一下，你知太多]
+** [http://www.hxgoogle.com/ 红杏谷歌]
+** [http://www.g363.com/ 谷歌363]
+** [https://safesearch.avira.com Safe Search]
+** [https://suche.web.de Suche]
+** [http://home.tb.ask.com/ Ask]
+** [http://www.gugebiao.com/ 谷歌婊]
+** [http://webwebweb.com/ WebWebWeb]
+
+* ''' 使用 Google 的技术 '''
+
+** [http://www.wow.com/ WOW.com ]
+
+** [https://search.disconnect.me/ Disconnect Search( 无痕搜索代理、斯诺登 ) ]
+
+** [http://www.aolsearch.com/ AOL Search ]
+
+* ''' Google to go - IP 直连 '''
+
+{| border="1" cellspacing="0" cellpadding="5" align="center"
+
+! [http://4.31.38.26/ 4.31.38.26]
+! [http://4.31.38.27/ 4.31.38.27]
+! [http://4.31.38.31/ 4.31.38.31]
+! [http://58.123.102.23/ 58.123.102.23]
+! [http://64.233.189.163/ 64.233.189.163]
+|- 
+| [http://66.185.84.19/ 66.185.84.19]
+| [http://74.125.102.230/ 74.125.102.230]
+| [http://74.125.104.113/ 74.125.104.113]
+| [http://91.213.30.153/ 91.213.30.153]
+| [http://95.173.210.55/ 95.173.210.55]
+|-
+| [http://118.174.27.112/ 118.174.27.112]
+| [http://173.194.1.13/ 173.194.1.13]
+| [http://173.194.14.40/ 173.194.14.40]
+| [http://173.194.14.41/ 173.194.14.41]
+| [http://173.194.14.50/ 173.194.14.50]
+|-
+| [http://173.194.14.52/ 173.194.14.52]
+| [http://173.194.138.103/ 173.194.138.103]
+| [http://201.163.0.13/ 201.163.0.13]
+| [http://203.211.0.100/ 203.211.0.100]
+| [http://209.85.225.23/ 209.85.225.23]
+|-
+| [http://209.85.226.146/ 209.85.226.146]
+| [http://209.85.228.11/ 209.82.228.11]
+| [http://209.85.228.19/ 209.85.228.19]
+| 
+| 
+|}
+
+* [http://zh.wikihow.com/ WikiHow]
+
+* [https://g.adminhost.org Be Wise]
+
+* [http://www.renrensousou.com/category/search 众人搜索网]
+
+
+
+----
+== ''' 效率 == '''
+
+* [https://www.icloud.com/ iCloud]
+
+* [https://app.yinxiang.com/Login.action Evernote]
+
+* [https://translate.google.cn/ 谷歌翻译]
+
+* [http://cdn.code.baidu.com 百度静态资源公共库]
+
+* [http://cn.bing.com/dict/ 必应词典]
+
+* [http://dict.youdao.com/ 有道词典]
+
+* 科学上网
+** [https://www.vpncloud.me/ 云梯]
+** [https://www.aevpn.net/index.php AEVPN]
+** [https://www.ivpncup.me/vip VPNCup]
+** [https://duotai.org 多态]
+** [https://www.shadowsocks.com/ Shadowsocks]
+** [https://honx.in/_U-Od_38mTiql9K51 红杏]
+** [[ Goagent ]]
+** [http://dun.m4rk.org/ 墙遁]
+** [https://www.iamfreevpn Free VPN]
+** [http://www.vpntj.net/arkvpn/ ArkVPN]
+** 邀请码至：   dixiatielu.net@gmail.com
+** [https://strongswan.org/ strongSwan]
+** [[ Psiphon ]]
+** [[ BitTorrent Sync ]]
+** [[ Free Gate ]]
+** [[ I2P ]]
+** [[ Tor ]]
+** [[ Hosts for Google ]]
+** [[ XX-Net ]]
+
+* [http://www.speedtest.net/index.php Ookla Speedtest]
+
+* [http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html TIOBE]
+
+* [http://alteredqualia.com/visualization/hn/sequence/ Sequence Solver]
+
+* [https://qiandao.today 签到]
+
+* [http://sms.xudan123.com 验证码]
+
+* [http://www.arealme.com/career/cn/ 职业测试]
+
+* [http://whereismyip.com/ Where is My IP]
+
+* [http://www.bitbug.net/ 比特虫]
+
+
+----
+== ''' 手册 == '''
+
+* [http://php.net/manual/zh/manual.php PHP 手册]
+
+* [http://man.chinaunix.net/ ChinaUnix 技术文档手册中心( MAN )]
+
+* [http://www.nginx.cn/doc/ Nginx中文文档]
+
+* [http://git-scm.com/book/en/v2 Pro Git]
+
+* [http://httpd.apache.org/docs/2.4/zh-cn Apache HTTP 服务器 2.4 文档]
+
+* [https://msdn.microsoft.com/zh-cn/library/ms123401.aspx Microsoft API 和参考目录]
+
+* [http://dev.mysql.com/doc/refman/5.6/en/index.html MySQL Reference Manual]
+
+* [http://www.virtualbox.org/manual/ Oracle VM VirtualBox User Manual]
+
+* [https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Wiki%E5%AD%A6%E4%B9%A0/page/Wiki%E8%AF%AD%E6%B3%95%E5%A4%A7%E5%85%A8 Wiki语法大全]
+
+* [http://www.computerhope.com/msdos.htm Microsoft DOS and Windows Command Line]
+
+* [http://fortawesome.github.io/Font-Awesome/icons/ Font Awesome iCons]
+
+----
+== ''' 学习 ''' ==
+
+* [http://tianmaying.com/ 天码营]
+
+* [http://www.runoob.com/ RUNOOB]
+
+* [http://www.w3school.com.cn/ W3CSchool]
+
+* [http://www.nowcoder.com 牛客网]
+
+* [http://www.imooc.com 慕客网]
+
+* [http://open.163.com 网易公开课]
+
+* [https://zh.coursera.org/ Coursera]
+
+* [http://# iTunes U]
+
+* [http://www.ccietea.com CCIE网络工程师成长之路]
+
+* [http://www.html5tricks.com/ HTML5资源教程]
+
+* [http://www.photoshoplady.com Photoshop Tutorials]
+
+* [http://www.tutorial9.net Tutorial9]
+
+* [http://segmentfault.com/a/1190000000349384?utm_source=Weibo&utm_medium=shareLink&utm_campaign=socialShare 30天学习30种新技术]
+
+* [http://codeforces.com Codeforces]
+
+* [http://sorting.at SORTING]
+
+* [http://acmicpc.info ACM/ICPC]
+
+
+----
+== 读书 ==
+
+* 《如何阅读一本书》
+
+* 《深度学习的艺术》
+
+* 《PHP核心技术与最佳实践》
+
+* 《大话数据结构》
+
+* 《算法与数据结构》
+
+* 《Modern Operating Systems》
+
+* 《Computer Architecture-A Quantitative Approach》
+
+* 《TCP/IP详解》
+
+* 《C语言深度剖析》
+
+* 《Web全栈工程师的自我修养》
+
+* 《鸟哥的Linux私房菜》
+
+* 《Clean Code》
+
+* 《Code Complete》
+
+* 《Programming Pearls》
+
+* 《Ngnix》
+
+* 《神经漫游者》( Neuromancer )
+
+* 《计算机史话》
+
+* 《Cross the Chasm》
+
+* 《Rich Dad Poor Dad》
+
+* 《权利与终结》
+
+
+----
+== ''' 技术社区 == '''
+
+* [https://github.com/ GitHub]
+
+* [http://stackoverflow.com/ Stack Overflow]
+
+* [http://segmentfault.com/ SegmentFault]
+
+* [http://superuser.com/ Superuser]
+
+* [https://www.quora.com/ Quora]
+
+* [http://v2ex.com/ V2EX]
+
+* [https://gitcafe.com/ GitCafe]
+
+
+----
+== ''' 博客 == '''
+
+* [http://lamchuanjiang.github.io/blog/ lamChuanJiang]
+
+* [http://www.ruanyifeng.com/blog/archives.html 阮一峰]
+
+* [http://martinfowler.com Martin Fowler]
+
+* [http://program-think.blogspot.com/ program-think]
+
+* [http://www.williamlong.info/ 月光博客]
+
+* [http://blog.yufeng.info/ 系统技术非业余研究]
+
+* [http://www.laruence.com 风雪之隅]
+
+* [http://www.nowamagic.net 简明现代魔法]
+
+* [http://www.yinwang.org 王垠]
+
+* [http://mindhacks.cn/ 刘未鹏]
+
+* [https://www.phodal.com/ 黄峰达 ]
+
+* [http://www.blogbar.cc Blogbar]
+
+* [http://insights.thoughtworkers.org/ TW洞见]
+
+* [http://www.youxiuboke.com 优秀博客推荐]
+
+
+----
+== ''' 云 == '''
+
+* [https://onedrive.live.com/about/zh-cn/ OneDrive]
+
+* [http://www.qiniu.com/ 七牛]
+
+* [https://www.dropbox.com/ Dropbox]
+
+* [http://www.eqzg.com/manage/ Linode]
+
+* [http://www.hostker.com/ Hostker]
+
+* [http://yun.baidu.com/ 百度云]
+
+* [http://www.weiyun.com/ 微云]
+
+* [https://jianguoyun.com/ 坚果云]
+
+
+----
+== ''' 资讯 == '''
+
+* [https://news.ycombinator.com/ Hacker News]
+
+* [http://www.jobbole.com/ 伯乐在线]
+
+* [http://www.infoq.com/cn/ InfoQ]
+
+* [http://www.oschina.net/ Open Source China]
+
+* [http://www.techmeme.com/ Techmeme]
+
+* [http://cn.engadget.com/ Engadget 中国版] / [http://www.engadget.com/ Engadget]
+
+* [http://geek.csdn.net/hotest CSDN 极客头条]
+
+* [http://www.zhidao91.com 知道91]
+
+* [http://www.sec-wiki.com SecWiki]
+
+* [http://wkee.net/ 美女程序员]
+
+* [http://www.howtogeek.com How-To Geek]
+
+* [http://www.wired.com WIRED]
+
+* 硬件
+** [http://www.tomshardware.com/ Tom's Hardware]
+** [http://www.anandtech.com/ AnandTech]
+** [http://www.xbitlabs.com/ X-bit labs]
+** [http://ark.intel.com/m/ ARK|Your Source for Intel Product]
+** [http://sharkyforums.com SharkyForums]
+** [http://shumeipai.nxez.com/ 树莓派实验室]
+** [http://www.shumeipai.net/forum.php 树莓派论坛]
+
+----
+== ''' 招聘 == '''
+
+* [http://www.jobdeer.com/ JobDeer]
+
+* [http://www.dajie.com/ 大街]
+
+* [http://100offer.com/ 100Offer]
+
+* [http://job.csdn.net/ CSDN JOB]
+
+* [http://www.neitui.me/ 内推]
+
+* [http://www.pinbot.me/ 聘宝]
+
+* [http://www.lagou.com/ 拉勾]
+
+* [http://xinshoudang.com/ 新手党( 校园招聘 )]
+
+* [http://job.cnblogs.com/ 博客园招聘]
+
+* Resume
+** [https://github.com/geekcompany/ResumeSample ResumeSample]
+** [http://bobzhangwz.github.io 张博的简历]
+** [http://www.rleonardi.com/interactive-resume 游戏主题简历]
+** [http://html.love 范文杰的简历]
+
+* [http://www.jobui.com/ 职友集]
+
+* [http://www.kanzhun.com/plc2p1.html?ka=com-rank 计算机软件公司排名]
+
+
+----
+== ''' 生活 == '''
+
+* [http://www2.hm.com/zh_cn/index.html H&M]
+
+* [http://www.zhihu.com/ 知乎]
+
+* [http://www.douban.com/ 豆瓣]
+
+* [http://www.muji.com.cn/ 无印良品]
+
+* [http://www.uniqlo.cn/ UNIQLO]
+
+* [http://www.gap.cn/ GAP]
+
+* [http://www.neitao.cn/Index.aspx 内淘]
+
+* [https://www.g-star.com/zh_cn G-Star]
+
+* [http://www.ikea.com/cn/zh/ IKEA]
+
+* [http://www.ziroom.com/ 自友如家]
+
+
+----
+== ''' 软件 ''' ==
+
+* 开发环境
+
+** Apache
+
+** AppServ
+
+** WAMP
+
+** MySQL
+
+** PHP
+
+** JDK/JRE
+
+** Python
+
+** Ngnix
+
+** Node.js
+
+** MinGW
+
+** HTTPWatch
+
+*IDE/Editer
+
+** Editplus
+
+** Sublime Text
+
+** Eclipse
+
+** Code::Blocks
+
+** UltraEdit
+
+** Notepad++
+
+** IETester
+
+* [http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html Chrome]
+
+* AAA Logo
+
+* VirtualBox
+
+* OneNote
+
+* 视听艺术
+
+** Photoshop CS 6
+
+** 会声会影
+
+** Windows Movie Maker
+
+** TechSmith Camtasia Studio
+
+** QQ影音
+
+** Axialis IconWorkshop
+
+** KMPlayer
+
+* 小工具
+
+** CPU-Z
+
+**  Securable
+
+** Advanced PDF Password Recovery
+
+** ePUBeePDFDRMRemoval
+
+** Connectify
+
+** Windows Essentials
+
+** 7-Zip
+
+** Stamp
+
+** FSCapture
+
+* 华宇拼音输入法
+
+* 阅读/电子书
+** Calibre
+** Kindle
+** ePUBee
+*** ePUBee Converter
+*** ePUBee DRM Removal
+** Adobe Acrobat XI Pro
+** LibreOffice
+** OpenOffice
+
+* 数据恢复
+** R-Studio
+** 7-data
+** Easy Recovery
+** Final Data
+** Glary Undelete
+
+* 无线渗透测试
+
+** aircrack
+
+** reaver
+
+** wifite
+
+* Green Software
+
+** Cmd Markdown
+
+** Complete Internet Repair
+
+** Wikitax
+
+** putty
+
+* Everedit
+
+* Elan Pointing Device
+
+* 硬盘工具
+
+** Acronis Disk Director
+
+** DiskGenius
+
+** Ext2Fsd
+
+** 分区助手
+
+** [http://crystalmark.info/software/CrystalDiskMark/index-e.html CrystalDiskMark]
+
+** [http://www.usbflashspeed.com/ Flash Bench Mark]
+
+* 系统安装
+
+** EasyBCD
+
+** NT6_hdd_installer
+
+** UltraISO
+
+** Win32DiskImager
+
+** 小马 PE
+
+** HEU_KMS_Activator
+
+** OEM7Y3.1_NT6_Activator
+
+
+----
+== ''' 下载 ''' ==
+
+* [http://sourceforge.net/ SourceForge]
+
+* [http://www.ed2000.com/FileList.asp ED2000]
+
+* [http://msdn.itechzero.com/ MSDN 我告诉你 ] or [http://msdn.itellyou.cn/ MSDN I Tell You]
+
+* [http://www.cmsky.com/ 厘米天空]
+
+* [http://cn.uptodown.com/ UptoDown]
+
+* [http://etextwizard.com/cn/download.html 国华软件]
+
+* BitComet
+
+* BitTorrent Sync：<code>BTLZ4A4UD3PEWKPLLWEOKH3W7OQJKFPLG</code>
+
+* Fedora
+** http://mirror.1000mbps.com/fedora/linux/releases/
+** https://torrent.fedoraproject.org/
+
+* CentOS
+** https://www.centos.org/download/
+** http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1503-01.iso
+
+* Kali：https://www.kali.org/downloads/
+
+* Raspbian：https://www.raspbian.org/RaspbianMirrors
+
+* Ubuntu: http://releases.ubuntu.com
+
+----
+== ''' 2nd Tags ''' ==
+
+'''
+<code>C10K</code>
+<code>Saas</code>
+<code>HHVM</code>
+<code>CC BY#45;NC#45;ND 3.0</code>
+<code>Lantern</code>
+<code>OpenGL</code>
+<code>&gt;_端工程师</code>
+<code>Tmux</code>
+<code>Docker</code>
+<code>代码整洁之道</code>
+<code>0DAY</code>
+<code>Full#45;Stack</code>
+<code>GitHub</code>
+<code>编程范式</code>
+<code>Thinkpad</code>
+<code>Tickeys</code>
+<code>Lynx</code>
+<code>Internet Gensus 2012</code>
+<code>6S</code>
+<code>约束编程</code>
+<code>Tornado</code>
+<code>Markdown</code>
+<code>Google Analytics</code>
+<code>MinGW</code>
+<code>IPTables</code>
+<code>协程</code>
+<code>Gollum</code>
+<code>Hadoop</code>
+<code>DirectX</code>
+<code>(N)Hibernate</code>
+<code>代码审查</code>
+<code>思维体力</code>
+<code>PXE</code>
+<code>回归测试</code>
+<code>极限编程</code>
+<code>WebApp Blue#45;Green Deployment</code>
+<code>Cgroups</code>
+<code>LXC</code>
+<code>OOM</code>
+<code>Mercurial</code>
+<code>Netflix</code>
+<code>Piper</code>
+<code>Topcoder</code>
+<code>Lovelace</code>
+<code>QEMU</code>
+<code>千禧技术奖</code>
+<code>图灵</code>
+<code>思维导图</code>
+<code>TED</code>
+<code>ACL</code>
+<code>Feedly</code>
+<code>web.py</code>
+<code>Django</code>
+<code>ETL</code>
+<code>野生程序员</code>
+<code>IoT</code>
+<code>Li 总是不务正业</code>
+<code>lamChuanJiang</code>
+<code>提问的智慧</code>
+<code>精英文化</code>
+<code>Hack</code>
+<code>Georgia</code>
+<code>HAR</code>
+<code>正则表达式</code>
+<code>机械键盘</code>
+<code>Canvas</code>
+<code>SVG</code>
+<code>时代造英雄</code>
+<code>APM</code>
+<code>BMCS</code>
+<code>云存储</code>
+<code>CDN</code>
+<code>负载均衡</code>
+<code>大数据</code>
+<code>回路网络接口</code>
+<code>0.0.0.0</code>
+<code>127.0.0.1</code>
+<code>localhost</code>
+<code>二维码</code>
+<code>Netfilter</code>
+<code>FPM</code>
+<code>OpCode</code>
+<code>JIT</code>
+<code>PGO</code>
+<code>全局寄存器</code>
+<code>宏</code>
+<code>Cache命中率</code>
+<code>Georgia</code>
+<code>SEO</code>
+<code>ELAN</code>
+<code>设计模式</code>
+<code>Growth Hacking</code>
+<code>对象存储</code>
+<code>MAU</code>
+<code>DAU</code>
+<code>灰度发布</code>
+<code>A/B Testing</code>
+<code>Data driven</code>
+<code>视觉艺术</code>
+<code>HOL</code>
+<code>可重入代码</code>
+<code>密集计算</code>
+<code>值拷贝</code>
+<code>IO密集</code>
+<code>PRCE	</code>
+<code>字节码</code>
+<code>CLI</code>
+<code>CIL</code>
+<code>Zend VM</code>
+<code>愿景</code>
+<code>Veda</code>
+<code>三次握手</code>
+<code>闭包</code>
+<code>语法糖</code>
+<code>Linux</code>
+<code>自由变量</code>
+<code>NOOBS</code>
+<code>Raspberry Pi</code>
+<code>阅读一百本计算机著作</code>
+<code>海马体</code>
+<code>联盟广告</code>
+<code>WebKit</code>
+<code>WebGL</code>
+<code>PhoneGap</code>
+<code>TSR</code>
+<code>系统调用</code>
+<code>PDK</code>
+<code>NTVDM</code>
+<code>DOSBox</code>
+<code>DOSEMU</code>
+<code>CRLF</code>
+<code>混合硬盘</code>
+<code>PowerShell</code>
+<code>ABI</code>
+<code>ARM</code>
+<code>Arduino</code>
+<code>NAT</code>
+<code>UBOOT</code>
+<code>DDNS</code>
+<code>DEP</code>
+<code>ADK</code>
+<code>EPUB</code>
+<code>MOBI/AZW3</code>
+<code>NAS</code>
+<code>双通道</code>
+<code>句柄</code>
+<code>IPKG</code>
+<code>UPnP</code>
+<code>Fenomenix</code>
+<code>AngularJS</code>
+<code>Action Script</code>
+<code>MODO</code>
+<code>Snapseed</code>
+<code>导图君</code>
+<code>PageRank</code>
+<code>单元测试</code>
+<code>AngularJS</code>
+<code>Ngnix</code>
+<code>轻量级WEB服务器</code>
+<code>端口映射</code>
+<code>虚拟主机</code>
+<code>虚拟空间</code>
+<code>花生壳</code>
+<code>Ngnix</code>
+<code>网站备案</code>
+<code>IIS</code>
+<code>KSWEB</code>
+<code>FPS</code>
+<code>蒙特卡罗方法</code>
+<code>反编译</code>
+<code>Hive</code>
+<code>对象模型</code>
+<code>MVC</code>
+<code>对象模型</code>
+<code>UTC</code>
+<code>PPI</code>
+<code>Cheat Sheet</code>
+<code>Geoko</code>
+<code>人际称谓</code>
+<code>阅读器视图</code>
+<code>心动然后行动</code>
+<code>分流</code>
+<code>HDMI</code>
+<code>VGA</code>
+<code>DVI</code>
+<code>Emmet</code>
+<code>不给自己设限</code>
+<code>压力测试</code>
+<code>迭代</code>
+<code>深入浅出</code>
+<code>图层</code>
+<code>中间件</code>
+<code>PowerPC</code>
+<code>CLR</code>
+<code>TTD</code>
+<code>应用服务器</code>
+<code>WebOS</code>
+<code>YQL</code>
+<code>Q&A</code>
+<code>调版</code>
+'''
+
+
+----
+== FAQ ==
+
+* MSI 和 EXE 的区别？
+
+* 商标 TM 和 R 的含义与区别？
+
+* [http://www.58.com/fc/?PGTID=14431648090390.5484880458097905&ClickID=1 租房知识( 58 )？]
+
+* 自解压安装的实现原理？
+
+* 公司里面员工级别及其定义是怎样的？
+
+* 软件版本号的指定有什么规范？
+
+* 公司名字后缀各代表什么意思？
+
+* 磁盘写保护的含义、分类以及解决办法？
+
+* soft、armhf、armel 三种版本的 Linux 有什么区别？
+
+* [http://zh.wikihow.com/%E8%A7%A3%E9%94%81%E5%8A%A0%E5%AF%86%E7%9A%84PDF%E6%96%87%E4%BB%B6 有哪 6 种方法可以解锁加密的 PDF？]
+
+* 域名解析的本质是什么？
+
+* 版权声明写法需要注意什么？
+
+* Apache 和 Ngnix 各有什么特点和不同？
+
+* 如何在 ADSL 宽带上搭建 WEB 服务器？
+
+* 可运行在 Android 上的 WEB 服务器有哪些？
+
+* 本地端口和服务器端口的区别？
+
+* 搭建 WEB 服务器和 FTP 服务器有哪些组合方案？
+
+* Jekyll 如何显示时分秒？
+
+* 为什么简短的 PIN 码比长密码更安全？
+
+* Windows 系统目录和 Linux 系统目录下面的各个文件夹各自代表什么意思？
+
+* 如何用 CSS 或者其他技术让背景色具有层次感、错乱而有致？
+
+----
+== 缩略语 ==
+* AP ：advanced placement
+* 5ways ：丰田5问
+* MBP/MBA/RMBP：MacBook Pro/MacBook Air/Retina Macbook Pro
+* BTW：By The Way
+* ROR：Ruby On Rails
+* STL/ATL：C++标准模版库/C++ 活动模版库
+* MSS：最大报文段长度
+
+
+----
+== ''' 其他 ''' ==
+
+* [https://github.com/cuber/ngx_http_google_filter_module Nginx Module for Google( GitHub )]
+
+* [http://mfavisa.com 签证导航]
+
+* [https://www.strikingly.com Strikingly(免费建站)]
+
+* [https://github.com/JacksonTian/fks 前端开发知识结构]
+
+* [http://nb386.com/blog/ 牛本网]
+* 域名
+
+** [Namesilo]
+** [https://www.godaddy.com/ GoDaddy]
+** [http://www.dot.tk/zh/index.html?lang=zh DOT.TK]
+** [http://101domain.com 101Domain]
+** [http://name.com]
+** [https://domains.google.com]
+** [dnspod]
+** [domcomp.com]
+** [namecheap]
+
+* [https://www.reddit.com Reddit]
+
+* [http://www.360doc.cn 360doc个人图书馆]
+
+* [http://www.apple.com/apple-events/ Apple Event]
+
+* [http://interimm.org/ 星际移民中心]
+
+* [http://echizen.github.io/ 折腾的blog]
+
+
+----
+== 一句话 ==
+
+* 编程就是艺术和工程的结合，因此他既有魅力又有价值。
+
+* 哪怕是 HTML 也要写的有模有样。
+
+* The only thing that changed is everything.
+
+* 大雄很多而哆啦A梦却只有一个。
+
+* 智慧改变命运。
+
+* 操作系统：CPU 驱动。
+
+* 框架：请按照我的方法来做；库：请使用我。
+
+* 但行好事，莫问前程。
+
+* 很幸运和你相爱。
+
+* 以大多数人的努力程度，根本用不到拼天赋。
+
+* 她没有错，是我飞蛾扑火。
+
+* 是不是弯路不是那么好界定的。
+
+* 创造中学习是我认为最销魂的自学姿势。
+
+* I lie for you, not lie to you.
+
+* Troublemaker and troubleshooter.
+
+* How to let you know that my heart is yours.
+
+* 要有一套自己的学习方法、研究方法、价值观、原则。
+
+* 学习 = 记忆( 90% ) + 举一反三( 10% )。
+
+* 离散的知识点毫无用武之地，清晰而完整组织起来的知识系统才能解决实际问题。
+
+* 不被看好的青春叫做成长。
+
+* 最好的休息不是去睡觉，而是换个大脑去做其他的事情。
+
+* Live free or die.
+
+* Now or never.
+
+* 对于你不喜欢的环境，要么去适应，要么去改变。
+
+* 如果你要追随梦想，就要心无他念。
+
+* 生活才是最重要的。
+
+* 因为相信，所以简单。
+
+* 大学之前，游戏是你的生活；大学之后，你是生活的游戏。
+
+* 别把失败当回事。
+
+* 若方向错误，停止便是进步。
+
+* 睡觉本身就是浪费时间，睡得越多浪费越多，活的越短。
+
+* 要有主动意识，什么事情都要别人来替他安排的人，干什么都不会成功。
+
+* 当你在抱怨的时候，比你优秀的人并没有停下来等你。
+
+* All work and no play makes Jack a dull boy.
+
+* Loser 总是有各种理直气壮的理由。
+
+* 一个大小写、一个空格、一个像素的差异。
+
+* 英语拼写不准确是由于长起来读音不标准导致的；阅读速度慢是因为死记中文解释的单词记的。
+
+* SNS：点赞/喜欢、感谢、收藏、评论、分享。
+
+* We are blind. We are slave to numbers.
+
+* 如果你无法执着于你的错误，这可能表明你对这个领域还不够热爱。
+
+* 不要把你的金钱和时间投资在物品上，而把它们投资给经历。
+
+* 将想象变为现实是这个世界上最具有成就感的事情。
+
+* I propose to myself to achieve what hitherto I had been promised in vain.
+
+* Exceeding the top-notch is the inferior of exceeding yourself.
+
+* PHP、Python、Ruby 在 Web 应用开发上各有什么特点？
+
+* What you don't know can't bring you ignorance.
+
+* 服务器的端口：为了客户端的进入而打开；客户端的端口：为了前往服务器而打开。两者同时打开，互相通信。
+
+* I dreamed a dream, tomorrow the same.
+
+----
+== 人物 ==
+
+* 国外
+
+** John McAfee
+
+** Leonardo da Vinci
+
+** Dennis MacAlistair Ritchie
+
+** Donald Knuth
+
+** Tim Berners-Lee
+
+** Bjarne Stroustrup
+
+** Linus Torvalds
+
+** Richard Matthew Stallman
+
+** James Gosling
+
+** Eric S. Raymond
+
+* 国内
+
+** 李彦宏
+
+** 马化腾
+
+** 张志东
+
+** 张小龙
+
+** 林锐
+
+** Facebook 覃超
+
+** PHP 鸟哥
+
+** V2EX 刘昕

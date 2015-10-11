@@ -27,11 +27,11 @@ latest: 2015年08月29日 14:54:13
 
 其中我很认可的几点有：
 
-> __书写是为了更好的思考__。
++ __书写是为了更好的思考__。
 
-> __教是最好的学__。
++ __教是最好的学__。
 
-> __一个长期的价值博客是一份很好的简历__。
++ __一个长期的价值博客是一份很好的简历__。
 
 我个人也认为，将自己的一些学习经历通过键盘敲出来，本身就是一种学习，和对知识的总结，认真去写，就是认真地去思考，坚持下去，一定会有很多收获。
 
@@ -46,37 +46,37 @@ latest: 2015年08月29日 14:54:13
 
 1. *[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)*
 
-> 实现一个简单的 Blog 功能，先看看基本效果和流程。
+实现一个简单的 Blog 功能，先看看基本效果和流程。
 
 2. *[Github 简明教程](http://www.runoob.com/w3cnote/git-guide.html)* & *[Git五分钟教程](http://www.runoob.com/w3cnote/git-five-minutes-tutorial.html)* & *[git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)*
 
-> 对 Git 和 GitHub 有个基本印象。
+对 Git 和 GitHub 有个基本印象。
 
 3. *[Markdown 语法说明 (简体中文版) ](http://wowubuntu.com/markdown/)* & *[markdown简明语法| 不如](http://ibruce.info/2013/11/26/markdown/)*
 
-> 快速熟悉 Markdown 的基本语法。
+快速熟悉 Markdown 的基本语法。
 
 4. *[jekyllcn](http://jekyllcn.com/docs/home/)*
 
-> 初步尝试后对 Jekyll 使用的深入。使自己的博客丰富起来。
+初步尝试后对 Jekyll 使用的深入。使自己的博客丰富起来。
 
 当然我也有对上述工具的个人理解，为了简单，我用自己的一句话将现阶段我认为它们最本质的概念总结出来：
 
 ##### __Git__
 
-> 版本管理工具。可以对软件、书籍，等等具有版本属性，需要版本管理的对象进行版本控制。
+版本管理工具。可以对软件、书籍，等等具有版本属性，需要版本管理的对象进行版本控制。
 
 ##### __GitHub__
 
-> 源代码托管服务。基于 Git，以网站的形式示众，与 Git "里应外合" 干大事。
+源代码托管服务。基于 Git，以网站的形式示众，与 Git "里应外合" 干大事。
 
 ##### __Jekyll__ 
 
-> 生成静态网页的引擎，被 GitHub 所采用。GitHub 上所有 **pages** 的最终呈现在浏览器的样式都是经过 Jekyll 处理的。
+生成静态网页的引擎，被 GitHub 所采用。GitHub 上所有 **pages** 的最终呈现在浏览器的样式都是经过 Jekyll 处理的。
 
 ##### __Markdown__
 
-> 一种专为写作而生的标记语。十分简洁美观，可用于制作各种文档。
+一种专为写作而生的标记语。十分简洁美观，可用于制作各种文档。
 
 ## **在 GitHub 上搭建 Blog 的基本操作**
 
@@ -96,13 +96,17 @@ baseurl: /blog
 
 其作用是指明 Blog 的根目录。
 
-> 这里指定为 `/blog` 是因为我的 GitHub 首页 *lamchuanjiang.github.io* 不是博客项目，blog 是我的一个 `gh-pages` 仓库，`/` 代表根，对于 GitHub 来说，只能是 `xxx.github.io`。
+这里指定为 `/blog` 是因为我的 GitHub 首页 *lamchuanjiang.github.io* 不是博客项目，blog 是我的一个 `gh-pages` 仓库，`/` 代表根，对于 GitHub 来说，只能是 `xxx.github.io`。
 
 #### **2. 用于发布博客文章的 `_posts` 文件夹**
 
 关于其下的文章文件只需注意 3 点：
 
-① 支持的文档类型：`textile`、`markdwon`、`html`
+① 支持的文档类型：`textile`、`markdwon`、`html`。
+
+##### **说明**
+
+其中，含有相应 YML 头的 textile 和 markdown 文档将被 Jekyll 渲染成 HTML，而 HTML 无论含不含有 YML 头，Jekyll 都不会再对其处理。
 
 ② 文章__命名格式__：年-月-日-标-题，如：2015-08-29-my-article.html
 
@@ -298,7 +302,9 @@ $ git push origin gh-pages
 
 为了使用了 Cmd Markdwon 的 CSS，叫：`template-theme-white.css`。
 
-> 可在 Cmd Markdown 中使用 `ctrl` + `alt` + `f`，然后输入 `exporttohtml` 导出，为了不给 Cmd Markdown 作者的服务器添堵，导出后将其下载到自己需要使用的项目中去 。
+#### **说明**
+
+可在 Cmd Markdown 中使用 `ctrl` + `alt` + `f`，然后输入 `exporttohtml` 导出，为了不给 Cmd Markdown 作者的服务器添堵，导出后将其下载到自己需要使用的项目中去 。
 
 不过有时候为了省时间，我也会直接导出 .markdown 然后上传。
 
@@ -328,7 +334,7 @@ raw 可以暂时禁用标签处理，用于生成内容，它对使用相互矛�
 
 比如要将 {% raw %}{{ content }}{% endraw %} 避免 Jekyll 处理而直接显示到网页需要在其前后添加一对 raw 标签：
 
-![](https://lamchuanjiang.github.io/image/blog/avoid_jekyll_parase.gif)
+![](http://ww1.sinaimg.cn/mw690/00644Sdogw1ewx7w8rxrig309s01ljr7.gif)
 
 这样一来，输出到网页上的就是 {% raw %}{{ content }}{% endraw %} 这个 Liquid 语法元素而非 Jekyll 解析后的内容了。
 

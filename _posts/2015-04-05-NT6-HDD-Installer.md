@@ -65,4 +65,4 @@ latest: 2015年04月05日 20:01:44
 图片教程
 -
 
-![](/image/blog/NT6-HDD-Installer.jpg)
+![](http://ww1.sinaimg.cn/mw690/00644Sdogw1ewx7wbvszoj30dw1t2wqj.jpg)

@@ -1,15 +1,20 @@
 <head>
+
 <meta charset="utf-8">
+<meta name="Keywords" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}, lamChuanJiang.">
+<meta name="Description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}. @lamChuanJiang. Quiter you be, more you hear.">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | by @lamChuanJiang</title>
-<meta name="Keywords" content="lamChuanJiang, Chuanjiang Li, blog, post">
-<meta name="Description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}, lamChuanJiang's Blog post, Chuanjiang Li's blog post, by lamChuanJiang, by Chuanjiang Li">
+
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} @lamChuanJiang</title>
+
+<link rel="shortcut icon" href="/image/li.ico">
 <link rel="stylesheet" href="/main.css">
 <link rel="stylesheet" href="/css/syntax.css">
 <link rel="stylesheet" href="/css/github-light.css">
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="/css/stylesheet.css">
 <link rel="stylesheet" href="/css/font-awesome.min.css">
+
 <style type="text/css">
 
 	/* Back to top*/
@@ -31,4 +36,6 @@
 		color: white;
 		background-color: #C8C8C8;
 	}
-</style></head>
+</style>
+
+</head>

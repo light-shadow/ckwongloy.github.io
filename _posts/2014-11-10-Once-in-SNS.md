@@ -22,7 +22,7 @@ latest: 2015年09月28日 19:51:21
 
 铭记鲁迅
 -
-![](/image/blog/people-hitched-just-like-dog.jpg)
+![](http://ww3.sinaimg.cn/mw690/00644Sdogw1ewx7wd49xmj305k05uwed.jpg)
 
 当年人类登月时，整个计算机系统的运算能力赶不上今天的一台iPhone，但当年的人类就是通过这样的科技迈向了探索外太空的第一步。
 
@@ -44,7 +44,7 @@ latest: 2015年09月28日 19:51:21
 
 不过，所有的这些跟我有什么关系呢，我能改变多少鲁反式中国人呢？有几个人会鸟你呢？我好像应该“适应这个社会”，赶走鲁迅，为“小沈阳”鼓掌，相信新闻联播，全国人民确实很幸福！社会确实很美好！让我们在开心笑声中，在悠闲轻适的大学校园生活中，在游戏赋予我们的虚拟成就感中，忘却现实的痛苦，渐渐麻木，渐渐的变傻……做个中国梦甚好！？
 
-![](/image/blog/luxun-out-of-textbooks.jpg)
+![](http://ww1.sinaimg.cn/mw690/00644Sdogw1ewx7waghopj305k03wjrl.jpg)
 
 【下次不要发这种不讨人喜的P文字了，你距离鲁迅差的不止一个时代，先改变自己再说吧。仅以此段文字怀恋讽刺式鲁迅精神。2014.10.18】
 
@@ -84,7 +84,7 @@ latest: 2015年09月28日 19:51:21
 爬开！莫影响老子看《代码大全》
 -
 
-![](/image/blog/get-out-for-my-code-complete.jpg)
+![](http://ww2.sinaimg.cn/mw690/00644Sdogw1ewx7wa31zhj305k03174b.jpg)
 
 图粗理不粗，要看书要学习就应该到这种境界。同样要玩就要全心去玩。
 
@@ -108,7 +108,7 @@ latest: 2015年09月28日 19:51:21
 
 这次长沙之行的火车时间，就在这些轻松而很精彩的 histories 中 kill 吧。
 
-![](/image/blog/computer-history-math-history.jpg)
+![](http://ww4.sinaimg.cn/mw690/00644Sdogw1ewx7w9pw41j305k0463ym.jpg)
 
 
 Who is the NEXT ?
@@ -116,7 +116,7 @@ Who is the NEXT ?
 
 这 ... ... 对向大屏妥协的一点点牢骚吧。
 
-![](/image/blog/who-is-the-next-iphone.jpg)
+![](http://ww4.sinaimg.cn/mw690/00644Sdogw1ewx7we5ot5j305k05kglj.jpg)
 
 
 国产操作系统
@@ -124,7 +124,7 @@ Who is the NEXT ?
 
 我对国产操作系统的一些看法。
 
-![](/image/blog/my-view-on-domestic-os.jpg)
+![](http://ww3.sinaimg.cn/mw690/00644Sdogw1ewx7wbagl9j30hr13fqdl.jpg)
 
 
 Me your stand by？U my persist in？LUV isn't terminate？
@@ -232,15 +232,15 @@ Tencent Weibo From 2015 to 2011：
 
 10. 【Reading & Thinking NOTES】
 
-![](/image/blog/work-attitude-should-be.jpg)
+![](http://ww2.sinaimg.cn/mw690/00644Sdogw1ewx7weikxtj305k06uaaj.jpg)
 
 11. 〔记忆 遗忘 学习 etc…〕
 
-![](/image/blog/memory-forget-learn.jpg)
+![](http://ww1.sinaimg.cn/mw690/00644Sdogw1ewx7watk03j305k09vt9a.jpg)
 
 12 . free(*HD)； return conclusion_in_image；
 
-![](/image/blog/the-shawshank-redemption.jpg)
+![](http://ww2.sinaimg.cn/mw690/00644Sdogw1ewx7wdh4eoj305k079q3d.jpg)
 
 13. 将考研的利弊分析清楚，结合自己实际，如学习情况，对继续上3年学的兴趣和激情，经济实力，然后做出理性的选择。选择了就要坚持到出成果并承担对这个选择的一切结果。盲目考研不可取，随波逐流不可取。不知兴趣所在不可取。考研和工作要有个好结局有个共同的前提：自身的不懈努力，其他都是形式不同。
 
@@ -248,7 +248,7 @@ Tencent Weibo From 2015 to 2011：
 
 15. 【RN】魔都指上海。自古有之，来源不可考，魔都上海这个词最早来源于日本明治维新时期，可以说是对当时上海繁华和复杂的社会一个最好的称谓。 　　帝都原指东京，国人指北京。 　　另外还有西安废都、南京旧都、东莞性都、重庆陪都、广州妖都、武汉伪都、深圳雌都等。
 
-16. ![](/image/blog/what-a-phd.jpg)
+16. ![](http://ww3.sinaimg.cn/mw690/00644Sdogw1ewx7wdu9t3j305k1kvmz0.jpg)
 
 17. 寝室是猪圈。安逸消磨斗志。本来什么课都没认真都听过却抱怨大学教育的坑爹，本来什么努力都没付出却讽刺梦想的扯淡。在如此清闲的寝室日子里培养出了对未来的抵触对梦想的排斥，谈资都是游戏或者三无娱乐垃圾，最可怕的，这些都在形成理所应当的习惯而浑然不觉。迷醉吃猪肉而变成猪，谁是谁的千寻？
 

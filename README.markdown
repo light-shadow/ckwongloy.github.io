@@ -1,37 +1,31 @@
 
-**本博客所遵守的公约**
-=
-
-**追求的写博目标**
+**Homepage** and **Blog**
 -
-> 简单易读、准确、有价值
 
-**声明**
--
-+ 博客内容仅代表写作者写作当时的想法，其正确性和时效性，限于博主本人的能力无法保证，但本人会不断更新自己的水平，随着经验的增加，发现错误也会及时更正；
+### 功能摘要
 
-+ 为了维护 Blog 页面的简洁性，本人暂时没有增加评论的想法，也不会投放广告。如果有人发现文章的错误，或者想与本人交流，还请通过这里列出的方式 [联系](https://lamchuanjiang.github.io/contact_li.html) 本人，最好附上简明正确的做法，本人将不胜感激；
+1、很简单的一个个人主页，主要用于博客和简历呈现，具有丝绸导航条、面包屑导航菜单、时钟、技能点标签统计、模态对话框等小功能。
 
-+ **版权声明** : 以自由转载-非商用-非衍生-保持署名（[创意共享3.0许可证](http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)）。
+2. 网站主要使用的是 ***Bootstrap*** ，也用到了 ***JQuery*** ，字符图标采用的是 ***Font Awesome*** 。
 
+整个主页的框架主要由以上 3 种前端框架和部分自定义 CSS/JS 组合构成。
 
-**文章所采用的样式公约**
-- 
- 
-+ 书写工具：完全采用 __Markdown__ 语法书写，目前使用的是 **Cmd Markdown**
-+ 需要居中的文本有：
-> 1. 标题
-> 2. 作者
-> 3. 日期
-> 4. 字数统计
+3. 博客引擎采用的是 ***Jekyll*** ，博客文章使用 ***Markdown*** 书写。
 
-+ 正文采用的样式有：
-> 1. 字体大小：20px
-> 2. 字体家族：**Georgia**
-> 3. 字体位置：由 Cmd Markdown CSS 决定
+4. 主页和源代码都托管在  ***GitHub***。
 
-+ 其他样式
-> 斜体、粗体、强调、引用等一律由 **Markdown** 生成
-> 其余样式均由 __CSS__ 控制
+### Description
 
-*最新改动在： [关于本博客](http://lamchuanjiang.github.io/blog/about)*
+1、 A simple personal homepage, in use of **Blog** and resume presentation. 
+
+Modules mainly contains ribbon navigation bars, breadcrumb navigation menus, clock, skill tags, modal dialog, etc.
+
+2、 The website mainly based on ***Bootstrap*** and ***JQuery*** , ***Font Awesome*** provide font icon. 
+
+The major framework of this homepage is the combination of 3 popular web front-end frameworks. Of course, also part of custom CSS/JS.
+
+3、 Blog engine is ***Jekyll***, and posts are written with ***Markdown***.
+
+4、 Website and source code of this homepage are hosted on the server of  **GitHub**.
+
+##### @lamChuanJiang

@@ -2,7 +2,7 @@
 layout: post
 title: 关于 "软件源"
 category: Excerpt
-tags: [Sources, Linux]
+tags: [软件源, Linux]
 latest: 2014年09月11日 14:50:31
 ---
 
