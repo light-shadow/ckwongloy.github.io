@@ -137,7 +137,6 @@ body {
 闪动
 -
 
-
 {% highlight HTML  linenos %}
 <marquee direction="left" bgcolor="silver" scrollamount="100">
 <input type="image" src="/path/to/image.suffix" width="15px" height="15px">
@@ -271,7 +270,7 @@ body {
 </map></body>
 {% endhighlight %}
 
-常用代码段
+**常用代码段**
 -
 
 + HTML 文件头
@@ -288,6 +287,15 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 
 {% highlight HTML %}
 <input type="image" src="path/to/image.suffix" width="100px" height="40px">
+{% endhighlight %}
+
++ 网站图标
+
+{% highlight HTML %}
+<!-- 注意在 head 中添加 -->
+<head>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
 {% endhighlight %}
 
 小案例

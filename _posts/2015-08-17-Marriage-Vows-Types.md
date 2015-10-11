@@ -2,7 +2,7 @@
 layout: post
 title:  Marriage Vows 的几种表达
 category: Excerpt
-tags: [Marriage Vows, Love]
+tags: [婚誓, Love]
 latest: 2014年09月17日 20:21:40
 ---
 
