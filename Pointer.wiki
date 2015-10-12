@@ -16,9 +16,9 @@
 
 * ''' Google Reverse Proxy '''
 ** [https://www.google.com/?gws_rd=ssl Google]
-** [http://www.getyii.com/topic/default/view/15 我有一万种上谷歌的方法]
+** [http://www.getyii.com/topic/default/view/15 一万种上谷歌的方法]
 ** [http://nan.so/ 南搜]
-** [http://www.xiexingwen.com/ Google 非官方镜像( 广告多 )]
+** [http://www.xiexingwen.com/ Google 非官方镜像]
 ** [http://gufensoso.com/ 谷粉搜搜]
 ** [http://i.forbook.net/ 谷歌一下，你知太多]
 ** [http://www.hxgoogle.com/ 红杏谷歌]
@@ -32,7 +32,7 @@
 * ''' 使用 Google 的技术 '''
 
 ** [http://www.wow.com/ WOW.com ]
-** [https://search.disconnect.me/ Disconnect Search( 无痕搜索代理、斯诺登 ) ]
+** [https://search.disconnect.me/ Disconnect Search]
 ** [http://www.aolsearch.com/ AOL Search ]
 
 * ''' Google to go - IP 直连 '''
@@ -165,6 +165,7 @@
 * [http://codeforces.com Codeforces]
 * [http://sorting.at SORTING]
 * [http://acmicpc.info ACM/ICPC]
+* [https://github.com/JacksonTian/fks 前端开发知识结构]
 
 
 ----
@@ -221,6 +222,7 @@
 * [https://www.phodal.com/ 黄峰达 ]
 * [http://www.blogbar.cc Blogbar]
 * [http://insights.thoughtworkers.org/ TW洞见]
+* [http://echizen.github.io/ 折腾的blog]
 * [http://www.youxiuboke.com 优秀博客推荐]
 
 
@@ -252,6 +254,7 @@
 * [http://wkee.net/ 美女程序员]
 * [http://www.howtogeek.com How-To Geek]
 * [http://www.wired.com WIRED]
+* [https://www.reddit.com Reddit]
 
 * 硬件
 ** [http://www.tomshardware.com/ Tom's Hardware]
@@ -303,94 +306,97 @@
 ----
 == ''' 软件 ''' ==
 
-* 开发环境
-** Apache
-** AppServ
-** WAMP
-** MinGW
+* 开发/测试环境
+** [http://httpd.apache.org/ Apache]
+** [http://nginx.org/en/ Ngnix]
+** [http://www.appservnetwork.com/ AppServ]
+** [http://www.wampserver.com/en/ WAMP]
+** [https://www.mamp.info/en/downloads/ MAMP]
+** [http://www.mingw.org/ MinGW]
+** [https://www.virtualbox.org/wiki/Downloads VirtualBox]
+** [http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html Chrome]
+** [http://www.my-debugbar.com/wiki/IETester/HomePage IETester]
+** [https://secure.php.net/manual/zh/index.php PHP]
+** [https://www.python.org/doc/ Python]
 
 *IDE/Editer
-** Editplus
-** Sublime Text
-** Eclipse
-** Code::Blocks
-** UltraEdit
-** Notepad++
-** IETester
+** [https://www.editplus.com/ Editplus]
+** [http://www.sublimetext.com/ Sublime Text]
+** [https://eclipse.org/downloads/ Eclipse]
+** [http://www.codeblocks.org/ Code::Blocks]
+** [http://www.ultraedit.cn/ Ultraedit]
+** [https://notepad-plus-plus.org/ Notepad++]
+** [https://www.zybuluo.com/mdeditor Cmd Markdown]
+** [http://cn.everedit.net/ Everedit]
 
-* [http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html Chrome]
-* AAA Logo
-* VirtualBox
-* OneNote
-* Everedit
-* Elan Pointing Device
-* 华宇拼音输入法
 
 * 视听艺术
-** Photoshop CS 6
-** 会声会影
-** Windows Movie Maker
-** TechSmith Camtasia Studio
-** QQ影音
-** Axialis IconWorkshop
-** KMPlayer
+** [http://www.photoshop.com/ Photoshop]
+** [http://www.huishenghuiying.com.cn/ 会声会影]
+** [http://windows.microsoft.com/zh-cn/windows-live/movie-maker Windows Movie Maker]
+** [http://www.techsmith.com/camtasia.html TechSmith Camtasia Studio]
+** [http://player.qq.com/ QQ影音]
+** [http://www.axialis.com/iconworkshop/ Axialis IconWorkshop]
+** [http://www.kmplayer.com/ KMPlayer]
+** [http://www.aaa-logo.com/ AAA Logo]
 
-* 小工具
-** CPU-Z
-** Securable
-** Advanced PDF Password Recovery
-** ePUBeePDFDRMRemoval
-** Connectify
-** Windows Essentials
-** 7-Zip
-** Stamp
-** FSCapture
-** HTTPWatch
+* 工具
+** [http://www.cpuid.com/softwares/cpu-z.html CPU-Z]
+** [https://www.grc.com/securable.htm Securable]
+** [http://cn.elcomsoft.com/pdf_password_recovery.html Advanced PDF Password Recovery]
+** [http://cn.epubee.com/ ePUBee DRM Removal]
+** [http://www.connectify.me/ Connectify]
+** [http://windows.microsoft.com/zh-cn/windows-live/essentials Windows Essentials]
+** [http://sparanoid.com/lab/7z/ 7-Zip]
+** [http://www.faststone.org/FSCaptureDetail.htm FSCapture]
+** [http://www.httpwatch.com/download/ HttpWatch]
+** [http://support.lenovo.com/us/en/downloads/ds103249 Elan Pointing Device]
+** [http://www.unispim.com/ 华宇拼音输入法]
+** [[Stamp]]
 
-* 阅读/电子书
-** Calibre
-** Kindle
-*** ePUBee Converter
-*** ePUBee DRM Removal
-** Adobe Acrobat XI Pro
-** LibreOffice
-** OpenOffice
+* 阅读/笔记/电子书/办公
+** [http://calibre-ebook.com/ Calibre]
+** [https://www.amazon.cn/gp/digital/fiona/kcp-landing-page?ie=UTF8&ref_=kcp_pc_mkt_lnd Kindle]
+** [http://epubee.com/ebook-converter.html ePUBee Converter]
+** [https://helpx.adobe.com/cn/acrobat/kb/acrobat-downloads.html Adobe Acrobat XI Pro]
+** [https://zh-cn.libreoffice.org/ LibreOffice]
+** [https://www.openoffice.org/zh-cn/ OpenOffice]
+** [https://www.onenote.com/OneNote]
 
 * 数据恢复
-** R-Studio
-** 7-data
-** Easy Recovery
-** Final Data
-** Glary Undelete
+** [http://www.r-studio.com/zhcn/ R-Studio]
+** [http://7datarecovery.com/ 7-Data]
+** [http://www.easyrecoverychina.com/ EasyRecovery]
+** [http://www.finaldata.com/ Final Data]
+** [http://www.glarysoft.com/glary-undelete/ ]
 
 * 无线渗透测试
-** aircrack
-** reaver
-** wifite
+** [http://www.aircrack-ng.org/ aircrack]
+** [https://github.com/t6x/reaver-wps-fork-t6x reaver]
+** [https://github.com/derv82/wifite wifite]
 
-* Green Software
-** Cmd Markdown
-** Complete Internet Repair
-** Wikitax
-** putty
+* Green Software/Out of Box
+** [http://www.techspot.com/downloads/5794-complete-internet-repair.html ComInRep]
+** [http://wikitaxi.en.softonic.com/ WikiTaxi]
+** [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html putty]
 
-* 硬盘工具
-** Acronis Disk Director
-** DiskGenius
-** Ext2Fsd
-** 分区助手
+* 磁盘工具
+** [http://www.acronis.com/zh-cn/personal/disk-manager/ Acronis Disk Director]
+** [http://www.diskgenius.cn/ DiskGenius]
+** [http://www.ext2fsd.com/ Ext2Fsd]
+** [http://www.disktool.cn/ 分区助手]
 ** [http://crystalmark.info/software/CrystalDiskMark/index-e.html CrystalDiskMark]
 ** [http://www.usbflashspeed.com/ Flash Bench Mark]
 
 * 系统安装
-** EasyBCD
-** NT6_hdd_installer
-** UltraISO
-** Win32DiskImager
-** 小马 PE
-** HEU_KMS_Activator
-** OEM7Y3.1_NT6_Activator
-** 
+** [http://neosmart.net/EasyBCD/ EasyBCD]
+** [http://www.ihacksoft.com/nt6-hdd-installer.html NT6 HDD installer]
+** [http://cn.ezbsystems.com/ultraiso/ UltraISO]
+** [http://sourceforge.net/projects/win32diskimager/ Win32DiskImager]
+** [http://www.xdowns.com/soft/6/99/2013/Soft_109268.html HEU KMS Activator]
+** [http://www.doudouxitong.net/tools/win7jihuo/2014/1112/4366.html OEM7Y3.1_NT6_Activator]
+** [http://www.52pojie.cn/thread-395154-1-1.html KMS10.exe]
+** [http://www.pccppc.com/xiaomape2015-html 小马 PE]
 
 
 ----
@@ -416,6 +422,23 @@
 * Kali：https://www.kali.org/downloads/
 * Raspbian：https://www.raspbian.org/RaspbianMirrors
 * Ubuntu: http://releases.ubuntu.com
+* Archlinux：https://www.archlinux.org/download/
+
+
+
+----
+== ''' 其他 ''' ==
+
+* [https://github.com/cuber/ngx_http_google_filter_module Nginx Module for Google( GitHub )]
+* [http://mfavisa.com 签证导航]
+* [https://www.strikingly.com Strikingly(免费建站)]
+* [http://nb386.com/blog/ 牛本网]
+* [http://www.360doc.cn 360doc个人图书馆]
+* [http://www.apple.com/apple-events/ Apple Event]
+* [http://interimm.org/ 星际移民中心]
+* [http://www.goagent.biz/ Goagent论坛]
+
+
 
 ----
 == ''' 2nd Tags ''' ==
@@ -433,10 +456,8 @@
 <code>图灵</code>
 <code>思维导图</code>
 <code>野生程序员</code>
-<code>Li 总是不务正业</code>
 <code>提问的智慧</code>
 <code>精英文化</code>
-<code>时代造英雄</code>
 <code>正则表达式</code>
 <code>机械键盘</code>
 <code>云存储</code>
@@ -446,7 +467,6 @@
 <code>回路网络接口</code>
 <code>全局寄存器</code>
 <code>宏</code>
-<code>轻量级WEB服务器</code>
 <code>端口映射</code>
 <code>虚拟主机</code>
 <code>虚拟空间</code>
@@ -457,8 +477,6 @@
 <code>反编译</code>
 <code>人际称谓</code>
 <code>阅读器视图</code>
-<code>心动然后行动</code>
-<code>不给自己设限</code>
 <code>压力测试</code>
 <code>迭代</code>
 <code>深入浅出</code>
@@ -486,7 +504,6 @@
 <code>闭包</code>
 <code>语法糖</code>
 <code>自由变量</code>
-<code>阅读一百本计算机著作</code>
 <code>海马体</code>
 <code>联盟广告</code>
 <code>混合硬盘</code>
@@ -508,11 +525,9 @@
 <code>Thinkpad</code>
 <code>Tickeys</code>
 <code>Lynx</code>
-<code>Internet Gensus 2012</code>
 <code>6S</code>
 <code>Tornado</code>
 <code>Markdown</code>
-<code>Google Analytics</code>
 <code>MinGW</code>
 <code>IPTables</code>
 <code>PXE</code>
@@ -558,7 +573,6 @@
 <code>ELAN</code>
 <code>A/B Testing</code>
 <code>Data driven</code>
-<code>Growth Hacking</code>
 <code>HOL</code>
 <code>PRCE</code>
 <code>CLI</code>
@@ -629,73 +643,38 @@
 <code>5ways</code>
 <code>BTW</code>
 <code>MSS</code>
-<code>MBP/MBA/RMBP</code>
 <code>STL/ATL</code>
 '''
 
+* 长标签
 '''
-* CC BY-NC-ND 3.0
-* WebApp Blue-Green Deployment
-* >_端工程师
+** CC BY-NC-ND 3.0
+** WebApp Blue-Green Deployment
+** Google Analytics
+** Internet Gensus 2012
+** MBP/MBA/RMBP
+** >_端工程师
+** 阅读一百本计算机著作
+** Li 总是不务正业
+** 轻量级WEB服务器
+** 心动然后行动
+** 不给自己设限
+** 时代造英雄
+** Growth Hacking
 '''
 
-
-----
-== FAQ ==
-
-* MSI 和 EXE 的区别？
-* 商标 TM 和 R 的含义与区别？
-* [http://www.58.com/fc/?PGTID=14431648090390.5484880458097905&ClickID=1 租房知识( 58 )？]
-* 自解压安装的实现原理？
-* 公司里面员工级别及其定义是怎样的？
-* 软件版本号的指定有什么规范？
-* 公司名字后缀各代表什么意思？
-* 磁盘写保护的含义、分类以及解决办法？
-* soft、armhf、armel 三种版本的 Linux 有什么区别？
-* [http://zh.wikihow.com/%E8%A7%A3%E9%94%81%E5%8A%A0%E5%AF%86%E7%9A%84PDF%E6%96%87%E4%BB%B6 有哪 6 种方法可以解锁加密的 PDF？]
-* 域名解析的本质是什么？
-* 版权声明写法需要注意什么？
-* Apache 和 Ngnix 各有什么特点和不同？
-* 如何在 ADSL 宽带上搭建 WEB 服务器？
-* 可运行在 Android 上的 WEB 服务器有哪些？
-* 本地端口和服务器端口的区别？
-* 搭建 WEB 服务器和 FTP 服务器有哪些组合方案？
-* Jekyll 如何显示时分秒？
-* 为什么简短的 PIN 码比长密码更安全？
-* Windows 系统目录和 Linux 系统目录下面的各个文件夹各自代表什么意思？
-* 如何用 CSS 或者其他技术让背景色具有层次感、错乱而有致？
-
-----
-== ''' 其他 ''' ==
-
-* [https://github.com/cuber/ngx_http_google_filter_module Nginx Module for Google( GitHub )]
-* [http://mfavisa.com 签证导航]
-* [https://www.strikingly.com Strikingly(免费建站)]
-* [https://github.com/JacksonTian/fks 前端开发知识结构]
-* [http://nb386.com/blog/ 牛本网]
-* [https://www.reddit.com Reddit]
-* [http://www.360doc.cn 360doc个人图书馆]
-* [http://www.apple.com/apple-events/ Apple Event]
-* [http://interimm.org/ 星际移民中心]
-* [http://echizen.github.io/ 折腾的blog]
-
-
-----
-== 人物 ==
-
-* 国外
+* 人物
 ** John McAfee
 ** Leonardo da Vinci
 ** Dennis MacAlistair Ritchie
 ** Donald Knuth
 ** Tim Berners-Lee
+** Larry Page
 ** Bjarne Stroustrup
 ** Linus Torvalds
 ** Richard Matthew Stallman
 ** James Gosling
 ** Eric S. Raymond
-
-* 国内
 ** 李彦宏
 ** 马化腾
 ** 张志东
@@ -704,3 +683,30 @@
 ** Facebook 覃超
 ** PHP 鸟哥
 ** V2EX 刘昕
+
+
+----
+== FAQ ==
+
+* [http://www.googto.com/?q=MSI和EXE的区别 MSI 和 EXE 的区别？]
+* [http://www.googto.com/?q=商标TM和R的含义与区别 商标TM和R的含义与区别？]
+* [http://www.58.com/fc/?PGTID=14431648090390.5484880458097905&ClickID=1 租房知识( 58 )？]
+* [http://www.googto.com/?q=自解压安装的实现原理 自解压安装的实现原理？]
+* [http://www.googto.com/?q=公司里面员工级别及其定义是怎样的 公司里面员工级别及其定义是怎样的？]
+* [http://www.googto.com/?q=软件版本号的指定有什么规范 软件版本号的指定有什么规范？]
+* [http://www.googto.com/?q=公司名字后缀各代表什么意思 公司名字后缀各代表什么意思？]
+* [http://www.googto.com/?q=磁盘写保护的含义、分类以及解决办法 磁盘写保护的含义、分类以及解决办法？]
+* [http://www.googto.com/?q=soft、armhf、armel 三种版本的 Linux 有什么区别 soft、armhf、armel 三种版本的 Linux 有什么区别？]
+* [http://zh.wikihow.com/%E8%A7%A3%E9%94%81%E5%8A%A0%E5%AF%86%E7%9A%84PDF%E6%96%87%E4%BB%B6 有哪 6 种方法可以解锁加密的 PDF？]
+* [http://www.googto.com/?q=域名解析的本质是什么 域名解析的本质是什么？]
+* [http://www.googto.com/?q=版权声明写法需要注意什么 版权声明写法需要注意什么？]
+* [http://www.googto.com/?q=Apache和Ngnix 各有什么特点和不同 Apache 和 Ngnix 各有什么特点和不同？]
+* [http://www.googto.com/?q=如何在ADSL宽带上搭建WEB服务器 如何在 ADSL 宽带上搭建 WEB 服务器？]
+* [http://www.googto.com/?q=可运行在Android上的WEB服务器有哪些 可运行在 Android 上的 WEB 服务器有哪些？]
+* [http://www.googto.com/?q=本地端口和服务器端口的区别 本地端口和服务器端口的区别？]
+* [http://www.googto.com/?q=搭建WEB服务器和FTP服务器有哪些组合方案 搭建 WEB 服务器和 FTP 服务器有哪些组合方案？]
+* [http://www.googto.com/?q=Jekyll如何显示时分秒 Jekyll 如何显示时分秒？]
+* [http://www.googto.com/?q=为什么简短的PIN码比长密码更安全 为什么简短的 PIN 码比长密码更安全？]
+* [http://www.googto.com/?q=Windows系统目录和Linux系统目录下面的各个文件夹各自代表什么意思 Windows 系统目录和 Linux 系统目录下面的各个文件夹各自代表什么意思？]
+* [http://www.googto.com/?q=如何用CSS或者其他技术让背景色具有层次感、错乱而有致 如何用 CSS 或者其他技术让背景色具有层次感、错乱而有致？]
+* [http://www.googto.com/?q=网址后面为什么会自动加正斜杠 网址后面为什么会自动加正斜杠 /?]
