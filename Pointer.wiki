@@ -6,7 +6,7 @@
 
 
 ----
-== ''' 搜索 == '''
+== ''' [#搜索] == '''
 
 * ''' Google 原版镜像 '''
 ** [http://www.kb58.cn/ kb58]
@@ -65,6 +65,7 @@
 | [http://209.85.226.146/ 209.85.226.146]
 | [http://209.85.228.11/ 209.82.228.11]
 | [http://209.85.228.19/ 209.85.228.19]
+|
 | 
 |}
 
@@ -76,7 +77,7 @@
 
 
 ----
-== ''' 效率 == '''
+== ''' [#效率] == '''
 
 * [https://www.icloud.com/ iCloud]
 * [https://app.yinxiang.com/Login.action Evernote]
@@ -96,7 +97,6 @@
 ** [http://dun.m4rk.org/ 墙遁]
 ** [https://www.iamfreevpn Free VPN]
 ** [http://www.vpntj.net/arkvpn/ ArkVPN]
-** [dixiatielu.net@gmail.com 地下铁邀请码]
 ** [https://strongswan.org/ strongSwan]
 ** [http://www.psiphon3.net/zh/download.html Psiphon ( get@psiphon3.com )]
 ** [https://www.getsync.com/ BitTorrent Sync]
@@ -104,6 +104,7 @@
 ** [https://geti2p.net/zh/download I2P]
 ** [https://www.torproject.org/download/download-easy.html.en Tor ]
 ** [https://github.com/XX-net/XX-Net XX-Net]
+** 地下铁邀请码至：<code>dixiatielu.net@gmail.com</code>
 
 ** Google Hosts
 *** [http://laod.cn/hosts/2015-google-hosts.html Google hosts 持续更新]
@@ -116,8 +117,8 @@
 ** [https://www.godaddy.com/ GoDaddy]
 ** [http://www.dot.tk/zh/index.html?lang=zh DOT.TK]
 ** [http://101domain.com 101Domain]
-** [http://name.com]
-** [https://domains.google.com]
+** [http://name.com Name.com]
+** [https://domains.google.com Google Domains]
 ** [https://www.dnspod.cn/ DNSPod]
 ** [https://www.domcomp.com/ domcomp]
 ** [https://www.namecheap.com/ Namecheap]
@@ -136,7 +137,7 @@
 == ''' 手册 == '''
 
 * [http://php.net/manual/zh/manual.php PHP 手册]
-* [http://man.chinaunix.net/ ChinaUnix 技术文档手册中心( MAN )]
+* [http://man.chinaunix.net/ ChinaUnix 技术文档手册中心]
 * [http://www.nginx.cn/doc/ Nginx中文文档]
 * [http://git-scm.com/book/en/v2 Pro Git]
 * [http://httpd.apache.org/docs/2.4/zh-cn Apache HTTP 服务器 2.4 文档]
@@ -194,7 +195,7 @@
 
 
 ----
-== ''' 技术社区 == '''
+== ''' 社区 == '''
 
 * [https://github.com/ GitHub]
 * [http://stackoverflow.com/ Stack Overflow]
@@ -301,7 +302,9 @@
 * [https://www.g-star.com/zh_cn G-Star]
 * [http://www.ikea.com/cn/zh/ IKEA]
 * [http://www.ziroom.com/ 自友如家]
-
+* [支付宝]
+* [亚马逊]
+* [天猫]
 
 ----
 == ''' 软件 ''' ==
@@ -361,14 +364,14 @@
 ** [https://helpx.adobe.com/cn/acrobat/kb/acrobat-downloads.html Adobe Acrobat XI Pro]
 ** [https://zh-cn.libreoffice.org/ LibreOffice]
 ** [https://www.openoffice.org/zh-cn/ OpenOffice]
-** [https://www.onenote.com/OneNote]
+** [https://www.onenote.com OneNote]
 
 * 数据恢复
 ** [http://www.r-studio.com/zhcn/ R-Studio]
 ** [http://7datarecovery.com/ 7-Data]
 ** [http://www.easyrecoverychina.com/ EasyRecovery]
 ** [http://www.finaldata.com/ Final Data]
-** [http://www.glarysoft.com/glary-undelete/ ]
+** [http://www.glarysoft.com/glary-undelete/ Glary Undelete]
 
 * 无线渗透测试
 ** [http://www.aircrack-ng.org/ aircrack]
@@ -395,21 +398,21 @@
 ** [http://sourceforge.net/projects/win32diskimager/ Win32DiskImager]
 ** [http://www.xdowns.com/soft/6/99/2013/Soft_109268.html HEU KMS Activator]
 ** [http://www.doudouxitong.net/tools/win7jihuo/2014/1112/4366.html OEM7Y3.1_NT6_Activator]
-** [http://www.52pojie.cn/thread-395154-1-1.html KMS10.exe]
+** [http://www.52pojie.cn/thread-395154-1-1.html KMS10]
 ** [http://www.pccppc.com/xiaomape2015-html 小马 PE]
 
 
 ----
 == ''' 下载 ''' ==
 
-* [http://sourceforge.net/ SourceForge]
+* [http://sourceforge.net SourceForge]
 * [http://www.ed2000.com/FileList.asp ED2000]
-* [http://msdn.itechzero.com/ MSDN 我告诉你 ] or [http://msdn.itellyou.cn/ MSDN I Tell You]
-* [http://www.cmsky.com/ 厘米天空]
-* [http://cn.uptodown.com/ UptoDown]
+* [http://msdn.itechzero.com MSDN 我告诉你 ] or [http://msdn.itellyou.cn MSDN I Tell You]
+* [http://www.cmsky.com 厘米天空]
+* [http://cn.uptodown.com UptoDown]
 * [http://etextwizard.com/cn/download.html 国华软件]
-* BitComet
-* BitTorrent Sync：<code>BTLZ4A4UD3PEWKPLLWEOKH3W7OQJKFPLG</code>
+* [http://www.bitcomet.com/index-zh-cn.php BitComet]
+* [https://www.getsync.com BitTorrent Sync]：<code>BTLZ4A4UD3PEWKPLLWEOKH3W7OQJKFPLG</code>
 
 * Fedora
 ** http://mirror.1000mbps.com/fedora/linux/releases/
@@ -429,19 +432,19 @@
 ----
 == ''' 其他 ''' ==
 
-* [https://github.com/cuber/ngx_http_google_filter_module Nginx Module for Google( GitHub )]
+* [https://github.com/cuber/ngx_http_google_filter_module Nginx Module for Google]
 * [http://mfavisa.com 签证导航]
 * [https://www.strikingly.com Strikingly(免费建站)]
-* [http://nb386.com/blog/ 牛本网]
+* [http://nb386.com/blog 牛本网]
 * [http://www.360doc.cn 360doc个人图书馆]
-* [http://www.apple.com/apple-events/ Apple Event]
-* [http://interimm.org/ 星际移民中心]
-* [http://www.goagent.biz/ Goagent论坛]
+* [http://www.apple.com/apple-events Apple Event]
+* [http://interimm.org 星际移民中心]
+* [http://www.goagent.biz Goagent论坛]
 
 
 
 ----
-== ''' 2nd Tags ''' ==
+== ''' 标签 ''' ==
 
 '''
 <code>代码整洁之道</code>
@@ -512,6 +515,9 @@
 <code>句柄</code>
 <code>导图君</code>
 <code>缩略语</code>
+'''
+
+'''
 <code>C10K</code>
 <code>Saas</code>
 <code>HHVM</code>
@@ -644,10 +650,11 @@
 <code>BTW</code>
 <code>MSS</code>
 <code>STL/ATL</code>
+<code>BOSD</code>
 '''
 
-* 长标签
 '''
+* 长标签
 ** CC BY-NC-ND 3.0
 ** WebApp Blue-Green Deployment
 ** Google Analytics
