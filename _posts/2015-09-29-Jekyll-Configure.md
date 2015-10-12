@@ -137,8 +137,10 @@ Jekyll/Liquid 注意事项
     - site.url
     
     在 _config.yml 指定？
-
-    ![有帮助的截图]({{ site.url }}/favicon.ico)
+    
+    ```
+    ![有帮助的截图]({%  raw %}{{ site.url }}{% endraw %}/favicon.ico)
+    ```
 
     - post.url
 
