@@ -62,9 +62,9 @@ Now and Up-growing
 </a>
 <span style="color: #{{ color }}{{ color }}{{ color }};">
 
-&times;
-
-{{ tag | last | size }}
+<sup>
+{{ tag | last | size }}	
+</sup>
 
 </span></span> 
 
@@ -88,11 +88,12 @@ Details
 {{ tag | first }}
 	
 </a>
-<i class="fa fa-angle-left"></i>
 
+<sup>
 {{ tag | last | size }}
+</sup>
 
-<i class="fa fa-angle-right"></i></p>
+</p>
 <ul>
 
 {% for post in tag.last %}
