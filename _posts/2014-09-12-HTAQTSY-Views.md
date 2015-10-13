@@ -3,7 +3,6 @@ layout: post
 title: 学会提问：《How to Ask Question the Smart Way》
 category: Auxiliary
 tags: [提问的智慧, 黑客]
-archive:  2015年09月28
 latest: 2015年09月28 17:28:53
 ---
 

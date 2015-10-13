@@ -2,7 +2,7 @@
 layout: post
 title: VirtualBox User Manual v5.0.4 中文版 ( 译文 )
 category: English
-tags: [VirtualBox, 虚拟化]
+tags: [VirtualBox, 虚拟化, English]
 latest: 2015年08月15日 17:19:48
 ---
 

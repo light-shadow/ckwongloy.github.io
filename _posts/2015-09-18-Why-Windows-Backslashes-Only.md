@@ -2,7 +2,7 @@
 layout: post
 title: 为什么只有 Windows 使用反斜线？( 译文 )
 category: English
-tags: [Windows, 键盘符号]
+tags: [Windows, 键盘符号, English]
 latest: 2015年09月28日 17:21:56
 ---
 
