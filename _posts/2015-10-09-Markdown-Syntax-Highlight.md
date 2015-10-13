@@ -43,6 +43,72 @@ Markdown 语法讲的不错的好几个，本文只是对我个人在使用过�
 
 效果都一样：* <https://google.com>* 。
 
+Markdown Extra
+-
+
+- 表格
+
+```
+| YOU      |    HE | I  |
+| :-------- | --------:| :--: |
+| YOU  | HE | I   |
+| YOU     |   HE |  I  |
+| YOU      |    HE | I  |
+```
+
+- 数学公式
+
+请参考：[Mathematics Stack Exchange](http://math.stackexchange.com) 。
+
+- 脚注
+
+`[^footnote]`
+
+- 代码块
+
+{% highlight python %}
+``` python
+@requires_authorization
+def somefunc(param1='', param2=0):
+    '''A docstring'''
+    if param1 > param2: # interesting
+        print 'Greater'
+    return (param2 - param1 + 1) or None
+class SomeClass:
+    pass
+>>> message = '''interpreter
+... prompt'''
+```
+{% endhighlight %}
+
+- 目录
+
+`TOC`
+
+- UML / 流程图
+
+```sequence
+张->李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四-->张三: 忙得吐血，哪有时间写。
+```
+
+或者流程图：
+
+```flow
+st=>start: 开始
+e=>end: 结束
+op=>operation: 我的操作
+cond=>condition: 确认？
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+
+*貌似 GitHub 不支持 Markdown Extra ?*
+
+
 ### 参考
 
 + *[markdown简明语法| 不如](http://ibruce.info/2013/11/26/markdown)* ( 个人推荐 )

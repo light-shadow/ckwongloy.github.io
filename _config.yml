@@ -25,6 +25,8 @@ email: lamchuanjiang@gmail.com
 # Build settings
 
 markdown: rdiscount
+# markdown: redcarpet
+# markdown: kramdown
 
 # old version jekyll use pygments:true
 # pygments: true
