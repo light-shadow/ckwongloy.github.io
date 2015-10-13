@@ -3,7 +3,7 @@ layout: post
 title: Jekyll/Liquid 常用小功能
 category: Clipboard
 tags: [Jekyll, 语法高亮]
-latest: 2015年10月9日19:57:13
+latest: 2015年10月9日 19:57:13
 ---
 
 把 Jekyll 博客用过的小功能代码段总结一下。

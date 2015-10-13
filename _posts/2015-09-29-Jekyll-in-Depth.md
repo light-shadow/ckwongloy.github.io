@@ -3,7 +3,7 @@ layout: post
 title: Jekyll 原理探索
 category: Auxiliary
 tags: [Jekyll, Liquid]
-latest: 2015年10月09日20:14:24
+latest: 2015年10月09日 20:14:24
 ---
 
 有人说 Jekyll 的配置好复杂，有人说 HEXO 比 Jekyll 简单好用，也有人更喜欢 Octopress。

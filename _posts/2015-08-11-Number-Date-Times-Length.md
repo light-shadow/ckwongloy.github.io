@@ -3,7 +3,7 @@ layout: post
 title: 数字、数量、倍数的英文表达
 category: English
 tag: English
-latest: 2015年08月11 17:28:53
+latest: 2015年08月11日 17:28:53
 ---
 
 数字

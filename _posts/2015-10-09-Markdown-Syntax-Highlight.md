@@ -3,7 +3,7 @@ layout: post
 title: 使用 Markdown 需要注意的地方
 category: Auxiliary
 tag: Markdown
-latest: 2015年10月09日20:14:24
+latest: 2015年10月09日 20:14:24
 ---
 
 Markdown 语法讲的不错的好几个，本文只是对我个人在使用过程中遇到的坑特意说明一下，已经炉火纯青的亲就不要在此文上浪费时间了。
@@ -45,6 +45,6 @@ Markdown 语法讲的不错的好几个，本文只是对我个人在使用过�
 
 ### 参考
 
-+ *[markdown简明语法| 不如](http://ibruce.info/2013/11/26/markdown/)* ( 个人推荐 )
++ *[markdown简明语法| 不如](http://ibruce.info/2013/11/26/markdown)* ( 个人推荐 )
 
-+ *[Markdown 语法说明 (简体中文版) ](http://wowubuntu.com/markdown/)*
++ *[Markdown 语法说明 (简体中文版) ](http://wowubuntu.com/markdown)*

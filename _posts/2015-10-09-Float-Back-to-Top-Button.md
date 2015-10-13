@@ -3,7 +3,7 @@ layout: post
 title: 页面上浮动的返回菜单
 category: Clipboard
 tags: [Javascript, CSS, HTML, Web, 返回菜单]
-latest: 2015年10月09日20:14:24
+latest: 2015年10月09日 20:14:24
 ---
 
 浮动的返回菜单应用十分广泛，本博客也采用到了。

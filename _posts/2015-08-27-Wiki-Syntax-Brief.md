@@ -3,7 +3,7 @@ layout: post
 title: Wiki 语法小结
 category: Undefined
 tag: Wiki
-latest: 2015年08月27日19:57:13
+latest: 2015年08月27日 19:57:13
 ---
 
 接触 Wiki 语法开始是为了生成像 Wikipedia 那样素雅的页面。

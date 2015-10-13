@@ -3,7 +3,7 @@ layout: post
 title: Jekyll 基本应用：分类、标签、归档、分页
 category: Auxiliary
 tags: [Jekyll, 博客]
-latest: 2015年10月9日19:07:20
+latest: 2015年10月09日 19:07:20
 ---
 
 Jekyll 博客基本功能已完成大半，觉得有必要整理一下然后总结在这里，为自己和需要的人提供便利，以后也会陆续总结更多功能。
