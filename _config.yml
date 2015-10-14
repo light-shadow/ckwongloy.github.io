@@ -24,6 +24,7 @@ email: lamchuanjiang@gmail.com
 
 # Build settings
 
+# markdown engine list
 markdown: rdiscount
 # markdown: redcarpet
 # markdown: kramdown

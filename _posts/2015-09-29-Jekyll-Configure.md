@@ -144,4 +144,14 @@ Jekyll/Liquid 注意事项
 
     - post.url
 
++ Build Failure?
+
+检查是否安装了 Python2.7.x，Python3.4.x 不行。
+
+建议将 Python2.7 添加到环境变量。
+
+##### **说明**
+
+Python2.7.x 和 Python 3.4.x 可以同时被安装，为了不冲突，建议只把其中一个添加到环境变量中去。
+
 + 如何通过手段将所有文章生成到首页？？？

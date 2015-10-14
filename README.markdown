@@ -24,7 +24,7 @@ Modules mainly contains ribbon navigation bars, breadcrumb navigation menus, clo
 
 The major framework of this homepage is the combination of 3 popular web front-end frameworks. Of course, also part of custom CSS/JS.
 
-3、 Blog engine is ***Jekyll***, and posts are written with ***Markdown***.
+3、 Blog engine is ***Jekyll***, and posts are written with ***Markdown*** syntax.
 
 4、 Website and source code of this homepage are hosted on the server of  **GitHub**.
 

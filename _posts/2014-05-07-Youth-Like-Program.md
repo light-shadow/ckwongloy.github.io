@@ -1,4 +1,4 @@
----
+---	
 layout: post
 title: Youth Like Program
 category: lamChuanJiang
@@ -6,7 +6,7 @@ tags: [青春, 心路旅程, lamChuanJiang]
 latest: 2014年09月18日 18:01:44
 ---
 
-青春的轨迹，完全就像程序。
+青春的轨迹，完全可以用程序来描述。
 
 {% highlight C linenos %}
 

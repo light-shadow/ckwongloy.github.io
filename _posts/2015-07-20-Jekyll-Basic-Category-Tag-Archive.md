@@ -88,6 +88,10 @@ Details
 二、Jekyll 标签：Tag
 -
 
+##### **说明**
+
+tag 的大小应该反映出实际生活在不同领域的时间花费。
+
 Tag 和 Category 的实现思路几乎是一致的，不过在对标签样式的处理上是 Tag 独有的。代码如下：
 
 {% highlight html %}
