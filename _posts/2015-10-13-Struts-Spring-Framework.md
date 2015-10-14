@@ -2,11 +2,11 @@
 layout: post
 title: 从 Struts/Spring 到框架简谈
 category: Java
-tags: [Struts, 框架, MVC]
+tags: [Struts, Spring, 框架, MVC]
 latest: 2015年10月13日 17:24:27
 ---
 
-谈谈 Struts，讲讲框架。
+总结下 Struts，总结下 Spring，最后讲讲框架。
 
 ### 什么是 Structs
 

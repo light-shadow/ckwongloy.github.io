@@ -55,6 +55,10 @@ latest: 2014年09月10日 13:17:34
 
 表现形式主要为引用片段 + 我的点评。
 
++ Tentacle
+
+顾名思义，"触角"，指的是兴趣带领我去探索的领域。
+
 + lamChuanJiang
 
 聚焦博主，存放和博主相关的的东西。目前包括但不限于：博客。
@@ -69,9 +73,12 @@ latest: 2014年09月10日 13:17:34
 
 最终用于展示具体分类文章的分类名有：
 
-**Auxiliary、Web、PHP、Programming、 Assembler、Clipboard、English、Excerpt、lamChuanJiang、Undefined**。
+**Auxiliary、Web、PHP、Programming、 Assembler、Clipboard、English、Excerpt、Tentacle、lamChuanJiang、Undefined**。
 
-	
+##### **说明**
+
+属性和分类不要混淆。
+
 系统称谓
 -
 

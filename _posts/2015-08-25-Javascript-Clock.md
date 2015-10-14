@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: Javascript 时钟模板
 category: Clipboard
@@ -8,7 +8,7 @@ latest: 2015年08月25日 19:57:13
 
 很实用的时钟模板，使用 Javascript 写的，我用在了我的个人主页上。
 
-{% highlight Javascript linenos %}
+{% highlight Javascript %}
 /* *****************************************************************************
 * 显示的是用户本机的时间
 * 在需要显示时间的地方加入: <script language="javascript" src="./js/clock.js"></script>
