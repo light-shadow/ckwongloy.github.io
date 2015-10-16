@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 从 Struts/Spring 到框架简谈
+title: 从 Struts/Spring/Hibernate 到框架简谈
 category: Java
-tags: [Struts, Spring, 框架, MVC]
+tags: [Struts, Spring, Hibernate, 框架, MVC]
 latest: 2015年10月13日 17:24:27
 ---
 
@@ -173,6 +173,78 @@ ApplicationContext ClassPathXmlApplicationContext( "applicationContext.xml" ) ;
 UserService us = (UserService) ac.getBean( "UserService" ) ;
 us.saySomething() ;
 ```
+Hibernate
+-
+
+学习一门新技术，需要考虑如果没有该技术问题会怎样解决，这样才能理解得深刻。
+
+万事开头难，对于入门来说，通常需要必备某个技术的 API 和手册，一定会经常查到的。
+
+而且如果有相关的书籍，那么还需要看书去深入。
+
+#### 什么是 Hibernate？
+
+一种 ORM 框架，处于项目的持久层，所以 Hibernate 也叫持久层框架。
+
+Hibernate 实际上就是对 JDBC 进行了轻量级的封装。
+
+Hibernate 的基础依然是 Java 的反射机制。
+
+##### 什么是 ORM ？
+
+Object Relation Mapping。
+
+#### 为什么需要 Hibernate？
+
+考量 **为什么** 一般都是从它们的优点，以及如果没有它们会怎样。
+
+- 如果不使用 Hibernate 是如何处理问题的？
+
+界面操作业务层 ，业务层操作数据库。
+
+- 使用 Hibernate 是如何处理的？
+
+界面操作业务逻辑，业务逻辑操作数据持久层，数据持久层操作数据库。
+
+如果有 dao，那么在数据持久层和数据库之间还隔着 dao 层。
+
+- Hibernate 的优点
+
+1、 数据持久层解决了对象模型 ( 业务逻辑 ) 和关系模式 ( 关系型数据库 ) 之间的阻抗问题。
+
+2、 Hibernate 将程序员从对数据库操作的分心当中解放出来，从而能够专注于业务本身，而对数据库的操作将有数据库管理员专门负责。这样，角色分工就非常细化、明确了。
+
+3、 分层更清晰，耦合性更小，可以随意地切换数据库，通用性也更强。
+
+4、 程序员只要会 HQL，那么就可以通过操作持久层的 Hibernate 去操作任何一种数据库。
+
+可以看出，持久层 Hibernate 在这里充当了一个翻译的角色。
+
+5、 对象化：把关系型数据库变成了 Java 的对象，操作更平滑。
+
+6、 性能保证：Hibernate 可以优化 SQL 语句，比经验不足的程序员写的 SQL 语句效率会更高。
+
+#### 如何学习 Hibernate？
+
+主要学习三个方面：
+
+- Hibernate API 
+
+- hibernate.cfg.xml
+
+Hibernate 的核心配置文件。
+
+- 对象关系映射文件
+
+#### Hibernate 的应用场合？
+
+- J2SE 项目
+
+- J2EE 项目 ( Web )
+
+##### **说明**
+
+Struts 是 Web 界面框架 ( jsp )，所以不能用于 J2SE 项目中。
 
 MVC
 -

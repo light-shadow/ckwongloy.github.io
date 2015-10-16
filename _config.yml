@@ -2,6 +2,8 @@
 
 baseurl: / # the subpath of your site, e.g. /blog/
 
+permalink: /:categories/:title.html
+
 encoding: utf-8
 
 title: Chuanjiang Li's Blog | @lamChuanJiang
@@ -42,3 +44,5 @@ paginate: 1
 paginate_path: "home/paginate-:num"
 
 production_url : http://lamchuanjiang.github.io
+
+#exclude: ["css", "image", "js", "fonts"]

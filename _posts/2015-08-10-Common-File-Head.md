@@ -29,3 +29,17 @@ tags: [HTML, Jekyll]
 latest: 2015年10月14日 19:02:35
 ---
 {% endhighlight %}
+
+XML 文件头
+-
+
+{% highlight xml %}
+<!-- XML 文件声明 ( standalone 默认为 no ) -->
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!-- XML 显示样式 -->
+<?xml-stylesheet href="./xml.css" type="text/css"?>
+
+<!-- CDATA 节 -->
+<![CDATA[XXXX]]>
+{% endhighlight %}
