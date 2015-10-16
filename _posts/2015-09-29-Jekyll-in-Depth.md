@@ -31,11 +31,45 @@ Jekyll 会遍历你的网站搜寻要处理的文件。
 
     - site
 
+	全站变量，可以通过 site 来引用已经定义在 *_config.yml* 中的自定义变量，比如 *{% raw %}{{site.email}}{% endraw %}*。
+
     - page
+
+	在非博客文章的网站页面引用页面所具有的属性，比如：*{% raw %}{{page.title}}{% endraw %}*。
 
     - post
 
+    在博客文章中引用文章引用文章页面所具有的属性，比如：*{% raw %}{{post.title}}{% endraw %}*。
+
 * 自定义变量
+
+	- 可以在 *_config.yml* 中自定义变量，然后再 page 后者 post 中引用。举例说明：
+
+	假如 *_config.yml* 中配置了如下内容：
+
+	```
+	title: Chuanjiang Li's Blog | @lamChuanJiang
+	description: > # this means to ignore newlines until "baseurl:"
+
+	 1. Quiter you be, more you hear.
+	 
+	 2. Keep it simple, stupid, but serviceable.
+
+	 @lamChuanJiang.
+
+	url: "http://lamchuanjiang.github.io" # the base hostname & protocol for your site
+
+	author: Chuanjiang Li
+
+	id: lamChuanJiang
+
+	email: lamchuanjiang@gmail.com
+	```
+	那么在文章或者页面中就可以引用任意一个变量：
+
+	```
+	{% raw %}{{ site.url }}{% endraw %}
+	```
 
 ( 未完待续 ... ... )
 

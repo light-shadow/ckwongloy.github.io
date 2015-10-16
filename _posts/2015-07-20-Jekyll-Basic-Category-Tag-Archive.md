@@ -11,6 +11,8 @@ Jekyll 博客基本功能已完成大半，觉得有必要整理一下然后总�
 一、Jekyll 分类：Category
 -
 
+Category 和 Tag 的思路很相似。本博客中使用的分类代码如下：
+
 {% highlight HTML %}
 
 {% raw %}{{ site.categories | size }}{% endraw %}
@@ -92,7 +94,9 @@ Details
 
 tag 的大小应该反映出实际生活在不同领域的时间花费。
 
-Tag 和 Category 的实现思路几乎是一致的，不过在对标签样式的处理上是 Tag 独有的。代码如下：
+Tag 和 Category 的实现思路几乎是一致的，不过在对标签样式的处理上是 Tag 独有的。
+
+我的思路和 *Liberize* 的大体一致，修改了部分代码。本博客使用到的源代码如下：
 
 {% highlight html %}
 
@@ -375,11 +379,32 @@ Details
 
 如果是在首页中要分页，Jekyll 也只能在首页，即 index.html 中分页。
 
-参考如下代码：
+参考我博客中的分页功能，思路和 *天镶* 的一致，但是我自己增加了跳页功能。
+
+首先在 *_config.yml* 文件中开启分页功能，我目前的配置是这样的：
+
+```
+paginate: 3
+paginate_path: "/home/paginate_:num"
+```
+
+然后再 `/home/index.html` 文件中配置如下代码：
 
 {% highlight HTML %}
+<section class="main-content" style="font-family:Georgia;">
+<div class="home">
+<h3 class="page-heading">
+<strong>
+<i class="fa fa-home" name="top"> Home </i>
+<i class="fa fa-terminal" style="color:red;"></i></h3>
+<h2 style="text-align:center;padding-bottom:30px;">
+<i class="fa fa-bolt"></i>
+<i class="fa fa-bolt"></i>
+<i class="fa fa-bolt"></i>
+Latest 3 by @lamChuanJiang
+</strong></h2>
 <ul class="post-list">
-{% raw %}{% for post in paginator.posts %}{% endraw %}
+{% for post in paginator.posts %}
 <hr>
 <li style="list-style:none;">
 <h3>
@@ -388,87 +413,108 @@ Details
 <a href="#" style="padding:10px;" title="Post">
 <i class="fa fa-paper-plane" style="font-size:30px;"></i></a>
 <i class="fa fa-calendar"></i>
-<a href="/blog/archive.html/#{% raw %}{{ post.date | date: "%Y-%m" }}{% endraw %}" title="Archive：{% raw %}{{ post.date | date: "%Y-%m" }}{% endraw %}">
-{% raw %}{% assign d = post.date | date: "%-d" %}{% endraw %}
-{% raw %}{{ post.date | date: "%B" }}{% endraw %}
-{% raw %}{% case d %}{% endraw %}
-{% raw %}{% when '1' or '21' or '31' %}{% endraw %}{% raw %}{{ d }}{% endraw %}st
-{% raw %}{% when '2' or '22' %}{% endraw %}{% raw %}{{ d }}{% endraw %}nd
-{% raw %}{% when '3' or '23' %}{% endraw %}{% raw %}{{ d }}{% endraw %}rd
-{% raw %}{% else %}{% endraw %}{% raw %}{{ d }}{% endraw %}th
-{% raw %}{% endcase %}{% endraw %}, 
-{% raw %}{{ post.date | date: "%Y, %A" }}{% endraw %}.
+<a href="/archive.html#{{ post.date | date: "%Y-%m" }}" title="Archive：{{ post.date | date: "%Y-%m" }}">
+{% assign d = post.date | date: "%-d" %} 
+{{ post.date | date: "%B" }}
+{% case d %}
+{% when '1' or '21' or '31' %}{{ d }}st
+{% when '2' or '22' %}{{ d }}nd
+{% when '3' or '23' %}{{ d }}rd
+{% else %}{{ d }}th
+{% endcase %}, 
+{{ post.date | date: "%Y, %A" }}.
 </a></b></span></h3>
 <h1 style="text-align:center;font-size:26px;"><strong>
 <i class="fa fa-angle-double-left" style="color:silver;"></i>
-{% raw %}{{ post.title }}{% endraw %}
+{{ post.title }}
 <i class="fa fa-angle-double-right" style="color:silver;"></i>
 </strong></h1>
 <h4 style="text-align:center;">
-<i class="fa fa-heartbeat"></i>
-<a href="http://lamchuanjiang.github.io" target="_blank" title="Author：@lamChuanJiang">
-{% raw %}{% if site.id %}{% endraw %}
-{% raw %}{{ site.id }}{% endraw %}
-{% raw %}{% endif %}{% endraw %}
+<i class="fa fa-heart"></i>
+<a href="https://github.com/lamChuanJiang" target="_blank" title="Author：@lamChuanJiang">
+{% if site.id %}
+{{ site.id }}
+{% endif %}
 </a>
 <i class="fa fa-folder"></i>
-{% raw %}{% for categories in post.categories %}{% endraw %}
-<a href="/blog/category.html#{% raw %}{{ post.categories[0] }}{% endraw %}" title="Category：{% raw %}{{ post.categories[0] }}{% endraw %}">
-{% raw %}{{ post.categories[0] }}{% endraw %}
+{% for categories in post.categories %}
+<a href="/category.html#{{ post.categories[0] }}" title="Category：{{ post.categories[0] }}">
+{{ post.categories[0] }}
 </a>
-{% raw %}{% endfor %}{% endraw %}
+{% endfor %}
 <i class="fa fa-tags"></i>
-{% raw %}{% for tag in post.tags %}{% endraw %}
-<a href="/blog/tag.html#{% raw %}{{ tag }}{% endraw %}" title="Tag：“{% raw %}{{ tag }}{% endraw %}”" style="background:#BFD9DB;margin:2px;radius:50%;">
+{% for tag in post.tags %}
+<a href="/tag.html#{{ tag }}" title="Tag：“{{ tag }}”" style="background:#BFD9DB;margin:2px;radius:50%;">
 <i>
-{% raw %}{{ tag }}{% endraw %}
-{% raw %}{{ tag | last }}{% endraw %}
+{{ tag }}
+{{ tag | last }}
 </i></a>
-{% raw %}{% endfor %}{% endraw %}
+{% endfor %}
 <i class="fa fa-pencil"></i>
-<a title="文章字数：{% raw %}{{ post.content | number_of_words }}{% endraw %}">
-{% raw %}{{ post.content | number_of_words }}{% endraw %}
+<a title="文章字数：{{ post.content | number_of_words }}">
+{{ post.content | number_of_words }}
 </a></h4>
-{% raw %}{{ post.excerpt }}{% endraw %}
+{{ post.excerpt }}
 </p>
 <p style="text-align:right;">
-<a href="{% raw %}{{ post.url | prepend: site.baseurl }}{% endraw %}" class="btn" style="background-color:#438F97;" title="Read this full article.">
+<a href="{{ post.url }}" class="btn" style="background-color:#438F97;" title="Read this full article.">
 Read More
 <i class="fa fa-angle-double-right"></i></a></p>
-{% raw %}{% endfor %}{% endraw %}
+{% endfor %}
 </li></ul>
 <hr>
 <h2 style="text-align:center;">
-{% raw %}{% if  paginator.total_pages >1 %}{% endraw %}
-{% raw %}{% if paginator.previous_page %}{% endraw %}
-<a href="{% raw %}{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}{% endraw %}" title="上一页">
+{% if paginator.page == 1 %}
+<span style="margin-right:15px;"><i><b>首页</b></i></span>
+{% endif %}
+{% if  paginator.total_pages >1 %}
+{% if paginator.previous_page %}
+<a href="/home/" title="首页">首页</a>
+<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="上一页">
 <span class="fa fa-backward" style="padding:10px;"></span></a>
-{% raw %}{% endif %}{% endraw %}
-{% raw %}{% for page in (1..paginator.total_pages) %}{% endraw %}
-{% raw %}{% if page == paginator.page %}{% endraw %}
-<span style="font-size:48px;">
-{% raw %}{{ page }}{% endraw %} /
-</span>
-<span style="font-size:16px;">
-{% raw %}{{ paginator.total_pages }}{% endraw %}
-</span>
-{% raw %}{% elsif page == 1 %}{% endraw %}
-{% raw %}{% else %}{% endraw %}
-{% raw %}{% endif %}{% endraw %}
-{% raw %}{% endfor %}{% endraw %}
-{% raw %}{% if paginator.next_page %}
-<a href="{% raw %}{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}{% endraw %}" title="下一页">
+{% endif %}
+{% for page in (1..paginator.total_pages) %}
+{% if page == paginator.page %}
+<select onChange="location.replace(this.options[this.selectedIndex].value)">
+<option>
+第
+{{ paginator.page }}
+ /
+{{ paginator.total_pages }}
+页
+</option>
+{% assign page_num = 1 %}
+<option value="/home/">跳至:首页</option>
+{% for page in (1..paginator.total_pages) %}
+{% assign page_num = page_num | plus: 1 %}
+{% if page_num < paginator.total_pages %}
+<option value="/home/paginate_{{ page_num }}/">跳至:第 {{ page_num }} 页</option>
+{% endif %}
+{% endfor %}
+<option value="/home/paginate_{{ paginator.total_pages }}">跳至:尾页</option>
+</select>
+{% elsif page == 1 %}
+{% else %}
+{% endif %}
+{% endfor %}
+{% if paginator.next_page %}
+<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="下一页">
 <i class="fa fa-forward" style="padding:10px;"></i></a>
-{% raw %}{% endif %}{% endraw %}
-{% raw %}{% endif %}{% endraw %}
-</h2>
+<a href="/home/paginate_{{ paginator.total_pages }}/" title="尾页">尾页</a>
+{% endif %}
+{% if paginator.page == paginator.total_pages %}
+<span style="margin-left:15px;"><i><b>已达尾页</b></i></span>
+{% endif %}
+{% endif %}
+</h2></div></section>
+
 {% endhighlight %}	
 
 ### 特别感谢
 
 在折腾 Jekyll 的整个过程中 Google 了不少时间，也参考了不少 Jekyll 博客源码，其中对我帮助最大的是：***[liberize's blog](http://liberize.me/)*** 。
 
-本博客的几项重要功能的实现都和该博客提供的思路有关，这为我省了不少时间，在此非常感谢 *liberize*。
+本博客的几项重要功能的实现都和该博客提供的思路有关，这为我省了不少时间，在此非常感谢 *liberize* 愿意提供博客源码。
 
 ### 参考
 

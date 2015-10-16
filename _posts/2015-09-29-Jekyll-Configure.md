@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll 常用配置：YML
+title: Jekyll 常用配置：_config.yml 和 YML 头
 category: Auxiliary
 tag: Jekyll
 latest: 2015年10月09日 20:14:24
@@ -25,6 +25,7 @@ highlighter: pygments
 # if local test then rouge that can avoid pygments and python installing
 #highlighter: rouge
 ```
+
 设置编码
 -
 
@@ -33,6 +34,7 @@ highlighter: pygments
 ```
 ruby -e 'puts Encoding::list.join("\n")'
 ```
+
 头信息
 -
 
@@ -136,7 +138,13 @@ Jekyll/Liquid 注意事项
 
     - site.url
     
-    在 _config.yml 指定？
+    url 在 _config.yml 指定，比如：
+
+	```
+	url: "http://lamchuanjiang.github.io" # the base hostname & protocol for your site
+	```
+
+	然后在任何页面引用：
     
     ```
     ![有帮助的截图]({%  raw %}{{ site.url }}{% endraw %}/favicon.ico)
@@ -154,4 +162,16 @@ Jekyll/Liquid 注意事项
 
 Python2.7.x 和 Python 3.4.x 可以同时被安装，为了不冲突，建议只把其中一个添加到环境变量中去。
 
-+ 如何通过手段将所有文章生成到首页？？？
+如何通过手段将所有文章生成到网站根目录？
+-
+
+permalink。可以为文章设置 **永久链接** 为如下格式：
+
+```
+permalink: /:title.html
+```
+
+这样一来，被 Jekyll 生成的文章都全部出现在 _site 目录的根目录下面，即网站下面。
+
+这样有利于 SEO，因为 Spider 对全网站文章的抓取都在 3 层目录之类，这对搜索引擎的搜录是十分友好的。
+
