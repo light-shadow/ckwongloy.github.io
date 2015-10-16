@@ -6,8 +6,9 @@ tag: English
 latest: 2015年08月15 17:28:53
 ---
 
+被单词不如被句子，背句子不如被文章。
 
-( Ngnix )
+然而被文章太累，所以还是背句子吧。
 
 As of early 2015，we powered 24% of all web servers and almost half of the world's busiest sites.
 

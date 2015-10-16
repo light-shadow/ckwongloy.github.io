@@ -6,6 +6,43 @@ tags: [Linux, Fedora]
 latest: 2014年04月09日 11:01:21
 ---
 
+
+安装 Fedora 之后还需要安装一些常用软件，以及配置一些开发环境。
+
+安装 Chrome
+-
+
+```
+$ sudo gedit /etc/yum.repos.d/google-chrome.repo
+```
+
+然后在本文中添加：
+
+```
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+```
+
+最后执行：
+
+```
+# dnf install google-chrome
+```
+
+或者是进入 `/etc/yum.repos.d/` 路径，然后在终端下打开 vi，添加好上述内容后保存为 google-chrome.repo 即可。
+
+##### **说明**
+
+如果是 Fedora 20/21 或者 CentOS 7.0：
+
+```
+yum install google-chrome-stable
+```
+
 删除多余的内核
 -
 
@@ -86,7 +123,7 @@ sudo yum install ffmpeg ffmpeg-libs gstreamer-ffmpeg libmatroska xvidcore
 
 4.KMplaer
 
-um install kmplayer即可。
+yum install kmplayer即可。
 
 5."/var/run/yum.pid 已被锁定,PID 为 3021 的另一个程序正在运行。" 
 
@@ -136,10 +173,18 @@ Settings -> Compiler settings -> Global compiler settings -> Compiler setting ->
 -fexec-charset=GBK
 ```
 
-完美解决。参考文章：*[Code：Blocks 中文乱码问题原因分析和解决方法](http://blog.csdn.net/softman11/article/details/6121538)* 。
+完美解决。
 
 + 如何更改 Code::Blocks 默认的控制台为 GNOME 自带的终端输出？
 
 + 无法调试？
 
 + 为什么必须新建工程才可以启动调试？
+
+
+参考
+-
+
+- [安装 Fedora 22 后要做的13件事](http://www.codeceo.com/article/fedora-22-things.html)
+
+- [Code：Blocks 中文乱码问题原因分析和解决方法](http://blog.csdn.net/softman11/article/details/6121538)

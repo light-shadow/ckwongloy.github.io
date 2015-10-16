@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Windows FAQ
+title: Windows Q&A
 category: Auxiliary
 tag: Windows
 latest: 2015年06月19日 14:52:41
 ---
+
+在整个使用 Windows 的过程中，个人遇到的一些问题集中到这里。
 
 1. Windows 系统目录功能说明？
 

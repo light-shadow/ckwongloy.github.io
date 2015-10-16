@@ -6,7 +6,7 @@ tags: [Struts, Spring, Hibernate, 框架, MVC]
 latest: 2015年10月13日 17:24:27
 ---
 
-总结下 Struts，总结下 Spring，最后讲讲框架。
+总结下 Struts，总结下 Spring，总结下 Hibernate，最后讲讲框架。
 
 ### 什么是 Structs
 

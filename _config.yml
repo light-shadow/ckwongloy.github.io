@@ -40,8 +40,8 @@ highlighter: pygments
 # if local test then rouge that can avoid pygments and python installing
 #highlighter: rouge
 
-paginate: 1
-paginate_path: "home/paginate-:num"
+paginate: 3
+paginate_path: "/home/paginate_:num"
 
 production_url : http://lamchuanjiang.github.io
 

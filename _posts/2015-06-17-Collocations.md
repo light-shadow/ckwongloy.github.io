@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 英语常用/习惯搭配
+title: 英语常用短语/习惯搭配
 category: English
 tag: English
 latest: 2015年06月17 17:28:53
 ---
+
+短语和习惯搭配千万别用错。没事多记几个吧。
 
 Set to 设置
 

@@ -6,6 +6,8 @@ tags: [Shadowsocks, Chrome, GFW]
 latest: 2015年04月11日 20:01:44
 ---
 
+在 Chrome 中通过 SwitchySharp 插件使用 Shadowsocks。
+
 1. chrome
 
 2. chrome网上应用商店搜索 Proxy SwitchySharp 并安装。

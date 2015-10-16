@@ -6,6 +6,7 @@ tags: English
 latest: 2015年04月13日 17:28:53
 ---
 
+记单词很痛苦，但是对比记忆效果比死记效果要好得多。
 
 update 与 upgrade
 -
