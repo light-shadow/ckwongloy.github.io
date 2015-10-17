@@ -13,7 +13,7 @@ Jekyll 博客基本功能已完成大半，觉得有必要整理一下然后总�
 
 Category 和 Tag 的思路很相似。本博客中使用的分类代码如下：
 
-{% highlight HTML %}
+{% highlight html %}
 
 {% raw %}{{ site.categories | size }}{% endraw %}
 
@@ -227,19 +227,19 @@ Details
 
 这是一个样本，不是本博客采用的，但是为我提供了思路。代码如下：
 
-{% highlight HTML %}
+{% highlight html %}
 <ul>
 
 {% raw %}{% assign count = 0 %}{% endraw %}
 {% raw %}{% for post in site.posts %}{% endraw %}
-{% raw %}{% capture this_month %}{{ post.date | date: "%Y 年 %m 月" }}{% endcapture %}{% endraw %}
-{% raw %}{% capture next_month %}{{ post.previous.date | date: "%Y 年 %m 月" }}{% endcapture %}{% endraw %}
+{% raw %}{% capture this_month %}{% endraw %}{% raw %}{{ post.date | date: "%Y 年 %m 月" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
+{% raw %}{% capture next_month %}{% endraw %}{% raw %}{{ post.previous.date | date: "%Y 年 %m 月" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
 {% raw %}{% assign count = count | plus: 1 %}{% endraw %}
 {% raw %}{% if forloop.last or this_month != next_month %}{% endraw %}
 
 <li style="list-style:none;padding:5px;">
 <i class="fa fa-archive"></i>
-<a href="#{{ post.date | date: "%Y-%m" }}">{{ this_month }} &lt;{{ count }}&gt;</a></li>
+<a href="#{% raw %}{{ post.date | date: "%Y-%m" }}{% endraw %}">{% raw %}{{ this_month }}{% endraw %} &lt;{% raw %}{{ count }}{% endraw %}&gt;</a></li>
 
 {% raw %}{% assign count = 0 %}{% endraw %}
 {% raw %}{% endif %}{% endraw %}
@@ -254,11 +254,11 @@ Details
 
 下面代码是测试将可以分开输出的两个循环集成到一个循环中，并实现 **计数** 功能的测试代码：
 
-{% highlight HTML %}
+{% highlight html %}
 {% raw %}{% assign count_by_year = 0 %}{% endraw %}
 {% raw %}{% for post in site.posts %}{% endraw %}
-{% raw %}{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}{% endraw %}
-{% raw %}{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}{% endraw %}
+{% raw %}{% capture this_year %}{% endraw %}{% raw %}{{ post.date | date: "%Y" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
+{% raw %}{% capture next_year %}{% endraw %}{% raw %}{{ post.previous.date | date: "%Y" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
 {% raw %}{% assign count_by_year = count_by_year| plus: 1 %}{% endraw %}
 {% raw %}{% if forloop.last or this_year != next_year %}{% endraw %}
 
@@ -277,8 +277,8 @@ Details
 
 {% raw %}{% assign count_by_month = 0 %}{% endraw %}
 {% raw %}{% for post in site.posts %}{% endraw %}
-{% raw %}{% capture this_month %}{{ post.date | date: "%Y 年 %m 月" }}{% endcapture %}{% endraw %}
-{% raw %}{% capture next_month %}{{ post.previous.date | date: "%Y 年 %m 月" }}{% endcapture %}{% endraw %}
+{% raw %}{% capture this_month %}{% endraw %}{% raw %}{{ post.date | date: "%Y 年 %m 月" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
+{% raw %}{% capture next_month %}{% endraw %}{% raw %}{{ post.previous.date | date: "%Y 年 %m 月" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
 {% raw %}{% assign count_by_month = count_by_month| plus: 1 %}{% endraw %}
 {% raw %}{% if forloop.last or this_month != next_month %}{% endraw %}
 
@@ -304,15 +304,15 @@ Details
 
 这是本博客目前最终采用的思路。代码如下：
 
-{% highlight HTML %}
+{% highlight html %}
 <div style="margin-left:10%;">
 
 {% raw %}{% for post in site.posts  %}{% endraw %}
-{% raw %}{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}{% endraw %}
-{% raw %}{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}{% endraw %}
+{% raw %}{% capture this_year %}{% endraw %}{% raw %}{{ post.date | date: "%Y" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
+{% raw %}{% capture next_year %}{% endraw %}{% raw %}{{ post.previous.date | date: "%Y" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
 
-{% raw %}{% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}{% endraw %}
-{% raw %}{% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}{% endraw %}
+{% raw %}{% capture this_month %}{% endraw %}{% raw %}{{ post.date | date: "%B" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
+{% raw %}{% capture next_month %}{% endraw %}{% raw %}{{ post.previous.date | date: "%B" }}{% endraw %}{% raw %}{% endcapture %}{% endraw %}
 
 {% raw %}{% if forloop.first %}{% endraw %}
 
@@ -390,7 +390,7 @@ paginate_path: "/home/paginate_:num"
 
 然后再 `/home/index.html` 文件中配置如下代码：
 
-{% highlight HTML %}
+{% highlight html %}
 <section class="main-content" style="font-family:Georgia;">
 <div class="home">
 <h3 class="page-heading">
@@ -404,7 +404,7 @@ paginate_path: "/home/paginate_:num"
 Latest 3 by @lamChuanJiang
 </strong></h2>
 <ul class="post-list">
-{% for post in paginator.posts %}
+{% raw %}{% for post in paginator.posts %}{% endraw %}
 <hr>
 <li style="list-style:none;">
 <h3>
@@ -413,102 +413,106 @@ Latest 3 by @lamChuanJiang
 <a href="#" style="padding:10px;" title="Post">
 <i class="fa fa-paper-plane" style="font-size:30px;"></i></a>
 <i class="fa fa-calendar"></i>
-<a href="/archive.html#{{ post.date | date: "%Y-%m" }}" title="Archive：{{ post.date | date: "%Y-%m" }}">
-{% assign d = post.date | date: "%-d" %} 
-{{ post.date | date: "%B" }}
-{% case d %}
-{% when '1' or '21' or '31' %}{{ d }}st
-{% when '2' or '22' %}{{ d }}nd
-{% when '3' or '23' %}{{ d }}rd
-{% else %}{{ d }}th
-{% endcase %}, 
-{{ post.date | date: "%Y, %A" }}.
+<a href="/archive.html#{% raw %}{{ post.date | date: "%Y-%m" }}{% endraw %}" title="Archive：{% raw %}{{ post.date | date: "%Y-%m" }}{% endraw %}">
+{% raw %}{% assign d = post.date | date: "%-d" %}{% endraw %} 
+{% raw %}{{ post.date | date: "%B" }}{% endraw %}
+{% raw %}{% case d %}{% endraw %}
+{% raw %}{% when '1' or '21' or '31' %}{% endraw %}{% raw %}{{ d }}{% endraw %}st
+{% raw %}{% when '2' or '22' %}{% endraw %}{% raw %}{{ d }}{% endraw %}nd
+{% raw %}{% when '3' or '23' %}{% endraw %}{% raw %}{{ d }}{% endraw %}rd
+{% raw %}{% else %}{% endraw %}{% raw %}{{ d }}{% endraw %}th
+{% raw %}{% endcase %}{% endraw %}, 
+{% raw %}{{ post.date | date: "%Y, %A" }}{% endraw %}.
 </a></b></span></h3>
 <h1 style="text-align:center;font-size:26px;"><strong>
 <i class="fa fa-angle-double-left" style="color:silver;"></i>
-{{ post.title }}
+{% raw %}{{ post.title }}{% endraw %}
 <i class="fa fa-angle-double-right" style="color:silver;"></i>
 </strong></h1>
 <h4 style="text-align:center;">
 <i class="fa fa-heart"></i>
 <a href="https://github.com/lamChuanJiang" target="_blank" title="Author：@lamChuanJiang">
-{% if site.id %}
-{{ site.id }}
-{% endif %}
+{% raw %}{% if site.id %}{% endraw %}
+{% raw %}{{ site.id }}{% endraw %}
+{% raw %}{% endif %}{% endraw %}
 </a>
 <i class="fa fa-folder"></i>
-{% for categories in post.categories %}
-<a href="/category.html#{{ post.categories[0] }}" title="Category：{{ post.categories[0] }}">
-{{ post.categories[0] }}
+{% raw %}{% for categories in post.categories %}{% endraw %}
+<a href="/category.html#{% raw %}{{ post.categories[0] }}{% endraw %}" title="Category：{% raw %}{{ post.categories[0] }}{% endraw %}">
+{% raw %}{{ post.categories[0] }}{% endraw %}
 </a>
-{% endfor %}
+{% raw %}{% endfor %}{% endraw %}
 <i class="fa fa-tags"></i>
-{% for tag in post.tags %}
-<a href="/tag.html#{{ tag }}" title="Tag：“{{ tag }}”" style="background:#BFD9DB;margin:2px;radius:50%;">
+{% raw %}{% for tag in post.tags %}{% endraw %}
+<a href="/tag.html#{% raw %}{{ tag }}{% endraw %}" title="Tag：“{% raw %}{{ tag }}{% endraw %}”" style="background:#BFD9DB;margin:2px;radius:50%;">
 <i>
-{{ tag }}
-{{ tag | last }}
+{% raw %}{{ tag }}{% endraw %}
+{% raw %}{{ tag | last }}{% endraw %}
 </i></a>
-{% endfor %}
+{% raw %}{% endfor %}{% endraw %}
 <i class="fa fa-pencil"></i>
-<a title="文章字数：{{ post.content | number_of_words }}">
-{{ post.content | number_of_words }}
+<a title="文章字数：{% raw %}{{ post.content | number_of_words }}{% endraw %}">
+{% raw %}{{ post.content | number_of_words }}{% endraw %}
 </a></h4>
-{{ post.excerpt }}
+{% raw %}{{ post.excerpt }}{% endraw %}
 </p>
 <p style="text-align:right;">
-<a href="{{ post.url }}" class="btn" style="background-color:#438F97;" title="Read this full article.">
+<a href="{% raw %}{{ post.url }}{% endraw %}" class="btn" style="background-color:#438F97;" title="Read this full article.">
 Read More
 <i class="fa fa-angle-double-right"></i></a></p>
-{% endfor %}
+{% raw %}{% endfor %}{% endraw %}
 </li></ul>
 <hr>
 <h2 style="text-align:center;">
-{% if paginator.page == 1 %}
+{% raw %}{% if paginator.page == 1 %}{% endraw %}
 <span style="margin-right:15px;"><i><b>首页</b></i></span>
-{% endif %}
-{% if  paginator.total_pages >1 %}
-{% if paginator.previous_page %}
+{% raw %}{% endif %}{% endraw %}
+{% raw %}{% if  paginator.total_pages >1 %}{% endraw %}
+{% raw %}{% if paginator.previous_page %}{% endraw %}
 <a href="/home/" title="首页">首页</a>
-<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="上一页">
+<a href="{% raw %}{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}{% endraw %}" title="上一页">
 <span class="fa fa-backward" style="padding:10px;"></span></a>
-{% endif %}
-{% for page in (1..paginator.total_pages) %}
-{% if page == paginator.page %}
+{% raw %}{% endif %}{% endraw %}
+{% raw %}{% for page in (1..paginator.total_pages) %}{% endraw %}
+{% raw %}{% if page == paginator.page %}{% endraw %}
 <select onChange="location.replace(this.options[this.selectedIndex].value)">
 <option>
 第
-{{ paginator.page }}
+{% raw %}{{ paginator.page }}{% endraw %}
  /
-{{ paginator.total_pages }}
+{% raw %}{{ paginator.total_pages }}{% endraw %}
 页
 </option>
-{% assign page_num = 1 %}
+{% raw %}{% assign page_num = 1 %}{% endraw %}
 <option value="/home/">跳至:首页</option>
-{% for page in (1..paginator.total_pages) %}
-{% assign page_num = page_num | plus: 1 %}
-{% if page_num < paginator.total_pages %}
-<option value="/home/paginate_{{ page_num }}/">跳至:第 {{ page_num }} 页</option>
-{% endif %}
-{% endfor %}
-<option value="/home/paginate_{{ paginator.total_pages }}">跳至:尾页</option>
+{% raw %}{% for page in (1..paginator.total_pages) %}{% endraw %}
+{% raw %}{% assign page_num = page_num | plus: 1 %}{% endraw %}
+{% raw %}{% if page_num < paginator.total_pages %}{% endraw %}
+<option value="/home/paginate_{% raw %}{{ page_num }}{% endraw %}/">跳至:第 {% raw %}{{ page_num }}{% endraw %} 页</option>
+{% raw %}{% endif %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
+<option value="/home/paginate_{% raw %}{{ paginator.total_pages }}{% endraw %}">跳至:尾页</option>
 </select>
-{% elsif page == 1 %}
-{% else %}
-{% endif %}
-{% endfor %}
-{% if paginator.next_page %}
-<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="下一页">
+{% raw %}{% elsif page == 1 %}{% endraw %}
+{% raw %}{% else %}{% endraw %}
+{% raw %}{% endif %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
+{% raw %}{% if paginator.next_page %}{% endraw %}
+<a href="{% raw %}{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}{% endraw %}" title="下一页">
 <i class="fa fa-forward" style="padding:10px;"></i></a>
-<a href="/home/paginate_{{ paginator.total_pages }}/" title="尾页">尾页</a>
-{% endif %}
-{% if paginator.page == paginator.total_pages %}
+<a href="/home/paginate_{% raw %}{{ paginator.total_pages }}{% endraw %}/" title="尾页">尾页</a>
+{% raw %}{% endif %}{% endraw %}
+{% raw %}{% if paginator.page == paginator.total_pages %}{% endraw %}
 <span style="margin-left:15px;"><i><b>已达尾页</b></i></span>
-{% endif %}
-{% endif %}
+{% raw %}{% endif %}{% endraw %}
+{% raw %}{% endif %}{% endraw %}
 </h2></div></section>
 
-{% endhighlight %}	
+{% endhighlight %}
+
+最终效果如下：
+
+![Jekyll 跳页功能](http://ww3.sinaimg.cn/bmiddle/00644Sdojw1ex3vos5d1hj30hs0vkadc.jpg)
 
 ### 特别感谢
 

@@ -35,6 +35,8 @@ Chome 使用 TIPs
 
 + 隐身模式：Ctrl + Shift + N
 
+该模式在测试的时候很有用。因为测试时候改动很多，一般都不需要 Cookie。
+
 + 清除浏览记录：Ctrl + Shift + Delete
 
 #### **插件**
