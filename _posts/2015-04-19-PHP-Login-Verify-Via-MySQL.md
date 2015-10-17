@@ -133,8 +133,7 @@ latest: 2015年04月19日 17:26:45
 		// 释放资源、关闭连接
 		// 根据手册，需要通过结果集来释放，所以这里给个参数 $res
 		public function close_connect( $res ) {
-			$res->free() ;
-			$res->close() ;
+			mysqli_free_result( $res ) ;
 		}
 	}
 
