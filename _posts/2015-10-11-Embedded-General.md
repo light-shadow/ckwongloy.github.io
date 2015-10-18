@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 嵌入式的一般思路
-category: Auxiliary
-tags: [嵌入式]
+category: Excerpt
+tags: [嵌入式, 硬件]
 latest: 2015年10月11日 19:33:47
 ---
 
