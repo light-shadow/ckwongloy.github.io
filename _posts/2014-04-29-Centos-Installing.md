@@ -2,7 +2,7 @@
 layout: post
 title: 安装 CentOS
 category: Auxiliary
-tags: [Linux, CentOS, Windows]
+tags: [Linux, CentOS]
 latest: 2015年09月28日 21:11:41
 ---
 

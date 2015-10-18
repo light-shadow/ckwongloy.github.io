@@ -2,7 +2,7 @@
 layout: post
 title: VirtualBox Q&A
 category: Auxiliary
-tags: [VirtualBox, Windows, Linux, Mac OS X]
+tag: VirtualBox
 latest: 2015年05月08日 19:33:47
 ---
 

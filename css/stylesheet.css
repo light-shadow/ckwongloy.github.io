@@ -67,7 +67,7 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 3rem 4rem; } }
+    padding: 3rem 3rem; } }
 
 @media screen and (max-width: 42em) {
   .page-header {
@@ -223,7 +223,7 @@ a {
     font-size: 1rem; } }
 
 .site-footer {
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin-top: 2rem;
   border-top: solid 1px #eff0f1; }
 
