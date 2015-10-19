@@ -19,7 +19,7 @@ latest: 2014年09月18日 18:01:44
 # define ING YOU_ARE_IMPROVING
 # define AMABE	ALL_MEN_ARE_BORN_EQUAL
 
-typedef struct your_life
+typedef struct your_life {
 	unsigned long long study ;
 	unsigned long long persist ;
 	struct your_life * better_next ;

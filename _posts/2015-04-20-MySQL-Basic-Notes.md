@@ -15,8 +15,10 @@ MySQL 高级使用，以及 SQL 语法深入后面也会总结出来。
 - 登录 MySQL Server
 
 ```
-mysql h localhost u root p your pwd
+mysql -h localhost:port -u root -p pwd
 ```
+
+有时候在本地可以简写成： `mysql -uroot -ppwd`。
 
 常用 SQL 语句
 -
@@ -59,7 +61,7 @@ show create database db_name ;
 show create table tb_name ;
 ```
 
-- 删除数据库 ( 操作不可逆！！！！ )
+- 删除数据库 ( ***操作不可逆！！！*** )
 
 ```
 drop database db_name ;

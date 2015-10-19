@@ -31,7 +31,9 @@ latest: 2014年09月10日 13:17:34
 
 主要使用和学习、研究时间花费最多的技术栈。
 
-目前包括但不限于：Web、PHP、Programming、 Assembler、Readding。
+目前包括但不限于：Web、PHP、Programming、 Assembler、Readding、Database+。
+
+Database+ 指的是与数据库有关的，包括数据库原理和数据库应用。
 
 + Auxiliary
 
@@ -75,7 +77,7 @@ latest: 2014年09月10日 13:17:34
 
 最终用于展示具体分类文章的分类名有：
 
-**Auxiliary、Web、PHP、Programming、 Assembler、Clipboard、English、Excerpt、Tentacle、lamChuanJiang、Undefined**。
+**Auxiliary、Web、PHP、Programming、 Assembler、Clipboard、Database、English、Excerpt、Tentacle、lamChuanJiang、Undefined**。
 
 ##### **说明**
 
