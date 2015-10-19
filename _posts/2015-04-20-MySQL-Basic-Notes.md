@@ -15,10 +15,16 @@ MySQL 高级使用，以及 SQL 语法深入后面也会总结出来。
 - 登录 MySQL Server
 
 ```
-mysql -h localhost:port -u root -p pwd
+mysql -h localhost -u root -p pwd
 ```
 
 有时候在本地可以简写成： `mysql -uroot -ppwd`。
+
+通过终端登录 MySQL Server 的时候不要指定端口；通过 PHP 链接 MySQL 的时候可以指定也可以不指定。
+
+##### **说明**
+
+如果不是默认端口则必须指定。
 
 常用 SQL 语句
 -
@@ -202,13 +208,15 @@ CRUD：Create, Read/Retrieve, Update, Delete
 
 1. 创建/插入
 
-在为所有字段插入值的时候，可以省略字段，但值列表要与字段一致。
+在为所有字段插入值的时候，可以省略 values 前面的字段列表。
 
-字段列表和字段值列表之间用 , 隔开；需要使用引号括起来的地方不要忘了引号。
+在仅插入部分字段的时候，values 前后的名字和值要一致。
 
 ```
 insert into tb_name (字段列表) values (字段值列表) ;
 ```
+
+字段列表和字段值列表之间用 , 隔开；需要使用引号括起来的地方不要忘了引号。
 
 2. 获得/查询
 
