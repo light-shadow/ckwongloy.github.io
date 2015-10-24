@@ -10,6 +10,8 @@ Windows 坑太多，简单的界面背后隐藏了太多内幕。
 
 通过命令和代码的方式操作计算机更有亲切感。
 
+> Graphical user interface make easy tasks easy, while command line interfaces make difficult tasks possible.
+
 DOS
 -
 

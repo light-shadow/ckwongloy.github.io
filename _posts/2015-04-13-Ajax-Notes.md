@@ -6,9 +6,13 @@ tags: [PHP, Javascript, AJAX, JSON, Web]
 latest: 2015年10月17日 21:01:57
 ---
 
-一句话总结 Ajax：免页面刷新的与服务器动态交换数据技术。
+一句话总结 Ajax：免页面刷新的与服务器动态交换数据技术。Ajax 被广泛应用，改变了 Web 开发的格局。
 
-在总结下 Ajax 的使用需要注意的地方：4 条线代表了 Ajax 引擎的运行原理。
+Ajax 不是一种编程语言，而是一种无需重新加载整个网页的情况下更新部分网页的技术，比如在注册和登录时候对表单输入信息的验证并给出提示信息，者带来的用户体验还是不错的，毕竟没有人希望在误填一堆表单后提交才发现出错。
+
+使用了 Ajax 技术的网页，通过在后台和服务器进行少量的数据交换就可以实现异步局部刷新，而实现与服务器异步交换数据的幕后核心，即 Ajax 的核心，是 __XMLHttpRequest__ 对象。
+
+Ajax 的使用需要注意的地方：4 条线代表了 Ajax 引擎的运行原理。
 
 细节用几个小案例来说明，代码说明一切，使用 Ajax 的重点在代码中的 4 条线。
 
@@ -51,8 +55,10 @@ function getXmlHttpObject() {
 	// 不同浏览器创建 XMLHttpRequest 对象方法不一致
 	// 这里用 if...else 简单判断两种情况，即 IE 内核和非 IE 内核
 	if( window.ActiveXObject ){
+		// IE5/IE6 
 		xmlHttpRequest = new ActiveXObject( "Microsoft.XMLHTTP" ) ;
 	}else{
+		// IE7+,FF/Opera/Chrome/Safari
 		xmlHttpRequest = new XMLHttpRequest() ;
 	}
 	return xmlHttpRequest ;
@@ -108,7 +114,6 @@ function callback(){
 function $( id ){
 	return document.getElementById( id ) ;
 }
-
 {% endhighlight %}
 
 
@@ -168,3 +173,18 @@ myXmlHttpRequest.send( data ) ;
 {% highlight php %}
 $username=$_POST['username'] ;
 {% endhighlight %}
+
+总结
+-
+
+小案例中，页面运行的流程是：
+
+1、 HTML+CSS 实现了页面，用于表达信息。
+
+2、 XMLHttpRequest 和 Web 服务器进行了数据的异步交换。
+
+3、 通过 Javascript 操作 DOM，将交换回来的数据呈现在网页上，从而实现了局部刷新的效果。
+
+#### 说明
+
+源码摘自我的小项目 _Web Chat_。最新改动及错误修复见 GitHub：[WebChat](https://github.com/lamChuanJiang/LBD/tree/master/WebChat)。
