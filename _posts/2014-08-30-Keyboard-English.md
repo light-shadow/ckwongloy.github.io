@@ -106,15 +106,15 @@ Punctuation ( 标点符号 )
 
 `∝`        varies as ( 与 … 成比例 )
 
-`(` )        parentheses ( 圆括号  )
+`()`        parentheses ( 圆括号  )
 
 `√`        ( square ) root ( 平方根 )
 
-`[` ]        square brackets ( 方括号  )
+`[]`       square brackets ( 方括号  )
 
 `∵`        since; because ( 因为 )
 
-`《` 》        French quotes ( 法文引号; 书名号  )
+`《 》`        French quotes ( 法文引号; 书名号  )
 
 `∴`        hence ( 所以 )
 
