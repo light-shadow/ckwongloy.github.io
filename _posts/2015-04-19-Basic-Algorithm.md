@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 几种基本算法
-category: Data Structure and Algorithm
+category: Algorithm
 tags: [算法, 排序, 查找]
 latest: 2015年04月20日 20:32:08
 ---
