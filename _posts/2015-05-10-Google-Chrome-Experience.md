@@ -81,7 +81,7 @@ Google to Go
 
 + Google Mirror
 
-More see：***[Pointer](https://github.com/lamChuanJiang/Pointer/blob/gh-pages/README.wiki)***
+More see：***[Pointer](https://github.com/lamChuanJiang/lamchuanjiang.github.io/wiki/)***
 
 Google Analytics
 -
