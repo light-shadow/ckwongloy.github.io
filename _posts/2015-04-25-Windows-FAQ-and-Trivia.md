@@ -38,6 +38,20 @@ LocalLow is the same folder as local, but has a lower integrity level. IE8, for 
 
 2. 如何取消电脑开机自动硬盘检测？
 
+- 磁盘上没有足够的空间完成此操作？
+
+```
+diskpart
+select disk 0
+convert dynamic
+```
+
+- 浏览器无法打开任何网页，提示无法连接到代理？
+
+Internet 选项 -> 连接 -> 局域网设置，取消 "代理服务器" 下面勾选。
+
+然后再执行相关操作。
+
 3. Windows 7下直接开启 ACHI 不蓝屏的方法？
 
 

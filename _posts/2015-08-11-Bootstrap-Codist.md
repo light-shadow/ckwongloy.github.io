@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrap 常用小功能
 category: Clipboard
-tags: [Bootstrap, 进度条, Front-End]
+tags: [Bootstrap, 进度条, 前端]
 latest: 2015年08月15日 17:19:48
 ---
 

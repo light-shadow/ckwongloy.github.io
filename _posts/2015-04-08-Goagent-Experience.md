@@ -2,7 +2,7 @@
 layout: post
 title: Goagent 使用小结
 category: Auxiliary
-tags: [Goagent, Chrome, GFW]
+tags: [Goagent, Chrome, GFW, GAE]
 latest: 2015年04月08日 20:01:44
 ---
 
@@ -82,6 +82,10 @@ https://wiki.archlinux.org/index.php/GoAgent_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%
 ![](http://7qndff.com1.z0.glb.clouddn.com/wp-content/uploads/2014/06/goagent-tutorial7_thumb.jpg?watermark/1/image/aHR0cDovL3d3dy56aGl5YW5ibG9nLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxNC8wMi93YXRlcm1hcmsxLnBuZw==/dissolve/100/gravity/SouthEast/dx/10/dy/10)
 
 如果你要建立多个appid，只需要从步骤4开始再重复操作多次就行了。
+
+> lamchuanjiang@gmail.com
+
+> Appid : gfwlcj, gfwlcj1988
 
 Goagent 软件上传配置
 -

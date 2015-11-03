@@ -1,10 +1,12 @@
 ---
 layout: post
 title: 安装 CentOS
-category: Auxiliary
+category: Linux
 tags: [Linux, CentOS]
 latest: 2015年09月28日 21:11:41
 ---
+
+在企业生产环境中，CentOS 使用还是比较多的。
 
 U 盘安装各种操作系统一般都很简单，直接刻录安装盘就行了，这里主要讲硬盘安装 CentOS6.5。
 
@@ -158,3 +160,25 @@ initrd (hd0,5)/initrd.img
 ```
 service network restart
 ```
+
+### 安装 Xfce
+
+Xfce 比较小，个人比较喜欢。在 CentOS 7 字符界面下安装步骤如下：
+
+```
+# yum search Xfce
+```
+
+注意 Xfce 大小写。yum 在软件源中搜索到之后，然后安装搜索结果中的那个 Xfce：
+
+```
+# yum install Xfce-release.norach.rpm
+```
+
+由于桌面软件比较大，所以下载需要等一段时间。
+
+
+参考
+-
+
+- [centos安装以及环境配置](http://ilovers.sinaapp.com/article/centos%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)

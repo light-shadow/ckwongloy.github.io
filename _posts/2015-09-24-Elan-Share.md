@@ -2,7 +2,7 @@
 layout: post
 title: 让鼠标休息一会：Elan Pointing Device
 category: Undefined
-tags: [Elan Pointing Device, 触摸板]
+tag: 触摸板
 latest: 2015年09月28日 16:55:45
 ---
 

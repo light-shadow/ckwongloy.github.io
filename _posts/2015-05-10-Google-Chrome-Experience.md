@@ -13,7 +13,7 @@ latest: 2015年09月28日 18:25:08
 这里总结和分享我个人的一些使用经验。
 
 Google 搜索 TIPs
-=
+-
 
 + 关键字前面使用 `+` 只显示当前关键字的搜索结果
 
@@ -23,9 +23,49 @@ Google 搜索 TIPs
 
 
 Chome 使用 TIPs
-=
+-
 
-+ 加载失败时游戏彩蛋：空格
+### 更换搜索引擎
+
+Chrome 默认当然是 Google 搜索，但是我并不是每时每刻都要开代理爬墙，所以更快一个国内速度快的搜索引擎还是比较方便的。可以在 Chrome 设置中更改默认搜索引擎。
+
+- Google
+
+```
+{google:baseURL}search?q=%s&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:bookmarkBarPinned}{google:searchClient}{google:sourceId}{google:instantExtendedEnabledParameter}{google:omniboxStartMarginParameter}{google:contextualSearchVersion}ie={inputEncoding}
+```
+
+- Bing
+
+```
+http://cn.bing.com/search?q=%s
+```
+
+- Googto
+
+```
+http://www.googto.com/?q=
+```
+
+- Google Translate
+
+```
+http://translate.google.cn/?source=osdd#auto|auto|%s
+```
+
+- 必应词典
+
+```
+http://cn.bing.com/dict/search?q=
+```
+
+- 百度搜索
+
+```
+https://www.baidu.com/s?wd=%s
+```
+
+### 其他
 
 + **审查元素** 下载网页视频
 
@@ -38,6 +78,8 @@ Chome 使用 TIPs
 该模式在测试的时候很有用。因为测试时候改动很多，一般都不需要 Cookie。
 
 + 清除浏览记录：Ctrl + Shift + Delete
+
++ 加载失败时游戏彩蛋：空格
 
 Chrome 与 Web 开发
 -
@@ -70,7 +112,7 @@ Chrome 在你更改系统主题为高反差模式的时候会自动侦测到，�
 
 这是我在 IE，FireFox 上没有看到的。
 
-( 虽然 FF 的 FireBugs 口碑一直不错，但是我 *个人的体验* 一直不怎么好，开始使用 FF 也是因为 Fedora 上基本上内置了 FF )
+( 虽然 FF 的 FireBugs 口碑一直不错，但是我 *个人的体验* 一直不怎么好，开始使用 FF 也是因为 Fedora Gnome 桌面基本上内置了 FF )
 
 Google to Go
 -

@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrap 3 分钟入门
 category: Web
-tags: [Bootstrap, Front-End]
+tags: [Bootstrap, 前端]
 latest: 2015年08月25日 17:19:48
 ---
 

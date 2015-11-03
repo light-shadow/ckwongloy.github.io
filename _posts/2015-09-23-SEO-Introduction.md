@@ -2,7 +2,7 @@
 layout: post
 title: SEO 3 分钟入门
 category: Web
-tags: [SEO, 前端工程师, 搜索引擎]
+tags: [SEO, 前端, 搜索引擎]
 latest: 2015年09月24日 20:35:19
 ---
 

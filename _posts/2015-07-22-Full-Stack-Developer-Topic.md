@@ -2,7 +2,7 @@
 layout: post
 title: 关于 "全栈"
 category: Excerpt
-tags: [全栈工程师, 编程, 程序员]
+tags: [全栈, 编程, 程序员]
 latest: 2015年09月28日 20:01:44
 ---
 

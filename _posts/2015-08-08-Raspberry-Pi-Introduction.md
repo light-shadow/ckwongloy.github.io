@@ -60,6 +60,14 @@ latest: 2015年09月24日 22:37:28
 
 安装过程没什么好说的，打开 Win32DiskImager 就应该知道怎么用了。
 
+#### **说明**
+
+如果要安装 Kali Linux，下载 Kali ARM img 镜像，然后对 MicroSD 执行：
+
+```
+root@kali:~ dd if=kali-pi.img of=/dev/sdb bs=512k
+```
+
 三、启动 Raspberry Pi
 -
 
@@ -80,7 +88,7 @@ latest: 2015年09月24日 22:37:28
 
 然后填入 Raspbian 的 IP 地址，SSH 协议则选择端口号为 22，然后开始连接 Raspbian。
 
-然后输入账号名和密码：( pi, raspberry )。如不出意外则登陆成功，此时便可以在 Raspbian 进行你想要的 Raspberry Pi 完成的任何操作。
+然后输入账号名和密码：( pi => raspberry )。如不出意外则登陆成功，此时便可以在 Raspbian 进行你想要的 Raspberry Pi 完成的任何操作。
 
 这里值得备注一下的就是扩展系统的可用空间的配置上，执行如下命令即可：
 
@@ -297,6 +305,8 @@ $ sudo chmod 755 /etc/init.d/tightvncserver
 
 $ sudo update-rc.d tightvncserver defaults
 ```
+
++ [安装Kali Linux ARM版本到Raspberry Pi](http://cn.docs.kali.org/general-use/%E5%AE%89%E8%A3%85kali-linux-arm%E7%89%88%E6%9C%AC%E5%88%B0raspberry-pi)
 
 + [适合初学者的开箱即用型系统安装程序：NOOBS](https://www.raspberrypi.org/downloads/noobs/)
 
