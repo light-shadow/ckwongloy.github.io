@@ -10,6 +10,8 @@ latest: 2015年03月29日 20:01:44
 
 以下是计算机专业术语的英语表达。
 
+ubiquitous    无所不在
+
 regular expressions  正则表达式
 
 mechanics  技工、操作方法

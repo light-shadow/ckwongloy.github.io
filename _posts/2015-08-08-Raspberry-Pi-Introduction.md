@@ -306,6 +306,13 @@ $ sudo chmod 755 /etc/init.d/tightvncserver
 $ sudo update-rc.d tightvncserver defaults
 ```
 
+Q&A
+-
+
+- RASPBIAN JESSIE 与 RASPBIAN WHEEZY ?
+
+<http://captainbodgit.blogspot.com/2014/11/wheezy-jessie-more-than-just-toy-story.html>
+
 + [安装Kali Linux ARM版本到Raspberry Pi](http://cn.docs.kali.org/general-use/%E5%AE%89%E8%A3%85kali-linux-arm%E7%89%88%E6%9C%AC%E5%88%B0raspberry-pi)
 
 + [适合初学者的开箱即用型系统安装程序：NOOBS](https://www.raspberrypi.org/downloads/noobs/)

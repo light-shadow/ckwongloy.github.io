@@ -97,7 +97,7 @@ kernel-2.6.34.8-68.fc13.x86_64
 
 _1.使用yum remove删除， yum 会自动移除 ： /boot/grub/menu.lst 中的相关启动项，不用再手动修改启动文件。 
 
-_2.自动清理内核：grub2-mkconfig -o /boot/grub2/grub.cfg 查看所有内核：rpm -qa | grep kernel
+_2.自动清理内核：grub2-mkconfig -o /boot/grub2/grub.cfg
 
 2.无线都能上有线能识别网卡驱动并已经获取到ip地址却还是不能上外网？
 

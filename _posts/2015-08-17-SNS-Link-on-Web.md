@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  直接打电话、发 QQ 消息的链接
+title:  网页上直接打电话、发 QQ 消息、打开微信的链接
 category: Clipboard
 tags: [QQ, SNS]
 latest: 2014年09月17日 20:21:40
@@ -33,3 +33,15 @@ latest: 2014年09月17日 20:21:40
 联通 CDMA 用 HTTP_X_UP_SUBNO。
 
 移动 GPRS 用 HTTP_X_UP_CALLING_LINE_ID。
+
+### 网页上直接跳转到 QQ 
+
+```
+<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=84580612&amp;site=qiangmi.com&amp;menu=yes" target="_blank"><code>742, 127, 934</code></a>
+```
+
+### 网页上直接打开 微信
+
+```
+<a href="weixin://contacts/profile/lamChuanJiang" title="微信" rel="nofollow"><code>@lamChuanJiang</code></a>
+```

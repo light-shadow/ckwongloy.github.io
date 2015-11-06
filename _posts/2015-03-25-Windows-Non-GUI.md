@@ -284,7 +284,7 @@ pause
 
 19. Windows7+ 热点共享：
 
-_1. 热点建立
+1. 热点建立
 
 ```
 netsh wlan set hostednetwork mode=allow ssid=Fenomenix key=qwertyuiop
@@ -292,19 +292,19 @@ netsh wlan set hostednetwork mode=allow ssid=Fenomenix key=qwertyuiop
 netsh wlan start hostednetwork
 ```
 
-_2. 热点开始
+2. 热点开始
 
 ```
 netsh wlan start hostednetwork
 ```
 
-_3. 热点删除
+3. 热点删除
 
 ```
 netsh wlan set hostednetwork mode=disallow
 ```
 
-_4. 热点暂停
+4. 热点暂停
 
 ```
 netsh wlan stop hostednetwork
@@ -313,13 +313,20 @@ netsh wlan stop hostednetwork
 CMD
 -
 
-- Ver
+- ver
 
 显示 Windows 版本。
 
+- gpedit.msc
+
+本地组策略编辑器。
+
+- mmc
+
+本地安全策略。
+
 批处理
 -
-
 
 批处理脚本的文件后缀为 .bat。
 

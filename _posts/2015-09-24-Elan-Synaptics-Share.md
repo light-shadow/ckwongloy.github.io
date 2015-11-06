@@ -61,7 +61,9 @@ latest: 2015年09月28日 16:55:45
 
 这里附上 Lenovo G480 适用的 Elan Pointing Device 驱动下载地址：
 
-[Elan Pointing Device Drivers for 64 bit Windows 10](http://support.lenovo.com/us/en/downloads/ds103249)
+- [Synaptics for 64 bit Windows 10](https://download.lenovo.com/consumer/mobiles/22b001af.exe)
+
+- [Elan Pointing Device Drivers for 64 bit Windows 10](http://support.lenovo.com/us/en/downloads/ds103249)
 
 希望能节省有需要的人的时间。
 

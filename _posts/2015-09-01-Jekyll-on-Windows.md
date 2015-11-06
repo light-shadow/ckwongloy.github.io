@@ -202,6 +202,23 @@ jekyll serve
 
 + **如果采用 pygments 作为语法高亮器，那么不要忘记将 Python2.7.x 添加到环境变量中**，否则也会报错。
 
+
+- __"ERROR:  Could not find a valid gem 'pygments' (>= 0) in any repository"__
+
+> Maybe the reason is the version of Jekyll or Ruby or Gem source.
+
+> Try change the earlier version of Jekyll, or install pygments  from the official gem source: <https://rubygems.org> . Which need a VPN connection for the users from China.
+
+- __"Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. Ensure you have `gems: [jekyll-paginate]` in your configuration file."__
+
+```
+gems: [jekyll-paginate]
+paginate: 3
+paginate_path: "/home/paginate_:num"
+```
+
+> Refer from: <https://teamtreehouse.com/community/jekyllpaginate-gem> .
+
 ### **关于 Blog 样式**
 
 为了使博客样式更好看，需要使用一些 CSS 。如果你的重心不在深入研究 CSS 等前端技术，一样的道理，为了节约时间还是去找现成的使用。

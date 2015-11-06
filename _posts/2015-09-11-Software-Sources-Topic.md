@@ -54,3 +54,19 @@ $ dnf search mysql
 所以，私人建议安装 MySQL 还是去 Oracle 官网下载所需要的源码，然后在本地自己手动安装，而不是用软件包管理程序。
 
 手动下载的能保证软件包的最新状态，因为软件源中的软件包不一定都是最新的。
+
+Q&A
+-
+
+-  `apt-get update` 和 `apt-get upgrade` 的区别？
+
+> update 是同步 `/etc/apt/sources.list` 和 `/etc/apt/sources.list.d` 中列出的源的索引，这样才能获取到最新的软件包。
+
+> upgrade 是升级已安装的所有软件包，升级之后的版本就是本地索引里的，因此，在执行 upgrade 之前一定要执行 update, 这样才能是最新的。
+
+> An `update` should always be performed before an upgrade or dist-upgrade.
+
+> `upgrade` is used to install the newest versions of all packages currently installed on the system from the sources enumerated in /etc/apt/sources.list. 
+
+> Packages currently installed with new versions available are retrieved and upgraded.
+

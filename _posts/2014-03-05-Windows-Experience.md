@@ -191,7 +191,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Sign
 
 6. 如何删除 Windows 不再使用的任务栏图标和通知图标？
 
-
 修改注册表，找到路径：
 
 ```

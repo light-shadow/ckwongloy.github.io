@@ -69,7 +69,7 @@ https://www.baidu.com/s?wd=%s
 
 + **审查元素** 下载网页视频
 
-+ 删除历史记录：Ctrl + Shift + Delete
++ 删除历史记录及缓存：Ctrl + Shift + Delete
 
 + Chome 缓存内容查看：**ChromeCacheView **
 
@@ -77,9 +77,9 @@ https://www.baidu.com/s?wd=%s
 
 该模式在测试的时候很有用。因为测试时候改动很多，一般都不需要 Cookie。
 
-+ 清除浏览记录：Ctrl + Shift + Delete
-
 + 加载失败时游戏彩蛋：空格
+
++ 鼠标中键，相当于选中整页，可以上下滑动页面
 
 Chrome 与 Web 开发
 -
@@ -113,6 +113,8 @@ Chrome 在你更改系统主题为高反差模式的时候会自动侦测到，�
 这是我在 IE，FireFox 上没有看到的。
 
 ( 虽然 FF 的 FireBugs 口碑一直不错，但是我 *个人的体验* 一直不怎么好，开始使用 FF 也是因为 Fedora Gnome 桌面基本上内置了 FF )
+
++ Chrome 邮箱插件
 
 Google to Go
 -
