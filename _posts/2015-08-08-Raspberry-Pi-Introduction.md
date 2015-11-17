@@ -20,6 +20,8 @@ latest: 2015年09月24日 22:37:28
 
 + *[34个使用 Raspberry Pi 的酷创意](https://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html )*
 
++ *[树莓派学习笔记](http://blog.csdn.net/xukai871105/article/details/23115627)*
+
 + *[树莓派无显示器上手步骤](http://ltext.tumblr.com/post/49580927299/)*
 
 + *[VNC, SSH 和 HDMI: 访问树莓派的三种方式](http://www.geekfan.net/3413/)*
@@ -219,6 +221,98 @@ $ vncserver :1 -geometry 1366x768
 
 尚未探索。
 
+Raspberry 文件共享
+-
+
+### 通过网络：FTP
+
+Raspberry 默认已安装 FTP 服务，如果没安装则安装并配置如下：
+
+```
+# apt-get install vsftpd
+# vi /etc/vsftpd.conf
+```
+
+然后根据需要注释掉，或者取消注释掉一些参数
+
+```
+anonymous_enable=NO   //不允许匿名访问
+
+local_enable=YES        //允许本地用户访问
+
+write_enable=YES        //允许写
+
+local_umask=022         //设定上传后文件权限掩码
+
+```
+
+最后重启 FTP 服务
+
+```
+# service vsftpd restart
+```
+
+于是同一网络中的其他 IP 便可以通过 `ftp://树莓派的IP` 来访问树莓派上 FTP 服务器上的文件了。FTP 默认路径是 `~` 目录。
+
+Raspberry Q&A
+-
+
+树莓派 GPIO
+-
+
+树莓派连接无线网卡
+-
+
+我用的是 Ralink 的 RT3070 无线网卡，本以为要编译安装一阵，结果是免驱。
+
+#### 开启自动连接  WIFI
+
+Ralink RT3070 在 Raspberry 上免驱动。但是开机后并没有自动连接至无线。
+
+获取不到 ip，那么我若不通过其他手段而仅仅按照原来的方式就无法连接到树莓派。
+
+所以有必要设置开机自动连接至某个无线网络，以顺利连接无线。
+
+
+- 树莓派中文输入法
+
+scim是一个输入法平台，不是单独的输入法，可以在scim上安装配置各种输入法。
+
+```
+# apt-get install ttf-wqy-zenhei
+# apt-get install scim-pinyin
+# raspi-config
+```
+
+如果安装的过程出现错误，尝试在命令后面加上 --fix-missing 参数。
+
+##### **说明**
+
+Scim 已经过时，开发者也不再维护。现在更好的中文输入法是：iBus。
+
+```
+$ sudo apt-get install ibus ibus-pinyin
+$ sudo ibus-setup
+```
+
+如果没有反应则重启。如果安装拼音输入法之后仍然无法输入中文，则需要将本地语言改为中文：
+
+- GUI
+- CLI
+
+```
+# Debian 系
+$ sudo dpkg-reconfigure locales
+```
+
+然后选择 International Options -> change_locale，在Default locale for the system environment:中选择zh_CN.UTF-8。然后重启机器，就发现整个环境变成中文的了。
+
+当然，`rasp=config` 也可以设置时区，默认为 UTC ，中国是应该是 CST。
+
+- **Putty 中文配置**
+	
+连接后如果出现乱码，可以在 putty 左上方点击鼠标右键，然后选择 "Change Settings" -> "Translation" -> "Remote character set"，在出现的下拉框中选择 "UTF-8"， "Apply" 即可。然后可以执行 `clear` 将终端窗口中的乱码清除。
+
 五、Raspbian OS 基本操作
 -
 
@@ -246,6 +340,10 @@ sudo passwd --unlockroot
 
 其他
 -
+
++ 博通 CPU 型号
+
+BCM2708/9 属于处理器的家族；BCM2835/6 属于处理的具体型号。参考：<http://bbs.21ic.com/icview-1180900-1-1.html>
 
 + 开机启动 VNC 桌面( 参考的其他文章 )
 
@@ -343,11 +441,19 @@ Q&A
 
 + [安装Kali Linux ARM版本到Raspberry Pi](http://cn.docs.kali.org/general-use/%E5%AE%89%E8%A3%85kali-linux-arm%E7%89%88%E6%9C%AC%E5%88%B0raspberry-pi)
 
++ [树莓派GPIO功能学习](http://shumeipai.nxez.com/2013/10/20/raspberry-pi-gpio-function-learning.html)
+
 + [适合初学者的开箱即用型系统安装程序：NOOBS](https://www.raspberrypi.org/downloads/noobs/)
 
 + [Windows 10 IoT Core on Raspberry Pi](http://bbs.ickey.cn/group-topic-id-48099.html)
 
 + [Download Raspberry Pi Supported OS List](https://www.raspberrypi.org/downloads/)
+
++ [配置树莓派支持中文](http://shumeipai.nxez.com/2013/10/04/configuring-raspberry-pi-support-chinese.html)
+
++ [Ralink RT3070 驱动下载](http://www.premiertek.net/top/download.html)
+
++ [Ralink RT3070 驱动安装](http://askubuntu.com/questions/148767/help-do-i-install-the-ralink-rt3070-wireless-driver)
 
 + [RoboPeak Mini USB显示屏粉墨登场](http://www.robopeak.com/blog/?p=406)
 

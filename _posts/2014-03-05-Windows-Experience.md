@@ -11,6 +11,26 @@ latest: 2014年06月19日 14:52:41
 Windows 10
 -
 
+#### Windows 8-10 删除视频-图片-文档-音乐等自带库文件夹
+
+通过注册表：
+
+1. Win + R： `regedit` ；
+
+2. 找到如下路径：
+
+```
+HKEY_LOCAL_MACHINE＼SOFTWARE＼Microsoft＼Windows＼CurrentVersion＼Explorer＼MyComputer＼NameSpace
+```
+
+删除 _NameSpace_ 下边 6 个子项，刷新下 "这台电脑/此电脑" 就没有了。
+
+
+##### **说明**
+
+这只是在文件系统中删除　( 取消 )　这几个文件夹的显示，并不能真正删除它们。
+
+
 #### Windows 10 强迫症 ( 技术预览版 )
 
 - 恢复任务栏搜索.reg
@@ -298,12 +318,21 @@ Windows XP_SP3_x86 安装序列号：`MRX3F-47B9T-2487J-KWKMF-RPWBY`。
 
 安装完重启将BIOS中的硬盘模式改回AHCI，如果XP滚动条出现了，那么你就大功告成了！
 
+- **XP 删除桌面回收站图标**
+
+- 通过组策略：
+
+1、 Win +R : `gpedit.msc` ；
+
+2、 用户配置 -> 管理模板 -> 桌面 -> 从桌面删除 "回收站" 图标。
+
+
 MS-DOS 622
 -
 
 这个对我现在来说没什么实际用途了，但是回顾一下历史也不错。
 
-到 _MSDN I Tell You_ 下载 EN_MSDOS622.exe 自解压文件，解压缩，安装只需使用到 `DISKS` 中的 `144UPG1.IMG`、`144UPG2.IMG`、`144UPG3.IMG`。
+到 _MSDN I Tell You_ 下载 EN_MSDOS622.exe 自解压文件 ( 不要下载成 6.0.0 )，解压缩，安装只需使用到 `DISKS` 中的 `144UPG1.IMG`、`144UPG2.IMG`、`144UPG3.IMG`。
 
 然后在虚拟机中安装，如果要在实体机上安装则需要使用相应的工具制作启动软盘或硬盘。这里使用 VirtualBox 在虚拟机玩玩就行了。
 
@@ -311,7 +340,7 @@ MS-DOS 622
 
 启动后需要先按 2 下 F3，进入 DOS 窗口执行：
 
-1. 创建分区
+1、 创建分区
 
 ```
 fdisk
@@ -319,7 +348,7 @@ fdisk
 
 然后一路 ENTER，然后重启，重启后仍然按 2  次 F3，进入命令行：
 
-2. 格式化 C 盘
+2、 格式化 C 盘
 
 ```
 format c:

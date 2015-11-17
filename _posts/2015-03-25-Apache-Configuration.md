@@ -165,6 +165,9 @@ ServerName www.server110.com:80
 如果使用的是基于域名的虚拟主机，在<VirtualHost>段中的ServerName将是为了匹配这个虚拟主机，在"Host:"请求头中必须出现的主机名。
 参见UseCanonicalName和UseCanonicalPhysicalPort指令以获得关于自引用URL(比如使用mod_dir模块)是需要指定一个特定端口，还是使用客户端请求的端口号的更详细的信息。
 
+4. Network Domain 和 Server Name 的区别
+
+
 Apache限制不能访问目录
 -
 

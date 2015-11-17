@@ -12,6 +12,8 @@ latest: 2014年09月11日 14:50:31
 
 只要满足约定的目录层次就能作为软件源，比如用光盘安装系统的时候光盘上的一些类似 package 的目录就是软件源。
 
+对于 Debian 来说，稳定版称为 wheezy(debian7)，测试版称为jessie。而不稳定版的代号永远是 sid。
+
 #### 镜像源
 
 一般各个版本的 Linux 发行套件都有其专门的官方软件源，但是对于国内用户来说，连不上很常见的事情。因此，有时候就需要更改一些国内镜像软件源。
@@ -90,3 +92,5 @@ Q&A
 - <http://www.cnblogs.com/beanmoon/p/3387652.html>
 
 - <http://coolnull.com/2509.html>
+
+- [debian软件源source.list文件格式说明](http://www.cnblogs.com/beanmoon/p/3387652.html)

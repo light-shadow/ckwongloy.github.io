@@ -88,7 +88,7 @@ Color
 
 Ipconfig
 
-Arp
+- arp：`arp -a`， IP 解析成 域名。
 
 Nslookup
 
@@ -113,6 +113,12 @@ Verify
 Wmic
 
 ### DOS 命令应用
+
+- 设置环境变量
+
+```
+set path=%path%;C:\python34
+```
 
 1. 改变窗口大小
 
