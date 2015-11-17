@@ -200,7 +200,7 @@ jekyll serve
 
 + 有了 *.gitigorne* 之后追踪所有文件需要带选项 `-f` 。( `-r` 用于删除文件夹 )
 
-+ **如果采用 pygments 作为语法高亮器，那么不要忘记将 Python2.7.x 添加到环境变量中**，否则也会报错。
++ **如果采用 pygments 作为语法高亮器，那么不要忘记将  Python2.7.x 添加到环境变量中**，否则也会报错。
 
 
 - __"ERROR:  Could not find a valid gem 'pygments' (>= 0) in any repository"__
@@ -218,6 +218,34 @@ paginate_path: "/home/paginate_:num"
 ```
 
 > Refer from: <https://teamtreehouse.com/community/jekyllpaginate-gem> .
+
+Linux 下不需要 `gems: [jekyll-paginate]`，所以要将其注释。总之，根据运行时的报错提示来排错。
+
+- __Gems source add failure?__ -- ( 需要配置可供外网访问的 Jekyll 服务器 )
+
+if when you add the gems source of _https://ruby.taobao.org_ ouccerd an error says:
+
+> Error fetching https://ruby.taobao.org/:
+>	no such name (https://ruby.taobao.org/specs.4.8.gz)
+
+then you should try to change the `/etc/resolv.conf` like this :
+
+```
+search lan
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+```_
+
+If this couldn't help you either, maybe you should comment the `search lan` block in `/etc/resolv.conf`.
+
+Retry the command `gem sources --add https://ruby.taobao.org/`, I think this time may be smoothy for you.
+
+- __Jekyll Instell failure?__
+
+> ERROR:  While executing gem ... (Gem::RemoteFetcher::UnknownHostError)
+>    no such name (https://ruby.taobao.org/gems/rb-inotify-0.9.5.gem)
+
+Maybe you should try `gem update` before your jekyll installation.
 
 ### **关于 Blog 样式**
 

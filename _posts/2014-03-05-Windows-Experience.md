@@ -317,13 +317,15 @@ MS-DOS 622
 fdisk
 ```
 
+然后一路 ENTER，然后重启，重启后仍然按 2  次 F3，进入命令行：
+
 2. 格式化 C 盘
 
 ```
 format c:
 ```
 
-然后进入安装进程。安装过程中提示什么就做什么，比如使用 _winimage_ 新建一个卷标为 `UNINSTALL 1` 的虚拟软磁盘，然后另存为 vfd，提示更换第 2、3 张磁盘在 VirtualBox 工具栏中选择并切换就行了。
+然后进入安装进程。安装过程中提示什么就做什么，比如使用 _winimage_ 新建一个卷标为 `UNINSTALL 1` 的虚拟软磁盘，然后另存为 UNINSTALL.vfd，提示更换第 2、3 张磁盘在 VirtualBox 工具栏中选择并切换就行了。
 
 DISK2、DISK3 可以直接通过 img 格式安装，就不用再转换成 vfd 格式了。
 

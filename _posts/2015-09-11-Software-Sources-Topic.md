@@ -12,6 +12,18 @@ latest: 2014年09月11日 14:50:31
 
 只要满足约定的目录层次就能作为软件源，比如用光盘安装系统的时候光盘上的一些类似 package 的目录就是软件源。
 
+#### 镜像源
+
+一般各个版本的 Linux 发行套件都有其专门的官方软件源，但是对于国内用户来说，连不上很常见的事情。因此，有时候就需要更改一些国内镜像软件源。
+
+很多比较大的互联网公司和中国大学都提供了很多镜像，比如 163, Sina, 中科大等等。但是镜像在提供高速度的同时软件的安全性不一定能保证。比如，网易有提供一些软件源，但是网易自己也曾经受到过 XcodeGhost 的影响 ( 网易公开课 APP 曾经为此更新 )，所以为了安全，特别是企业生产环境下，一般还是去官网下载比较好，虽然可能要借助一些梯子，不过对于技术人员来说，通常都不是什么难事。
+
+- Debian 系更改软件源
+
+```
+$ sudo vi /etc/apt/sources.list
+```
+
 Linux 下安装软件的几种方式优劣对比
 -
 
@@ -70,3 +82,11 @@ Q&A
 
 > Packages currently installed with new versions available are retrieved and upgraded.
 
+参考
+-
+
+- <http://www.bkjia.com/Linuxjc/1014783.html>
+
+- <http://www.cnblogs.com/beanmoon/p/3387652.html>
+
+- <http://coolnull.com/2509.html>

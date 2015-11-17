@@ -96,6 +96,28 @@ Chrome 的兼容性很强，比如 FireFox 不能兼容的 IE 属性 innerText C
 
 我用 Chrome，调试网页从来不用下载其他任何工具，一个 F12，HTML, CSS, JS, 以及网络状况都能够一目了然，调试前后端都非常方便。
 
+Linux 下安装 Chrome
+-
+
+在/etc/yum.repos.d目录中创建google-chrome.repo文件，其写入如下内容：
+
+```
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+```
+
+配置好后直接使用 yum 命令 ( dnf 命令貌似不起作用 ) 安装：
+
+```
+# yum install google-chrome-unstable -y
+```
+
+如果提示获取GPG密钥失败，则将上面的 gpgcheck 置 0 即可。
+
 #### **插件**
 
 + Chrome 灰色金属主题：Brushed。

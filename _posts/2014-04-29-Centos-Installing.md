@@ -8,6 +8,30 @@ latest: 2015年09月28日 21:11:41
 
 在企业生产环境中，CentOS 使用还是比较多的。
 
+Q&A - CentOS 7
+-
+
+- **安装 CentOS Minimal 时已经选择 Gnome 桌面，为什么安装结束后仍然进入字符界面？**
+
+暂时不知道。
+
+- **"One of the configured repositories failed (未知), and yum doesn't have enough cached data to continue. At this point the only safe thing yum can do is fail. "**
+
+网络未连接，默认 CentOS 未启用网络连接，安装过程中可以通过界面可以开启，但是也可以在安装结束后手动开启：
+
+```
+# cd /etc/sysconfig/network-scripts
+# ls
+```
+发现没有经典的 `ifcfg-etho` 了，但是没关系，CentOS 7.0 （包括 Fedora 23） 只是换了一个名字而已：`ifcfg-enp0s3`，修改里面的 `ONBOOT=no` 为 `ONBOOT=yes` 即可：
+
+```
+
+```
+
+Win7 下硬盘安装 CentOS6.5
+-
+
 U 盘安装各种操作系统一般都很简单，直接刻录安装盘就行了，这里主要讲硬盘安装 CentOS6.5。
 
 ```
@@ -28,10 +52,7 @@ initrd (hd0,0)/initrd.img
 boot
 ```
 
-Win7 硬盘安装 CentOS6.5 步骤
--
-
-一、安装过程中需要的软件
+**一、安装过程中需要的软件**
 
 + 1. 硬盘分区软件
 
@@ -53,7 +74,7 @@ Ext2Fsd 可以通过设置显示 Ext2 分区，从而能够把相应文件，主
 
 支持多种操作系统的多重引导：EasyBCD2.1.2。
 
-二、CentOS 系统安装文件下载
+**二、CentOS 系统安装文件下载**
 
 CentOS 6.5 iso文件，一共有如下几种类型的 iso 版本，简单介绍一下。
 
@@ -75,7 +96,7 @@ CentOS 6.5 iso文件，一共有如下几种类型的 iso 版本，简单介绍�
 
 最精简版 net install 版：网络安装版。
 
-三、LiveDVD 或者 LiveCD 版 CentOS 的安装方法
+**三、LiveDVD 或者 LiveCD 版 CentOS 的安装方法**
 
 如果你下载的是 LiveDVD 或者 LiveCD 版 ( 安装文件 iso 大小小于 4GB )，那么恭喜你，安装比较简单。步骤如下：
 
@@ -101,7 +122,7 @@ initrd (hd0,5)/initrd.img
 
 接下来，安装方法就跟光盘安装一样了。
 
-四、BinDV D版 CentOS 的安装方法
+**四、BinDV D版 CentOS 的安装方法**
 
 如果很不幸，你和我一样想用个比较牛逼，软件比较多的 BinDVD 版本，那么你需要了解一下为啥不能用三中介绍的办法。
 
@@ -145,7 +166,7 @@ initrd (hd0,5)/initrd.img
 
 接下来，安装方法就跟光盘安装一样了。 
 
-五、其他信息安装
+**五、其他信息安装**
 
 启动，登录后，发现上不了网，需要做如下配置更改 ( 假设你是以root权限登录的 )
 
@@ -163,7 +184,7 @@ service network restart
 
 ### 安装 Xfce
 
-Xfce 比较小，个人比较喜欢。在 CentOS 7 字符界面下安装步骤如下：
+Xfce 比 GNOME/KED 而言较小，Linus 也推荐过，个人认为还不错。在 CentOS 7 字符界面下安装步骤如下：
 
 ```
 # yum search Xfce
@@ -182,3 +203,5 @@ Xfce 比较小，个人比较喜欢。在 CentOS 7 字符界面下安装步骤�
 -
 
 - [centos安装以及环境配置](http://ilovers.sinaapp.com/article/centos%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
+
+- [Questions about CentOS-7](https://wiki.centos.org/FAQ/CentOS7)

@@ -149,9 +149,25 @@ Raspberry Pi 默认没有提供显示屏，所以要想进入 Raspbian OS 的桌
 
 这里我用的是笔记本的显示屏来远程连接 Raspbian OS。( 虽然不止一种方法 )
 
-- **VNC Server 复用笔记本显示屏**
+#### **使用 Windows 自带的 mstsc.exe 远程连接至 Raspberry Pi 桌面**
 
-要使用 VNC Server，需要先在终端下安装 VNC Server。
+先在 Raspberry 中安装 xrdp 服务：
+
+[_xrdp_](http://www.xrdp.org/)  指的是 X Remote Desktop Protocol，是一个开源的专门用于连接到 Linux 的 X 桌面环境的服务。
+
+```
+# apt-get install xrdp -y
+```
+
+Linux 下安装成功后，在 Windows 上运行 (  WIN + R)：`mstsc.exe`。_( [Mstsc 介绍 - Microsoft terminal services client](https://technet.microsoft.com/en-us/library/cc753907.aspx) )_
+
+在打开的登录对话框中添入树莓派的 IP，如果连接成功将继续提示你输入用户名和密码，之后便可登录至 Raspberry 的桌面。
+
+这种方式对 Windows 用户来说比较推荐，因为是 Windows 上自带的服务，比 VNC 更快，连接也是加密的，同时避免了 VNC 在 Linux 端的一些配置，比如桌面分辨率，Mstsc 会自动采用和运行 _mstsc.exe_ 的 Windows 一致的分辨率。
+
+#### **VNC Server 复用笔记本显示屏**
+
+要使用 VNC Server，需要先在终端下安装 VNC Server。需要注意的是 VNC Server 是明文连接。
 
 ```
 $ sudo apt-get install tightvncserver
@@ -159,11 +175,21 @@ $ sudo apt-get install tightvncserver
 
 下载安装过程的提示可根据需要选择，在这里不重要，比如 `view-only` 的选择一般就不需要，如有需要可在以后使用 `vncpasswd` 命令设置。
 
-然后设置虚拟远程桌面的编号和分辨率。
+##### **注意**
+
+VNC 连接有个专门的密码，这个密码和 Raspberry 的用户密码是不同的，不要混淆，在登录 VNC Server 的时候会使用该密码登录，这是和 Windows 的 Mstsc 不同之处。
+
+然后设置虚拟远程桌面的编号和分辨率，我笔记本的物理分辨率是 1366x768 的，所以为了全屏显示不至于难看，设置一样的分辨率即可。
 
 ```
-$ vncserver :1 -geometry 1350x740
+$ vncserver :1 -geometry 1366x768
 ```
+
+##### **可能遇到的问题**
+
+如果以后不小心删除 `~` 目录下的 _.vnc_ 目录，则执行该命令后会自动重新配置登录密码。
+
+如果因为不当操作导致登录桌面失败，比如出现连接被主机拒绝，可以删除 `~` 目录下的 _.vnc_ 目录，然后重新执行该命令，配置登录密码后再尝试登录。
 
 最后下载一个 VNC Server 的客户端，比如 RealVNC、VNC Viewer 等，然后打开客户端输入地址和上面设置的桌面编号即可进入刚才设置过的 Raspbian 桌面。
 
@@ -171,9 +197,15 @@ $ vncserver :1 -geometry 1350x740
 192.168.1.110:1
 ```
 
+连接并登录至 Raspberry 后，在 VNC Viewer 左上角菜单中选择 "Full Screen" 后即可进入设置过分辨率全屏  Raspberry 桌面。
+
 ##### **说明**
 
-关闭 1 号桌面的命令举例：vncserver -kill : 1。
+- 关闭 1 号桌面的命令举例：vncserver -kill : 1。
+
+- 我一般需要浏览网页才进入桌面，因为字符浏览器看着着实不照。通常都是通过 CLI 操作树莓派。
+
+这样也有好处，比如 putty 不至于将屏幕占满，省去桌面切换的不变，同时避免不能在两个系统直接共享粘贴板的问题。
 
 - **HDMI/VGA/DVI 接口 + 显示屏**
 
@@ -182,10 +214,6 @@ $ vncserver :1 -geometry 1350x740
 ##### **注意**
 
 不要使用**无源**的 HDMI -> VGA 转接线。
-
-- **XRDP**
-
-和 VNC Server 相比，XRDP 是加密连接而 VNC Server 是明文连接。
 
 - **X11Forward**
 

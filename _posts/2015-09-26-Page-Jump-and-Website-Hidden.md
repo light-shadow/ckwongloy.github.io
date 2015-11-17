@@ -6,25 +6,44 @@ tags: [HTML, 建站]
 latest: 2015年09月26日 17:19:48
 ---
 
-在浏览器地址栏上隐藏网站内部结构的代码。
+使用隐形 URL 转发可以在浏览器地址栏上隐藏网站内部结构的代码。
 
-此代码可制作成单独首页 ( index.html/htm/php/asp/... )，放在空间服务器根目录位置。
+显性/隐性 URL 转发流程
+-
+
+#### **解析**
+
+- 显性 URL 跳转
+
+配置里将所有的请求跳转到实际提供内容的网址。
+
+- 隐性 URL 转发
+
+站点里面的 index.html 面加上 iframe，在里面嵌套的是想要将请求转发到的网址 ( 实际提供内容的网址 )，所以不管你怎么点链接，url 地址栏都不会变化，除非你的连接是打开新页面。
+
+#### **访问**
+
+
+- 显性 URL 转发
+
+服务器将你直接跳转到实际提供内容的网址。
+
+- 隐性 URL 转发
+
+服务器返回一个嵌套实际提供内容的网址的 index.html 文件，比如：www.linux.com；浏览器再次去访问该网址,并且内容嵌套在 index.html 里，所以用户就看不到有任何跳转。
+
+隐形 URL 解析的代码如下，此代码需要单独制作成网站首页 ( index.html/htm/php/asp/... )，放在空间服务器根目录位置。
 
 {% highlight HTML %}
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>lamchuanJiang.github.io | @lamChuanJiang</title>
-
 <!-- 关键代码开始 -->
-
 <frameset framespacing="0" border="0" rows="0" frameborder="0">
 <frame name="main" src="http://lamchuanjiang.github.io/blog" scrolling="auto" noresize></frameset>
-
 <!-- 关键代码结束 -->
-
 </head>
-
 <body>
 <!-- 下行可选 -->
 <a href="http://lamchuanjiang.github.io/">Li</a></body></html>
@@ -49,3 +68,8 @@ latest: 2015年09月26日 17:19:48
 -
 
 **用于隐藏的首页不能和实际想要隐藏网站结构的首页是同一个**，否则真正有内容的首页将被隐藏，导致浏览器一片空白。
+
+参考
+-
+
+- <http://www.ttlsa.com/system/dns-url/>
