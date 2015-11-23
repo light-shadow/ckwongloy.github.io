@@ -13,12 +13,14 @@ title: Quieter you be, More you hear. @lamChuanJiang
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
-Latest 3 by @lamChuanJiang
+Latest 5 by @lamChuanJiang
 </strong></h2>
+
 <ul class="post-list">
 {% for post in paginator.posts %}
-<hr>
+
 <li style="list-style:none;">
+<div style="border:1px solid #E2E2E2;padding:5px 5px 5px 5px;margin:5px -10px 5px -10px;" >
 <h3>
 <span class="post-meta">
 <b>
@@ -66,14 +68,14 @@ Latest 3 by @lamChuanJiang
 <a title="文章字数：{{ post.content | number_of_words }}">
 {{ post.content | number_of_words }}
 </a></h4>
-{{ post.excerpt }}
+{{ post.content | strip_html | truncate:80 }}
 <p style="text-align:right;">
 <a href="{{ post.url }}" class="btn" style="background-color:#438F97;" title="Read this full article.">
 Read More
 <i class="fa fa-angle-double-right"></i></a></p>
 {% endfor %}
-</li></ul>
-<hr>
+</div></li></ul>
+
 <h2 style="text-align:center;">
 {% if paginator.page == 1 %}
 <span style="margin-right:15px;"><i><b>首页</b></i></span>
@@ -118,4 +120,3 @@ Read More
 {% endif %}
 {% endif %}
 </h2></div></section>
-
