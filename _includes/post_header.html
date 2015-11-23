@@ -5,12 +5,13 @@
 </div>
 
 <header class="post-header" style="text-align:center;font-family:Georgia;">
-<div class="wrapper">
+<div class="wrapper" style="padding:20px 0 0 0;">
 <a href="" name="top"></a>
-<h1 class="post-title">
+<div style="background-color:white;border:1.5px solid #ccc;">
+<h1 class="post-title" >
 {{ page.title }}
 </h1>
-<p  class="post-meta">
+<p class="post-meta">
 <i class="fa fa-heart"></i>
 <a href="https://github.com/lamChuanJiang" target="_blank" title="Author：@lamChuanJiang">
 {% if site.id %}
@@ -49,4 +50,4 @@
 <i class="fa fa-pencil"></i>
 <a title="本文字数：{{ page.content | number_of_words }}">
 {{ page.content | number_of_words }}
-</a></p></div></header>
+</a></p></div></div></header>

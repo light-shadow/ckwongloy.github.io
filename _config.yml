@@ -39,7 +39,7 @@ highlighter: pygments
 
 # if Jekyll 3.0
 #highlighter: pigments
-#excerpt_separator: ""  
+#excerpt_separator: ""
 
 # if local test then rouge that can avoid pygments and python installing
 #highlighter: rouge

@@ -3,6 +3,7 @@ layout: post
 title: LEMPA 环境搭建
 category: PHP
 tags: [PHP, Linux, Nginx, MySQL, Apache]
+latest: 2015年11月15日 13:23:27
 ---
 
 今天主要总结的是 LAEMP 开发环境的搭建。不过先回顾下 Windows 上 Nginx 遇到过哪些问题，对 Linux 下是否有借鉴意义。
