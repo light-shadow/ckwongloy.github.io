@@ -126,6 +126,8 @@ $ git add file1 file2 file3
 
 `add` 用于文件跟踪，此命令执行后会将 file1，file2，file3 更新的内容添加到索引中，为  commit 他们做准备。
 
+也可以通过 `git add -A` 和 `git add *` 来添加仓库中所有新建或者改动的文件到索引。
+
 **②查看**有哪些文件将被提交：
 
 ```

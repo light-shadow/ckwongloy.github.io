@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Raspberry Pi 2 折腾记
+title: Raspberry Pi 2 折腾记开始
 category: Auxiliary
 tags: [树莓派, Linux, 硬件]
 latest: 2015年09月24日 22:37:28
@@ -450,10 +450,6 @@ Q&A
 + [Download Raspberry Pi Supported OS List](https://www.raspberrypi.org/downloads/)
 
 + [配置树莓派支持中文](http://shumeipai.nxez.com/2013/10/04/configuring-raspberry-pi-support-chinese.html)
-
-+ [Ralink RT3070 驱动下载](http://www.premiertek.net/top/download.html)
-
-+ [Ralink RT3070 驱动安装](http://askubuntu.com/questions/148767/help-do-i-install-the-ralink-rt3070-wireless-driver)
 
 + [RoboPeak Mini USB显示屏粉墨登场](http://www.robopeak.com/blog/?p=406)
 

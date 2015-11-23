@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 文件共享思路
+title: 文件共享常见思路
 category: Auxiliary
 tags: [文件共享, FTP]
 latest: 2015年11月01日 01:18:44

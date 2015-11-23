@@ -6,7 +6,7 @@ tags: [分页, 算法, PHP]
 latest: 2015年10月25日19:31:48
 ---
 
-分页算法是几乎在各种网站，博客上随处可见。我 PHP + MySQL 实现了一个还算比较漂亮的分页算法。
+分页算法是几乎在各种网站，博客上随处可见。参考慕课网上的有关课程，我用 PHP + MySQL 实现了一个还算比较漂亮的分页算法。
 
 废话少说，直接上代码。
 
@@ -15,7 +15,6 @@ latest: 2015年10月25日19:31:48
 <head>
 <meta charset='utf-8'>
 <title>用户管理 - Web Chat</title>
-
 <style>
 	body { font-family: Georgia; }
 	form { display: inline; }
@@ -26,11 +25,8 @@ latest: 2015年10月25日19:31:48
 	/*div.pagination { margin:50px 0 0 22%; }*/
 	.current { background-color: #0000EB; font-size: 18px; color: white; }
 </style>
-
 </head>
-
 <body>
-	
 <?php
 	
 	require_once '../class/sql_helper.class.php' ;
@@ -300,29 +296,28 @@ $total_rows = ceil( ($total_rows/$rows_per_page) ) ;
 {% highlight javascript %}
 <script>
 
-	// 需要将 PHP 中的相关参数传递到 Javascript 才能得到比较正确的判断
+// 需要将 PHP 中的相关参数传递到 Javascript 才能得到比较正确的判断
 
-	function page_check( total_page, page_now ) {
+function page_check( total_page, page_now ) {
 
-		input_page = $( 'input_page' ).value
+	input_page = $( 'input_page' ).value
 
-		if( ! ( input_page <= total_page &&  input_page > 0 ) ) {
+	if( ! ( input_page <= total_page &&  input_page > 0 ) ) {
 
-			$( 'input_page' ).value = page_now
+		$( 'input_page' ).value = page_now
 
-			alert( '输入页码的不正确！' )
-		}
+		alert( '输入页码的不正确！' )
 	}
+}
+
+function clear_content() {
 	
-	function clear_content() {
-		
-		$( 'input_page' ).value = ''
-	}
+	$( 'input_page' ).value = ''
+}
 
-	function $( id ){
+function $( id ){
 
-		return document.getElementById( id ) ;
-	}
-	
+	return document.getElementById( id ) ;
+}
 </script>
 {% endhighlight %}
