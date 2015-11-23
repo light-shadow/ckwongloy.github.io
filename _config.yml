@@ -35,10 +35,11 @@ markdown: rdiscount
 # pygments: true
 
 # if GitHub then pygments
-# highlighter: pygments
+highlighter: pygments
 
 # if Jekyll 3.0
-highlighter: pigments
+#highlighter: pigments
+#excerpt_separator: ""  
 
 # if local test then rouge that can avoid pygments and python installing
 #highlighter: rouge
@@ -47,7 +48,7 @@ highlighter: pigments
 # But make sure that the gem "jekyll-paginate " has been installed
 
 gems: [jekyll-paginate]
-paginate: 3
+paginate: 5
 paginate_path: "/home/paginate_:num"
 
 production_url : http://lamchuanjiang.github.io
