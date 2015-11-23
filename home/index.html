@@ -20,7 +20,7 @@ Latest 5 by @lamChuanJiang
 {% for post in paginator.posts %}
 
 <li style="list-style:none;">
-<div style="border:1px solid #E2E2E2;padding:5px 5px 5px 5px;margin:5px -10px 5px -10px;" >
+<div style="padding:5px 5px 5px 5px;margin:5px -10px 5px -10px;" >
 <h3>
 <span class="post-meta">
 <b>
@@ -72,9 +72,9 @@ Latest 5 by @lamChuanJiang
 <p style="text-align:right;">
 <a href="{{ post.url }}" class="btn" style="background-color:#438F97;" title="Read this full article.">
 Read More
-<i class="fa fa-angle-double-right"></i></a></p>
+<i class="fa fa-angle-double-right"></i></a></p></div><hr></li></ul>
 {% endfor %}
-</div></li></ul>
+
 
 <h2 style="text-align:center;">
 {% if paginator.page == 1 %}

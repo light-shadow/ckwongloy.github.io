@@ -1,15 +1,13 @@
-<footer class="site-footer" style="text-align:center;background-image: linear-gradient(120deg, #272822, #6E6F6B);font-family:Georgia;">
+<a href="#top" id="back-to-top" title="返回顶层" style="margin-bottom:5px;">
+<i class="fa fa-arrow-circle-o-up"></i></a>
+<a href="#bottom" id="back-to-bottom" title="跳至底部" style="margin-top:5px;">
+<i class="fa fa-arrow-circle-o-down"></i></a>
 
-<div style="padding-top:20px;">
-<p class="site-footer-owner">
-<i class="fa fa-cog fa-spin"></i>
-<script src="/js/clock.js"></script></p>
+<footer class="site-footer" style="text-align:center;background-image: linear-gradient(120deg, #000, #6E6F6B);font-family:Georgia;">
 
-<p>
-<span class="fa fa-refresh" style="padding:0 15px 0 15px;"> 2015-10-10 22:21:15</span>
-<span class="fa fa-desktop"> Desktop Version</span></p>
+<div style="color:#E2E2E2;">
 
-<p class="site-footer-credit" style="text-decoration:none;">
+<p class="site-footer-owner" style="text-decoration:none;">
 Powered by
 <a title="Blogging Like A Hacker.">
 Jekyll
@@ -21,27 +19,20 @@ GitHub
 , Written with
 <a title="to-HTML">
 Markdown
-</a>.</p>
+</a>.
+
+<i class="fa fa-cog fa-spin"></i>
+<script src="/js/clock.js"></script></p>
+
 <p class="site-footer-credit">
 Copyleft &copy; 2014~2015 Chuanjiang Li, Some Rights Reserved.
 <a href="/" title="Keep it simple, stupid, but serviceable.">
-<img src="/image/li.png" style="width:25px;height:25;border-radius:50%;"></a></p></div>
-<div style="padding:0 0 15px 0;"></div></footer>
+<img src="/image/li.png" style="width:25px;height:25;border-radius:50%;"></a>
+
+<span class="fa fa-refresh" style="padding:0 15px 0 15px;"> 2015-10-10 22:21:15</span>
+<span class="fa fa-desktop"> Desktop Version</span></p></div>
+
+<a href="" name="bottom"></a></footer>
 
 <script src="/js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript">
-	$( function (){
-	    $( "#back-to-top" ).click( function (){
-	        jQuery( "html,body" ).animate({
-	            scrollTop:300
-	        },0);
-	    });
-	    $(window).scroll( function () {
-	        if  ( $( this ).scrollTop() > 100){
-	            $( '#back-to-top' ).fadeIn( "fast" );
-	        } else  {
-	            $( '#back-to-top' ).stop().fadeOut( "fast" );
-	        }
-	    });
-	});
-</script>
+<script src="/js/jump-to.js"></script>

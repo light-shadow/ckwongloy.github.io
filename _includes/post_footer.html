@@ -1,5 +1,7 @@
-<a href="#top" id="back-to-top" title="返回顶层">
+<a href="#top" id="back-to-top" title="返回顶层" style="margin-bottom:5px;">
 <i class="fa fa-arrow-circle-o-up"></i></a>
+<a href="#bottom" id="back-to-bottom" title="跳至底部" style="margin-top:5px;">
+<i class="fa fa-arrow-circle-o-down"></i></a>
 
 <section class="main-content" style="font-family:Georgia;text-align:center;color:#E2E2E2;">
 
@@ -15,7 +17,32 @@
 <a href="/contact_li.html" title="Li's Contacts and SNS Footprints">
 Contacts
 </a></b></p>
-<a href="/home/" title="All The Best">
+
+<span style="padding:0 20px 0 0;"><strong><em><i class="fa fa-creative-commons"> CC BY-NC-ND 3.0</i></em></strong></span>
+<a href="/home/" title="All The Best" >
 <img src="/image/love.png" style="width:40px;height:30px;border-radius:100%;" alt="All The Best"></a>
+<a href="" name="bottom"></a>
+
+<hr>
+<h5>
+<i style="color:#fff;">上一篇 <b><i class="fa fa-arrow-up"></i></b>
+{% if page.previous %}
+<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" style="color:#000";>{{ page.previous.title }}</a>
+{% else %}
+无
+</i>
+{% endif %}
+
+<i style="color:#fff;">下一篇 <b><i class="fa fa-arrow-down"></i></b>
+{% if page.next %}
+<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" style="color:#000;">{{ page.next.title }}</a>
+{% else %}
+无
+</i>
+{% endif %}
+</h5>
 
 </section>
+
+<script src="/js/jquery-2.1.4.min.js"></script>
+<script src="/js/jump-to.js"></script>
