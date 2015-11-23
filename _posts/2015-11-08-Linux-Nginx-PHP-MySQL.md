@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LAEMP 环境搭建
+title: LEMPA 环境搭建
 category: PHP
 tags: [PHP, Linux, Nginx, MySQL, Apache]
 ---

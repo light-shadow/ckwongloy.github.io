@@ -3,7 +3,7 @@ layout: post
 title: 文件共享思路
 category: Auxiliary
 tags: [文件共享, FTP]
-latest: 2015年11月1日 01:18:44
+latest: 2015年11月01日 01:18:44
 ---
 
 文件共享的需求是很常见的。总结一下各种系统之间文件共享的常见思路。

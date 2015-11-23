@@ -56,7 +56,7 @@ Latest 3 by @lamChuanJiang
 {% endfor %}
 <i class="fa fa-tags"></i>
 {% for tag in post.tags %}
-<a href="/tag.html#{{ tag }}" title="Tag：“{{ tag }}”" style="background:#BFD9DB;margin:2px;radius:50%;">
+<a href="/tag.html#{{ tag }}" title="Tag：“{{ tag }}”" style="background:#BFD9DB;margin:2px;border-radius:40%;">
 <i>
 {{ tag }}
 {{ tag | last }}
@@ -79,7 +79,7 @@ Read More
 {% if paginator.page == 1 %}
 <span style="margin-right:15px;"><i><b>首页</b></i></span>
 {% endif %}
-{% if  paginator.total_pages >1 %}
+{% if paginator.total_pages >1 %}
 {% if paginator.previous_page %}
 <a href="/home/" title="首页">首页</a>
 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="上一页">
