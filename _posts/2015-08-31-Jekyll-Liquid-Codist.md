@@ -39,3 +39,19 @@ latest: 2015年10月9日 19:57:13
 ```
 
 其中 `{% raw %}{{ post.url | prepend: site.baseurl }}{% endraw %}` 在以域名根目录作为博客根目录时失效，仅需要替换为 `{% raw %}{{ post.url  }}{% endraw %}` 即可。
+
+摘要截取
+-
+
+页面中，在需要截取部分内容的位置插入一下代码即可截取规定字数的内容输出，`truncate` 后的字数根据需要自定义。我将下面的代码用到了首页摘要的截取，以及下一篇、上一篇文章链接中队文章标题长度的限定上面。
+
+```
+{% raw %}{{ post.content | strip_html | truncate:100 }}{% endraw %}
+```
+
+上下篇文章跳转路径
+-
+
+```
+<a href="{% raw %}{{ BASE_PATH }}{% endraw %}{% raw %}{{ page.previous.url }}{% endraw %}" title="{% raw %}{{ page.previous.title }}{% endraw %}" style="color:#fff";>{% raw %}{{ page.previous.title | strip_html | truncate:20 }}{% endraw %}</a>
+```

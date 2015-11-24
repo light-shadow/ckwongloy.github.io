@@ -61,6 +61,91 @@ $ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9
 $ sudo update-alternatives --config gcc
 ```
 
+屏蔽自带驱动，启用自己编译的驱动
+-
+
+首先确保已经正确编译并安装了官方的网卡驱动，比如我的 RT3070 官方驱动源码编译后得到的就是叫做 _rt5370sta.ko_ 模块。
+
+1. 卸载或者禁用自带网卡驱动模块
+
+```
+$ lsmod
+```
+找到无线网卡默认的驱动名称，比如 RT3070 默认的的就是 _rt2800_。
+
+然后执行：
+
+```
+$ sudo vi /etc/modprobe.d/fbdev-blacklist.conf
+```
+其中黑名单配置的位置和文件名不同的发行版本有可能不一样。Raspberry 的就是上面命令中的名字。然后将第一步中找到的驱动模块名称添加到黑名单：
+
+```
+blacklist rt2800
+```
+
+2. 重启网络服务
+
+```
+$ sudo service networking restart
+```
+
+3. 通过有线接口连接树莓派并登录 Raspberry ，然后重启：
+
+```
+$ sudo reboot
+```
+
+4. 拔掉网线，在路由器管理界面中查看是否有无线网卡获得了 IP ( 通过 MAC 地址判断 )，如果有则新的驱动已经加载并正常使用了。
+
+静态 IP 配置
+-
+
+设置静态 IP 后每次登录不用更改 IP，比较方便。主要是修改接口配置文件：
+
+```
+$ sudo vi /etc/network/interfaces
+```
+
+内容的修改参考如下:
+
+```
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+iface default inet static
+address 192.168.1.111
+netmask 255.255.255.0
+gateway 192.168.1.1
+#dns-nameservers 8.8.8.8
+```
+
+保存，重启后，路由器管理界面可能暂时看不到设置的静态 IP，但是登录的时候用设置的 IP 登录就可以了。
+
+Q&A
+-
+
+- 编译过程报错 __类型不匹配__ ？
+
+> 找到 rt_linux.c，在 Vi 编辑中搜索错误关键词，然后把报错那里的：
+
+> `current_fsuid()` 改成 `current_fsuid().val`；
+
+> `current_fsgid()` 改成 `current_fsgid().val` 。
+
+- 编译从 GitHub 上下载的 Raspberry Linux 源码 ZIP 压缩包的时候提示 *符号描述文件有误*？
+
+解压的过程已经出错，请下载 _.tar.gz_ 源码压缩包重新配置编译。
+
+附录：腾达 MT7601 无线网卡驱动编译说明
+-
+
+编译的步骤和上面的 RT3070 是一样的，不同之处仅仅只是需要下载相应网卡的驱动源码。
+
 其他
 -
 
@@ -89,3 +174,5 @@ $ sudo modprobe rt2800usb
 - [_基于2015-0505-Raspbian 镜像的树莓派2用gcc4.8 编译 360wifi2 过程_](http://my.oschina.net/freeblues/blog/495754)
 
 - [_树莓派内核编译与固件升级_](http://wiki.jikexueyuan.com/project/raspberry-pi/kernel.html)
+
+- [_Raspberry PI （树莓派） 使用WIFI连接无线网络 - 解除网线的束缚_](http://tianranzhai.blog.51cto.com/7235933/1213302)

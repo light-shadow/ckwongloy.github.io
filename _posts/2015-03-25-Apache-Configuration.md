@@ -239,3 +239,30 @@ All：则可以做任何事，但不包括MultiViews。
 AllowOverride：加None参数表示任何人都可以浏览该目录下的文件。
 
 另外的参数有：FileInfo、AuthConfig、Limit
+
+Raspberry 上 Apache 的安装配置简述
+-
+
+
+- Apache 2.2
+
+Raspberry Pi 上 Apache 的网站根目录： _/var/www_ 。停止 Apache 服务命令：
+
+```
+$ /etc/init.d/apache2 stop
+```
+
+- Apache 2.4
+
+升级 Apache 至 2.4 后需要移除旧版本的 Apache ：
+
+```
+$ sudo apt-get autoremove
+```
+
+Apache 的配置文件 httpd.conf 无论在 Windows 上还是在 Linux 上都区分大小写，因此需要细心。
+
+Q&A
+-
+
+- 如何更改 baseurl ，即实现无论网站放在硬盘的什么位置，那个路径都始终作为根目录？

@@ -24,7 +24,7 @@ Contacts
 <h4 style="margin-bottom:-10px;">
 <i style="color:#1E6BB8;">上一篇 <b><i class="fa fa-arrow-up"></i></b>
 {% if page.previous %}
-<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" style="color:#fff";>{{ page.previous.title }}</a>
+<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" style="color:#fff";>{{ page.previous.title | strip_html | truncate:20 }}</a>
 {% else %}
 无
 </i>
@@ -35,7 +35,7 @@ Contacts
 
 <i style="color:#1E6BB8;">下一篇 <b><i class="fa fa-arrow-down"></i></b>
 {% if page.next %}
-<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" style="color:#fff;">{{ page.next.title }}</a>
+<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" style="color:#fff;">{{ page.next.title | strip_html | truncate:20 }}</a>
 {% else %}
 无
 </i>

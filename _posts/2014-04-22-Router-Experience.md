@@ -137,7 +137,7 @@ PandoraBox 端口映射与 DDNS 设置
 
 公网 IP 可以在接口总览中查看，也可以通过百度搜索 IP 等网站查看。
 
-### __端口映射 Q&A__
+### **端口映射 Q&A**
 
 
 - 按照上面做了仍然不成功？
@@ -162,6 +162,12 @@ tasklist | findsrt "pid"
 - 为什么在路由器上做映射后内网 IP 反而无法访问相关服务了？
 
 建议内网计算机按静态 IP 分配。
+
+#### 关于 **IP 回流**
+
+关于端口转发后公网可以访问内网服务而内网 IP 无法通过公网 IP （或域名）访问内网服务的问题解决思路：
+	
+公网 IP 使用域名访问内网服务，而内网 IP 直接通过内网 IP 访问，或者在内网网关中配置 DNS，使本指向公网 IP 的域名在内网中直接指向提某个服务的内网 IP。
 
 ### PandoraBox 配置 DDNS
 
@@ -217,5 +223,7 @@ tasklist | findsrt "pid"
 -
 
 - [Current IP Check](http://checkip.dyndns.com/)
+
+- [浅谈内网web服务器发布到公网后路由器回流问题--NAT--PAT---技术研究](http://zhan.renren.com/cqhqhsj?gid=3602888498000970436&checked=true)
 
 - [如何在ddwrt内核路由器中设置花生壳ddns（公网版）](http://service.oray.com/question/868.html)

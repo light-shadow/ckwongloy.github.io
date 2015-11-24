@@ -156,7 +156,9 @@ arp -a
 
 Netsh
 
-Nbtstat
+- nbtstat
+
+可以带的参数有： `-a` `-A` `-n`。
 
 Net
 
