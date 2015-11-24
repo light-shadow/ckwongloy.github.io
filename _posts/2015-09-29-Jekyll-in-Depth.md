@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 进一步研究 Jekyll 的一些原理和实用应用
+title: 进一步研究 Jekyll：原理和更实用的应用
 category: Auxiliary
 tags: [Jekyll, Liquid]
 latest: 2015年10月09日 20:14:24
@@ -111,13 +111,15 @@ GitHub 上使用 Jekyll 确实十分方便，在下载 Jekyll 的过程中可以
 原因猜想：语法高亮与摘要设置相冲突。因为本地我安装 pygments 的时候失败，按照提示安装了 pigments，有可能 GitHub 上的 Jekyll 引擎使用的仍然是 pygments，导致冲突。解决方案如下：
 
 ```
-$ gem install bundler 
+$ gem install bundler
 # then you can user  `bundle install package_name` to install gems instead
 
 $ gem install github-pages
 ```
 
 如果不出意外，该命令会安装与 Jekyll 运行相关的大约 32 个 GEM 包。然后设置语法高亮器为 _pygments_，最终上传到 GitHub 上的结果是：还是没有摘要效果。看来猜想是失败的，不过上面的命令可以解决的是 Jekyll 的安装难问题，如果按部就班安装 Jekyll 总是出现这样那样的错误的话，不妨试试上面的命令，因为这样可以保证本地的 Jekyll 服务和 GitHub 可以保持一致的效果。
+
+此外，通过这种方式安装在所有平台下都是一样的。
 
 接下来分析引起我摘要效果出不来的原因，我以前是直接把 `{% raw %}{{ post.excerpt }}{% endraw %}` 这句代码放在需要显示摘要的首页合适的位置 ( 自定义 )，以前在本地和在 GitHub 上都可以很好的使用，在首页默认显示的是文章的第一段内容，( 所以也只能在第一段中自定义长度 )。
 我也是这几天才发现本地可以使用而 GitHub 上却失效了，即文章内容全部输出到首页。
@@ -206,4 +208,3 @@ $ git clone https://gitcafe.com/liberize/liberize.git
 - [_Using Jekyll with Pages_](https://help.github.com/articles/using-jekyll-with-pages/#troubleshooting)
 
 - [_请问jekyll 服务器搭建_](https://ruby-china.org/topics/5035)
-

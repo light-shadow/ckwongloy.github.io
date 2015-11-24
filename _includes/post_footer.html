@@ -12,6 +12,7 @@
 <span style="padding:0 20px 0 0;"><code><i class="fa fa-creative-commons"> CC BY-NC-ND 3.0</i></code></span>
 <a href="" name="bottom"></a>
 </p>
+
 <p style="font-size:16px;font-family:'Comic Sans MS';">
 <b>
 <i class="fa fa-heart"></i>
@@ -21,26 +22,31 @@ Contacts
 </a></b></p>
 
 <hr>
-<h4 style="margin-bottom:-10px;">
-<i style="color:#1E6BB8;">上一篇 <b><i class="fa fa-arrow-up"></i></b>
+
+<p style="text-align:left;margin-left:10px;">
+<b style="color:#fed;">上一篇</b>
+<i class="fa fa-arrow-up"></i>
 {% if page.previous %}
-<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" style="color:#fff";>{{ page.previous.title | strip_html | truncate:20 }}</a>
+<a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}" style="color:#fff";>
+<i>{{ page.previous.title | strip_html | truncate:40 }}</i></a>
 {% else %}
-无
-</i>
+<i>无</i>
 {% endif %}
 
-<a href="/home/" title="All The Best" style="padding:0 5px 0 10px;">
-<img src="/image/love.png" style="width:40px;height:30px;border-radius:100%;" alt="All The Best"></a>
+<p style="text-align:right;margin:-30px 10px 0 0;">
+<a href="/home/" title="All The Best" style="padding:0 5px 0 10px;">	
+<img src="/image/love.png" style="width:40px;height:30px;border-radius:100%;" alt="All The Best"></a></p>
 
-<i style="color:#1E6BB8;">下一篇 <b><i class="fa fa-arrow-down"></i></b>
+<p style="text-align:left;margin:-15px 0 0 10px;">
+<b style="color:#fed;">下一篇</b>
+<i class="fa fa-arrow-down"></i>
 {% if page.next %}
-<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" style="color:#fff;">{{ page.next.title | strip_html | truncate:20 }}</a>
+<a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" style="color:#fff;">
+<i>{{ page.next.title | strip_html | truncate:40 }}</i></a>
 {% else %}
-无
-</i>
+<i>无</i>
 {% endif %}
-</h4>
+</p>
 
 <script src="/js/jquery-2.1.4.min.js"></script>
 <script src="/js/jump-to.js"></script>
