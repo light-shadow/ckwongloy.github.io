@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fedora 安装结束后的那些事
-category: Auxiliary
+category: Linux
 tags: [Linux, Fedora]
 latest: 2014年04月09日 11:01:21
 ---

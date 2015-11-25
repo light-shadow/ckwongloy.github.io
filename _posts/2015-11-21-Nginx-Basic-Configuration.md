@@ -20,10 +20,13 @@ $ sudo wget http://nginx.org/keys/nginx_signing.key
 $ sudo apt-key add nginx_signing.key
 ```
 
-/etc/apt/sources.list
+然后在软件源中增加 Nginx 官方软件源：
 
+```
+sudo vi /etc/apt/sources.list
 deb http://nginx.org/packages/debian/ codename nginx
 deb-src http://nginx.org/packages/debian/ codename nginx
+```
 
 ##### **说明**
 

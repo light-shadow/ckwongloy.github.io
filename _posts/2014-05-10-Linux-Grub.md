@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux Grub
-category: Auxiliary
+category: Linux
 tags: [Linux, Grub]
 latest: 2014年05月10日 20:41:21
 ---

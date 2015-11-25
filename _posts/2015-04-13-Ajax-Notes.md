@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AJAX 学习笔记
+title: AJAX 入门：用户验证
 category: PHP
 tags: [PHP, Javascript, AJAX, JSON, Web]
 latest: 2015年10月17日 21:01:57
@@ -8,13 +8,13 @@ latest: 2015年10月17日 21:01:57
 
 一句话总结 Ajax：免页面刷新的与服务器动态交换数据技术。Ajax 被广泛应用，改变了 Web 开发的格局。
 
-Ajax 不是一种编程语言，而是一种无需重新加载整个网页的情况下更新部分网页的技术，比如在注册和登录时候对表单输入信息的验证并给出提示信息，者带来的用户体验还是不错的，毕竟没有人希望在误填一堆表单后提交才发现出错。
+Ajax 不是一种编程语言，而是一种无需重新加载整个网页的情况下更新部分网页的技术，比如在注册和登录时候对表单输入信息的验证并给出提示信息，这带来的用户体验还是不错的，毕竟没有人希望在误填一堆表单后提交才发现出错。
 
 使用了 Ajax 技术的网页，通过在后台和服务器进行少量的数据交换就可以实现异步局部刷新，而实现与服务器异步交换数据的幕后核心，即 Ajax 的核心，是 __XMLHttpRequest__ 对象。
 
 Ajax 的使用需要注意的地方：4 条线代表了 Ajax 引擎的运行原理。
 
-细节用几个小案例来说明，代码说明一切，使用 Ajax 的重点在代码中的 4 条线。
+细节用一个小案例来说明，代码说明一切，使用 Ajax 的重点在代码中的 4 条线。
 
 无刷新验证用户名合法性 ( 用户注册 )
 -
@@ -47,7 +47,6 @@ Ajax 的使用需要注意的地方：4 条线代表了 Ajax 引擎的运行原�
 - ajax.js
 
 {% highlight javascript %}
-
 // 获得 XMLHttpRequest 对象
 function getXmlHttpObject() {
 	var xmlHttpRequest ;
@@ -119,7 +118,7 @@ function $( id ){
 
 - register_process.php
 
-{% highlight php %}
+```
 <?php
 
 	// 告诉浏览器返回的数据格式
@@ -147,7 +146,7 @@ function $( id ){
 	}
 
 ?>
-{% endhighlight %}
+```
 
 ### 如果是 POST 方式提交请求
 
@@ -184,6 +183,36 @@ $username=$_POST['username'] ;
 2、 XMLHttpRequest 和 Web 服务器进行了数据的异步交换。
 
 3、 通过 Javascript 操作 DOM，将交换回来的数据呈现在网页上，从而实现了局部刷新的效果。
+
+对 XMLHttpRequest 对象取得响应中涉及到的属性值及函数的解释
+-
+
+- responseText：获得字符串形式的相应数据。
+
+- responseXML；获得 XML 形式的响应数据。
+
+- status 和 statusText：以数字形式和文本形式返回 HTTP 状态码。
+
+- getAllResponseHeader()：获取所有的响应报文。
+
+- getResponseHeader()：查询响应中的某个字段的值。
+
+#### readyState 属性：
+
+- 0： 请求未初始化， open 还没有调用。
+
+- 1：服务器连接已建立，open 已调用。
+
+- 2：请求已接受，即收到了请求头信息。
+
+- 3：请求正在处理中，即收到了响应的主体。
+
+- 4: 请求已经完成，且响应已经就绪，即响应完成。
+
+其他
+-
+
+- 连接字符串：php `.`; js `+`。
 
 #### 说明
 

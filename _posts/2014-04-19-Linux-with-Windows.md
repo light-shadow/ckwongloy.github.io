@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 双系统常见问题：Windows + Linux
-category: Auxiliary
+category: Linux
 tags: [Linux, Windows]
 latest: 2015年10月04日22:31:48
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows 下硬盘安装 Fedora
-category: Auxiliary
+category: Linux
 tags: [Linux, Fedora]
 latest: 2015年09月28日 21:11:41
 ---

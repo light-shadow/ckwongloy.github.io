@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux 下软件安装方式
-category: Auxiliary
+category: Linux
 tags: [Linux, Fedora]
 latest: 2014年04月15日 22:31:01
 ---
