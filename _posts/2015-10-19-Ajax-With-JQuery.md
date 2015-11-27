@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 用 JQuery 实现 Ajax
-category: Programming
+category: Web
 tags: [AJAX, JQuery]
 latest: 2015年11月25日 23:49:58
 ---
@@ -72,7 +72,8 @@ JQuery 如何实现 AJAX？
 
 - 使用 JQuery 不需要为按钮注册事件监听 `onclick="query()"`，只需为需要响应用户事件的按钮设置一个 id，JQuery 就可以直接使用该 id 完成以前需要注册事件才能完成的事情了。上面的例子中 JQuery 监听并响应的就是 id 为 `query` 的按钮。
 
-附录：JQuery 实现 Ajax 中 POST 方法的使用举例
+附录：JQuery 实现 Ajax 中 POST 方法举例
+-
 
 POST 请求通常用于更改服务器上的数据，比如增删改。下面的代码是在上面的例子上增加的，通过 JQuery 来实现异步增加员工信息的简单举例，同 GET 方式，仍然需要对一个按钮事件通过 id 进行监听，假设 "新建" 按钮的 id 设置为 `create`，具体代码如下：
 
@@ -120,4 +121,4 @@ POST 请求通常用于更改服务器上的数据，比如增删改。下面的
 参考
 -
 
-- [JSON 的学习和简单应用](http://lamchuanjiang.github.io/programming/json-notes.html)
+- [_JSON 的学习和简单应用_](http://lamchuanjiang.github.io/programming/json-notes.html)

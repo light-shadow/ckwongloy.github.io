@@ -26,7 +26,7 @@ Javascript 处于对安全的考虑，不同域之间互相请求资源，就算
 解决 "跨域" 问题的三种方法
 -
 
-### **通过代理**
+### **一、通过代理**
 
 代理这种方式属于后台技术，跟 Javascript 没多大关系。解决思路举例说明：
 
@@ -34,7 +34,7 @@ Javascript 处于对安全的考虑，不同域之间互相请求资源，就算
 
 这样在前端看来，调用 _www.apple.cn/controller/china.php_ 就和调用 _apple.com/class/service.php_ 的效果是一样的了。
 
-### **通过 JSONP**
+### **二、通过 JSONP**
 
 JSONP 解决的是主流浏览器的跨域数据访问的问题。它的原理是：
 
@@ -44,14 +44,14 @@ JSONP 解决的是主流浏览器的跨域数据访问的问题。它的原理�
 
 - a.com
 
-``` js
+{% highlight javascript %}
 <script>
 	function jsnop( json ) {
 		document.writeln( json[ 'age' ] )
 	}
 </script>
 <script src="http://apps.bdimg.com/jsonp.js"></script>
-```
+{% endhighlight %}
 
 - apps.bdimg.com
 
@@ -86,9 +86,9 @@ $res = jsonp.'( { "success":false, "message":"OK" } )' ;
 
 #### JSONP 的限制
 
-JSONP 只适用于 GET 请求方式有用。
+JSONP 只适用于 GET 请求方式有用，不支持 POST 方式。
 
-### **使用 XHR2**
+### **三、使用 XHR2**
 
 XHR2 ( XMLHttpRequest Level 2 ) 是 HTML5 的新特性，只要支持 XHR2 的浏览器都可以使用 XHR2 来实现跨域。
 

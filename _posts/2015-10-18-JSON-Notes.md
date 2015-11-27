@@ -192,9 +192,10 @@ function callback() {
 
 如果在函数中使用超全局变量不用 `global` 声明，而在函数中使用全局变量则需要 `global` 声明。
 
-附录：源代码 - JSON 在 AJAX 中的简单使用
+附录(源代码)：JSON 在 AJAX 中的简单使用
+-
 
-_index.php_、_server.php_、_ajax.js_ 三个脚本都位于统一文件夹下。
+_index.php_、_server.php_、_ajax.js_ 三个脚本都位于同一文件夹下。
 
 - index.php
 
