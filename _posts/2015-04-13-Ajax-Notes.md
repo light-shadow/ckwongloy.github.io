@@ -46,7 +46,7 @@ Ajax 的使用需要注意的地方：4 条线代表了 Ajax 引擎的运行原�
 
 - ajax.js
 
-{% highlight javascript %}
+{% highlight js %}
 // 获得 XMLHttpRequest 对象
 function getXmlHttpObject() {
 	var xmlHttpRequest ;
@@ -83,9 +83,7 @@ function check_is_legal() {
 		// 回调函数名带括号和不带括号的区别：
 		//callback 代表赋于函数引用的地址值；而 callback() 代表调用一个函数
 		myXmlHttpRequest.onreadystatechange = callback ;
-		
 		/////////////////////////////////////// 第 2 号线 —— 开始发送请求
-
 		// 如果是 get 方式，则填入 null 即可；如果是 post 方式，则填入实际的数据
 		myXmlHttpRequest.send( null ) ;
 	}else{
