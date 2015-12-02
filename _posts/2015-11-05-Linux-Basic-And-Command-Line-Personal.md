@@ -26,9 +26,25 @@ Linux 终端下的文本编辑器除了 `nano` 外，VI 是最常用的了。一
 
 ```
 syntax on
-set nu
-set tabstop=4
+set autoindent
+set cindent
+"set cursorline
+
+set ru
+set number
+set cursorcolumn
+auto cmd BufNewFile *.py, *.sh exec ":call SetTitle()"
+
+let $author_name = "Li"
+let $author_email = "lamchuanjiang@gmail.com"
+
+func SetTitle() 
+
+	If &filetype == 'sh'
+	call setLine( 1, #######################)
 ```
+
+
 
 - ETA = Estimated Time of Arrival
 
