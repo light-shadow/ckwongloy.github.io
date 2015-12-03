@@ -13,7 +13,7 @@ latest: 2015年10月08 16:18:20
 添加 Sublime Text 到 Windows 右键菜单
 -
 
-默认情况下 Sublime Text 没有出现在鼠标右键菜单的，虽然可以网页等文件的设置默认打开程序为 Sublime Text，但是有时候编辑和查看网页的切换是不方便的。
+默认情况下，portable 版本的 Sublime Text 没有出现在鼠标右键菜单的，虽然可以网页等文件的设置默认打开程序为 Sublime Text，但是有时候编辑和查看网页的切换是不方便的。
 
 因此，需要将 Sublime Text 添加到右键菜单。步骤如下：
 

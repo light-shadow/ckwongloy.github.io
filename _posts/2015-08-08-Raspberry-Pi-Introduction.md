@@ -435,9 +435,7 @@ $ sudo update-rc.d tightvncserver defaults
 Q&A
 -
 
-- RASPBIAN JESSIE 与 RASPBIAN WHEEZY ?
-
-<http://captainbodgit.blogspot.com/2014/11/wheezy-jessie-more-than-just-toy-story.html>
+- [RASPBIAN JESSIE 与 RASPBIAN WHEEZY ?](http://captainbodgit.blogspot.com/2014/11/wheezy-jessie-more-than-just-toy-story.html)
 
 + [安装Kali Linux ARM版本到Raspberry Pi](http://cn.docs.kali.org/general-use/%E5%AE%89%E8%A3%85kali-linux-arm%E7%89%88%E6%9C%AC%E5%88%B0raspberry-pi)
 
@@ -460,7 +458,3 @@ Q&A
 + [树莓派官方FAQs中文版](http://bbs.ickey.cn/group-topic-id-13801.html)
 
 + [Kali Linux for Raspberry Pi](https://www.kali.org/downloads/)
-
-+ [树莓派跑pin](http://bbs.ickey.cn/group-topic-id-30449.html)
-
-+ [Raspberry Pi下跑aircrack和reaver破解路由器PIN码](http://www.freebuf.com/articles/6615.html)

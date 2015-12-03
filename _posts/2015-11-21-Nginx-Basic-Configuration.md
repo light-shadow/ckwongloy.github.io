@@ -103,6 +103,14 @@ Nginx 在 Windows 上暂时还不能作为服务运行，但是仍然可以被�
 
 - Windows 上启动 Nginx ：在 Nginx 安装根目录下面执行 `nginx` 即可。
 
+### 在 Windows 上设置 nginx 开启自启动
+
+将 nginx.exe 的快捷方式复制到：
+
+```
+C:\Users\lamChuanJiang\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
+
 Nginx 在 Linux 和在 Windows 上的配置都差不多，这里总结下常见的几个：
 
 - 配置根目录
