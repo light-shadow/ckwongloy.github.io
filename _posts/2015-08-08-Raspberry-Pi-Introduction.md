@@ -64,7 +64,7 @@ latest: 2015年09月24日 22:37:28
 
 #### **说明**
 
-如果要安装 Kali Linux，下载 Kali ARM img 镜像，然后对 MicroSD 执行：
+如果要安装 Kali Linux，下载 Kali ARM Custom Images 镜像，然后对 MicroSD/TF 执行：
 
 ```
 root@kali:~ dd if=kali-pi.img of=/dev/sdb bs=512k
@@ -457,4 +457,6 @@ Q&A
 
 + [树莓派官方FAQs中文版](http://bbs.ickey.cn/group-topic-id-13801.html)
 
-+ [Kali Linux for Raspberry Pi](https://www.kali.org/downloads/)
++ [Kali Linux Downloads – Custom Images](https://www.offensive-security.com/kali-linux-vmware-arm-image-download/)
+
++ [Windows IoT Core](http://ms-iot.github.io/content/en-US/Downloads.htm)
