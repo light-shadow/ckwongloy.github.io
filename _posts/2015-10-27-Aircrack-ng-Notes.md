@@ -123,15 +123,9 @@ WAP2-PSK Crack
 
 对于启用WPA2-PSK加密的无线网络，其攻击和破解步骤及工具是完全一样的，不同的是，在使用airodump-ng进行无线探测的界面上，会提示为 WPA CCMP PSK。
 
-
-
-References
--
-
--<netsecurity、51cto、com/art/201105/264844_all、htm>
-
-
 参考
 -
+
+- <netsecurity.51cto.com/art/201105/264844_all.htm>
 
 - [_无线破解攻击工具Aircrack-ng使用详解_](http://blog、csdn、net/ffilman/article/details/5782577)

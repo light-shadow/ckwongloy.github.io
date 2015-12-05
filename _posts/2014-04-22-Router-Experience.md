@@ -227,3 +227,5 @@ tasklist | findsrt "pid"
 - [浅谈内网web服务器发布到公网后路由器回流问题--NAT--PAT---技术研究](http://zhan.renren.com/cqhqhsj?gid=3602888498000970436&checked=true)
 
 - [如何在ddwrt内核路由器中设置花生壳ddns（公网版）](http://service.oray.com/question/868.html)
+
+- [PandoraBox 固件下载](http://downloads.openwrt.org.cn/PandoraBox/)

@@ -159,6 +159,7 @@ Raspberry Pi 默认没有提供显示屏，所以要想进入 Raspbian OS 的桌
 
 ```
 # apt-get install xrdp -y
+# service xrdp start
 ```
 
 Linux 下安装成功后，在 Windows 上运行 (  WIN + R)：`mstsc.exe`。_( [Mstsc 介绍 - Microsoft terminal services client](https://technet.microsoft.com/en-us/library/cc753907.aspx) )_
