@@ -229,3 +229,5 @@ tasklist | findsrt "pid"
 - [如何在ddwrt内核路由器中设置花生壳ddns（公网版）](http://service.oray.com/question/868.html)
 
 - [PandoraBox 固件下载](http://downloads.openwrt.org.cn/PandoraBox/)
+
+- <http://www.right.com.cn/Forum/thread-162040-1-1.html>
