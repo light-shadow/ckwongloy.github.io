@@ -230,4 +230,4 @@ tasklist | findsrt "pid"
 
 - [PandoraBox 固件下载](http://downloads.openwrt.org.cn/PandoraBox/)
 
-- <http://www.right.com.cn/Forum/thread-162040-1-1.html>
+- [使用PandoraBox固件的迅雷远程下载](http://www.right.com.cn/Forum/thread-162040-1-1.html)
