@@ -11,6 +11,11 @@ latest: 2014年06月19日 14:52:41
 Windows 10
 -
 
+- **开启自启动某个程序？**
+
+> 将应用的快捷方式复制到 `C:\Users\lamChuanJiang\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`  即可。
+
+
 #### Windows 8-10 删除视频-图片-文档-音乐等自带库文件夹
 
 通过注册表：

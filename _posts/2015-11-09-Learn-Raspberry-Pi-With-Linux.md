@@ -141,3 +141,8 @@ $ ln -s 源文件 链接名
 # 硬链接 ( Linux 默认 )
 $ ln 源文件 链接名
 ```
+
+参考
+-
+
+- [树莓派学习笔记——索引博文 - 物联网 IoT 经验分享小站 - 博客频道 - CSDN.NET](blog.csdn.net/xukai871105/article/details/23115627)

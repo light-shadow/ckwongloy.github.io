@@ -13,8 +13,6 @@ latest: 2015年11月01日 01:18:44
 
 网络的诞生原因之一就是实现资源共享 ( 另一个是通信 )，所以首先想到的是使用网络协议 FTP 来实现文件共享。
 
-<!-- break -->
-
 ### **Windows FTP Q&A**
 
 - 提示需要用户名和密码，那么用户名和密码是什么？
@@ -125,3 +123,5 @@ ls [remote-directory] [local-file]: 同DIR
 + [Windows FTP](https://technet.microsoft.com/zh-CN/library/hh831655.aspx)
 
 + [Windows 自带 FTP 服务](http://jingyan.baidu.com/album/455a9950e1e2fba167277862.html?picindex=4)
+
++ [Samba](https://www.samba.org/samba/docs/)

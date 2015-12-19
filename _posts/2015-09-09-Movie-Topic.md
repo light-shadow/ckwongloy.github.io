@@ -39,6 +39,7 @@ latest: 2015年09月09日 12:06:24
 
 + 火影忍者
 + 名侦探柯南
++ 加菲猫
 
 好莱坞
 -
@@ -82,3 +83,10 @@ Tom Hanks
 -
 
 - [IMDb](http://www.imdb.com/)
+
+参考
+-
+
+- [生活大爆炸第九季/全集The Big Bang Theory迅雷下载](http://cn163.net/archives/17613/)
+
+- [破产姐妹第五季/全集2 Broke Girls迅雷下载](http://cn163.net/archives/15473/)
