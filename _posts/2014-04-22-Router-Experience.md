@@ -231,3 +231,5 @@ tasklist | findsrt "pid"
 - [PandoraBox 固件下载](http://downloads.openwrt.org.cn/PandoraBox/)
 
 - [使用PandoraBox固件的迅雷远程下载](http://www.right.com.cn/Forum/thread-162040-1-1.html)
+
+- [在路由器上写CMCC自动登录验证脚本 | Xiaoxia[PG]](http://xiaoxia.org/2012/04/28/mini-router-auto-login-cmcc/)

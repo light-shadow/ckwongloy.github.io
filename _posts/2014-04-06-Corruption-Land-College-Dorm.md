@@ -92,4 +92,6 @@ latest: 2015年09月28日 20:04:24
 
 [我们是如何一步步沦为平庸的](http://card.weibo.com/article/h5/s#cid=1001603882586551265004&vid=5557064054&extparam=&from=&wm=0&ip=111.39.105.61)
 
-[大学十年-林锐](http://www.xiaohui.com/prg/note/year10/1.htm)
+- [大学十年-林锐](http://www.xiaohui.com/prg/note/year10/1.htm)
+
+- [沉迷游戏的三种人 - 王登科-DK博客](http://www.wdk.pw/358.html)

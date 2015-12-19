@@ -147,3 +147,8 @@ splashimage=(hd0,2)/boot/grub/splash.xpm.gz
 ```
 
 6.  最后得到splash.xpm.gz，将其放到/boot/grub/路径下，替换掉原图片，重启看看你的新开机图片吧。
+
+参考
+-
+
+- [grub rescue模式下修复](http://www.douban.com/note/66041888/#!/ckDefault)

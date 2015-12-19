@@ -373,3 +373,15 @@ DISK2、DISK3 可以直接通过 img 格式安装，就不用再转换成 vfd �
 - [HM65 芯片组的硬盘 ACHI 接口驱动地址](http://ishare.iask.sina.com.cn/f/20352228.html)
 
 - <http://demon.tw/operating-system/msdn-ms-dos-6-22-setup.html>
+
+- [浅析Windows系统的10大死机故障](http://www.xp74.com/article/news/6418.htm)
+
+- [PowerPC架构与X86架构](http://blog.sina.cn/dpool/blog/s/blog_6c9670bb0101slkh.html)
+
+- [选中的磁盘具有MBR分区表。在EFI系统上，windows只能安装到GPT](http://blog.csdn.net/primoblog/article/details/9139981)
+
+- [Analysis: x86 Vs PPC](http://blog.csdn.net/zxy119/article/details/1330908)
+
+- [ARM与X86架构对比区别](http://blog.csdn.net/lizzywu/article/details/7789462)
+
+

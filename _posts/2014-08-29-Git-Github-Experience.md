@@ -431,3 +431,8 @@ $ git tag -u <gpg-key-id> stable-1 1b2e1d63ff
 > 此外，以后每次出现 page build failure 的时候，GitHub 都会迅速邮件告诉我具体错误的位置，使我每次解决问题都很快。
 
 > 所以我觉得，GitHub 公司是一家比较上心的技术，我不得不更加支持。
+
+参考
+-
+
+- [Gitflow实践](http://blog.csdn.net/sweetvvck/article/details/50245147)

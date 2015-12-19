@@ -153,3 +153,10 @@ Google Analytics
 -
 
 Stay tuned...
+
+参考
+-
+
+- [Chrome 开发者工具使用技巧](http://segmentfault.com/a/1190000003882567?utm_source=Weibo&utm_medium=shareLink&utm_campaign=socialShare)
+
+- [翻墙软件Chrome+发布页](https://github.com/comeforu2012/truth/wiki/ChromePlus)

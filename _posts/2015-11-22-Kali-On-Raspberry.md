@@ -126,3 +126,5 @@ screen -r cracking
 - <http://www.aircrack-ng.org/doku.php?id=cracking_wpa>
 
 - <http://www.openwall.com/john/>
+
+- [树莓派(raspberrypi)安装aircrack-ng,reaver及wifi破解教程[整理] | FindSpace](http://www.findspace.name/res/1184)

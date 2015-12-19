@@ -167,4 +167,20 @@ ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu
 ```
 ( 你懂的 )
 
+参考
+-
+
 - 六飞
+
+- [求 IOS 上稳定 VPN](http://cn.v2ex.com/t/217132#reply44)
+
+- [动态网](http://e22.odimusic.net/99)
+	
+- [IOS系统设置登录VPN服务器图文介绍(IKEv2模式) | VPNCUP](https://ivpncup.me/config/ios-ikev2)
+
+- [PLAY VPN](http://www.playfreevpn.com)
+
+- [修改hosts轻松访问Google、Twitter、Facebook等网站的方法【长期有效】 - 火端网络](http://m.huoduan.com/google-hosts.html)
+
+- []()
+

@@ -168,3 +168,8 @@ location ~ \.php$ {
 Nginx 和 Apache 默认都是监听 80 端口，因此在 LNMPA 架构中，需要手动解决该冲突。
 
 随便改一个服务器就行了，Apache 就修改 httpd.conf 中的 Listen 80 字段；Nginx 就修改 nginx.conf 里面 `server  {}` 块中的 Listen 80 字段。
+
+相关
+-
+
+- [How To Set Up Nginx Load Balancing | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-load-balancing)
