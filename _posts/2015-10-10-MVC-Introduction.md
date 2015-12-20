@@ -61,34 +61,245 @@ MVC 工作流程举例
 单入口机制
 -
 
-### 什么是入口程序？
+#### 什么是入口程序？
 
 指在一个 Web 应用程序中，所有的请求都是指向一个脚本文件，通常都是 index.php，index.html，index.asp, index.jsp 等形式。所有对该 Web 应用程序的访问都必须通过这个入口，这种规定也被称为单一入口机制。
 
-### 入口程序有什么用？
+#### 入口程序有什么用？
 
 - 统一 URL 格式：Web 应用的入口都统一为入口程序。
 
 - 可以在入口文件中使用安全的方式接受传递来的控制器名和方法名。
 
-视图引擎
+一个简单而经典的 MVC 项目实例
 -
+
+通常在实际的项目开发中，项目文件中 M/V/C 的命名都是有规定的，为了开发和维护的方便，命名最好强制性统一，只以 Controller/Model/View 以示区分。
+
+本例中还需注意的命名规范有：类名和文件名一致；类名采用首字母大写的驼峰法；函数名采用首字母小写的驼峰法；变量名采用 `小写+下划线` 的命名格式，比如保存类 TestController 的实例化对象的变量名就以这种形式进行命名为 $test_controller，可以做到见名知意。
+
+命名的方式可以不一定非得是某种形式，但是一定要做到统一。
+
+此外，一个控制器，最好对应一个/类模型和一个/类视图，表示专门处理一个业务，各种任务和逻辑最好强制性分开，不要耦合在一起。
+
+举例说明：
+
+### 控制器：mvc/controllers/TestController.class.php
+
+```
+<?php
+
+require_once( '/models/TestModel.class.php' ) ;
+require_once( '/views/TestView.class.php' ) ;
+
+class TestController {
+	function show() {
+		$test_model = new TestModel ;
+		$data = $test_model->get() ;
+		$test_view = new TestView ;
+		$test_view->display( $data ) ;
+	}
+}
+
+?>
+```
+
+控制器最主要的两个任务：一个是专门用于调用模型来完成各种业务，并产生数据，一个调用视图是把模型产生的数据送往视图显示给用户。
+
+### 模型/数据模型：mvc/models/testModel.class.php
+
+```
+<?php
+class TestModel {
+	function get() {
+		return 'Hello Model.' ;
+	}
+}
+?>
+```
+
+模型常常被称为数据模型 (YII)，专门处理与数据相关的业务，比如从数据库、缓存中取数据，然后把这些数据返回给控制器。
+
+### 视图引擎：mvc/views/testView.class.php
+
+```
+<?php
+class TestView {
+	function display( $data ) {
+		echo $data ;
+	}
+}
+?>
+```
+
+视图的作用是将取得的数据进行组织、美化，最终会呈现在用户终端。
 
 应该都知道 PHP 写的常见的视图引擎有：Smarty, PHPLIB 等等。但是我们不能仅仅使用，还要挖掘其背后隐藏的原理才能学得更深刻。
 
-### 为什么需要视图引擎？
+关于视图模板引擎的更多细节，详见文章末尾的其他博文。
 
-### 什么才算是优秀的视图引擎？
+### 入口脚本：mvc/index.php
 
-- 基于该引擎开发出来的模板要更贴近标准的 HTML。
+```
+<?php
 
-- 语法简单易懂。
+require_once( '/controllers/TestController.class.php' ) ;
 
-- 良好的缓存机制。
+$test_controller = new TestController ;
 
-- 扩展性好。
+$test_controller->show() ;
 
-- 网络资源多。
+?>
+```
+
+入口脚本是该项目运行的起点，可谓牵一发而动全身。
+
+有规矩，画方圆
+-
+
+上面例子中文件命名和存放的路径搞那么规范如果不加以利用是不是觉得有点浪费？的确是的。
+
+为了简化对控制器、模型、视图的调用，我们可以利用统一化的项目文件对调用操作进行简单的封装。举例说明：
+
+- mvc/tools/MVC.function.php
+
+```
+<?php
+
+/**
+ * This PHP file contains 3 functions ready for invoking classes M, V, C in a more convenient way 
+ * @author    lamChuanJiang
+ * @package   Basic MVC demo
+ * @latest    2015-11-25 20:57:32
+ */
+
+/**
+ * M( $name ): Instance one Model named $name; In MVC, methods of models usually have many parameters, so here skip it
+ * @param String $name; Model name
+ * @return Object $obj; The instance of one Model class
+ */
+function M( $name ) {
+	require_once( '/models/'.$name.'Model.class.php' ) ;
+
+	eval( '$obj = new '.$name.'Model ;' ) ;
+
+	# !!! In a safer like production environment do not use eval() but below instead
+	// $Model = $name.'Model' ;
+	// $obj = new $Model ;
+
+	return $obj ;
+}
+
+/**
+ * C( $name, $method ): Instance one Controller named $name and execute one method named $method
+ * @param String $name; Controller name
+ * @param String $method; Controller method
+ * @return none; Controllers do not need any return value in MVC design pattern
+ */
+function C( $name, $method ) {
+	require_once( '/controllers/'.$name.'Controller.class.php' ) ;
+
+	eval( '$obj = new '.$name.'Controller ; $obj->'.$method.'() ;' ) ;
+
+	# !!! In a safer like production environment do not use eval() but below instead
+	// $Controller = $name.'Controller' ;
+	// $obj = new $Controller ;
+	// $obj -> $method() ;
+}
+
+/**
+ * V( $name ): Instance one View named $name; In MVC, methods of views usually have many parameters, so here skip it
+ * @param String $name; View name
+ * @return Object $obj; The instance of one View class
+ */
+function V( $name ) {
+	require_once( '/views/'.$name.'View.class.php' ) ;
+
+	eval( '$obj = new '.$name.'View ;' ) ;
+
+	# !!! In a safer like production environment do not use eval() but below instead
+	// $View = $name.'View' ;
+	// $obj = new $View ;
+
+	return $obj ;
+}
+
+?>
+```
+
+- mvc/index.php
+
+```
+<?php
+
+require_once( '/tools/MVC.function.php' ) ;
+
+# 定义一个数组, 保存允许访问的控制器
+$controllers_available = array(
+		'controllers' => array( 'index', 'test' ) ,
+		'methods' => array( 'get', 'show' )
+	) ;
+
+# URL style 1: index.php?a=controller/method
+$a = explode( '/', $_GET[ 'a' ] ) ;
+
+$controller = in_array( $a[0], $controllers_available['controllers'] ) ? addslashes( $a[0] ) : 'index' ;
+$method = in_array( $a[1], $controllers_available['methods'] ) ? addslashes( $a[1] ) : 'index' ;
+
+# URL style 2: index.php?c=controller&m=method
+// $controller = in_array( $_GET[ 'c' ], $controllers_available['controllers'] ) ? addslashes( $_GET[ 'c' ] ) : 'index' ;
+// $method = in_array( $_GET[ 'm' ], $controllers_available['methods'] ) ? addslashes( $_GET[ 'm' ] ) : 'index' ;
+
+C( ucfirst( $controller ), $method ) ;
+
+?>
+```
+
+- mvc/controllers/TestController.class.php
+
+```
+<?php
+
+class TestController {
+	function show() {
+		$data = M( 'Test' )->get() ;
+		V( 'Test' )->display( $data ) ;
+	}
+}
+
+?>
+```
+- mvc/models/TestModel.class.php
+
+```
+<?php
+
+class TestModel {
+	function get() {
+		return 'Hello MVC' ;
+	}
+}
+
+?>
+```
+
+- mvc/views/TestView.class.php
+
+```
+<?php
+
+class TestView {
+	function display( $data ) {
+		echo $data ;
+	}
+}
+
+?>
+```
+
+进行这样的封装还有一个好处就是，当项目中出现的控制器、模型、视图文件越来越多的时候，类似上面这些可以直接通过控制器名字和操作来调用控制器的便捷性体现地更具体。
+
+##### **注意：在路径的写法上最好使用绝对路径，这是为了避免与其他类文件的依赖过大。**
 
 Q&A
 -
@@ -100,4 +311,8 @@ Q&A
 参考
 -
 
-- Design Patterns - Elements of Reusable Object-Oriented Software .
+- _Design Patterns - Elements of Reusable Object-Oriented Software._
+
+- *[Mini-Smarty 与模板](../php/smarty-and-template.html)*
+
+- *[Smarty 学习笔记](../php/smarty-notes.html)*
