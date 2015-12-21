@@ -183,7 +183,7 @@ function M( $name ) {
 
 	eval( '$obj = new '.$name.'Model ;' ) ;
 
-	# !!! In a safer like production environment do not use eval() but below instead
+	# !!! In a safer, like production environment do not use `eval()` but below instead
 	// $Model = $name.'Model' ;
 	// $obj = new $Model ;
 
@@ -201,7 +201,7 @@ function C( $name, $method ) {
 
 	eval( '$obj = new '.$name.'Controller ; $obj->'.$method.'() ;' ) ;
 
-	# !!! In a safer like production environment do not use eval() but below instead
+	# !!! In a safer, like production environment do not use `eval()` but below instead
 	// $Controller = $name.'Controller' ;
 	// $obj = new $Controller ;
 	// $obj -> $method() ;
@@ -217,11 +217,35 @@ function V( $name ) {
 
 	eval( '$obj = new '.$name.'View ;' ) ;
 
-	# !!! In a safer like production environment do not use eval() but below instead
+	# !!! In a safer, like production environment do not use `eval()` but below instead
 	// $View = $name.'View' ;
 	// $obj = new $View ;
 
 	return $obj ;
+}
+
+?>
+```
+
+- mvc/tools/secure.function.php
+
+```
+<?php
+
+/**
+ * This PHP file contains some functions in relation to secure
+ * @author    lamChuanJiang
+ * @package   Basic MVC demo
+ * @latest    2015-11-25 20:57:32
+ */
+
+/**
+ * str_escape( $str ): Escape string to a relative safer format, filter some sensitive chars like `'`, `"`, `<`, `>` etc.
+ * @param String $str: The source string to be escaped
+ * @return String; The escaped result of source string
+ */
+function str_escape( $str ) {
+	return ( !get_magic_quotes_gpc() ) ? addslashes( $str ) : $str ;
 }
 
 ?>
@@ -233,6 +257,7 @@ function V( $name ) {
 <?php
 
 require_once( '/tools/MVC.function.php' ) ;
+require_once( '/tools/secure.function.php' ) ;
 
 # 定义一个数组, 保存允许访问的控制器
 $controllers_available = array(
@@ -243,12 +268,12 @@ $controllers_available = array(
 # URL style 1: index.php?a=controller/method
 $a = explode( '/', $_GET[ 'a' ] ) ;
 
-$controller = in_array( $a[0], $controllers_available['controllers'] ) ? addslashes( $a[0] ) : 'index' ;
-$method = in_array( $a[1], $controllers_available['methods'] ) ? addslashes( $a[1] ) : 'index' ;
+$controller = in_array( $a[0], $controllers_available['controllers'] ) ? str_escape( $a[0] ) : 'index' ;
+$method = in_array( $a[1], $controllers_available['methods'] ) ? str_escape( $a[1] ) : 'index' ;
 
 # URL style 2: index.php?c=controller&m=method
-// $controller = in_array( $_GET[ 'c' ], $controllers_available['controllers'] ) ? addslashes( $_GET[ 'c' ] ) : 'index' ;
-// $method = in_array( $_GET[ 'm' ], $controllers_available['methods'] ) ? addslashes( $_GET[ 'm' ] ) : 'index' ;
+// $controller = in_array( $_GET[ 'c' ], $controllers_available['controllers'] ) ? str_escape( $_GET[ 'c' ] ) : 'index' ;
+// $method = in_array( $_GET[ 'm' ], $controllers_available['methods'] ) ? str_escape( $_GET[ 'm' ] ) : 'index' ;
 
 C( ucfirst( $controller ), $method ) ;
 

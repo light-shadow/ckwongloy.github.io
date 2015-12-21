@@ -19,7 +19,7 @@ latest: 2015年05月20日 14:46:45
 
 - 语法简单易懂：上手快。
 
-- 良好的缓存机制。
+- 良好的缓存机制：可以避免每次请求模板文件都去编译一次。
 
 - 扩展性良好：可以通过开发扩展的方式扩展原有引擎的功能。
 
@@ -131,14 +131,14 @@ Smarty 模板语法
 {$arr['copyright']['email']}
 ```
 
-3、变量是对象：Smarty 中类的调用原本有 2 种方式，一种是通过 `registe_object()` 方法，但该方法由于调用不方便在 Smarty 3 以后已经被弃用。还有一种是通过 `assign()` 直接把类的对象直接以变量的形式赋给 Smarty 模板中使用。
+3、变量是对象：Smarty 中类的调用原本有 2 种方式，一种是通过 `register_object()` 方法，但该方法由于调用不方便在 Smarty 3 以后已经被弃用。还有一种是通过 `assign()` 直接把类的对象直接以变量的形式赋给 Smarty 模板中使用。
 
 可以看出， `assign()` 方法可以为模板赋值变量、数组和对象。举例说明：
 
 ```
 # 使用 Smarty 的脚本中使用
 class Obj {
-	function foo() {
+	function foo( $parameters ) {
 		return $parameters[0].'has'.$parameters[1] ;
 	}
 }
@@ -182,7 +182,7 @@ $smarty->assign( 'url', 'https://lamchuanjiang.github.io/home/tags.html?#php' ) 
 
 之所以需要转码是因为很多符号，比如 `?`/`'` 等会对 PHP 等脚本语言的正常执行产生干扰。
 
-6、字符串完全大小写：`upper` 和 `lower`。比如：{$title|upper}。
+6、字符串完全大小写：`upper` 和 `lower`。比如：`{$title|upper}`。
 
 7、换行符替换：`nl2br`。将所有换行符（编辑器中的回车也算）替换成 `<br>`，功能同 PHP 的 `nl2br()` 函数。
 
@@ -236,8 +236,8 @@ $smarty->assign( 'article', $article_list ) ;
 	{$article_list[article].title}
 	{$article_list[article].author}
 	{$article_list[article].content}
-{/section}
 <br>
+{/section}
 ```
 
 其中，`name=article` 指的是循环依据的 ID，而 `loop=$article_list` 指的是循环的对象。
@@ -262,11 +262,11 @@ $smarty->assign( 'article', $article_list ) ;
 	{$article.content}
 <br>
 {foreachelse}
-	当前文章列表为空。
+	当前文章列表为空。<br>
 {/foreach}
 ```
 
-Smarty 3 开始 `foreach` 支持 PHP 语法直接书写循环：
+Smarty 3 开始 `foreach` 支持用 PHP 语法直接书写循环：
 
 ```
 # 模板文件中使用
@@ -276,13 +276,13 @@ Smarty 3 开始 `foreach` 支持 PHP 语法直接书写循环：
 	{$article.content}
 <br>
 {foreachelse}
-	当前文章列表为空。
+	当前文章列表为空。<br>
 {/foreach}
 ```
 
 ### **模板文件引用**
 
-Smarty 中引入文件只有 `include`，并支持自定义属性。举例说明：
+Smarty 中引入文件只用 `include`，并支持自定义属性。举例说明：
 
 test.tpl:
 
@@ -290,7 +290,7 @@ test.tpl:
 {include file="footer.tpl" sitename="lamChuanJiang's Blog"}
 ```
 
-其中 `sitename` 就是自定义的属性，可以把自定义属性传递给引用它的模板文件并直接调用。比如在模板文件 footer.tpl 中可以这么直接调用它：
+其中 `sitename` 就是自定义的属性，可以把自定义属性传递给它引用的模板文件并直接调用。比如在模板文件 footer.tpl 中可以这么直接调用它：
 
 footer.tpl:
 
@@ -318,7 +318,7 @@ $smarty->assin('time', time() ) ;
 
 这里例子中，在模板中直接使用了 PHP 内置函数 `date()`，用于自定义时间的格式化类型。
 
-需要注意的是，在 Smarty 里面，关于函数参数的传递，`|` 左边的是第一个参数，然后 `函数名:` 后面的依次是第 2、3 个参数，以后的参数之间需要用 `:` 隔开。
+需要注意的是，在 Smarty 里面，关于函数参数的传递，`|` 左边的是第一个参数，然后 `函数名:` 后面的依次是第 2、3、... 个参数，以后的参数之间需要用 `:` 隔开。
 
 任何 PHP 内置函数都可以通过这种方式在模板文件里面调用。
 
@@ -350,7 +350,7 @@ Smarty 中使用自定义函数的时候，函数的参数叫做属性，Smarty 
 
 ### **什么是插件？**
 
-插件就是遵循主程序/主系统中的接口编写规范开发出来以扩展原系统功能的程序。
+**插件就是遵循主程序/主系统中的接口编写规范开发出来以扩展原系统功能的程序。**
 
 插件可以调用系统的数据和函数库，可执行性强，具有热插拔特性而不影响主系统的功能。
 
@@ -444,7 +444,7 @@ $smarty->assign( 'str', 'Hello，lamChuanJiang。abcdefghijklmnopqrstuvwxyz' ) ;
 
 - php 的内置函数可以以自动修饰插件，即变量调节器插件，的形式在模板里使用。
 
-参考
+相关
 -
 
 - *[Mini-Smarty 与模板](../php/smarty-and-template.html)*

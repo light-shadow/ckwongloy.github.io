@@ -117,3 +117,5 @@ sudo dpkg --configure -a
 - _<http://nginx.org/en/docs/windows.html>_
 
 - _<http://shumeipai.nxez.com/2013/08/25/install-and-config-lnmp.html>_
+
+- _[Linux（基于CentOS的LAMP）环境搭建图文教程](http://faq.comsenz.com/library/system/env/env_linux.htm)_
