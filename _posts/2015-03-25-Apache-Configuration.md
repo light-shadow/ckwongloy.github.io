@@ -6,9 +6,11 @@ tag: Apache
 latest: 2015年10月24日 20:21:06
 ---
 
-关于 Apache 的配置，常用的主要有：虚拟主机、虚拟目录、rewrite、与 PHP 关联等。
+关于 Apache 的配置，常用的主要有：虚拟主机、虚拟目录、rewrite、与 PHP 关联等，写在这里方便查找。
 
-1、Apache 与 PHP 整合
+### 1、Apache 与 PHP 整合
+
+配置代码几乎是死的，如下：
 
 ```
 # Apache 2.4
@@ -21,28 +23,39 @@ PHPIniDir "C:/dev/PHP"
 AddType application/x-httpd-php .php .phtml
 ```
 
-2、虚拟目录( 适用于 Apache 2.4 和 2.2 )
+### 2、虚拟目录( 适用于 Apache 2.4 和 2.2 )
 
-# 非默认路径权限设置
+虚拟目录就是说假设主机名是 localhost，位于 "C:/path/to/htdocs/"，那么可以为其他非主机名下的目录设置一个别名，使其成为主机 localhost 下的一个虚拟目录，允许通过 `http://localhost/虚拟目录别名` 的方式访问这些虚拟目录。具体配置如下：
 
 ```
+# 非默认路径权限设置
  <Directory C:/lamChuanJiang>
-	Options Indexes FollowSymLinks
+	Options Indexes FollowSymLinks    # 允许以目录形式访问
 	AllowOverride None
 	Require all granted
 </Directory>
 
 <IfModule dir_module>
-    DirectoryIndex index.html index.php
-    Alias /li "C:/lamChuanJiang"
-    Alias /blog "C:/dev/Apache/htdocs/Wordpress"
-    Alias /fe "C:/dev/Apache/htdocs/Discuz"
+    DirectoryIndex index.html index.php    # 入口脚本
+
+    # 为虚拟目录设置别名
+    Alias /li "D:/lamChuanJiang"
+    Alias /blog "E:/Wordpress"
+    Alias /fe "F:/Discuz"
 </IfModule>
 ```
 
 ##### **说明**：已位与 Apache 安装目录 htdocs 文件夹下的站点可以不再设置权限。
 
-3、 虚拟主机 ( 2.4 版本不再需要 NameVirtualHost )
+### 3、 虚拟主机 ( 2.4 版本不再需要 NameVirtualHost )
+
+一台计算机原本只能有一个 IP/域名与其对应的，因为是其网络上的唯一标识。
+
+而虚拟主机的意思是，在同一台物理机上，可以配置多个IP/域名或者多个端口(同一个 IP)去访问整个物理机硬盘上的不同站点，就像有很多台计算机充当服务器一样。
+
+以 Apache 2.4 举例说明，首先在 httpd.conf 中搜索 httpd-vhosts 然后取消其前面的注释。
+
+接着修改 extra/httpd-vhosts.conf 配置文件，有两种配置思路：
 
 ① 基于端口
 
@@ -73,7 +86,7 @@ AddType application/x-httpd-php .php .phtml
 ```
 <VirtualHost *:80>
 	DocumentRoot "D:/web1"
-	ServerName www.chuanjiang1.com
+	ServerName lamchuanjiang.org
 	<Directory "D:/web1">
 		Options FollowSymLinks
 		AllowOverride None
@@ -83,7 +96,7 @@ AddType application/x-httpd-php .php .phtml
 
 <VirtualHost *:80>
 	DocumentRoot "D:/web2"
-	ServerName www.chuanjiang2.com
+	ServerName lamchuanjiang.net
 	<Directory "D:/web2">
 		Options FollowSymLinks
 		AllowOverride None
@@ -92,13 +105,25 @@ AddType application/x-httpd-php .php .phtml
 </VirtualHost>
 ```
 
-- Apache 2.4 允许局域网内用户访问网站
+以上两种配置修改完成后都需要重启 Apache，然后修改 hosts 文件：C:\Windows\System32\drivers\etc。
+
+在文件末尾添加 IP 和域名的映射关系，如下：
+
+```
+# Apache Serving
+127.0.0.1    lamchuanjiang.org
+127.0.0.1    lamchuanjiang.net
+```
+
+现在通过上面的域名就可以直接在浏览器中进行访问刚刚配置好的虚拟主机目录了。
+
+### Apache 2.4 允许局域网内用户访问网站
 
 两个步骤：
 
-1. 防火墙放行 _httpd.exe_ 。
+1、防火墙放行 _httpd.exe_ 。
 
-2. Httpd.conf 中找到并修改下列内容：
+2、Httpd.conf 中找到并修改下列内容：
 
 ```
 <Directory />
@@ -151,15 +176,15 @@ DocumentRoot "C:/Dev/Apache24/htdocs"
 Apache FAQ
 -
 
-1、怎样与虚拟主机协同工作？
+**1、怎样与虚拟主机协同工作？**
 
 `Listen` 指令并不实现虚拟主机，它只是告诉主服务器(main server)去监听哪些地址和端口。如果没有 `<VirtualHost>`指令，服务器将对所有请求一视同仁；但是如果有 `<VirtualHost>` 指令，则服务器会对不同的地址和端口作出不同的响应。要实现虚拟主机，首先必须告诉服务器需要监听哪些地址和端口，然后为每个特定的地址和端口建立一个 `<VirtualHost>`段来执行特定的相应。注意，如果将 `<VirtualHost>` 段设置为服务器没有监听的地址和端口，则此段无效。
 
-2、取消中心主机( Mainhost )
+**2、取消中心主机( Mainhost )**
 
 如果你想在现有的 web 服务器上增加虚拟主机，你必须也为现存的主机建造一个 `<VirtualHost>` 定义块。这个虚拟主机中 `ServerName` 和 `DocumentRoot` 所包含的内容应该与全局的 `ServerName` 和 `DocumentRoot` 保持一致。还要把这个虚拟主机放在配置文件的最前面，来让它扮演默认主机的角色。
 
-3、ServerName
+**3、ServerName**
 
 `ServerName` 指令设置了服务器用于辨识自己的主机名和端口号。这主要用于创建重定向 URL。比如，一个放置web服务器的主机名为upload.server110.com ，但同时有一个 DNS 别名 www.server110.com  。而您希望 web 服务器更显著一点，您可以使用如下的指令：
 
@@ -172,8 +197,7 @@ ServerName www.server110.com:80
 如果使用的是基于域名的虚拟主机，在 `<VirtualHost>` 段中的 `ServerName` 将是为了匹配这个虚拟主机，在 `"Host:"` 请求头中必须出现的主机名。
 参见 `UseCanonicalName` 和 `UseCanonicalPhysicalPort` 指令以获得关于自引用 URL (比如使用 mod_dir 模块)是需要指定一个特定端口，还是使用客户端请求的端口号的更详细的信息。
 
-4、Network Domain 和 Server Name 的区别?
-
+**4、Network Domain 和 Server Name 的区别?**
 
 Apache 2.2 限制不能访问目录
 -
@@ -228,7 +252,7 @@ CustomLog /var/wwwlogs/b.test.com.log common
 
 ##### **注意**：`<Directory />...</Directory>` 部分要写在 `<VirtualHost 192.168.1.127:8000>...</VirtualHost>` 区块内，否则又表示全局了。首页档案的类型与 `DirectoryIndex` 设定值有关。
 
-### **`Options` 的其他参数：**
+### **Options 的其他参数：**
 
 `None`：表示只能浏览，
 
@@ -250,7 +274,6 @@ CustomLog /var/wwwlogs/b.test.com.log common
 
 Raspberry 上 Apache 的安装配置简述
 -
-
 
 - Apache 2.2
 
