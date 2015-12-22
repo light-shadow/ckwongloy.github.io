@@ -406,7 +406,7 @@ Engine::run( $main_conf ) ;
 附录：框架项目文件组织树
 -
 
-![mini-mvc-framework-project-tree](http://localhost/inset/programming/mini-mvc-framework-project-tree.png)
+![mini-mvc-framework-project-tree](http://localhost.lamchuanjiang.org/inset/programming/mini-mvc-framework-project-tree.png)
 
 总结
 -

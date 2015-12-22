@@ -70,109 +70,107 @@ PHP 绘制验证码
 
 - _checkcode.class.php_
 
-{% highlight php %}
+```
 <?php
-	
-	////////////////////////////////////////////////////////// 验证码工具类：CheckCode
-	
-	class CheckCode {
 
-		private $length ;
+////////////////////////////////////////////////////////// 验证码工具类：CheckCode
 
-		private $checkcode ;
+class CheckCode {
 
-		public function __construct( $length ) {
+	private $length ;
 
-			// 这里访问私有成员不能写成：self::$length = $length ;
+	private $checkcode ;
 
-			$this->length = $length ;
+	public function __construct( $length ) {
 
-			$this->checkcode = $this->rand_str( $this->length ) ;
+		// 这里访问私有成员不能写成：self::$length = $length ;
 
-		}
+		$this->length = $length ;
 
-		public function get_checkcode() {
-
-			return $this->checkcode ;
-
-		}
-
-		public function rand_str( $length ) {
-
-			$str = '' ;
-
-			$arr = array(
-
-				"a", "b", "c", "d", "e", 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ,
-				"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ,
-				'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
-			
-			) ;
-
-			for( $i=0; $i<$length; $i++ ) {
-
-				// 生成随机字符串
-				$str .= $arr[ rand( 0, 61 ) ] ;
-
-				// 生成随机数并转换成 16 进制
-				// $str .= dechex( rand( 0, 9 ) ) ;
-
-			}
-
-			return $str ;
-		}
-
-		public function random_str( $length ) {
-
-		    // 生成一个包含 大写英文字母, 小写英文字母, 数字 的数组
-
-		    $arr = array_merge(range(0, 9), range('a', 'z'), range('A', 'Z')) ;
-		 
-		    $str = '' ;
-		    $arr_len = count($arr) ;
-
-		    for ($i = 0; $i < $length; $i++)
-		    {
-		        $rand = mt_rand(0, $arr_len-1) ;
-		        $str .= $arr[$rand] ;
-		    }
-		 
-		    return $str ;
-		}
-
-		public function draw_checkcode( $checkcode ) {
-
-			// 访问共有函数可以使用 self:: 也可以使用 $this->
-			// $checkcode = self::rand_str( $length ) ;
-			// $checkcode = $this->rand_str( $length ) ;
-
-			// 创建画布，画布大小一般固定
-			$canvas = imagecreatetruecolor( 200, 50 ) ;
-
-			// 画颜色、大小、位置都变化的干扰线
-			for( $j=0; $j<20; $j++ ) {
-				imageline( $canvas, rand( 0, 200 ), rand( 0, 50 ), rand( 0, 200 ), rand( 0, 50 ), imagecolorallocate( $canvas, rand( 0, 255 ), rand( 0, 255 ), rand( 0, 255 ) ) ) ;
-			}
-
-			// 画出验证码
-			imagestring( $canvas, rand( 5, 15 ), rand( 10, 160 ), rand( 10, 30 ), $checkcode, imagecolorallocate( $canvas, 255, 255, 255 ) );
-
-			// 画噪点
-			for( $j=0; $j<500; $j++ )  {
-				imagesetpixel( $canvas, rand( 0, 200 ), rand( 0, 50 ), imagecolorallocate( $canvas, rand( 0, 255 ), rand( 0, 255 ), rand( 0, 255 ) ) ) ;
-			}
-
-			// 将绘制的图片以 png 格式输出到浏览器
-			header( "Content-Type: image/png" ) ;
-			imagepng( $canvas ) ;
-
-			imagedestroy( $canvas ) ;
-		}
+		$this->checkcode = $this->rand_str( $this->length ) ;
 
 	}
 
+	public function get_checkcode() {
 
-{% endhighlight %}
+		return $this->checkcode ;
+
+	}
+
+	public function rand_str( $length ) {
+
+		$str = '' ;
+
+		$arr = array(
+
+			"a", "b", "c", "d", "e", 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ,
+			"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ,
+			'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+		
+		) ;
+
+		for( $i=0; $i<$length; $i++ ) {
+
+			// 生成随机字符串
+			$str .= $arr[ rand( 0, 61 ) ] ;
+
+			// 生成随机数并转换成 16 进制
+			// $str .= dechex( rand( 0, 9 ) ) ;
+
+		}
+
+		return $str ;
+	}
+
+	public function random_str( $length ) {
+
+	    // 生成一个包含 大写英文字母, 小写英文字母, 数字 的数组
+
+	    $arr = array_merge(range(0, 9), range('a', 'z'), range('A', 'Z')) ;
+	 
+	    $str = '' ;
+	    $arr_len = count($arr) ;
+
+	    for ($i = 0; $i < $length; $i++)
+	    {
+	        $rand = mt_rand(0, $arr_len-1) ;
+	        $str .= $arr[$rand] ;
+	    }
+	 
+	    return $str ;
+	}
+
+	public function draw_checkcode( $checkcode ) {
+
+		// 访问共有函数可以使用 self:: 也可以使用 $this->
+		// $checkcode = self::rand_str( $length ) ;
+		// $checkcode = $this->rand_str( $length ) ;
+
+		// 创建画布，画布大小一般固定
+		$canvas = imagecreatetruecolor( 200, 50 ) ;
+
+		// 画颜色、大小、位置都变化的干扰线
+		for( $j=0; $j<20; $j++ ) {
+			imageline( $canvas, rand( 0, 200 ), rand( 0, 50 ), rand( 0, 200 ), rand( 0, 50 ), imagecolorallocate( $canvas, rand( 0, 255 ), rand( 0, 255 ), rand( 0, 255 ) ) ) ;
+		}
+
+		// 画出验证码
+		imagestring( $canvas, rand( 5, 15 ), rand( 10, 160 ), rand( 10, 30 ), $checkcode, imagecolorallocate( $canvas, 255, 255, 255 ) );
+
+		// 画噪点
+		for( $j=0; $j<500; $j++ )  {
+			imagesetpixel( $canvas, rand( 0, 200 ), rand( 0, 50 ), imagecolorallocate( $canvas, rand( 0, 255 ), rand( 0, 255 ), rand( 0, 255 ) ) ) ;
+		}
+
+		// 将绘制的图片以 png 格式输出到浏览器
+		header( "Content-Type: image/png" ) ;
+		imagepng( $canvas ) ;
+
+		imagedestroy( $canvas ) ;
+	}
+
+}
+```
 
 在 HTML 中使用该工具类：
 
@@ -186,7 +184,7 @@ PHP 绘制验证码
 
 - _checkcode.php_
 
-{% highlight php %}
+```
 <?php
 	
 	require_once '../class/check_code.class.php' ;
@@ -199,7 +197,8 @@ PHP 绘制验证码
 	session_start() ;
 	$_SESSION['checkcode'] = $random_checkcode ;
 
+
 	$checkcode->draw_checkcode( $random_checkcode ) ;
 
 ?>
-{% endhighlight %}
+```
