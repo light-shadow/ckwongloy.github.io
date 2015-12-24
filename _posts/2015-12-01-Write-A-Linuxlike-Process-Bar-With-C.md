@@ -172,6 +172,66 @@ int main() {
 
 已完成的部分用 `=` 表示，当前正在执行的部分用 `_` 表示。
 
+附录：可接受服务器回送数据的客户端进度条
+-
+
+{% highlight html %}
+<style>
+    #area {
+        background-color:silver;
+        width:502px;
+        height:20px;
+    }
+    #process_bar {
+        margin:5px 0 5px 0;
+        width:500px;
+        border:1px solid navy;
+    }
+    #percent {
+        display:inline-block;
+        text-align:center;
+        height:20px;
+        background:yellow;
+    }
+    #is_finished {
+        width:502px;
+        height:20px;
+        background:silver;
+    }
+</style>
+
+<div id="area">
+    <div id="status">正在更新...</div>
+    <div id="process_bar">
+        <span id="percent">请稍后...</span>
+    </div>
+    <div id="is_finished"></div>
+</div>
+
+<script>
+    var i = 0 ;
+    var id = setInterval( print_process , 100 ) ;
+    function print_process() {
+            if( 100 === i ) {
+                $( "is_finished" ).innerHTML = "更新完成!" ;
+                clearInterval( id ) ;
+            } else if( i>100 || i<0 ) {
+                return ;
+            }
+            $( "percent" ).innerHTML = i + "%" ;
+            $( "percent" ).style.width = (5*i++) + "px" ;
+    }
+    function $( id ) {
+        return document.getElementById( id ) ;
+    }
+    // 写一个函数用于接收从服务器端传回的值用来改变客户端的 i 而非像在 `print_process()` 函数里面那样通过自增来模拟
+    // 从而体现进度条真正的作用
+    // function current_process() {
+    //  do something more here...
+    // }
+</script>
+{% endhighlight %}
+
 参考
 -
 

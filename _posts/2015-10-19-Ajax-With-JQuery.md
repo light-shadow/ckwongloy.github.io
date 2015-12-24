@@ -121,4 +121,4 @@ POST 请求通常用于更改服务器上的数据，比如增删改。下面的
 参考
 -
 
-- [_JSON 的学习和简单应用_](http://lamchuanjiang.github.io/programming/json-notes.html)
+- [_JSON 的学习和简单应用_](../programming/json-notes.html)

@@ -214,4 +214,4 @@ $username=$_POST['username'] ;
 
 #### 说明
 
-源码摘自我的小项目 _Web Chat_。最新改动及错误修复见 GitHub：[WebChat](https://github.com/lamChuanJiang/LBD/tree/master/WebChat)。
+源码摘自我的小项目 _Web Chat_。最新改动及错误修复见 GitHub：[WebChat](https://github.com/lamChuanJiang/LBD/tree/master/web-chat)。
