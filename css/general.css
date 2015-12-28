@@ -30,6 +30,10 @@ a:hover {
 	background:#59A386;
 }
 
-#webchat, #homepage_blog, #tank-battle, #mini-mvc-framework {
+/**
+* 对项目经验中的案例进行样式控制
+*/
+
+#webchat, #homepage_blog, #tank-battle, #mini-mvc-framework, #mini-ocs {
 	display: inline-block;
 }
