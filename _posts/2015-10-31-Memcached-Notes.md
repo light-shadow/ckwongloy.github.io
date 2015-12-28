@@ -2,7 +2,7 @@
 layout: post
 title: Memcached 快速入门
 category: Database+
-tags: [Memcached, NoSQL, PHP]
+tags: [Memcache, NoSQL, PHP]
 latest: 2015年11月2日 12:26:32
 ---
 

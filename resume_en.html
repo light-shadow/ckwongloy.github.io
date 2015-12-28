@@ -3,13 +3,6 @@ layout: backbone
 title: Li's Resume ( English ) @lamChuanJiang
 ---
 
-<style>
-/*	#Resume {
-		width: 200px;
-		background-color: #EFE3AF;
-	}*/
-</style>
-
 <h2>Li's Resume    
 <a href="/resume_zh.html">
 <button type="button" class="btn btn-success btn-lg" style="text-shadow: black 5px 3px 3px;font-size: 14px;color: rgb(255,255,255);">
@@ -40,11 +33,12 @@ title: Li's Resume ( English ) @lamChuanJiang
 <div class="content_font">
 <h3 class="alert alert-success"><span class="fa fa-send-o"></span> Job Intention</h3>
 <p><span class="fa fa-asterisk"></span> 
-<strong>Job Location ：</strong>Chongqing &gt; Chengdu &gt; Shanghai &gt; Guangzhou</p>
+<strong>Job Location ：</strong>Guangzhou &gt; Shenzheng &gt; Shanghai &gt; Chongqing</p>
 <p><span class="fa fa-asterisk"></span> 
-<strong>Job Direction ：</strong>Web developing(<em> Expecting Back-End </em>)、LNMPA</p>
+<strong>Job Direction ：Junior PHP Web Developer</strong></p>
 <p><span class="fa fa-asterisk"></span> 
-<strong>Job Type ：</strong><span class="label label-default">Internship</span></p>
+<strong>Job Type ：</strong><span class="label label-default">Internship</span>
+<span class="label label-default">Graduate with some Experience</span></p>
 <p><span class="fa fa-asterisk"></span> 
 <strong>Expectation to company ：</strong>Tech Driven, Growing Together.</p>
 <p><span class="fa fa-asterisk"></span> 
@@ -53,91 +47,28 @@ title: Li's Resume ( English ) @lamChuanJiang
 <div class="content_font">
 <h3 class="alert alert-success"><span class="fa fa-star"></span> Abilities</h3>
 <p><span class="fa fa-asterisk"></span> 
-<strong>Programming Basis : </strong>Acquainted with often used data structure and basic algorithm, SQL, and TCP/IP Internet protocol; Trend of thinking in computer.</p>
+<strong>Programming Basis : </strong>Acquainted with often used data structure and basic algorithm, SQL, and HTTP, TCP/IP Internet protocol; Trend of thinking in computer.</p>
 <p><span class="fa fa-asterisk"></span> 
-<strong>Classified by Direction : </strong>Web developing( Back-end will be better )、programming on Linux.</p>
+<strong>Classified by Direction : </strong>Web developing( Back-end will be better )、programming on Linux、LAMP/LNMP stack.</p>
 <p><span class="fa fa-asterisk"></span> 
-<strong>Classified by Language : </strong>C、PHP</p>
+<strong>Classified by Language : </strong>C、PHP、Javascript、Java</p>
 <p><span class="fa fa-asterisk"></span> 
 <strong>English Level : </strong>Medium-level CET4/CET6 , have the ability of smoothly reading English manual and technical books.Well, good at reading comprehension, but weak in listening.</p>
-<p><span class="fa fa-asterisk"></span> 
+<p>（
 <strong>All Skills 
 <span class="fa  fa-hand-o-right"></span> 
 <a href="/skills.html">Skill Tags </a> 
-<span class="fa  fa-hand-o-left"></span></strong></p></div>
+<span class="fa  fa-hand-o-left"></span>）</strong></p></div>
 
 <h3 class="alert alert-success"><span class="fa fa-list-ol"></span> Experience</h3>
-<blockquote>
-<span class="fa fa-flag"></span> 
-<span class="label label-info">August, 2015 
-<span class="fa fa-arrow-right"></span> Now</span>
-<!-- 按钮触发模态框 -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Homepage + Blog</button></blockquote>
-<!-- 模态框（Modal） -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
 
-<div class="modal-header">
-<!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-<em>Tags</em>  
-<span class="label label-success">Front-End</span> 
-<span class="label label-warning">Bootstrap</span> 
-<span class="label label-warning">JQuery</span>
-<span class="label label-info">Jekyll</span> </div>
-<div class="modal-body">
-<div class="modal-title" id="myModalLabel"></div> 
-<p>
-<span class="label label-default">Link</span>
-<button type="button" class="btn btn-default">
-<a href="http://lamchuanjiang.github.io" target="_blank">lamchuanjiang.github.io</a></button></p>
-<p>
-<span class="label label-default">Description</span>
-<p>1. A simple personal homepage, in use of <b>Blog</b> and resume presentation. Modules mainly contains ribbon navigation bars, breadcrumb navigation menus, clock, skill tags, modal dialog, etc.</p>
-<p>2. The website mainly based on  <i><b>Bootstrap</b></i> and <i><b>JQuery</b></i> , <i><b>Font Awesome</b></i> provide font icon.  The major framework of this personal homepage is the combination of 3 popular web front-end frameworks. Of course, also part of custom CSS/JS.</p>
-<p>3. Blog engine is <b><i>Jekyll</i></b>, and posts are written with <b><i>Markdown</i>.</b></p>
-<p>4. Website and source code of this homepage are hosted on the server of <span class="fa fa-hand-o-right"></span> <a href="https://github.com/lamChuanJiang/lamChuanJiang.github.io" target="_blank"><b>GitHub</b></a></p></p></div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button></div></div></div></div>
+{% include projects/mini-mvc-framework_en.html %}
+{% include projects/tank-battle_en.html %}
+{% include projects/homepage_blog_en.html %}
+{% include projects/webchat_en.html %}
 
-<!-- 项目 2 开始 注意修改 data-target 的对应值-->
-
-<blockquote>
-<span class="fa fa-flag"></span>
-<span class="label label-info">
-2015-04-11
-<span class="fa fa-arrow-right"></span>
-2015-04-24</span>
-<!-- 按钮触发模态框 -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">WebChat</button></blockquote>
-<!-- 模态框（Modal） -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" >
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-<em>Tags</em>  
-<span class="label label-success">PHP</span> 
-<span class="label label-default">MVC</span>
-<span class="label label-warning">Ajax</span>
-<span class="label label-warning">MySQL</span>
-<span class="label label-info">Paganation</span></div>
-
-<div class="modal-body">
-<div class="modal-title" id="myModalLabel2"></div> 
-<p>
-<span class="label label-default">Link</span>
-<button type="button" class="btn btn-default">
-It Open Sourced on <a href="https://github.com/lamChuanJiang/LBD/tree/master/WebChat" target="_blank"><b>GitHub</b></a></button></p>
-<span class="label label-default">Description</span><br><br>
-<p>1. A simple online web chat system， <b>PHP</b> + <b>MySQL</b> + <b>MVC</b>。</p>
-<p>2. Use <b>Ajax</b> to exchange data with server asynchronously, and this mainly used in instant message and login, register process, providing legal check without page refreshing.</p>
-<p>3. Use regex expressions to verify the legality of user's input information when login and registering.Besides, <b>checkcode</b> also applied in login and register process. Both of them are used PHP methods.</p>
-<p>4. Implemented a relatively pretty <b>pagination</b> bar in the userinfo display page, It works and looks great to show the messages select from MySQL。</p></div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
-
-<!-- 项目 2 结束 -->
+<p class="content_font">（Source code and more projects please see: <span class="fa fa-hand-o-right"></span> 
+<a href="https://github.com/lamChuanJiang/LBD/" target="_blank"><b>GitHub</b></a>）</p>
 
 <div class="content_font">
 <h3 class="alert alert-success">
@@ -163,6 +94,3 @@ It Open Sourced on <a href="https://github.com/lamChuanJiang/LBD/tree/master/Web
 <h3 class="alert alert-success"><span class="fa fa-eye"></span> Others</h3>
 <p>
 <span class="label label-default"> Reference Only</span> <em>Certificates in University: CET4、CET6、level 2 NCRE C、level 3 NCRE computer network 、Third prize of  school level Freescale Intelligent vehicle, etc.</em></p></div>
-
-<script src="/js/jquery-2.1.4.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>

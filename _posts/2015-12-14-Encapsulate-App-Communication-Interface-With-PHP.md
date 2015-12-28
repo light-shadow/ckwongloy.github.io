@@ -2,7 +2,7 @@
 layout: post
 title: 使用 PHP 封装 APP 通信接口数据
 category: PHP
-tags: [PHP, APP接口]
+tags: [PHP, APP接口, JSON, XML]
 latest: 2015年12月14日　18:36:10
 ---
 
@@ -92,7 +92,23 @@ APP 通信接口的工作原理
 PHP 封装通信接口数据
 -
 
+对于 PHP 开发人员来说，我们的重心在于对服务器端接口文件的开发，即我们要把客户端需要的数据为他们准备好。
+
+数据的来源需要根据业务的情况而定，这里我只总结对几种常见接口数据格式的封装。
+
+接口数据格式一般采用的是 JSON 和 XML，但在封装接口数据之前，为了统一开发，减少不必要的工作，往往需要规定一个通信数据标准格式。比如：
+
+- code：标识服务端的状态。
+
+- message：提示信息。
+
+- data：返回数据。
+
 ### 以 JSON 方式封装接口数据
+
+PHP 中只需使用 `json_encode()` 函数就可以把 PHP 数组转换成 JSON 数据。
+
+###### **注意：`json_encode()` 函数只接受 UTF-8 格式的数据，如果传递的是其他编码格式的数据则返回 null。**
 
 ```
 class JsonResponse {
@@ -107,20 +123,34 @@ class JsonResponse {
 		if( !is_numeric( $code ) ) {
 			return '' ;
 		}
-
 		$result = array(
 			'code' => $code ,
 			'message' => $message ,
 			'data' => $data 
 		) ;
-
 		echo json_encode( $result ) ;
 		exit() ;
 	}
 }
 ```
 
+可以进行简单的测试：
+
+```
+$arr = array(
+	"id" => 0000 ,
+	"name" => "Li"
+) ;
+JsonResponse::json_response( 200, 'success', $arr ) ;
+```
+
 ### 以 XML 方式封装接口数据
+
+对 XML 格式的接口数据的组织常见的做法是：
+
+- 组装字符串：这种比较简单，理解也不难，等下就用这种方式。
+
+- 使用系统类：比如 DOMDocument、XMLWriter、SimpleXML。但是使用这些需要学习它们的使用方式，鉴于第一种方式不仅简单而且灵活，所以下面就直接用拼装字符串的方式来组织 XML 数据。
 
 ```
 class XmlResponse {
@@ -135,13 +165,11 @@ class XmlResponse {
 		if( !is_numeric( $code ) ) {
 			return '' ;
 		}
-
 		$result = array(
 			'code' => $code ,
 			'message' => $message ,
 			'data' => $data 
 		) ;
-
 		# 指定页面显示类型
 		header( "Content-Type:text/xml;charset:utf-8" ) ;
 		$xml = "<?xml version='1.0' encoding='UTF-8'?>" ;
@@ -154,7 +182,6 @@ class XmlResponse {
 		$xml .= "</root>"."\n" ;
 		echo $xml ;
 	}
-
 	public static function arr_to_xml( $arr ) {
 		$xml = $k_attr = "" ;
 		foreach( $arr as $k => $v ) {
@@ -171,10 +198,57 @@ class XmlResponse {
 }
 ```
 
+可以进行一些简单的测试：
+
+```
+$data = array(
+	'id' => 0000 ,
+	'name' => 'Li' ,
+	'type' => array( 1, 3, 5 )
+) ;
+XmlResponse::xml_encode( 200, "sucess", $data ) ;
+```
+
 ### 综合 JSON 和 XML 方式封装接口数据
 
 ```
-
+class Response {
+	const JSON = "json" ;
+	/**
+	* 按指定的数据类型输出通信数据
+	* @param integer $code 状态码
+	* @param string $message 提示信息
+	* @param array $data 数据
+	* @param string $type 数据类型
+	* @return string
+	*/
+	public static function response_data( $code, $message = '', $data = array() ) {
+		if( !is_numeric( $code ) ) {
+			return '' ;
+		}
+		$type = isset( $_GET[ 'type' ] ) ?  $_GET[ 'type' ] : self::JSON ;
+		$res = array(
+			'code' => $code ,
+			'message' => $message ,
+			'data' => $data
+		) ;
+		switch( $type ) {
+			case 'json':
+				self::json_response( $code, $message, $data ) ;
+				break ;
+			case 'xml':
+				self::xml_encode( $code, $message, $data ) ;
+				break ;
+			# 调试模式
+			case 'array':
+				echo "<pre>" ;
+				print_r( $res ) ;
+				echo "</pre>" ;
+				break ;
+			default: break ;
+		}
+	}
+}
 ```
 
 附录：XML 和 JSON 的对比
