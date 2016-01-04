@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 缓存技术入门
+title: Web 应用中的缓存技术入门
 category: Programming
 tags: [Memcache, Redis, No-SQL, PHP]
 latest: 2015年12月15日 14:10:26

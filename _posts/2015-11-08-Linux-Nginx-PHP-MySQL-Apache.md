@@ -39,9 +39,13 @@ Nginx 常用的几个命令：
 LEMPA
 -
 
-LAEMP 的含义现在看来已经比较丰富了：Linux + Apache + Nginx(Engin-x) + MySQL/MemCached/MongDB + PHP/Python。
+LEMPA 的含义现在看来已经比较丰富了：Linux + Apache + Nginx(Engin-x) + MySQL/MemCached/MongDB + PHP/Python。
 
-1. Linux 下 Apache 和 Nginx 共存
+**- Linux 下 Apache 和 Nginx 共存**
+
+```
+apt-get install apache
+```
 
 更改 Apache 的监听端口为 8888：/etc/apache2/ports.conf
 
@@ -51,8 +55,17 @@ LAEMP 的含义现在看来已经比较丰富了：Linux + Apache + Nginx(Engin-
 
 - /usr/share/nginx/www/
 
-2. PHP 安装与配置
--
+- **MySQL**
+
+如果是通过包管理器安装 MySQL 的话，只需安装 mysql-server 和 mysql-client 这两个就行了，其他需要的软件包包管理器会自动解决。
+
+```
+apt-get install mysql-server mysql-client
+```
+
+下载好之后，解压安装的过程中需要设置密码。
+
+- **PHP 安装与配置**
 
 Raspberry 上 PHP 的安装位置在: _/usr/share/php5_ 。
 
@@ -66,11 +79,11 @@ $ sudo apt-get autoremove
 $ sudo apt-get install -f php5-fpm
 ```
 
-- 与 Nginx 整合
+- **PHP 与 Nginx 整合**
 
 首先确保已经正确安装 PHP-FPM。通过 `apt-get` 方式安装的无须多余配置，直接修改 _/etc/nginx/nginx.conf_ 。
 
-PHP 与 Nginx 的整合详见我的另一篇文章：[_Nginx 基础：安装与配置_](http://127.0.0.1:4000/php/nginx-basic-configuration.html) 。
+PHP 与 Nginx 的整合详见我的另一篇文章：[_Nginx 基础：安装与配置_](../php/nginx-basic-configuration.html) 。
 
 - 找不到 Imagecreatetruecolor() ？
 
@@ -80,10 +93,8 @@ PHP 与 Nginx 的整合详见我的另一篇文章：[_Nginx 基础：安装与�
 $ sudo apt-get install php5-gd
 ```
 
-Linux 下 MySQL 的安装与配置
+Mysql查看版本号的五种方式介绍
 -
-
-### Mysql查看版本号的五种方式介绍
 
 - 进入 MySQL 客户端的时候会提示
 
@@ -92,10 +103,10 @@ Linux 下 MySQL 的安装与配置
 - 使用系统函数
 
 ```
-Select version() ;
+select version() ;
 ```
 
-- mysql --help | grep Distrib 
+- mysql --help | grep distrib 
 
 - 包管理工具（根据不同系统 rh系列或则是bsd系列） 
 
@@ -110,6 +121,31 @@ dpkg --get-selections | grep mysql
 
 sudo dpkg --configure -a
 
+MySQL 忘记密码重置
+-
+
+进入 MySQL 安全模式，即当 MySQL 起来后，不用输入密码就能进入数据库。 
+命令为： 
+
+```
+mysqld-nt --skip-grant-tables 
+```
+
+使用空密码登录后：
+
+```
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('your_password'); 
+```
+
+或者：
+
+```
+use mysql
+update mysql.user set password=PASSWORD('your_password') where user='root'; 
+flush privileges; 
+```
+
+如果出现错误请检查环境变量或者是否 MySQL 服务未关闭。
 
 参考
 -

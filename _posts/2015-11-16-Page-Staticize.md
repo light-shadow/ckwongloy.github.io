@@ -2,7 +2,7 @@
 layout: post
 title: 页面响应时间优化之 "动态页面静态化"
 category: PHP
-tags: [页面静态化, PHP, 伪静态, Ajax, crontab]
+tags: [页面静态化, PHP, 伪静态, AJAX, crontab]
 latest: 2015年11月16日 01:12:37
 ---
 

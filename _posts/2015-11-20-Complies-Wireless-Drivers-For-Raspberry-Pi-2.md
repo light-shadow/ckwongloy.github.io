@@ -66,7 +66,7 @@ $ sudo update-alternatives --config gcc
 
 首先确保已经正确编译并安装了官方的网卡驱动，比如我的 RT3070 官方驱动源码编译后得到的就是叫做 _rt5370sta.ko_ 模块。
 
-1. 卸载或者禁用自带网卡驱动模块
+1、卸载或者禁用自带网卡驱动模块
 
 ```
 $ lsmod
@@ -84,19 +84,19 @@ $ sudo vi /etc/modprobe.d/fbdev-blacklist.conf
 blacklist rt2800
 ```
 
-2. 重启网络服务
+2、重启网络服务
 
 ```
 $ sudo service networking restart
 ```
 
-3. 通过有线接口连接树莓派并登录 Raspberry ，然后重启：
+3、通过有线接口连接树莓派并登录 Raspberry ，然后重启：
 
 ```
 $ sudo reboot
 ```
 
-4. 拔掉网线，在路由器管理界面中查看是否有无线网卡获得了 IP ( 通过 MAC 地址判断 )，如果有则新的驱动已经加载并正常使用了。
+4、拔掉网线，在路由器管理界面中查看是否有无线网卡获得了 IP ( 通过 MAC 地址判断 )，如果有则新的驱动已经加载并正常使用了。
 
 静态 IP 配置
 -
