@@ -2,7 +2,7 @@
 layout: post
 title: 在树莓派上使用 Kali
 category: Linux
-tags: [Kali, linux, 树莓派, 渗透测试]
+tags: [Kali, Linux, 树莓派, 渗透测试]
 latest: 2015年12月4日 14:10:44
 ---
 
@@ -100,7 +100,7 @@ resize2fs /dev/mmcblk0p2
 ```
 nameserver 178.79.131.110    # 	V2EX
 nameserver 199.91.73.222
-nameserver 223.5.5.5   # 阿里
+nameserver 223.5.5.5   # Ali
 nameserver 223.6.6.6
 nameserver 114.114.114.114
 nameserver 8.8.8.8    # Google

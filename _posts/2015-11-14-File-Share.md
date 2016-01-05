@@ -6,36 +6,14 @@ tags: [文件共享, FTP]
 latest: 2015年11月01日 01:18:44
 ---
 
-文件共享的需求是很常见的。总结一下各种系统之间文件共享的常见思路。
+总结一下各种系统之间文件共享的常见思路。
 
 通过网络
 -
 
 网络的诞生原因之一就是实现资源共享 ( 另一个是通信 )，所以首先想到的是使用网络协议 FTP 来实现文件共享。
 
-### **Windows FTP Q&A**
-
-- 提示需要用户名和密码，那么用户名和密码是什么？
-
-是 Windows 服务器上的合法的，已经注册的用户；只有系统中有该账户才能登录。
-
-浏览器中的登录界面不全，但是在文件系统的地址栏中输入 FTP 服务器 IP 后就可以完整显示登录界面。
-
-- 浏览器中显示为乱码如何处理？
-
-待处理。
-
-- Windows 中 通过 FTP 命令下载的文件放在哪？
-
-Windows 上默认为打开终端时，执行 `ftp` 命令时候的当前路径。
-
-- 如果站点路径位于 C 盘 （系统盘），如何登录？
-
-- 如何让局域网内的计算机能够访问到 Windows 上的 FTP 服务器？( 局域网内其他计算机上的 FTP 服务器都能访问唯独 Windows 自带的 FTP 服务器无法被访问 )
-
-IIS FTP 服务器配置问题。
-
-### **Windows 上 `ftp` 命令详解**
+### ** `ftp` 命令详解**
 
 **说明**：ftp 命令是跨平台的。
 
@@ -43,8 +21,7 @@ IIS FTP 服务器配置问题。
 
 ```
 ftp
-open ip_addr:port
-(enter username and password)
+open ip_addr:port # enter username and password
 ```
 
 - 上传文件
@@ -58,11 +35,10 @@ dir
 
 ```
 mget *.php
-# 退出出 ftp 客户端
-bye
+bye # 退出出 ftp 客户端
 ```
 
-- 命令总结
+- FTP 命令总结
 
 1. open：与服务器相连接；
 
@@ -115,7 +91,56 @@ lcd: 改变当前本地主机的工作目录,如果缺省,就转到当前用户�
 
 ls [remote-directory] [local-file]: 同DIR
 
-- 通过 VirtualBox 
+### **Windows FTP Q&A**
+
+- 提示需要用户名和密码，那么用户名和密码是什么？
+
+是 Windows 服务器上的合法的，已经注册的用户；只有系统中有该账户才能登录。
+
+浏览器中的登录界面不全，但是在文件系统的地址栏中输入 FTP 服务器 IP 后就可以完整显示登录界面。
+
+- 浏览器中显示为乱码如何处理？
+
+待处理。
+
+- Windows 中 通过 FTP 命令下载的文件放在哪？
+
+Windows 上默认为打开终端时，执行 `ftp` 命令时候的当前路径。
+
+- 如果站点路径位于 C 盘 ( 系统盘 ) ，如何登录？
+
+- 如何让局域网内的计算机能够访问到 Windows 上的 FTP 服务器？( 局域网内其他计算机上的 FTP 服务器都能访问唯独 Windows 自带的 FTP 服务器无法被访问 )
+
+IIS FTP 服务器配置问题。
+
+Samba
+-
+
+安装 Samba 
+
+```
+[global]
+server string = Samba Server
+workgroup = QYBMYH
+security = user
+encrypt passwords = yes 
+smb passwd file = /etc/samba/smbpasswd
+
+[root]
+netbios name = root
+path = /root
+browseable = yes
+writeable = yes
+
+[home]
+netbios name = home
+path = /home
+browseable = yes
+writeable = yes
+```
+
+- 通过 VirtualBox
+
 
 参考
 -
