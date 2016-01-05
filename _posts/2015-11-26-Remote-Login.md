@@ -45,12 +45,15 @@ ssh username@host_ip
 
 免简单轻巧的工具，因为它的轻便，在现在还不时使用，不过作者貌似好久没更新了。
 
-- SecureCRT：经常在慕课网中看见有讲师使用这个工具，个人使用感觉一般吧。相关的还有一个 SecureFXP，用与远程和本机之间的文件传输，界面还是比较友好的。
+- SecureCRT
 
-- XShell
+经常在慕课网中看见有讲师使用这个工具，个人使用感觉一般吧。
+
+相关的还有一个 SecureFXP，用与远程和本机之间的文件传输，界面还是比较友好的，可以直接拖，适合喜欢图形界面的朋友。
+
+### XShell
 
 目前比较火的一款远程终端软件，个人感觉也还不错，可以保存用户名和密码，不用每次登录都输入。
-
 
 #### XShell 字体修改："文件" -> "属性" -> "外观"。
 
@@ -59,9 +62,30 @@ ssh username@host_ip
 如果在 Windows 上初次运行绿色版 XShell 没有反应的话，需要先安装 VC 
 2008 和 VC 2012 这两个运行库。在后面附上了下载链接。
 
-- RDP
+#### XShell 常用设置
+
+- 全屏模式：Alt + Enter
+
+-  简单模式：Alt + S ( 极简主义者喜欢, like me )
+
+### RDP
 
 远程桌面协议。Windows 远程登录桌面就是使用 RDP。比如自带的 `msctsc.exe`，个人认为还是比较方便的。
+
+使用 RDP 连接 Linux 需要在 Linux 上安装 xrdp 服务：
+
+```
+apt-get install xrdp
+service xrdp start
+```
+
+如果需要开机启动该服务，可以为其创建一个软连接到 /etc/rc3.d/ 目录下：
+
+```
+ln -s /etc/ini.d/xrdp /etc/rc3.d/S03xrdp
+```
+
+##### **说明** Linux 运行等级详见其他文章介绍。
 
 VC 运行库下载
 -
