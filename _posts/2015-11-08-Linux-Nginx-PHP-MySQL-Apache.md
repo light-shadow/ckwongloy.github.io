@@ -8,8 +8,7 @@ latest: 2015年11月15日 13:23:27
 
 今天主要总结的是 LEMPA 开发环境的搭建。不过先回顾下 Windows 上 Nginx 遇到过哪些问题，对 Linux 下是否有借鉴意义。
 
-Nginx 与 Apache  共存时端口分配问题
--
+### 复习：Nginx 与 Apache  共存时端口分配问题
 
 使 Apache 监听 80；Nginx 监听 8080 。
 
@@ -36,6 +35,105 @@ Nginx 常用的几个命令：
 
 - `nginx -s reopen`：re-opening log files。
 
+LAMP
+-
+
+由于 PHP 和 Apache 的亲密关系，LAMP 依然是 PHP 网站中最常用的架构。
+
+### LAMP 中 Apache 的配置
+
+- 修改 Apache 网站根目录
+
+```
+cd /etc/apache2/sites-enabled/
+vi  000-default.conf
+```
+
+然后在配置文件的 `<VirtualHost>` 代码块中指定 `DocumentRoot` 字段的值为你想设置的路径即可。比如：
+
+```
+DocumentRoot /var/www/htdocs
+```
+
+##### **注意**
+
+`<VirtualHost>` 块中`<VirtualHost:*80>` 的端口要与你在 /etc/apache2/ports.conf 中的 `listen` 配置一致，否则 Apache 将不会对你在 /etc/apache2/sites-enabled/000-default.conf 中的配置做任何的响应。
+
+比如，如果你设置 Apache 监听的端口号是 8000，而你在 `<VirtualHost>` 字段后面设置的是 80，那么来自于对本机 80 端口的请求将不会由 Apache 处理。
+
+如果配置了 Nginx 的默认端口也是 80，那么就会由 Nginx 处理。
+
+如果
+
+### LAMP 中 Apache 和 PHP 整合
+
+如果是通过包管理器， 比如 apt-get 安装的 Apache 和 PHP，那么默认安装好之后，Apache 和 PHP 就已经关联好了。
+
+可以在 /etc/apache2/mods/enabled/__php5.load__ 中查看或者修改相关配置，里面的内容如下：
+
+```
+LoadModule php5_module /usr/lib/apache2/modules/libphp5.so
+```
+
+可以发现这和在 WAMP 环境中对 httpd.conf 的配置 PHP 支持是一样的：
+
+```
+#让 Apache载入php处理模块，安装目录请灵活修改，Apache2.4 版本的需要响应改成2_4
+LoadModule php5_module "C:/Dev/PHP5615/php5apache2_4.dll"
+```
+
+都是将 php 的处理模块，都是动态加载库文件，加载到 Apache 配置即可。
+
+此外，Apache 还会读取 /etc/apache2/mods/enabled/__php5.conf__ 里面对 php 脚本处理方式配置，关键配置如下：
+
+```
+<FilesMatch ".+\.ph(p[345]?|t|tml)$">
+    SetHandler application/x-httpd-php
+</FilesMatch> 
+```
+
+这和 WAMP 环境中的配置也是类似的，如下：
+
+```
+#下述代码表示：当有一个资源是 *.php 的时候就由交给 php 来处理
+AddType application/x-httpd-php .php .phtml
+```
+
+#### 配置 在 HTML 嵌入 PHP 功能
+
+仅仅是上面的配置，Apache 只会将通过上面的正则表达式的文件后缀才交给 PHP 处理，如果想在 HTML 中嵌入 PHP 脚本的话，仅靠上面的配置不行。
+
+有两种解决办法，一是将 HTML 文件后缀命名为 .php，另一种是修改 php5.conf 中的正则表达式。
+
+如果觉得修改正则不方便，可以再添加一个 `<FilesMatch>` 代码块，专门为 .html 后缀的文件设置 Handler 为 application/x-httpd-php。类似如下：
+
+```
+<FilesMatch ".+\.html$">
+    SetHandler application/x-httpd-php
+</FilesMatch> 
+```
+
+但建议第一种做法，因为这样可以见名知意，不然纯 HTML 文件还要交给 PHP 引擎处理，这是没必要的。
+
+#### 配置首页文件 DirectoryIndex
+
+Apache 服务器默认的首页文件就是 .php  和 .html 两种，可以在 /etc/apache2/mods-enabled/dir.conf 中修改，但一般默认的就够了。
+
+也可以在每个虚拟主机中修改，类似如下：
+
+```
+<VirtualHost *:7777>
+# do something
+DirectoryIndex index.php index.html
+# do something more
+```
+
+#### 设置 Apache 监听的端口
+
+修改 /etc/apache2/ports.conf  中的 Listen 字段就行了。
+
+Apache 可以监听多个端口，但是一个端口只能被一个服务或进程所监听/占用。
+
 LEMPA
 -
 
@@ -45,17 +143,22 @@ LEMPA 的含义现在看来已经比较丰富了：Linux + Apache + Nginx(Engin-
 
 ```
 apt-get install apache
+apachectl start | restart | stop
+# 或者 /etc/init.d/apache2 restart
 ```
 
 更改 Apache 的监听端口为 8888：/etc/apache2/ports.conf
 
-通过 apt-get 方式安装 Ngnix 的默认安装路径在：
+通过 apt-get 方式安装 Ngnix 的默认安装路径通常在一下几个目录：
 
 - /etc/ngnix/
 
 - /usr/share/nginx/www/
 
-- **MySQL**
+- /var/www/html/
+
+**Linux 下 MySQL 的安装以及 FAQ**
+-
 
 如果是通过包管理器安装 MySQL 的话，只需安装 mysql-server 和 mysql-client 这两个就行了，其他需要的软件包包管理器会自动解决。
 
@@ -65,19 +168,36 @@ apt-get install mysql-server mysql-client
 
 下载好之后，解压安装的过程中需要设置密码。
 
-- **PHP 安装与配置**
+#### **MySQL FAQ**
+
+- **Can’t connect to local MySQL server through socket '/path/to/mysql.sock'?**
+
+查看 /etc/rc.d/init.d/mysqld status 看看mysql 是否已经启动，另外看看是不是权限问题。
+
+**PHP 安装与配置**
+- 
 
 Raspberry 上 PHP 的安装位置在: _/usr/share/php5_ 。
 
 （其实默认 Raspberry 通过 apt-get 方式安装的软件的默认安装路径就在 /usr/share/ 中）。
 
-Php5.4 需要安装 php5-fpm
+如果是 PHP5.4 则需要安装 php5-fpm：
 
 ```
 $ sudo apt-get autoclean
 $ sudo apt-get autoremove
-$ sudo apt-get install -f php5-fpm
+$ sudo apt-get install -f php5 php5-fpm
 ```
+
+- **PHP 与 MySQL 整合**
+
+最简单的方式就是通过包管理器直接安装 PHP 的 MySQL 扩展就行了：
+
+```
+apt-get install php5-mysql
+```
+
+上述命令会把 mysql、mysqli、pdo 这三种操作 MySQL 的扩展全部安装。可以通过 `phpinfo();` 查看有无它们的信息。
 
 - **PHP 与 Nginx 整合**
 
@@ -93,7 +213,68 @@ PHP 与 Nginx 的整合详见我的另一篇文章：[_Nginx 基础：安装与�
 $ sudo apt-get install php5-gd
 ```
 
-Mysql查看版本号的五种方式介绍
+开启启动相关服务
+-
+
+总结一下，上面的配置中出现的服务一共有：apache2, nginx, mysql, php5-fpm。
+
+其实通过 apt-get 安装好之后，默认已经为这些服务 ( 位于 /etc/init.d/ ) 创建了在 /etc/rc`1~7`.d 中的符号链接，但是命名还没有改过来。
+
+如要设置其在字符界面开机自启动，即对应的配置路径 /etc/rc3.d/，则只需把它们的命名从 `K` 开头的改为 `S` 开头的即可。
+
+这是因为对于以 K 开头的文件，系统将终止对应的服务，对于以 S 开头的文件，系统将启动对应的服务。
+
+举一个例子就知道了：
+
+```
+mv K01apache2 S03apache2
+```
+
+就这样就行了，注意数字后面的 **服务名不能改变**，其他服务在不同的 Linux 自启动配置原理也类似。
+
+此外，还可直接在 /etc/rc.local 中加入想要在多用户运行环境下 ( Debian 系是 2~5 ) 开启执行的某些 Shell 命令。
+
+比如：
+
+```
+!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+# <lamCJ>
+/etc/init.d/nginx start
+/etc/init.d/php5-fpm start
+/etc/init.d/samba start
+/etc/init.d/auto_resolv.sh
+# </lamCJ>
+
+exit 0
+ulimit -HSn 65536
+```
+
+##### 注意：如果是运行 Shell 脚本，这需要保证其有执行权限。
+
+#### 其他自启动方式
+
+- update-rc.d
+
+```
+update-rc.d ssh enable    #  SSH 服务开机自动启动
+update-rc.d ssh disabled    #  SSH 服务开机关闭
+```
+
+如果不知道服务名字可以去 /etc/init.d/ 中查找。
+
+附录：MySQL 查看版本号的五种方式介绍
 -
 
 - 进入 MySQL 客户端的时候会提示
@@ -116,36 +297,6 @@ rpm -qa|grep mysql
 # Debian 系
 dpkg --get-selections | grep mysql
 ```
-
-- 其他
-
-sudo dpkg --configure -a
-
-MySQL 忘记密码重置
--
-
-进入 MySQL 安全模式，即当 MySQL 起来后，不用输入密码就能进入数据库。 
-命令为： 
-
-```
-mysqld-nt --skip-grant-tables 
-```
-
-使用空密码登录后：
-
-```
-SET PASSWORD FOR 'root'@'localhost' = PASSWORD('your_password'); 
-```
-
-或者：
-
-```
-use mysql
-update mysql.user set password=PASSWORD('your_password') where user='root'; 
-flush privileges; 
-```
-
-如果出现错误请检查环境变量或者是否 MySQL 服务未关闭。
 
 参考
 -

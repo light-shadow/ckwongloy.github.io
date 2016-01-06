@@ -6,7 +6,9 @@ tags: [ Tmux, Thefuck, Linux, 终端, Shell ]
 latest: 2016年1月5日 21:45:59
 ---
 
-这么晚才用 Tmux 也没啥好值得炫耀啥的，这里记录一下安装和配置就行了。
+久闻文本三巨头 ( zsh+tmux+vim ) 大名，但目前只用过 bash 和 vi/vim 最基础的操作，只能说我需要才回去用而非仅因为名气大。
+
+而且这么晚才用 Tmux 也没啥好值得炫耀啥的，这里记录一下它们的安装和配置就行了。
 
 至于 Thefuck 暂时觉得还有很大的改进空间，不过还是挺有用的。
 
@@ -61,6 +63,8 @@ bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
 - 前缀 `o`：按顺序在窗口中切换
 
+- 前缀 `上下左右`：按方向在窗口中切换
+
 - 前缀 `&`：关闭窗口
 
 - 前缀 `d`：退出 tumx 并保存当前会话 ( 这时 tmux 仍在后台运行，可以通过 `tmux attach` 进入到指定的会话 )
@@ -68,6 +72,8 @@ bind r source-file ~/.tmux.conf \; display "Reloaded!"
 - 前缀 `Space`：采用下一个内置布局
 
 - 前缀 `[`：进入复制模式 ( `Esc`：退出复制模式 )
+
+- 前缀 `q`：查看窗口编码
 
 Thefuck
 -
@@ -94,7 +100,9 @@ pip install thefuck
 
 - 配置 thefuck
 
-将下面的配置写到 Shell 启动脚本，比如 .bash_profile,  .bashrc,  .zshrc，或者 Shell 配置文件当中，比如 Bash, Zsh, Fish, Powershell, tcsh。
+将下面的配置写到 Shell 启动脚本，比如 .bash_profile,  .bashrc,  .zshrc，这根据你使用的 Shell 解释器来决定。
+
+或者 Shell 配置文件当中，比如 Bash, Zsh, Fish, Powershell, tcsh。
 
 ```
 eval "$(thefuck --alias)"

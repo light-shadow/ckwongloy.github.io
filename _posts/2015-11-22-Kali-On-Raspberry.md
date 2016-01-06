@@ -192,7 +192,24 @@ apt-get install xrdp
 service xrdp start
 # 系统服务管理工具
 apt-get install chkconfig
+# FTP 服务器和客户端
+apt-get install vsftpd
+apt-get install ftp
 ```
+
+时区和编码设置
+-
+
+```
+dpkg-reconfigure tzdata
+dpkg-reconfigure locales
+```
+
+然后选择 `Aisa/Shanghai` 和 `zh-CN.UTF-8`。
+
+##### **注意**
+
+输入上面这两个命令的时候，终端窗口最好不要太小，否则不能出现图形设置界面，而字符提示界面输入有时候不好操作。
 
 开启服务自启动和自动执行脚本
 -

@@ -308,7 +308,11 @@ $ sudo dpkg-reconfigure locales
 
 然后选择 International Options -> change_locale，在Default locale for the system environment:中选择zh_CN.UTF-8。然后重启机器，就发现整个环境变成中文的了。
 
-当然，`rasp=config` 也可以设置时区，默认为 UTC ，中国是应该是 CST。
+当然，`rasp=config` 也可以设置时区，默认为 UTC ，UTC 是全球通用时间格式。
+
+中国有 5 个时区，但一般都是使用东八区的时间，即是北京时间，应该是 CST。
+
+此外，还有一个 GMT 时间表示，格林威治时间一般在程序中作为时间戳使用较多而系统显示个人很少使用。
 
 - **Putty 中文配置**
 	

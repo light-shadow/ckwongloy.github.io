@@ -62,11 +62,13 @@ ssh username@host_ip
 如果在 Windows 上初次运行绿色版 XShell 没有反应的话，需要先安装 VC 
 2008 和 VC 2012 这两个运行库。在后面附上了下载链接。
 
-#### XShell 常用设置
+#### XShell 常用快捷键
 
 - 全屏模式：Alt + Enter
 
 -  简单模式：Alt + S ( 极简主义者喜欢, like me )
+
+- 粘贴：Shift + Insert
 
 ### RDP
 

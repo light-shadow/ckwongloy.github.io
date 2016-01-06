@@ -66,3 +66,16 @@ cd 解压出来后的目录
 6、最后 `make clean`
 
 清除掉配置编译的一些文件。
+
+其他
+-
+
+- **deb 包配置**
+
+```
+sudo dpkg --configure -a
+```
+
+当 `dpkg --configure` 后面不接具体的包名时而接 `-a` 或者 `--pending` 时，这条命令的意思是配置所有已打开但未配置过的软件包。
+
+具体查询：`man dpkg`。
