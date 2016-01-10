@@ -65,6 +65,8 @@ bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
 - 前缀 `上下左右`：按方向在窗口中切换
 
+- 前缀 + 按住`上下左右`：按方向在改变当前窗口大小
+
 - 前缀 `&`：关闭窗口
 
 - 前缀 `d`：退出 tumx 并保存当前会话 ( 这时 tmux 仍在后台运行，可以通过 `tmux attach` 进入到指定的会话 )

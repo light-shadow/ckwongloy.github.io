@@ -174,6 +174,84 @@ apt-get install mysql-server mysql-client
 
 查看 /etc/rc.d/init.d/mysqld status 看看mysql 是否已经启动，另外看看是不是权限问题。
 
+- **配置 MySQL 允许被远程访问**
+
+首先确保 MySQL 服务器地址有无写错，IP 后面不要带端口号。
+
+1、先将 mysql 服务停掉
+
+```
+/etc/init.d/mysql stop
+```
+
+2、查看并修改 mysql 配置文件
+
+```
+vi /etc/mysql/my.cnf
+```
+
+特别要留意其中的两项： `bind_address` 和 `skip_networking`。
+
+其中 bind_address 一定不能为127.0.0.1，否则只能在本地连接。
+
+skip_networking 一定不能出现，否则只接受 unix socket 而不能提供 tcp socket 服务，建议将 bind_address 和 skip_networking 直接都注释掉。
+
+3、重启 mysql 服务
+
+```
+# /etc/init.d/mysqld start
+```
+
+4、对用户授权，允许指定用户远程访问
+
+最简单的方式是将 mysql 库中 user 表中的对应的用户的 host 设置为%，亦即允许该用户从任意 ip 远程访问
+
+```
+# mysql -u root -ppassword    # 进入 mysql 控制台
+# mysql>use mysql;
+# mysql>update user set host = '%' where user = 'root';    # 这个命令执行错误时可略过
+# mysql>flush privileges;
+# mysql>select host, user from user;     # 检查  `%` 是否插入到数据库中
+#mysql>quit
+```
+
+##### **说明**
+
+在执行上面的 update 操作的时候，可能会出现 `ERROR 1062 (23000): Duplicate entry '%-root' for key 'PRIMARY'` 错误，但是实际上其实是成功了的。
+
+一般情况下此时就能满足远程访问的要求，但对于某些系统还需要检查防火墙设置，和 ip 访问策略，以防系统对网络访问的限制造成无法远程访问 mysql。
+
+对于 CentOS 系统而言，最好检测 iptables 设置。具体步骤如下：
+
+- 暂停 iptables 服务
+
+```
+service iptables stop
+```
+
+- 查看 iptables 配置文件
+
+```
+vi /etc/sysconfig/iptables
+```
+
+- 也许会看到如下内容
+
+```
+:OUTPUT ACCEPT [1009120:257185920]
+-A INPUT -p tcp -m tcp --dport 3306 -j ACCEPT
+-A INPUT -s 118.144.89.18 -p tcp -m tcp --dport 3306 -j ACCEPT
+-A INPUT -s 123.127.177.239 -p tcp -m tcp --dport 3306 -j ACCEPT
+```
+
+建议直接开放 3306 端口，而不是仅限定某个 ip 才可以访问 3306
+
+- 重启 iptables 服务
+
+```
+service iptables start
+```
+
 **PHP 安装与配置**
 - 
 
@@ -306,3 +384,5 @@ dpkg --get-selections | grep mysql
 - _<http://shumeipai.nxez.com/2013/08/25/install-and-config-lnmp.html>_
 
 - _[Linux（基于CentOS的LAMP）环境搭建图文教程](http://faq.comsenz.com/library/system/env/env_linux.htm)_
+
+- _[mysql远程访问失败解决方案](http://blog.csdn.net/yyrookie/article/details/17589849)_

@@ -98,6 +98,8 @@ Nginx 配置目录：_/etc/nginx/nginx.conf_ 、 _/etc/nginx/sites-available/def
 
 2、 网站加载慢往往网站代码写得有问题。
 
+3、如果 PHP 代码写得有错误，Nginx 也会返回浏览器 502 错误，可以现在本地终端执行一遍出现 502 的 PHP 程序检查下有无错误。
+
 Nginx Serves On Linux/Windows
 -
 
@@ -236,6 +238,31 @@ server {
 
 最后，重新载入配置：在 Nginx 安装根目录下面执行 `nginx -s reload` 即可。此时便可以在浏览器中输入 localhost/index.php 测试配置是否成功。
 
+- **配置 Nginx 允许以目录列表访问**
+
+Nginx 让目录中的文件以列表的形式展现只需要一条指令：
+
+```
+autoindex on;
+```
+
+autoindex 可以放在 location 中，只对当前 location 的目录起作用。
+
+你也可以将它放在 server 指令块则对整个站点都起作用，或者放到 http 指令块，则对所有站点都生效。
+
+- **配置 Nginx 禁止访问某个目录**
+
+跟 Apache 的 Deny from all 类似，nginx 有 deny all 指令来实现。
+
+禁止对叫 dirdeny 目录的访问并返回403 Forbidden，可以使用下面的配置：
+
+```
+location /dirdeny {
+      deny all;
+      return 403;
+}
+```
+
 #### Nginx PHP FAQ
 
 - **按上面的配置 FPM 后访问出现 502 ？**
@@ -276,6 +303,8 @@ source /etc/profile
 - *[How To Set Up Nginx Load Balancing | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-load-balancing)*
 
 - *[nginx 502 bad gateway](http://stackoverflow.com/questions/4252368/nginx-502-bad-gateway)*
+
+- *[nginx目录列表和目录访问权限设置](http://www.nginx.cn/692.html)*
 
 - *[nginx+php-fpm出现502 bad gateway错误解决方法](http://www.nginx.cn/102.html)*
 
