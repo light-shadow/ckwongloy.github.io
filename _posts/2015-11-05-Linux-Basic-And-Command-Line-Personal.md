@@ -127,26 +127,49 @@ gateway 192.168.1.1
 
 - **中文乱码问题**
 
-### **将本地语言改为中文**
+### **地区和时区设置**
+
 ```
-# Debian 系
-# dpkg-reconfigure locales
+# Debian 系将本地语言改为中文
+dpkg-reconfigure locales
+dpkg-reconfigure tzdatas
 ```
 
 ### **删除Linux的乱码文件**
 
-通过 inode 来删除，ls -il 后的第一列就是文件的 inode。
+通过 inode 来删除，`ls -il` 后的第一列就是文件的 inode。
 
 ```
-# ls -il
-# find . -num inode_num
-# find . -num inode_num -exec rm -f {} \;
+ls -il
+find . -num inode_num
+find . -num inode_num -exec rm -f {} \;
 ```
+
+- **Linux 用户/组管理**
+
+- **git 不在 sudoers 文件中。此事将被报告？**
+
+```
+# 查看用户名所在的组
+cat /etc/group
+# 修改 sudousers
+vi /etc/sudoers
+# username ALL=( ALL ) ALL    # 保存退出
+# 往某一个用户组里面添加用户
+usermod -G username -a groupname
+```
+
+- **# 禁止某个用户登录终端？**
+
+```
+vi /etc/passwd
+```
+然后在需要禁用的用户名后面的 bash 改为 `nologin`，这样下次登录的时候即使密码正确也会被 Linux 拒绝。
 
 - **Linux 杀死桌面进程**
 
 ```
-$ps -ef | grep 'X'
+ps -ef | grep 'X'
  
 #kill -9 <x-pid>
 ```
