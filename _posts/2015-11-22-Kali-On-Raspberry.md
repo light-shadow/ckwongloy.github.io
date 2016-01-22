@@ -233,15 +233,10 @@ KALI "渗透测试"
 
 ```
 lsusb
-
 apt-get install screen    # 为了可以 SSH 离线
-
 apt-get install cowpatty 	# 不安装运行该程序的时候会提示
-
 iwconfig
-
 screen
-
 wifite
 ```
 
@@ -268,9 +263,7 @@ Aircrack-ng
 ```
 sudo airmon-ng start wlan0
 sudo airodump-ng wlan0mon
-
 airmon-ng start wifi0 9
-
 reaver -i mon0 -b F8:D1:11:31:50:24 -vv -c 6 -p 88948935
 ```
 
@@ -378,24 +371,24 @@ reboot
 参考
 -
 
-- [Kali Linux Custom ARM image downloads](https://www.offensive-security.com/kali-linux-arm-images/)
+- *[Kali Linux Custom ARM image downloads](https://www.offensive-security.com/kali-linux-arm-images/)*
 
-- [重新编译Kali Linux内核](http://cn.docs.kali.org/development-cn/%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91kali-linux%E5%86%85%E6%A0%B8)
+- *[重新编译Kali Linux内核](http://cn.docs.kali.org/development-cn/%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91kali-linux%E5%86%85%E6%A0%B8)*
 
-- [通过 gparted 在其他 Linux 上为 SD 卡扩容](www.linuxidc.com/Linux/2013-12/93430.htm)
+- *[通过 gparted 在其他 Linux 上为 SD 卡扩容](www.linuxidc.com/Linux/2013-12/93430.htm)*
 
-- [Debian升级Linux内核](http://blog.csdn.net/cherylnatsu/article/details/6294148)
+- *[Debian升级Linux内核](http://blog.csdn.net/cherylnatsu/article/details/6294148)*
 
-- <http://os.ctocio.com.cn/68/12957068.shtml>
+- *<http://os.ctocio.com.cn/68/12957068.shtml>*
 
-- <http://shumeipai.nxez.com/2013/10/15/raspberry-pi-and-a-network-cable-directly-connected-laptop.html>
+- *<http://shumeipai.nxez.com/2013/10/15/raspberry-pi-and-a-network-cable-directly-connected-laptop.html>*
 
-- <http://www.aircrack-ng.org/doku.php?id=faq#where_can_i_find_good_wordlists>
+- *<http://www.aircrack-ng.org/doku.php?id=faq#where_can_i_find_good_wordlists>*
 
-- <http://www.oschina.net/question/12_7909>
+- *<http://www.oschina.net/question/12_7909>*
 
-- <http://www.aircrack-ng.org/doku.php?id=cracking_wpa>
+- *<http://www.aircrack-ng.org/doku.php?id=cracking_wpa>*
 
-- <http://www.openwall.com/john/>
+- *<http://www.openwall.com/john/>*
 
-- [树莓派(raspberrypi)安装aircrack-ng,reaver及wifi破解教程[整理] | FindSpace](http://www.findspace.name/res/1184)
+- *[树莓派(raspberrypi)安装aircrack-ng,reaver及wifi破解教程[整理] | FindSpace](http://www.findspace.name/res/1184)*
