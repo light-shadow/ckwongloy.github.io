@@ -44,7 +44,11 @@ func SetTitle()
 	call setLine( 1, #######################)
 ```
 
+- 查看系统位数
 
+```
+getconf LONG_BIT
+```
 
 - ETA = Estimated Time of Arrival
 

@@ -89,8 +89,11 @@ http://pan.baidu.com/s/1pJwfGG7
 其他
 -
 
+- Psiphon
+
+get@Psiphon3.com
+
 - webfreer
- 
 
 基于谷歌chrome内核的ssh翻墙浏览器，ip段内有数十个IP 而且不定时更换，简单易用。
 

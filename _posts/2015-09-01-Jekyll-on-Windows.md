@@ -240,7 +240,7 @@ If this couldn't help you either, maybe you should comment the `search lan` bloc
 
 Retry the command `gem sources --add https://ruby.taobao.org/`, I think this time may be smoothy for you.
 
-- __Jekyll Instell failure?__
+- __Jekyll Install failure?__
 
 > ERROR:  While executing gem ... (Gem::RemoteFetcher::UnknownHostError)
 >    no such name (https://ruby.taobao.org/gems/rb-inotify-0.9.5.gem)

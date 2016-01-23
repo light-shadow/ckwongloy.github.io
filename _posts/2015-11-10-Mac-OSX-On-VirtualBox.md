@@ -110,6 +110,16 @@ VBoxManage setextradata "Mavericks" "CustomVideoMode1"  "1366x768x32@60"
 
 Enter, 进入系统。其中 `-fv` 是如果进入系统失败后需要带上的启动参数。
 
+其他分辨率还可以有：
+
+```
+0 – 640×480
+1 – 800×600
+2 – 1024×768
+3 – 1280×1024
+4 – 1440×900
+```
+
 四、 安装结束后系统的进一步设置与更新
 -
 
@@ -151,9 +161,10 @@ sudo apachectl restart    // 重启服务
 ```
 cd /etc/apache2/
 sudo vi httpd.conf
+/LoadModule
 ```
 
-怎么配置和在 Linux 和 Windows 上的一样。
+怎么配置和在 Linux 和 Windows 上的一样，大约在 LoadModule 的末尾，取消对 php5xxx 的注释。
 
 ### PHP
 
