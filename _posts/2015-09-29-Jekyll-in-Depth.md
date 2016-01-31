@@ -74,7 +74,7 @@ Jekyll 会遍历你的网站搜寻要处理的文件。
 为什么 Jekyll 的安装总是出问题？
 -
 
-无论在 Windows，还是 Linux， 还是 Mac OS X，我好像我没有哪一次是十分顺畅的安装好 Jekyll 的，现在得出一些个人经验如下，并一定正确，但是确实都帮我成功安装过 Jekyll：
+无论在 Windows，还是 Linux， 还是 Mac OS X，我好像我没有哪一次是十分顺畅的安装好 Jekyll 的，现在得出一些个人经验如下，并不一定正确，但是确实都帮我成功安装过 Jekyll：
 
 - 低版本 Gem 安装 Jekyll 时候添加 Ruby 源：
 
@@ -112,7 +112,7 @@ GitHub 上使用 Jekyll 确实十分方便，在下载 Jekyll 的过程中可以
 
 ```
 $ gem install bundler
-# then you can user  `bundle install package_name` to install gems instead
+# then you can use  `bundle install package_name` to install gems instead
 
 $ gem install github-pages
 ```

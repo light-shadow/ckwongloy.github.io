@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git 私有仓库搭建步骤及问题
+title: 私有 Git 仓库搭建步骤及问题
 category: CheatSheet
 tag: Git
 latest: 2016年01月11日 22:46:04
