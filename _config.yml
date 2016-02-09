@@ -35,14 +35,14 @@ markdown: kramdown
 # pygments: true
 
 # if GitHub then pygments
-highlighter: pygments
+#highlighter: pygments
 
 # if Jekyll 3.0
 #highlighter: pigments
 #excerpt_separator: ""
 
-# if local test then rouge that can avoid pygments and python installing
-#highlighter: rouge
+# if Jekyll 3.0 on GitHub or local test then rouge that can avoid pygments and python installing
+highlighter: rouge
 
 # if Jekyll 3.0+, then use: "gems: [jekyll-paginate]" to include jekyll-paginate
 # But make sure that the gem "jekyll-paginate " has been installed
