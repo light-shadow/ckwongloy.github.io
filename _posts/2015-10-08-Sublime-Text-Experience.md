@@ -101,6 +101,26 @@ Sublime 快捷键
 
 不过需要注意标签名前后不要有中文字符，否则按 tab 只是一个缩进。
 
+Package Control
+-
+
+使用 Sublime Text 的 Package Control 可以轻松地安装某些插件以提高开发速度。
+
+启用 Package Control 需要下载：<https://sublime.wbond.net/Package%20Control.sublime-package> 这个文件然后放到 Installed Packages 目录下面。
+
+进入 Package Control 的快捷键是：Ctrl + Shift + P。
+
+然后可以输入：`Package Control`，就可以看到 Install Package。或者直接输入 `picp` 进入选择安装的 Packages。
+
+比如安装 Emmet 插件，就可以接着输入 Emmet 然后下载安装了。
+
+安装完插件后都需要重启 Sublime 才能生效。
+
+禁止 Sublime Text 检查更新
+-
+
+找到 Preferences -> Settings -> User，在大括号之内添加：`"update_check": false`，重启 Sublime Text 即可。
+
 附录：Sublime Text 3 Build 3083 注册码
 
 ```
@@ -125,3 +145,5 @@ B98FC99C 8FAC73EE D2B95564 DF450523
 - [Sublime Text 配置](http://blog.csdn.net/hexrain/article/details/13997565)
 
 - <http://ysido.com/sublime_text_key.html>
+
+- <http://my.oschina.net/chinesedragon/blog/160197>
