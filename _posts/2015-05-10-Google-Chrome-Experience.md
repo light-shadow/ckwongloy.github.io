@@ -65,6 +65,17 @@ http://cn.bing.com/dict/search?q=
 https://www.baidu.com/s?wd=%s
 ```
 
+快捷键
+-
+
+- Ctrl + Shift + N：隐身模式。
+
+- Ctrl + 1~9：切换序号为 n 的标签页，其中 9 为最后一页。
+
+- Ctrl + Tab：向后切换标签页。
+
+- Ctrl + Shift + Tab: 向前切换标签页。
+
 ### 其他
 
 + **审查元素** 下载网页视频
@@ -125,6 +136,8 @@ gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 + 广告封杀：AdBlock。
 
 + 清爽网页浏览：印象笔记·悦读。
+
++ Safari 阅读模式：阅读模式。
 
 + 高反差扩展插件
 
