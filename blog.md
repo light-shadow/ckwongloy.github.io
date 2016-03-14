@@ -55,12 +55,12 @@ About This Blog
 </h3></div>
 
 <h3 style="padding-top:50px;text-decoration:none;font-size:30px;">
-<a href="http://jekyll.cjli.info" title="Quiter you be, More you here." target="_blank">
+<a href="/home" title="Quiter you be, More you here." target="_blank">
 <button type="button" class="btn btn-success">
 <span class="label label-success">
 <i class="fa fa-hand-o-right"> <b>点击进入 Li 的网络日志</b></i></span></button></a>
 
-<a href="http://hexo.cjli.info" title="Hexo + NexT" target="_blank">
+<a href="http://cjli.coding.me" title="Hexo + NexT" target="_blank">
 <button type="button" class="btn btn-warning">
 <span class="label label-warning">
 <i class="fa fa-mobile"> <b>进入移动版网志</b></i>

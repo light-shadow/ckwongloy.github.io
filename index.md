@@ -13,7 +13,7 @@ title: Keep it simple, stupid, but serviceable. @lamChuanJiang
 
 <h1>
 <div class="navigation-bars">
-<a href="/start.html" title="Start"><span class="nav">Start</span></a>
+<a href="/index.html" title="Start"><span class="nav">Start</span></a>
 <a href="/blog.html" title="Blog Entry"><span>Blog</span></a>
 <a href="/skills.html" title="Skills"><span>Skills</span></a>
 <a href="/about_li_zh.html" title="About Li"><span>About</span></a>
@@ -21,7 +21,7 @@ title: Keep it simple, stupid, but serviceable. @lamChuanJiang
 <a href="/contact_li.html" title="Li's Contacts and SNS Footprints"><span>Contacts</span></a>
 <a href="https://github.com/lamChuanJiang/lamchuanjiang.github.io/wiki" target="_blank" title="Point to the most often used website."><span>Pointer</span></a></div></h1>
 <h3>
-<a href="http://jekyll.cjli.info" title="Blog Home" target="_blank">
+<a href="/home" title="Blog Home" target="_blank">
 <img src="/image/li.png" class="img-circle" style="width:150px;height:150px;padding:10px;border-radius:100%;"></a></h3>
 
 <h3>

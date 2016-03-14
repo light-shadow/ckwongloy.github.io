@@ -8,7 +8,7 @@ title: Li's Resume ( 中文 ) @lamChuanJiang
 <button type="button" class="btn btn-success btn-lg" style="text-shadow: black 5px 3px 3px;font-size: 16px;color: rgb(255,255,255);">
 <i class="fa  fa-hand-o-right"></i> Swith to English</button></a>
 
-<a href="/li_resume_zh.pdf">
+<a href="/assets/doc/li_resume_zh.pdf">
 <button type="button" class="btn btn-info btn-lg" style="text-shadow: black 5px 3px 3px;font-size: 16px;color: rgb(255,255,255);">
 <i class="fa fa-download"></i> 简历下载</button></a></h2>
 
