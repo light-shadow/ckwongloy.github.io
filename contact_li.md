@@ -4,17 +4,23 @@ title: Contact Li @lamChuanJiang
 ---
 
 <table class="table table-bordered " style="color:white;">
-<caption class="center-please" style="padding:30px;margin-top:-100px;">
-<h2 class="slogan">Chuanjiang Li's Contacts and SNS Footprints</h2></caption>
+    <caption class="center-please" style="padding:30px;margin-top:-100px;">
+        <h2 class="slogan">
+            Chuanjiang Li's Contacts and SNS Footprints
+        </h2>
+    </caption>
 
-<thead class="center-please">
-<tr>
-<th>电话</th>
-<th>邮箱</th>
-<th><span class="fa fa-terminal"></span></th> 
-<th>Tencent</th> 
-<th>SNS</th></tr></thead>
-
+    <thead class="center-please">
+        <tr>
+            <th>电话</th>
+            <th>邮箱</th>
+            <th>
+                <i class="fa fa-terminal"></i>
+            </th> 
+            <th>Tencent</th> 
+            <th>SNS</th>
+        </tr>
+    </thead>
 
 <tbody class="center-please">
 <tr>
