@@ -24,7 +24,7 @@ title: Keep it simple, stupid, but serviceable. @lamChuanJiang
 </h1>
 
 <h3>
-    <a href="/home" title="Blog Home" target="_blank">
+    <a href="/home" title="Blog Home">
         <img src="/assets/image/li.png" class="img-circle" style="width:150px;height:150px;padding:10px;border-radius:100%;">
     </a>
 </h3>

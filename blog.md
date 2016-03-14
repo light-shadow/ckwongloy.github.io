@@ -78,7 +78,7 @@ title: Blog Entry @lamChuanJiang
         </button>
     </a>
     
-    <a href="http://cjli.coding.me" title="Hexo + NexT" target="_blank">
+    <a href="http://cjli.coding.me/li" title="Hexo + NexT" target="_blank">
         <button type="button" class="btn btn-warning">
             <span class="label label-warning">
                 <i class="fa fa-mobile">
