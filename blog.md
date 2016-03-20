@@ -58,7 +58,7 @@ title: Blog Entry @lamChuanJiang
     </p>
     <h3 style="text-align: center;background:#77C2A5;">
         四、博客文章遵守的公约 ( 详见：
-        <a href="/about_blog.html" title="See full About This Blog">
+        <a href="/home/about.html" title="See full About This Blog">
             About This Blog
         </a>
         )

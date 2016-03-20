@@ -57,11 +57,11 @@ title: Contact Li @lamChuanJiang
 <td><a href="http://www.v2ex.com/member/lamChuanJiang" target="_blank" title="V2EX 社区" rel="nofollow"><code>V2EX</code></a></td>
 <td><i class="fa fa-envelope-o" style="padding:5px;"></i>
 <a href="mailto:lamchuanjiang@qq.com"><code>lamchuanjiang@qq.com</code></a></td>
-<td><a href="htttps://plus.google.com" target="_blank">
+<td><a href="https://plus.google.com/u/0/104404625886108662367" target="_blank">
 <code><i class="fa fa-google-plus"></i></code></a></td></tr>
 
 <tr>
-<td  rowspan="2">
+<td rowspan="2">
 <p>Notes : </p>
 <p>iCloud &lt;- iPhone<br>Outlook &lt;- Windows<br>Gmail &lt;- VPN；
 <p>为了时效性建议将邮件发至 iCloud。</p></td>
@@ -77,8 +77,6 @@ title: Contact Li @lamChuanJiang
 <td>
 <a href="https://github.com/lamChuanJiang" target="_blank" title="GitHub">
 <code><span class="fa fa-github"></span></code></a><hr>
-<a href="https://gitcafe.com/lamChuanJiang" target="_blank" title="GitCafe">
-<code>GitCafe</code></a><hr>
-<a href="https://coding.net/u/lamChuanJiang" target="_blank" title="Coding.Net">
+<a href="https://coding.net/u/cjli" target="_blank" title="Coding.Net">
 <code>Coding.Net</code></a></td>
 <td><a href="http://www.douban.com/people/lamChuanJiang" target="_blank" title="豆瓣" rel="nofollow"><code>豆</code><br><code>瓣</code></a></td></tr></tbody></table><br>
