@@ -167,6 +167,11 @@ Google Analytics
 
 Stay tuned...
 
+附录：Google 开发者工具
+-
+
+- [PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
+
 参考
 -
 

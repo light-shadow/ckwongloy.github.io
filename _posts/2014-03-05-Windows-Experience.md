@@ -35,6 +35,14 @@ HKEY_LOCAL_MACHINE＼SOFTWARE＼Microsoft＼Windows＼CurrentVersion＼Explorer�
 
 这只是在文件系统中删除　( 取消 )　这几个文件夹的显示，并不能真正删除它们。
 
+- 局域网共享
+
+<http://ce.sysu.edu.cn/hope/Item/77421.aspx>
+
+- Win10 经常无声音？
+
+
+打开声音设置，然后禁用增强功能。
 
 #### Windows 10 强迫症 ( 技术预览版 )
 
