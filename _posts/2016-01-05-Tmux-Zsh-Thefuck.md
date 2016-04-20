@@ -2,7 +2,7 @@
 layout: post
 title: Linux 常用工具: Tmux、Zsh、rzsz 等
 category: Linux
-tags: [ Tmux, Thefuck, Linux, 终端, Shell ]
+tags: [Tmux, Zsh, Thefuck, Linux, 终端, Shell]
 latest: 2016年1月5日 21:45:59
 ---
 
