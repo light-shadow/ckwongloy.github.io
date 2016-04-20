@@ -37,6 +37,34 @@ set -g prefix C-z
 unbind C-b
 ```
 
+Tmux 会话管理
+-
+
+和 Screen 一样，Tmux 也可以实现离线操作，这样在 SSH 客户端遇到突发状况还是很有用的。下面是 Tmux 的常见几种会化管理命令：
+
+```
+#  新建名字为 name 的会话
+tmux new -s name    # 等同 tmux new-session -s name, 指定名字方便 attach
+
+#  重命名 session1 为 session2
+tmux rename -t session1 session2    # 等同 tmux rename-session -t session1 session2
+
+# 列出所有会话，等同 tmux list-sessions
+tmux ls    # 第一列的就是 session name
+
+# attach 名字为 name 的会话
+tmux at -t name    # 等同 tmux attach -t name
+
+# 杀死指定名字的会话，关闭会话所有窗口自动会关掉会话
+tmux kill-session -t name
+
+# 关闭指定窗口，很少用，一般都是 Ctrl-b & 关闭本窗口
+tmux kill-window -t name
+
+# 脱离会话回到终端
+Ctrl-b d
+```
+
 这个组合键的设置随意，Z 离左边 Ctrl 近，所以我设置 Z 了。
 
 - **使 Tmux 配置生效**
@@ -143,16 +171,22 @@ export PYTHONIOENCODING=utf-8
 - C-b c 创建新窗口
 - C-b 0~9 选择几号窗口
 - C-b c 创建新窗口
-- C-b n 选择下一个窗口
-- C-b l 切换到最后使用的窗口
 - C-b p 选择前一个窗口
-- C-b w 以菜单方式显示及选择窗口
+- C-b n 选择下一个窗口（也可以直接用 Ctrl-b 数字 切换到指定窗口）
+- C-b l 切换到最后使用的窗口
+- C-b w 以菜单方式显示及选择窗口（可用 vim j/k 上下翻页）
 - C-b t 显示时钟  ( Ctrl + C 停止显示 )
 - C-b ; 切换到最后一个使用的面板
 - C-b x 关闭面板
 - C-b & 关闭窗口
 - C-b s 以菜单方式显示和选择会话
 - C-b d 退出tumx，并保存当前会话 ( 这时 tmux 仍在后台运行，可以通过 `tmux attach` 进入到指定的会话 )
+- tmux at -d    # 重绘窗口，在大小不同屏幕上用 tmux 时候会保持窗口大小为最小尺寸，这个命令就可以重置窗口大小
+- C-b [    # 进入复制模式，滚屏查看，支持 vim 上下翻页快捷键
+- set-window-option -g mode-keys vi   # 设置复制模式中键盘布局为 vi
+- C-b : - rename-window    # 重命名窗口
+- C-b %/"    # 分割窗口为面板(panel)
+- C-b Alt+方向键    # 调整面板大小
 
 - *[tmux的使用方法和个性化配置](http://mingxinglai.com/cn/2012/09/tmux/)*
 
