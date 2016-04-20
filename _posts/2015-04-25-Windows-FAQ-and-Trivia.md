@@ -6,9 +6,65 @@ tags: [Windows, FAQ, 冷知识]
 latest: 2015年06月19日 14:52:41
 ---
 
-在整个使用 Windows 的过程中，个人遇到的一些问题集中到这里。
+在整个使用 Windows 及其软件的过程中，个人遇到的一些问题集中到这里。
 
-1. Windows 系统目录功能说明？
+- **phpStorm 2016.1**
+
+```
+# 1. 在线激活
+菜单 help >>>> Register 
+选择 License Server
+输入：http://idea.qinxi1992.cn
+
+# 2.本地(离线)激活
+下载 http://idea.qinxi1992.cn/jar/JetbrainsCrack-2.5.3.jar
+
+放到 phpstorm 安装目录下的lib文件夹
+
+如：`C:\Dev\PhpStorm\lib\JetbrainsCrack-2.5.3.jar`
+
+选择菜单 help >>>> Edit Custom VM options，如果没有会提示创建,进行创建：
+
+打开文件，在最后面加入一行：-javaagent:F:\Program Files (x86)\JetBrains\PhpStorm 2016.1\lib\JetbrainsCrack-2.5.3.jar
+
+后面是补丁的路径，根据自己放的位置修改。
+
+保存文件，关闭并重启 phpstorm。
+
+# 3. 激活码
+到网站 http://15.idea.lanyus.com 生成一个激活码。
+菜单 help >>>>Register，选择 Activation Code，将验证码粘贴进去即可激活。
+```
+
+> <http://idea.lanyus.com/>
+
+- **Faststone Capture 8.4**
+
+```
+企业版序列号： 
+name：bluman 
+serial/序列号/注册码：VPISCJULXUFGDDXYAUYF 
+
+FastStone Capture 注册码 序列号： 
+name/用户名：TEAM JiOO 
+key/注册码：CPCWXRVCZW30HMKE8KQQUXW 
+
+USER NAME:TEAM_BRAiGHTLiNG_2007 
+CODE:XPNMF-ISDYF-LCSED-BPATU 
+RPTME-IMDHD-MIEPX-VLXAW
+```
+
+- **EDITPLUAS 4.0935**
+
+```
+Mulder
+1EEC5-B0CC8-FAZ81-3BW97-FFTD4
+
+www.serials.ws
+6CF14-FLN
+```
+
+- **Windows 系统目录功能说明？**
 
 Appdata 与 Local Roaming LocalLow
 
@@ -36,9 +92,9 @@ Local is the folder that is specific to that computer – any information here w
 LocalLow is the same folder as local, but has a lower integrity level. IE8, for example, can only write to the locallow folder (when protected mode is on).
 
 
-2. 如何取消电脑开机自动硬盘检测？
+- **如何取消电脑开机自动硬盘检测？**
 
-- 磁盘上没有足够的空间完成此操作？
+- **磁盘上没有足够的空间完成此操作？**
 
 ```
 diskpart
@@ -46,14 +102,11 @@ select disk 0
 convert dynamic
 ```
 
-- 浏览器无法打开任何网页，提示无法连接到代理？
+- **浏览器无法打开任何网页，提示无法连接到代理？**
 
-Internet 选项 -> 连接 -> 局域网设置，取消 "代理服务器" 下面勾选。
+Internet 选项 -> 连接 -> 局域网设置，取消 "代理服务器" 下面勾选，然后再执行相关操作。
 
-然后再执行相关操作。
-
-3. Windows 7下直接开启 ACHI 不蓝屏的方法？
-
+- **Windows 7下直接开启 ACHI 不蓝屏的方法？**
 
 很多朋友都遇到安装Windows后，再在BIOS中去开启SATA硬盘的AHCI功能的话，就会出现无法启动的情况。我最近也在安装Windows7后去开启AHCI时遇到这样的问题，只有改回IDE模式后，系统才恢复正常。经过试验后发现如果是在IDE模式下安装了Windows系统，要在BIOS中将硬盘更改为AHCI模式的话，需要重新安装系统才行。那么有没有不用重装系统，即可以开启硬盘AHCI模式的办法呢?经过一番研究和咨询，终于找到以下办法。
 
@@ -72,9 +125,9 @@ Internet 选项 -> 连接 -> 局域网设置，取消 "代理服务器" 下面�
 在WindowsVistaSP1及以后版本的系统中，在BIOS更改硬盘为AHCI模式后，系统会自动安装驱动程序。但是如果你用的是 VistaSP1之前的操作系统，在启动电脑时就需要通过Windows系统的安装光盘手动加载AHCI的驱动了。如果没有Windows系统的安装光盘，请先改回IDE模式，启动电脑后下载并安装AHCI的驱动，然后再进入BIOS将硬盘更改为AHCI模式。
 
 
-4. Win8 如何安装 IIS 服务？
+- **Win8 如何安装 IIS 服务？**
 
-5. Windows 如何重置网络设置？
+- **Windows 如何重置网络设置？**
 
 ①命令
 
@@ -86,45 +139,41 @@ IPCONFIG /FLUSHDNS
 
 Common Internet Repair
 
-6. Windows 下强力删除软件有哪些方式？
+- **Windows 下强力删除软件有哪些方式？**
 
-7. 如何为 C 盘瘦身？
+shift + delete。
+
+- **如何为 C 盘瘦身？**
 
 虚拟内存转移、关闭休眠
 
-8. 如何查看文件被谁占用？
+- **如何查看文件被谁占用？**
 
-9. 如何删除多余服务？
+- **如何删除多余服务？**
 
+```
 sc delete 服务名
+```
 
-10. 为什么耳机插入 Windows 8.1 笔记本后后麦克风（声音输入）可以使用而声音输出不能使用？
+- **为什么耳机插入 Windows 8.1 笔记本后后麦克风（声音输入）可以使用而声音输出不能使用？**
 
 有可能是禁用了耳机设备。鼠标 右击任务栏声音图标，选择声音-> 播放。
 
-11. DOS 和 CMD 有什么不同？
+- **DOS 和 CMD 有什么不同？**
 
-DOS
+DOS：DOS 是 16 位的。
 
-DOS 是 16 位的。
-
-纯 DOS
-
-IO.SYS、MSDOS.SYS 和 COMMAND.COM
+纯 DOS：IO.SYS、MSDOS.SYS 和 COMMAND.COM。
 
 纯 DOS 仅用于涉及硬件的底层操作，如分区、刷 BIOS 等。
 
-实模式 DOS
+实模式 DOS：是最常用的 DOS 系统模式，在纯 DOS 基础上加入了 CONFIG.SYS、AUTOUEXEC.BAT 和各种驱动程序、DOS 下的 16 位应用程序等。
 
-是最常用的 DOS 系统模式，在纯 DOS 基础上加入了 CONFIG.SYS、AUTOUEXEC.BAT 和各种驱动程序、DOS 下的 16 位应用程序等。
-
-保护模式 DOS 与 CMD
-
-进入WINDOWS时代后，WINDOWS3.X和WINDOWS9X系列操作系统（包括WINDOWS ME）本质上都是以DOS为内核的32位保护模式应用程序，顶多是加层壳而已。于是，使用WINDOWS 95/98的用户在“开始”菜单中可以找到一个“msdos方式”（command），那就是“保护模式DOS”，严格来说也是16位的DOS，但是该DOS运行于Windows下。此外，Windows98系统的“关闭系统”选项中有“重新启动并切换到DOS模式下”的选项，就是重启后进入实模式DOS。 
+保护模式 DOS 与 CMD：进入WINDOWS时代后，WINDOWS3.X和WINDOWS9X系列操作系统（包括WINDOWS ME）本质上都是以DOS为内核的32位保护模式应用程序，顶多是加层壳而已。于是，使用WINDOWS 95/98的用户在“开始”菜单中可以找到一个“msdos方式”（command），那就是“保护模式DOS”，严格来说也是16位的DOS，但是该DOS运行于Windows下。此外，Windows98系统的“关闭系统”选项中有“重新启动并切换到DOS模式下”的选项，就是重启后进入实模式DOS。 
 
 但是，这种情况在NT内核出现后被彻底改变，NT内核是独立的32位操作系统（WINDOWS NT/2000/XP/2003）的核心，不依赖于DOS的16为核心，因此这些操作系统不包括DOS而独立运作。为了照顾大部分习惯于使用命令行（即DOS和CMD都使用的文字界面，这也是大部分人把DOS和CMD“命令提示符”混为一谈的原因）的系统开发和维护人员（因为命令行界面有效率高、指令传输快的优点，因此高级的计算机专家们都不用图形界面），微软在NT系列操作系统中集成了“复原监督台”和“命令提示符”（即“CMD”）两个组件，通过命令行操作WINDOWS。但是事实上这两个组件仅仅是和DOS一样通过命令行操作而已，它们都是32位应用程序（而DOS是16位操作系统）
 
-12. PowerShell 和传统的 CMD 命令行有什么区别？
+- **PowerShell 和传统的 CMD 命令行有什么区别？**
 
 Windows命令提示符（cmd.exe）是Windows NT下的一个用于运行Windows控制台程序或某些DOS程序的shell程序；或在Windows CE下只用于运行控制台程序的外壳程序。
 
@@ -165,7 +214,7 @@ All in all, PowerShell is cmd on steroids that let'a you automate and manage Win
 
 这一条是重点。微软有个优点，与应用相比，它更喜欢做平台。PowerShell 早已变成一个平台，在PowerShell 刚发布的第二年，微软的System Center Operations Manager 和 SharePoint就提供了针对该平台的组件，后来的AD，Hyper-V，Windows Azure，Office 365就更不用说了。除了微软，亚马逊的云平台管理，Dell的out-of-hand 管理，也都提供了基于PowerShell的管理组件。PowerShell 俨然变成了一个标准，变成了一个规范。
 
-13. command.com与cmd.exe 区别
+- **command.com与cmd.exe 区别？**
 
 cmd.exe 是 Windows NT 命令行接口，它不是一个 dos 窗口。
 
@@ -173,7 +222,7 @@ cmd.exe 是 Windows NT 命令行接口，它不是一个 dos 窗口。
 
 但就用户来说，这两个命令有惊人的相似之处，这是因为用户在 command.com 中输入的命令有很大一部分要送到 cmd.exe 中运行。
 
-14. 如何在“我的电脑”中删除腾讯微云图标？
+- **如何在“我的电脑”中删除腾讯微云图标？**
 
 通过注册表：regedit。路径为：
 HKEY_CURRENT_USER 
@@ -190,9 +239,7 @@ HKEY_CURRENT_USER
 
 注意：也有可能是其他列表名，比如 {20D04FE0-3AEA-1069-A2D8-08002B303091}，所以删除前请看一下右边显示的是什么。
 
-15. 突破百度云上传大文件不能超过4G的限制？
-
-来源：http://jingyan.baidu.com/article/76a7e409c65556fc3a6e157c.html
+- **[突破百度云上传大文件不能超过4G的限制？](http://jingyan.baidu.com/article/76a7e409c65556fc3a6e157c.html)**
 
 方法/步骤
 
@@ -209,7 +256,7 @@ HKEY_CURRENT_USER
 ·比特彗星安装过程中，若不选择添加到开始菜单则在 Win 8 的 Metro开始菜单下搜索不到。
 
 
-16. Windows 10 如何更改系统用户名和计算机名？
+- **Windows 10 如何更改系统用户名和计算机名？**
 
 用户名
 
@@ -222,29 +269,24 @@ HKEY_CURRENT_USER
 电脑属性 -> 高级系统设置设置 -> 计算机名 -> 更改
 
 
-17. 如何获取系统信息？
+- **如何获取系统信息？**
 
 Systeminfo > info.txt
 
+- **将 GPT 转换为 MBR**
 
-18. 将 GPT 转换为 MBR
-
+```
 Diskpart
-
 List disk
-
 Select disk 0
-
-Clean
-
-会清除硬盘上所有文件
-
+Clean # 会清除硬盘上所有文件
 Conver mbr
 
 convert  basic     -将磁盘从动态转换为基本。
 convert  dynamic  -将磁盘从基本转换为动态。
 convert  gpt      -将磁盘从MBR转换为GPT。
 convert  mbr     -将磁盘从GPT转换为MBR。
+```
 
 Windows 冷知识
 -
@@ -292,8 +334,4 @@ Windows 开机图片制作
 
 推荐软件：
 
-格式转换 － ACD FotoCanvas 2.0 （包括在ACDSee 5 Powerpack和以后的版本中）
-
-http://jys.jdedu.org/xajyz/UploadSoft/ACDSee5.0中文零售版.exe
-
-
+格式转换 － [ACD FotoCanvas 2.0（包括在ACDSee 5 Powerpack和以后的版本中）](http://jys.jdedu.org/xajyz/UploadSoft/ACDSee5.0中文零售版.exe)

@@ -62,6 +62,22 @@ ssh username@host_ip
 如果在 Windows 上初次运行绿色版 XShell 没有反应的话，需要先安装 VC 
 2008 和 VC 2012 这两个运行库。在后面附上了下载链接。
 
+#### XShell 连接 VirtualBox Linux
+
+首先要在虚拟机中安装 ssh 服务：
+
+```
+apt-get install openssh-server
+
+service iptables stop
+
+chkconfig iptables off
+
+service sshd start
+```
+
+然后设置虚拟机在物理主机上的网卡模式为 Host-Only，然后通过 XShell 便能使用虚拟机的内网 IP 连接到 VirtualBox 中的以 Host-Only 模式启动的 Linux 了。
+
 #### XShell 常用快捷键
 
 - 全屏模式：Alt + Enter
