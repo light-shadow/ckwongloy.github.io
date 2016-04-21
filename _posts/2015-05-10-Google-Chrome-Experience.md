@@ -137,6 +137,10 @@ gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 
 + 清爽网页浏览：印象笔记·悦读。
 
++ 阅读模式
+
++ 划词翻译
+
 + Safari 阅读模式：阅读模式。
 
 + 高反差扩展插件
@@ -150,6 +154,8 @@ Chrome 在你更改系统主题为高反差模式的时候会自动侦测到，�
 ( 虽然 FF 的 FireBugs 口碑一直不错，但是我 *个人的体验* 一直不怎么好，开始使用 FF 也是因为 Fedora Gnome 桌面基本上内置了 FF )
 
 + Chrome 邮箱插件
+
++ Vimium：Chrome 快捷键。
 
 Google to Go
 -

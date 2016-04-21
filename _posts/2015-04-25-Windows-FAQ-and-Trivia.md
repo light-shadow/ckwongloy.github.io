@@ -54,14 +54,19 @@ CODE:XPNMF-ISDYF-LCSED-BPATU 
 RPTME-IMDHD-MIEPX-VLXAW
 ```
 
-- **EDITPLUAS 4.0935**
+- **Editplus**
 
 ```
+# v4.0935
 Mulder
 1EEC5-B0CC8-FAZ81-3BW97-FFTD4
 
 www.serials.ws
 6CF14-FLN
+
+# v3.70 build 720
+注册名：Free User
+注册码：6AC8D-784D8-DDZ95-B8W3A-45TFA
 ```
 
 - **Windows 系统目录功能说明？**

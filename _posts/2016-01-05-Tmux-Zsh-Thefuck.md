@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Linux 常用工具: Tmux、Zsh、rzsz 等
+title: Linux 常用工具：Tmux、Zsh、rzsz 等
 category: Linux
-tags: [Tmux, Zsh, Thefuck, Linux, 终端, Shell]
-latest: 2016年1月5日 21:45:59
+tags: [Tmux, Zsh, Thefuck, Linux, Shell]
+latest: 2016年01月05日 21:45:59
 ---
 
 久闻文本三巨头 ( zsh+tmux+vim ) 大名，但目前只用过 bash 和 vi/vim 最基础的操作，只能说我需要才回去用而非仅因为名气大。
