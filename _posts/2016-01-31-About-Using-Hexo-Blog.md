@@ -20,7 +20,6 @@ latest: 2016年01月31日 22:46:04
 
 暂时就是这样。
 
-参考
--
+##### 参考
 
 - [Start Blogging with Hexo Plus NexT](http://cjli.coding.me/2016/01/24/Starting-Blog-with-Hexo-Plus-NexT/)

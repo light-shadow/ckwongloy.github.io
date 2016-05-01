@@ -35,7 +35,9 @@ latest: 2015年08月29日 14:54:13
 
 我个人也认为，将自己的一些学习经历通过键盘敲出来，本身就是一种学习，和对知识的总结，认真去写，就是认真地去思考，坚持下去，一定会有很多收获。
 
-我一直也有通过文字表达自己思想，以及记录成长经历的冲动，但惭愧，直到今天，我才终于 "忍无可忍" ：写吧！
+作为码农，博客可以用来作为记录技术学习经验和笔记，同时，放在网上也能为需要的人提供有用的内容。
+
+一直也有通过文字表达自己思想，以及记录成长经历的冲动，但惭愧，直到今天，我才终于 "忍无可忍" ：写。
 
 进入正题
 -
@@ -48,15 +50,15 @@ latest: 2015年08月29日 14:54:13
 
 实现一个简单的 Blog 功能，先看看基本效果和流程。
 
-2. *[Github 简明教程](http://www.runoob.com/w3cnote/git-guide.html)* & *[Git五分钟教程](http://www.runoob.com/w3cnote/git-five-minutes-tutorial.html)* & *[git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)*
+1. *[Github 简明教程](http://www.runoob.com/w3cnote/git-guide.html)* & *[Git五分钟教程](http://www.runoob.com/w3cnote/git-five-minutes-tutorial.html)* & *[git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)*
 
 对 Git 和 GitHub 有个基本印象。
 
-3. *[Markdown 语法说明 (简体中文版) ](http://wowubuntu.com/markdown/)* & *[markdown简明语法| 不如](http://ibruce.info/2013/11/26/markdown/)*
+1. *[Markdown 语法说明 (简体中文版) ](http://wowubuntu.com/markdown/)* & *[markdown简明语法| 不如](http://ibruce.info/2013/11/26/markdown/)*
 
 快速熟悉 Markdown 的基本语法。
 
-4. *[jekyllcn](http://jekyllcn.com/docs/home/)*
+1. *[jekyllcn](http://jekyllcn.com/docs/home/)*
 
 初步尝试后对 Jekyll 使用的深入。使自己的博客丰富起来。
 
@@ -127,7 +129,6 @@ category: d
 
 {% highlight yaml %}
 ---
-layout:post
 title:My first article
 ---
 
@@ -198,7 +199,6 @@ title:My first article
 
 {% highlight html linenos %}
 ---
-layout: main
 title: My Blog
 ---
 
