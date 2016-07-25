@@ -297,3 +297,12 @@ Q&A
 -
 
 - 如何更改 baseurl ，即实现无论网站放在硬盘的什么位置，那个路径都始终作为根目录？
+
+
+- apache 2.2设置单IP多端口的虚拟主机?
+
+如果要设置虚拟主机，则不要在 httpd.conf 中配置 DocumentRoot，只需在 `<VitualHost>`字段中配置不同的即可。
+
+#### 参考
+
+- <http://skyou.blog.51cto.com/2915693/542444>
