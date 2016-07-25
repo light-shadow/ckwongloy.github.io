@@ -16,13 +16,15 @@ Home
 <i class="fa fa-info-circle">
 About
 </i>
-<i class="fa fa-terminal" style="color:red;"></i></h3>
+<i class="fa fa-terminal" style="color:red;"></i></strong></h3>
+
 <h2 style="text-align:center;">
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
 About This Blog
-</strong></h2>
+</h2>
+
 <ul style="margin-left:-50px;">
 <ol>
 <h2 class="page-heading">
@@ -36,7 +38,7 @@ Author
 @ {{ site.id }}
 <br><br></a></strong>
 <i><b>
-( See More About Chuanjiang Li Please Move to : 
+( See More About Chuanjiang Li Please Move to :
 <a href="/about_li_zh.html" title="About Li" target="_blank">
 About Li
 </a>
@@ -80,7 +82,7 @@ Conventions
 <p>
 本博客所有文章采用
 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank" rel="nofollow">
-CC BY-NC-ND 3.0 
+CC BY-NC-ND 3.0
 </a>
 许可协议进行许可。(署名-非商业使用-禁止演绎-自由转载 )
 </p>
@@ -110,21 +112,20 @@ CC BY-NC-ND 3.0
 <i class="fa fa-star"> 用于一些不错的东西、思想：</i>
 <code>
 &lt;i class="fa fa-start">&lt;/i&gt;
-</code></p></li></li>
+</code></p></li>
 <li>
 <p>
 <i class="fa fa-download"> 用于文章中提供的下载链接：</i>
 <code>
 &lt;i class="fa fa-download">&lt;/i&gt;
 </code></p></li>
-</li>
 <li>
 <p>
 <i class="fa fa-exclamation-circle"> 用于提醒和注意事项：</i>
 <code>
 &lt;i class="fa fa-exclamation"&gt;&lt;/i&gt;
-</code></p></li>
-</li></ul></p>
+</code></p></li></ul></p>
+
 <p>5、次序：
 <ul>
 <li>
@@ -140,7 +141,7 @@ CC BY-NC-ND 3.0
 <li>
 <p>
 斜体只用于其他文章或者外部资源的引用。
-</p></li></ul></p>
+</p></li>
 <p>6、其他：
 <ul>
 <li>
@@ -160,6 +161,4 @@ CC BY-NC-ND 3.0
 <li>
 <p>
 <b>Tag 数目：</b>每篇文章的 Tag 数目不要超过 5 个，如果实在会，那就多写几篇文章。
-</p></li></ul></p></ol></ul>
-
-</div></section>
+</p></li></ul></p>

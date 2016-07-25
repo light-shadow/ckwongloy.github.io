@@ -13,14 +13,16 @@ title: Archive @lamChuanJiang
 <i class="fa fa-home"> Home</i></a>
 <i class="fa fa-angle-double-right" style="color:silver;"></i>
 <i class="fa fa-archive"> Archive</i>
-<i class="fa fa-terminal" style="color:red;"></i></h3>
+<i class="fa fa-terminal" style="color:red;"></i></strong></h3>
+
 <h2 style="text-align:center;">
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
 Timeline &times;
 {{ site.posts | size }}
-</strong></h2>
+</h2>
+
 <div style="width:100%;">
 <div style="width:40%;float:left;margin:30px;background:#F7F6F6;">
 <h3>Month</h3>
@@ -77,7 +79,7 @@ Details
 <h2 style="text-align:center; background:#BFD9DB;">
 <i class="fa fa-flag-checkered"></i>
 <a href="#{{ post.date | date: "%Y" }}" name="{{ post.date | date: "%Y" }}">
-{{ this_year }} 
+{{ this_year }}
 </a></h2>
 <h3>
 <i class="fa fa-calendar-check-o"></i>

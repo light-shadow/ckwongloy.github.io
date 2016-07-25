@@ -29,14 +29,14 @@ Latest 5 by @lamChuanJiang
 <i class="fa fa-paper-plane" style="font-size:30px;"></i></a>
 <i class="fa fa-calendar"></i>
 <a href="/archive.html#{{ post.date | date: "%Y-%m" }}" title="Archive：{{ post.date | date: "%Y-%m" }}">
-{% assign d = post.date | date: "%-d" %} 
+{% assign d = post.date | date: "%-d" %}
 {{ post.date | date: "%B" }}
 {% case d %}
 {% when '1' or '21' or '31' %}{{ d }}st
 {% when '2' or '22' %}{{ d }}nd
 {% when '3' or '23' %}{{ d }}rd
 {% else %}{{ d }}th
-{% endcase %}, 
+{% endcase %},
 {{ post.date | date: "%Y, %A" }}.
 </a></b></span></h3>
 <h1 style="text-align:center;font-size:26px;"><strong>

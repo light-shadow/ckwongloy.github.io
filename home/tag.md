@@ -13,7 +13,8 @@ title: Tag @lamChuanJiang
 <i class="fa fa-home"> Home</i></a>
 <i class="fa fa-angle-double-right" style="color:silver;"></i>
 <i class="fa fa-tags"> Tag</i>
-<i class="fa fa-terminal" style="color:red;"></i></h3>
+<i class="fa fa-terminal" style="color:red;"></i></strong></h3>
+
 <h2 style="text-align:center;">
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
@@ -23,7 +24,8 @@ Now and Up-growing
 
 {{ site.tags | size }}
 
-</strong></h2>
+</h2>
+
 <div style="margin-bottom:90%;margin-top:10%;">
 
 {% assign first = site.tags.first %}
@@ -64,10 +66,10 @@ Now and Up-growing
 <span style="color: #{{ color }}{{ color }}{{ color }};">
 
 <sup>
-{{ tag | last | size }}	
+{{ tag | last | size }}
 </sup>
 
-</span></span> 
+</span></span>
 
 {% endfor %}
 
@@ -87,7 +89,7 @@ Details
 <a href="#{{ tag | first }}" name="{{ tag | first }}" title="All posts below are taged by &lt;{{ tag | first }}&gt;">
 
 {{ tag | first }}
-	
+
 </a>
 
 <sup>
@@ -113,7 +115,7 @@ Details
 
 {% endfor %}
 
-</ul> 
+</ul>
 
 {% endfor %}
 

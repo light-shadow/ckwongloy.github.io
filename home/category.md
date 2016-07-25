@@ -13,7 +13,8 @@ title: Category @lamChuanJiang
 <i class="fa fa-home"> Home</i></a>
 <i class="fa fa-angle-double-right" style="color:silver;"></i>
 <i class="fa fa-folder"> Category</i>
-<i class="fa fa-terminal" style="color:red;"></i></h3>
+<i class="fa fa-terminal" style="color:red;"></i></strong></h3>
+
 <h2 style="text-align:center;">
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
@@ -23,9 +24,10 @@ Full-Stacking
 
 {{ site.categories | size }}
 
-</strong></h2>
+</h2>
+
 <div style="background: #F7F6F6;">
-	
+
 {% for category in site.categories %}
 
 <p style="font-size:24px;margin-left:5%;">
@@ -39,7 +41,7 @@ Full-Stacking
 
 {{ category | last | size }}
 
-<i class="fa fa-angle-right"></i></p></ul>
+<i class="fa fa-angle-right"></i></p>
 
 {% endfor %}
 
@@ -86,7 +88,7 @@ Details
 
 {% endfor %}
 
-</ul> 
+</ul>
 
 {% endfor %}
 
