@@ -136,6 +136,45 @@ extension=gd.so
 
 gd库的文件存放在：/usr/lib/php/modules/gd.so
 
+#### MariaDB
+
+``` shell
+yum search mysql | grep ^mysql
+```
+
+安装好 MariaDB 后进入 MariaDB 的命令依然是 mysql
+
+I have successfully installed MySQL or MariaDB, after rebooting my system and running mysql -u root -p, I get the following error message:
+
+``` shell
+[~]$ mysql -u root -p
+Enter password: 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+```
+
+This definitely might be because you haven’t start MySQL server or MariaDB server.
+Open Terminal and the command below to check the status:
+
+``` shell
+# service mysql status
+```
+
+If the command above returns an error, you have definitely not started the server after booting.
+Now start MariaDB:
+
+``` shell
+# systemctl start mariadb.service
+OR
+# systemctl start mysqld.service
+ 
+Enable auto start at boot time:
+# systemctl enable mariadb.service
+OR
+# systemctl enable mysqld.service
+```
+
+If after all these and you still can’t access MariaDB, it means your installation wasn’t completed successfully.
+
 #### 其他
 
 在 RedHat 系 Linux 上搭建 LAMP 环境和 Debian 系 Linux 不同之处有如下几处：
@@ -293,3 +332,11 @@ kill -9 pid
 #### 参考
 
 - <http://www.phpddt.com/server/984.html>
+
+- <http://www.unixmen.com/fix-cant-connect-local-mysql-server-socket-varlibmysqlmysql-sock-2-error/>
+
+- <http://mirror.sdunix.com/apache/tomcat/tomcat-9/v9.0.0.M3/src/>
+
+- <https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7>
+
+- <https://www.howtoforge.com/how-to-install-tomcat-on-centos-7>

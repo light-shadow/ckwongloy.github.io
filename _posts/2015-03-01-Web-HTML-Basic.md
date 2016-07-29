@@ -2,7 +2,7 @@
 layout: post
 title: Web、HTML 入门
 category: Web
-tags: [Web, HTML, 浏览器]
+tags: [Web, HTML, CSS, Javacript, 浏览器]
 latest: 2015年03月01日 12:18:44
 ---
 
@@ -110,3 +110,76 @@ submit -- 表单提交按钮，可以设置其 value 属性值为提交按钮的
 </fieldset>
 ```
 
+#### background 和 background-color 的区别
+
+background 可以设置 背景颜色、背景图片、定位等 
+
+background-color 只能设置 背景颜色 
+
+设置 background-color: #aaa; 时仅仅改变了背景色，但此时有一个默认的的 background:repeat; 
+
+而设置 background: #aaa;后，相当于同时设置了 background:no-repeat; 
+
+既 `{background-color: #aaa;background:no-repeat;}` <==> `{background: #aaa;}`
+
+#### HTML CSS Javascript 三者之间的关系
+
+1. HTML是网页内容的载体。内容就是网页制作者放在页面上想要让用户浏览的信息，可以包含文字、图片、视频等。
+
+2. CSS样式是表现。就像网页的外衣。比如，标题字体、颜色变化，或为标题加入背景图片、边框等。所有这些用来改变内容外观的东西称之为表现。
+
+3. JavaScript是用来实现网页上的特效效果。如：鼠标滑过弹出下拉菜单。或鼠标滑过表格的背景颜色改变。还有焦点新闻（新闻图片）的轮换。可以这么理解，有动画的，有交互的一般都是用JavaScript来实现的。
+
+
+平常大家说的上网就是浏览各种各式各样的网页，这些网页都是由html标签组成的。网页中每一个内容在浏览器中的显示，都要存放到各种标签中。
+
+#### onmousemove 和 onmouseover 之间的区别？
+
+时间上 onmousemove 事件触发后，再触发 onmouseover 事件。
+
+按钮上 不区分鼠标按钮。
+
+动作上 onmouseover 只在刚进入区域时触发。onmousemove 除了刚进入区域触发外，在区域内移动鼠标，也会触发该事件。
+
+**当鼠标移动很快时，可能不会触发这两个事件。**
+
+
+#### 其他
+
+- 字体设置
+
+``` css
+font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+```
+
+- 隐藏地址栏
+
+``` js
+setTimeout(function(){ window.scrollTo(0, 1); }, 0);
+```
+
+- 优先级 优先级
+
+``` css
+!important
+```
+
+#### 移动 Web 开发
+
+- [移动开发规范概述](http://alloyteam.github.io/Spirit/modules/Standard/)
+
+- [手机/移动前端开发需要注意的20个要点](http://sentsin.com/web/54.html)
+
+- [像素-分辨率-PPI](http://www.infoq.com/cn/articles/development-of-the-mobile-web-deep-concept)
+
+- [移动端统计](https://github.com/jtyjty99999/mobileTech)
+
+- [移动前端不得不了解的html5 head 头标签](http://www.css88.com/archives/5480)
+
+#### 参考
+
+- [下拉菜单](http://www.cnblogs.com/lhb25/archive/2012/06/15/handpicked-jquery-drop-down-menus-tutorials.html)
+
+- [javascript-void(0)](http://stackoverflow.com/questions/1291942/what-does-javascriptvoid0-mean)
+
+- <http://www.cnblogs.com/qieqing/articles/1224085.html> 
