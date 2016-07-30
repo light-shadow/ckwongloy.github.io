@@ -36,15 +36,15 @@ C/S 比较安全,因为服务器和客户端之间怎么通信的是由开发者
 C/S 利于管理用户,控制收费等
 
 - jsp + asp 对比
-asp=html+css+javascript(vbscript)+com
-jsp=html+css+javascript+jsp+java
+  asp=html+css+javascript(vbscript)+com
+  jsp=html+css+javascript+jsp+java
 
 class 字节码运行速度快，基本上可以认为是用空间换时间。
 
 - JDK／Tomcat/jBoss 等开发环境
 
 - Servlet 和 Applet :服务器端小程序和客户端小程序
-Servlet 是顶层容器,也是一种规范,Java 开发动态网页必须按照 Servlet 的规范来进行网 站开发
+  Servlet 是顶层容器,也是一种规范,Java 开发动态网页必须按照 Servlet 的规范来进行网 站开发
 
 #### Servlet 会话技术以及数据库操作 ＋ Servlet 体系结构和网络拓扑结构
 
@@ -67,24 +67,25 @@ Servlet 是顶层容器,也是一种规范,Java 开发动态网页必须按照 S
 servlet是在web服器中运行的,建议baidu下servlet的生命周 期。web服务器(常见的有tomcat,websphere,jboss等)会生 成每一个servlet的实例。客户端调用时,根据调用方法的不同, 会分别调用servlet的doGet(...),doPost(...)等方法,一般个人实 现servlet都会覆盖这两个方法中的一个。还有就是你了解 下servlet和jsp之间的关系。
 
 - java编译错误 程序包javax.servlet不存在javax.servlet.* ?
-由于servlet和JSP不是Java平台JavaSE(标准版)的一部分,而 是Java EE(企业版)的一部分,因此,必须告知编译器servlet的 位置。
+  由于servlet和JSP不是Java平台JavaSE(标准版)的一部分,而 是Java EE(企业版)的一部分,因此,必须告知编译器servlet的 位置。
 
 - 解决“软件包 javax.servlet不存在”错误的方法:
 1. 搜索servlet-api.jar
-所在文件夹:apache-tomcat-7.0.29\common\lib
+   所在文件夹:apache-tomcat-7.0.29\common\lib
 2. 将环境变量CLASSPATH的值设置为:
-.;...apache-tomcat-7.0.29\common\lib\servlet-api.jar
+   .;...apache-tomcat-7.0.29\common\lib\servlet-api.jar
 3. 除了设置classpath以及servlet-api.jar外,还有一点!!!
-把COMMON/LIB下的SERVLET-API.JAR 拷贝到JDK/jre\lib\ext 下
+   把COMMON/LIB下的SERVLET-API.JAR 拷贝到JDK/jre\lib\ext 下
 
 - 关于 J2EE 中 Servlet 的构造方法和 init() 方法?
-一直有个疑问:构造函数用来初始化类,可是servlet初始化却 是init方法,可servlet本质上也是java类,那它的构造方法和init函 数到底是什么关系?
-上网搜索了一下,得到以下结论:
-首先,构造函数是有的,虽然我们通常不写servlet的构造函数, 但是就像任何一个普通的java类一样,编译器会自动给你生成一 个默认构造函数;
-其次,构造函数和init方法都会被web容器调用,而且是先调用构 造函数,然后调用init方法;
-最后,貌似容器只会调用默认构造函数,所以如果你自己写了带 参数的构造函数(系统就不会自动生成默认构造函数),容器初 始化servlet就会出错......P.S.:任何时候都不推荐自己写构造函数 来初始化servlet类,哪怕你自己提供不带参数的构造函数......
+  一直有个疑问:构造函数用来初始化类,可是servlet初始化却 是init方法,可servlet本质上也是java类,那它的构造方法和init函 数到底是什么关系?
+  上网搜索了一下,得到以下结论:
+  首先,构造函数是有的,虽然我们通常不写servlet的构造函数, 但是就像任何一个普通的java类一样,编译器会自动给你生成一 个默认构造函数;
+  其次,构造函数和init方法都会被web容器调用,而且是先调用构 造函数,然后调用init方法;
+  最后,貌似容器只会调用默认构造函数,所以如果你自己写了带 参数的构造函数(系统就不会自动生成默认构造函数),容器初 始化servlet就会出错......P.S.:任何时候都不推荐自己写构造函数 来初始化servlet类,哪怕你自己提供不带参数的构造函数......
 
 - Linux tomcat 配置
+
 ``` shell
 [root@master ~]# unzip apache-tomcat-6.0.30.zip
 [root@master ~]# mv apache-tomcat-6.0.30/ /usr/local/ [root@master ~]cd /usr/local/
@@ -235,10 +236,10 @@ Servlet接口中提供5个方法,其中init service destroy 这三个方法描�
 2、每一次客户端HTTP请求,都将执行服务器Servlet对象 service方法 (以独立线程进行执行,当多个线程访问 同一个共享资源时发生并发)
 * 为了不出现并发问题,Servlet对象只有一个实例,通常不编写Servlet对象成员变量
 * 栈空间时线程私有的 不会发生并发问题 ,只有堆空间是进程独享,进程由多个线程组成,堆空间上变量才能 导致 多线程并发问题
-3、在服务器正常关闭时,执行一次 destroy
-四.在编写servlet时并没有重写service,这是为什么?
-service 和 doGet/doPost 关系
-在 H t t p S e r v l e t 中 s e r v i c e 方 法 内 根 据 请 求 方 式 执 行 d o G e t 或 者 d o P o s t (   查 看 S e r v l e t 源 代 码 即 可 )
+  3、在服务器正常关闭时,执行一次 destroy
+  四.在编写servlet时并没有重写service,这是为什么?
+  service 和 doGet/doPost 关系
+  在 H t t p S e r v l e t 中 s e r v i c e 方 法 内 根 据 请 求 方 式 执 行 d o G e t 或 者 d o P o s t (   查 看 S e r v l e t 源 代 码 即 可 )
 
 五.配置load-on-startup
 默认情况下Servlet程序是在第一次访问时,创建对象(执行构造方法),执行init ----- 如果想在服务器启动时就 创建Servlet对象并执行init 有无办法???
@@ -247,7 +248,7 @@ service 和 doGet/doPost 关系
 六.编写Servlet注意事项
 1、Servlet初始化时只要覆盖init()即可,无需覆盖init(config)
 * 覆盖无参数init 也会得到初始化执行,因为在GenericServlet中 init(config) 调用 init()，那么在初始化时 执行哪个方法 ?答案:2 只会执行生命周期 init(config)
-*  2、继承HttpServlet 只需覆盖doGet 和 doPost 无需覆盖service 3、当doGet 和 doPost 代码完全相同 互相调用 简化编程
+* 2、继承HttpServlet 只需覆盖doGet 和 doPost 无需覆盖service 3、当doGet 和 doPost 代码完全相同 互相调用 简化编程
 
 七.servlet虚拟路径的3种方式
 1、完全路径匹配 : 以/开始 例如:/demo1、/demo2、/aa/index.html- ---- 不存在通配符* 2、目录匹配 : 以/开始 使用通配符* 例如:/*、/aa/*、/bb/cc/*- --- /a*b* /a* 错误的
@@ -288,23 +289,23 @@ web 工程读文件 通过Servlet读取- ---- Tomcat中运行 注意这里读取
 #### IntelliJ 配置和快捷键
 
 - 配置编译的 class 文件路径:
-File -> Project Structure -> Modules -> Path -> Use module complie output path
-下面填写 classes 文件夹需要在文件系统的绝对路径即可。
-注意 : classes 文件夹和 web.xml 会被 IntelliJ 编译时创建,一次上面填写的路径不要含有
-classes 而是 classes 的上级路径,也就是 WEB-INF。
-由于这里的 classes 是固定的,因此,为了方便,在开发的时候如果打包建议打包成 package classes.test; 这样就会在 classes 目录下产生编译文件。
+  File -> Project Structure -> Modules -> Path -> Use module complie output path
+  下面填写 classes 文件夹需要在文件系统的绝对路径即可。
+  注意 : classes 文件夹和 web.xml 会被 IntelliJ 编译时创建,一次上面填写的路径不要含有
+  classes 而是 classes 的上级路径,也就是 WEB-INF。
+  由于这里的 classes 是固定的,因此,为了方便,在开发的时候如果打包建议打包成 package classes.test; 这样就会在 classes 目录下产生编译文件。
 
 不要使用 IntelliJ 的默认路径(Inherit project complie output path),否则在访问页面 的时候 Tomcat 会提示 404
 最后,取消勾选 Exclude output paths。
 
 - 设置字体
-File -> Settings -> Editor -> Colors & Fonts -> Font
-由于默认的方案不能被修改,所以需要复制一份现有的 Scheme 另存为 Custom,然后就 可以在下面选择字体。
+  File -> Settings -> Editor -> Colors & Fonts -> Font
+  由于默认的方案不能被修改,所以需要复制一份现有的 Scheme 另存为 Custom,然后就 可以在下面选择字体。
 
 - 快捷键
-Ctrl + F9 编译
-Ctrl + Shift + F10 运行
-Alt + Insert 重写/覆盖方法
+  Ctrl + F9 编译
+  Ctrl + Shift + F10 运行
+  Alt + Insert 重写/覆盖方法
 
 #### 参考
 
