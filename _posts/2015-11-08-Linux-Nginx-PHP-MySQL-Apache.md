@@ -252,8 +252,7 @@ vi /etc/sysconfig/iptables
 service iptables start
 ```
 
-**PHP 安装与配置**
-- 
+- **PHP 安装与配置**
 
 Raspberry 上 PHP 的安装位置在: _/usr/share/php5_ 。
 
@@ -341,6 +340,76 @@ ulimit -HSn 65536
 
 ##### 注意：如果是运行 Shell 脚本，这需要保证其有执行权限。
 
+#### 在Ubuntu Server下搭建 LAMP 记录
+
+``` shell
+sudo tasksel install apache2 php5 mysql-server php5-mysql Sudo service apache2 restart
+```
+
+- **软连接有什么好处?**
+
+防止误删除,计算误删除软连接文件后源文件并没有被删除。
+
+- **虚拟主机配置**
+
+修改客户端 hosts 文件
+
+	- Linux - /etc/hosts
+	- Windows10 - C:\Windows\System32\drivers\etc
+
+使得二级域名都指向同一个 IP 地址。 通过集合的方式创建三个目录:
+
+``` shell
+sudo mkdir -p /wwwroot/{video, bbs, oa}
+```
+
+Apache 默认网站目录在: /var/www/, 默认配置目录在:/etc/apache2/site-avaliable/.
+
+``` shell
+sudo cp default video
+sudo cp default bbs
+sudo cp default oa
+```
+
+然后配置多个虚拟主机,以配置 video.imooc.com 为例说明: 
+
+1、 添加 ServerName: `ServerName video.imooc.com`
+
+2、 更改 DocumentRoot 为子域名项目文件夹实际所在路径: `DocumentRoot /wwwroot/video`
+
+3、启用新建配置 -> 在 /etc/apache2/site-enabled 下创建 /etc/apache2/site-
+available 下新建配置的软连接文件:
+
+``` shell
+sudo ln -s ../site-available/video video
+```
+
+4、重启 Apache: `sudo service apache2 restart`
+
+5、 在浏览器访问不同的子域名进行测试
+
+- **数据迁移**
+
+1、 停止 MySQL 服务:sudo service mysql stop
+2、 制定数据迁移的目标位置(实际大多数是另一块硬盘),这里模拟一下:
+    
+``` shell
+sudo mkdir /mysqldata
+sudo chown -vR mysql:mysql /mysqldata
+```
+
+MySQL 默认的存储目录在:/var/lib/mysql
+
+- Apparmor 的修改 允许远程访问 MySQL
+
+``` shell
+sudo vi /etc/mysql/my.cnf
+
+# 注释掉 bind-address
+```
+
+然后在 MySQL 中的用户数据库中新建一个用户并允许使用公网 IP 访问即可,登 录的时候就使用刚刚新建的专用用户名密码。
+
 #### 其他自启动方式
 
 - update-rc.d
@@ -351,6 +420,49 @@ update-rc.d ssh disabled    #  SSH 服务开机关闭
 ```
 
 如果不知道服务名字可以去 /etc/init.d/ 中查找。
+
+### centos 下 升级 php
+
+- 检查PHP组件
+
+``` shell
+rpm -qa |grep php
+```
+
+- 新增开发库
+
+新建一个repo文件
+
+```
+vim /etc/yum.repos.d/CentOS-Testing.repo
+
+# 复制以下内容,保存并退出。
+# CentOS-Testing:
+# !!!! CAUTION !!!!
+# This repository is a proving grounds for packages on their way to CentOSPlus and CentOS Extras.
+# They may or may not replace core CentOS packages, and are not guaranteed to function properly.
+# These packages build and install, but are waiting for feedback from testers as to
+# functionality and stability. Packages in this repository will come and go during the
+# development period, so it should not be left enabled or used on production systems without due
+# consideration.
+[c5-testing]
+name=CentOS-5 Testing baseurl=http://dev.centos.org/centos/$releasever/testing/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=http://dev.centos.org/centos/RPM-GPG-KEY-CentOS-testing includepkgs=php*
+```
+
+也可以复制这里的内容: <http://dev.centos.org/centos/5/CentOS-Testing.repo> 升级PHP组件, 这里通过官方的开发库后我们可以使用简单命令升级到最新版本的php。
+
+``` shell
+yum update
+service httpd restart
+
+# 再次检查 PHP 组件
+rpm -qa |grep phpc entos-php-new-2
+``
+
+PHP 已升级到最新的版本。
 
 附录：MySQL 查看版本号的五种方式介绍
 -
@@ -369,7 +481,7 @@ select version() ;
 
 - 包管理工具（根据不同系统 rh系列或则是bsd系列） 
 
-```
+``` shell
 # RedHat 系
 rpm -qa|grep mysql 
 # Debian 系
@@ -386,3 +498,5 @@ dpkg --get-selections | grep mysql
 - _[Linux（基于CentOS的LAMP）环境搭建图文教程](http://faq.comsenz.com/library/system/env/env_linux.htm)_
 
 - _[mysql远程访问失败解决方案](http://blog.csdn.net/yyrookie/article/details/17589849)_
+
+- <http://itlab.idcquan.com/linux/special/linuxcom/>
