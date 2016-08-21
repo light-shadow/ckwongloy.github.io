@@ -110,16 +110,26 @@ Package Control
 
 进入 Package Control 的快捷键是：Ctrl + Shift + P。
 
-然后可以输入：`Package Control`，就可以看到 Install Package。或者直接输入 `picp` 进入选择安装的 Packages。
+然后可以输入：`Package Control`，就可以看到 Install Package。或者直接输入 `picp` (模糊匹配)进入选择安装的 Packages。
 
 比如安装 Emmet 插件，就可以接着输入 Emmet 然后下载安装了。
 
 安装完插件后都需要重启 Sublime 才能生效。
 
+推荐安装的 package 有：PackageResourceViewer, Theme - Glacier, Emment, etc.
+
 禁止 Sublime Text 检查更新
 -
 
 找到 Preferences -> Settings -> User，在大括号之内添加：`"update_check": false`，重启 Sublime Text 即可。
+
+## FAQ
+
+- **Sublime Text 3 sidebar doesn't effected by theme on mac?**
+  - 1. command + shift +p: `brwo` => browse pagekages
+  - 2. mkdir Theme - Default
+  - 3. cp Theme - Glacier/Glacier.sublime-theme Theme - Default/Default.sublime-theme
+  - 4. restart sublime
 
 附录：Sublime Text (3103版本可用) 注册码 License Key
 
@@ -378,9 +388,8 @@ FD032C30 AD5E7241 4EAA66ED 167D91FB
 -
 
 - [Sublime Text 配置](http://blog.csdn.net/hexrain/article/details/13997565)
-
 - <http://ysido.com/sublime_text_key.html>
-
 - <http://my.oschina.net/chinesedragon/blog/160197>
-
 - [http://9iphp.com/web/html/sublime-text-3-license-key.html]
+- [Why do Sublime Text 3 Themes not affect the sidebar?](http://stackoverflow.com/questions/27931448/why-do-sublime-text-3-themes-not-affect-the-sidebar)
+
