@@ -116,7 +116,20 @@ Package Control
 
 安装完插件后都需要重启 Sublime 才能生效。
 
-推荐安装的 package 有：PackageResourceViewer, Theme - Glacier, Emment, etc.
+推荐安装的 package 有：
+
+- PackageResourceViewer
+- Theme - Glacier
+- Emment
+- Theme - Brogrammer
+- 1337 Color Sheme
+- Auto-save
+- Markdown Preview
+- Laravel 5 artisan
+- SideBarEnhancements
+- SublimeCodeIntel
+- SublimeLinter/SublimeLinter-php
+- Terminal
 
 禁止 Sublime Text 检查更新
 -
