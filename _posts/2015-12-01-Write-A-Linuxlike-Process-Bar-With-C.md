@@ -235,4 +235,6 @@ int main() {
 参考
 -
 
+- _[原 Linux终端彩色打印+终端进度条](http://my.oschina.net/jcseg/blog/178047)_
+
 - _The C Programming Language: 第八章 UNIX 系统接口_

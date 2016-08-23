@@ -1,0 +1,437 @@
+---
+layout: post
+title: Windows Q&A 与冷知识
+category: Auxiliary
+tags: [Windows, FAQ, 冷知识]
+latest: 2015年06月19日 14:52:41
+---
+
+在整个使用 Windows 及其软件的过程中，个人遇到的一些问题集中到这里。
+
+- **phpStorm 2016.1**
+
+```
+# 1. 在线激活
+菜单 help >>>> Register 
+选择 License Server
+输入：http://idea.qinxi1992.cn
+
+# 2.本地(离线)激活
+下载 http://idea.qinxi1992.cn/jar/JetbrainsCrack-2.5.3.jar
+
+放到 phpstorm 安装目录下的lib文件夹
+
+如：`C:\Dev\PhpStorm\lib\JetbrainsCrack-2.5.3.jar`
+
+选择菜单 help >>>> Edit Custom VM options，如果没有会提示创建,进行创建：
+
+打开文件，在最后面加入一行：-javaagent:F:\Program Files (x86)\JetBrains\PhpStorm 2016.1\lib\JetbrainsCrack-2.5.3.jar
+
+后面是补丁的路径，根据自己放的位置修改。
+
+保存文件，关闭并重启 phpstorm。
+
+# 3. 激活码
+到网站 http://15.idea.lanyus.com 生成一个激活码。
+菜单 help >>>>Register，选择 Activation Code，将验证码粘贴进去即可激活。
+```
+
+> <http://idea.lanyus.com/>
+
+- **Faststone Capture 8.4**
+
+```
+企业版序列号： 
+name：bluman 
+serial/序列号/注册码：VPISCJULXUFGDDXYAUYF 
+
+FastStone Capture 注册码 序列号： 
+name/用户名：TEAM JiOO 
+key/注册码：CPCWXRVCZW30HMKE8KQQUXW 
+
+USER NAME:TEAM_BRAiGHTLiNG_2007 
+CODE:XPNMF-ISDYF-LCSED-BPATU 
+RPTME-IMDHD-MIEPX-VLXAW
+```
+
+- **Editplus**
+
+```
+# v4.0935
+Mulder
+1EEC5-B0CC8-FAZ81-3BW97-FFTD4
+
+www.serials.ws
+6CF14-FLN
+
+# v3.70 build 720
+注册名：Free User
+注册码：6AC8D-784D8-DDZ95-B8W3A-45TFA
+```
+
+- **Windows 10 + Office**
+
+​	Key有Retail Key 和MAK Key。Retail Key就是零售版的密匙，MAK Key是大客户版密匙，网络上流传的大部分都是MAK Key。微软对于“大客户”使用的Windows 7或Windows8/8.1企业版、专业版，有两种双方达成协议的授权激活方式： MAK为永久激活,“MAK密钥”激活一次，就会减少一次，直至为“0”。只有当“大客户”再次付费之后，微软才会视付费金额“授权激活次数”，使“MAK密钥”重新焕发活力。 KMS激活为“180天周期激活”，一般激活工具会使用这种激活方式。
+
+```
+WIN10激活策略变更：可以直接使用WIN7、WIN8.1零售密钥激活。
+
+本文最后更新于2016/4/21 12:50
+
+Windows10 系列激活密钥：
+
+Windows10 Professional 专业版 MAK 激活密钥：
+
+N9M2T-MBJ4W-68KGB-Q2GCH-HXMQB激活次数: 163
+
+PW48G-MNG8W-B9978-YWBRP-76DGY激活次数: 38
+
+N8MY8-K2PXF-TR6GF-GGJ32-CKCKM
+
+GNPVX-P7VHX-WC2MH-GWPXM-92FDB
+
+[验证工作于2016/4/21] 有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+电话激活：cmd => sLUI 4 => 选择国家 => 打电话给"微软服务与支持中心" =>听电话提示，进行安装ID的输入 => 如果你验证成功，就会有一个确认ID，（确认ID页面要按下一步）再输入确认ID =>  确认ID是正确的就会告诉你已经激活了。
+
+Windows10 Enterprise 企业版 MAK 激活密钥：
+
+NWQ3Q-QT6C6-PHQBX-4774F-Q9MPF
+
+4YDN3-8PV6C-P8G8K-YGVH7-KHJWR
+
+VNF8K-QTHRV-CWFDR-GPCKR-3DBPF
+
+J6NHH-2T9HY-V36TQ-JB8F4-TVJWR
+
+NDVBG-69JM4-QVTT4-RQ8WY-BBH2F
+
+[验证工作于2016/4/20] 有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Windows10 Professional 专业版Retail密钥：
+
+[验证工作于2016/04/20]适用于Skype电话激活
+
+Windows10 Core/Home 核心/家庭版Retail密钥：
+
+B898G-CNJ2D-RC463-9YMF6-GMT3V
+
+[验证工作于2016/04/20]适用于Skype电话激活
+
+Windows8/8.1 系列激活密钥：
+
+Windows8.1 专业版/企业版 MAK 密钥：
+
+6C7TP-NDD2M-TGT9D-HQB3Y-FGB93 激活次数: 4
+
+BNJ8G-73CR9-8QRDT-G3WW2-KWY93
+
+JN8J2-G6HFP-J9GXH-6KQT6-4M33Q
+
+NV9JH-W278M-HJHJ8-GPYFT-VCC7D
+
+VY6TJ-36NQD-VWPCT-27989-7XKHD
+
+QN2M7-VCVJQ-Y36FD-T3PHJ-82M93
+
+TPY4B-CNKP3-8XXK3-H6PGF-YTB93
+
+[验证工作于2016/4/20]有激活次数的可用于联网激活，无激活次数的可用电话激活 
+
+Windows 8 专业版/企业版 MAK 密钥：
+
+N6PRT-TK66R-HJ7JV-RRFWX-RM2K2 激活次数: 383
+
+3FNX9-TCYWV-MTYV2-WVC3K-CDG7C 激活次数: 346
+
+P24CV-HNQ3J-P8F2K-XQRYY-CWCK2 激活次数: 345
+
+92NC8-3W278-MP77Q-TT8WF-R3G7C 激活次数: 340
+
+YPFHF-WNRMW-R968P-9G2YV-KHF92 激活次数: 330
+
+YX37W-M8NTJ-D8H6H-H2DYH-T273P 激活次数: 316
+
+NTQFC-46FDR-6HGTY-628BR-CRYQP 激活次数: 259
+
+XYV2H-YN7BQ-FWB36-X7KHC-VFPK2 激活次数: 0
+
+GQWWC-HNPJG-2RQ74-8PYY9-GJCK2 激活次数: 50
+
+[验证工作于2016/4/20] 有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Win8/8.1 专业版Retail密钥：
+
+[验证工作于2016/4/16]可联网激活或电话激活 
+
+Win8/8.1 专业版 WMC（媒体中心）Retail密钥：
+
+TF63W-4JWB2-9K9JN-GP4RT-FVRFQ
+
+HKKJB-4CGRN-9KQXJ-Q7WXT-VCBRQ
+
+[验证工作于2016/4/17]可联网激活或电话激活
+
+Windows7 系列激活密钥：
+
+Windows7 旗舰版Retail密钥：
+
+RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289
+
+D3KKF-FPBBF-HRW64-PC7GB-QKY9B
+
+H4CBY-JRPJ4-43K4Y-GTWVQ-THDVC
+
+HRBR3-W3PFF-64TT8-Y8PVK-H77HQ
+
+2KJCB-XJKXB-PY2DC-R8VVH-7YVGC
+
+D9QWX-7GJC6-666JD-VBPRH-C9BJ3
+
+W2KM6-73YC3-RQDGX-Y8CPT-CR86H
+
+769FH-HP26W-M6849-G33K2-8DYC9
+
+CM2GW-H98J4-PH6CP-G4KWW-VYVYW
+
+RBJW6-RGTV3-YV8W3-CFWPF-3THG9
+
+CVW9H-9DQPM-R7HRV-PM3DK-PP2VJ
+
+[验证工作于2016/4/20]可用于电话激活 
+
+Windows7 专业版/企业版MAK密钥： 
+
+RJ23J-6H2CD-8BYDT-FWG8B-68R76 激活次数: 243
+
+W7TM4-K2CKR-BWYTF-M9J74-DWTT6 激活次数: 125
+
+TQXRM-348VV-HKPVG-R8JBB-W8M2K 激活次数: 124
+
+YCGVH-XJBD8-YRHK7-22RFB-3BDCF 激活次数: 122
+
+Q8XKC-PTK42-7KVB2-2GH7R-M98R7 激活次数: 119
+
+GVV92-JJW4J-92Q86-3XVWM-HCWRH 激活次数: 13
+
+XGDV3-GWVCJ-XMP9B-Y7PWJ-KMGGR 激活次数: 13
+
+HVYCW-RQ64J-XKWBX-6GPPX-WT33W 激活次数: 13
+
+BKDHT-YWDTG-3TFMD-FDMQ7-22YC9 激活次数: 13
+
+[验证工作于2016/4/21]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office2016 系列激活密钥：
+
+Office2016 ProPlus Vol 版MAK激活密钥：
+
+QMTNQ-GPGT7-M7Y26-JWGHT-HFTDY
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office2016 ProPlus Retail 激活密钥：
+
+BN346-KPVRG-HHQG3-6YDPV-8HV7H
+
+9F2KN-7R73D-QD2JH-T6M2J-QDBVH
+
+8NJ6V-BB36F-T3XWY-XDDK3-WQKX7
+
+KH2XP-QNGV7-DQF8M-RFCVV-T3BVH
+
+[验证工作于2016/4/8]可联网激活或电话激活
+
+Office2013 系列激活密钥：
+
+Office2013 ProPlus VL版MAK激活密钥：
+
+BT289-PN344-W3M64-4P9V3-8K6XV 激活次数: 11079
+
+M2FCV-2NTW8-MJ4F4-GJQHB-MY29V
+
+BNQWW-X4422-FCXD8-JPT37-PWC9V
+
+PNT6B-DKH2Q-GW4J2-DDT6T-PDHT7
+
+HRVQK-JNYXX-XPPQV-M3GQF-3C8QH
+
+WPNPV-JWJ22-F9TWQ-82948-82MG7
+
+H69H3-N49B7-F6RQP-67QRB-VQTXV
+
+X33QN-R998F-6DYB6-K9XBB-39JQH
+
+[验证工作于2016/4/20]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office2013 Visio Pro VL版MAK激活密钥：
+
+NWY9Q-VT449-64DGY-8PGXY-7MF4R
+
+K9N7G-PMTWK-86CTF-K98HR-QGKJY
+
+KCHDY-NJD6B-WT29Q-BQXKV-CYQ8F
+
+WM9XX-NMDQT-9T646-F8VRP-D67WF
+
+2XQNB-VT69T-48TY7-D44P3-4GBJF
+
+88YWN-84K3Q-QK34X-V26H9-T8YJF
+
+FQ3N7-DRB2X-MYFCY-RJXV3-PYQ8F
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office2013 Project Pro VL版MAK激活密钥：
+
+HQ7PN-M8PKG-GK83K-MKV6B-BBF2M
+
+K9N7G-PMTWK-86CTF-K98HR-QGKJY
+
+9YWBG-NT47H-3BDYV-BYRWV-3JYGB
+
+BNY68-CWQ47-9T7GP-7R9FH-VT7TB
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office2013 Standard VL版MAK激活密钥：
+
+NR9KH-Y94BC-39C2K-3J9TR-6Q436
+
+NGPGC-634G3-6K493-DTD9R-R3HVT
+
+XPMN2-8PTC7-JBBXX-26RX8-82MHT
+
+3R8BG-CNHTJ-K44PV-7429V-2R2D6
+
+XPMN2-8PTC7-JBBXX-26RX8-82MHT
+
+VGHCC-NPPBG-KTJ9J-BWYR8-YPXMG
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office2013 Pro Plus Retail密钥：
+
+NWBJ2-YMWMK-TKGR6-T6PBC-GQ43D
+
+PMKXN-6YJJ4-4X873-G3R68-JFD63
+
+WNMD2-93MKM-FJVJR-CMF6X-BKJQD
+
+TVPDN-MY682-HDYPJ-3RWBD-7T7T3
+
+N6MK9-XMM2X-22JCR-XB4Q4-F6WQD
+
+463TW-NXKK8-6Q862-9PJHP-9P8QD
+
+JNM2X-Q48FW-WPWX9-VM8BG-RRD63
+
+38VW7-RN43K-W3YPY-JVT8K-9HGXQ
+
+8MN63-J63KD-D7623-7WWV2-27GXQ
+
+VXMJQ-N8GJH-TJW29-6K78W-YPXKQ
+
+KGVCN-BCD6T-GFFCC-MBJCJ-82MG3
+
+KWHCN-8H9PM-CVY76-HR9YW-29VT3
+
+8DQN4-3HR2B-Y4TBC-CPQJG-J2MG3
+
+C8QN2-BYV6D-6MFKM-FMK8P-P9VT3
+
+4VBNQ-DHXWX-TMDF4-3VXDG-J2MG3
+
+T34GC-69N37-C8QM9-HMT96-QYF3D
+
+XX4PH-GN64G-P3PMM-K66C4-6Q43D
+
+B8HKG-NXTQ9-3FPFX-KKQXK-8QHT3
+
+B8GY6-H9N22-QYTQ2-H3FYW-29VT3
+
+8NWFD-7Q7GB-RX49K-7HYVW-CPMG3
+
+K8JN3-B7BKR-RJFYR-22Y8V-3JYG3
+
+3M8NQ-YCB4B-8MCM2-JQGDV-M4D63
+
+K9TQH-WWNRT-6HDMV-7X4HV-8HR3D
+
+GJNPW-9YP6B-9G44K-283YR-9WYG3
+
+CGPDN-WR4YH-Q6C83-C4DPK-WTWQD
+
+PNWBX-YC9JP-9WYH8-9KBVG-QYF3D
+
+[验证工作于2016/4/16]可联网激活或电话激活 
+
+Office2013 Visio Pro Retail密钥：
+
+[验证工作于2016/4/16]可联网激活或电话激活 
+
+Office2013 Project Pro Retail密钥：
+
+[验证工作于2016/4/16] 可联网激活或电话激活
+
+Office2010 系列激活密钥：
+
+Office2010 ProPlus VL版MAK激活密钥：
+
+CK94C-WVJVJ-DVMX6-MDJQR-P6CVT 激活次数: 519
+
+CWBHD-MPYB7-BR26V-GYDRT-CFCGP 激活次数: 455
+
+GQG3C-DGYM7-TB68M-YR9FJ-XHK87 激活次数: 230
+
+[验证工作于2016/4/20]有激活次数的可用于联网激活，无激活次数的可用电话激活 
+
+Office 2010 VisioPro VL版MAK激活密钥：
+
+76T6X-2D3MG-2P2FH-H9RD6-HDTRJ 激活次数：4861
+
+YFYJT-KYCDQ-4X47K-RKJBP-7JJCV 激活次数：385
+
+2WGMM-V4VXJ-8FRKG-922TD-8VVK6
+
+2R89H-MX9TC-QHCVH-9FTG2-T8KQ3
+
+38YPJ-JPMJ7-DHX9M-MKM99-TCTYV
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office 2010 VisioPrem VL版MAK激活密钥：
+
+YDDYK-T8M4C-HMDX8-TYJY6-X7347 激活次数：4430
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office 2010 ProjectPro VL版MAK激活密钥：
+
+YF7DQ-W9MFT-HPMQT-WC86T-KGHC4 激活次数：4940+
+
+J29CH-GXH4V-FYTCB-MKYVD-FB9PB 激活次数：440+
+
+6HTPG-9X4RQ-F23TW-FWWT9-BKR4V 激活次数：410+
+
+TK7WV-9DQT4-MQM8K-F24DP-8QGWC 激活次数：390+
+
+KF6MQ-G3X7K-62DTP-X9G9R-9B79F 激活次数：350+
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+
+Office2010 Standard VL版MAK激活密钥：
+
+8YWGJ-CBYWX-HCVYC-63R8B-2C4PP 激活次数：4635
+
+YT3F4-3PT6M-XVQ4M-C3GH3-XR74C 激活次数：185
+
+2MXDK-K9WXT-R9Q4M-4K7H7-JMKCV 激活次数：5
+
+87BYJ-W2HT4-HXH87-P684X-FBXWQ 激活次数：9
+
+YKRK6-TCTMW-VQ42B-TGXJQ-8BKC3 激活次数：12
+
+[验证工作于2016/4/16]有激活次数的可用于联网激活，无激活次数的可用电话激活
+```
+
