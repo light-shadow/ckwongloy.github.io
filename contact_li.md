@@ -64,14 +64,14 @@ title: Contact Li @lamChuanJiang
 <td rowspan="2">
 <p>Notes : </p>
 <p>iCloud &lt;- iPhone<br>Outlook &lt;- Windows<br>Gmail &lt;- VPN；
-<p>为了时效性建议将邮件发至 iCloud。</p></td>
+<p>为了时效性建议将邮件发至 iCloud。</p>
 <td><a href="http://www.quora.com/Chuanjiang-Li-1" target="_blank" title="Quora 问答社区" rel="nofollow"><code>Quora</code></a></td>
 <td rowspan="2">
 <p>Notes : </p>
 <p>QQ 邮箱国内速度比较快。</p>
 <p>本人在所有 SNS 均不是很活跃。</p>
 <p>微信/QQ 主要接收网络留言而非 IM。</p></td>
-<td><a href="http://www.zhihu.com/people/lamChuanJiang" target="_blank" title="知乎" rel="nofollow"><code>知</code><br><code>乎</code></a></td></tr>
+<td><a href="http://www.zhihu.com/people/lamChuanJiang" target="_blank" title="知乎" rel="nofollow"><code>知</code><br><code>乎</code></a></td>
 
 <tr>
 <td>
@@ -79,4 +79,4 @@ title: Contact Li @lamChuanJiang
 <code><span class="fa fa-github"></span></code></a><hr>
 <a href="https://coding.net/u/cjli" target="_blank" title="Coding.Net">
 <code>Coding.Net</code></a></td>
-<td><a href="http://www.douban.com/people/lamChuanJiang" target="_blank" title="豆瓣" rel="nofollow"><code>豆</code><br><code>瓣</code></a></td></tr></tbody></table><br>
+<td><a href="http://www.douban.com/people/lamChuanJiang" target="_blank" title="豆瓣" rel="nofollow"><code>豆</code><br><code>瓣</code></a></td></tr>

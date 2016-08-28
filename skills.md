@@ -260,7 +260,7 @@ title: Skills of Li @lamChuanJiang
 
 <span class="label label-danger">精通</span>
 <span class="fa fa-hand-o-right"></span> 
-<em><b>    ( 暂无达到精通的技术栈，这是我的长期目标 )</em></b><br><br>
+<b> ( 暂无达到精通的技术栈，这是我的长期目标 )</b><br><br>
 
 <span class="label label-default">感兴趣</span>
 <span class="fa fa-hand-o-right"></span>
@@ -271,4 +271,4 @@ title: Skills of Li @lamChuanJiang
 <p>②对编程充满激情和耐心，享受 Coding 带来的乐趣和挑战；</p>
 <p>③谦虚好学，喜欢探索学习效率和方法，喜欢自学，践行 Learn by doing；</p>
 <p>④兴趣广泛：热爱 Web，热爱 Git/GitHub，热爱网络，热爱开源，热爱信息时代；</p>
-<p>⑤具有较强的抗压、抗打击、抗负能量能力。</p></div></div></div></div>
+<p>⑤具有较强的抗压、抗打击、抗负能量能力。</p>
