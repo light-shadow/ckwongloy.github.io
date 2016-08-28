@@ -267,7 +267,7 @@ mb_convert_encoding
 
 为了保持与旧版 php 的兼容(与类名相同的方法被称为构造函数),PHP5 也保留了这一特性,但是 PHP5之后的版本有了自己专门的构造函数 __construct()。
 
-- **Can't use function return value in write context? **
+- __Can't use function return value in write context?__
 
 <http://stackoverflow.com/questions/17139264/cant-use-function-return-value-in-write-context>
 
@@ -315,9 +315,9 @@ E_ALL 对于开发过程来说有点太细, 因为它在屏幕上为一些小事
 
 任何语言都会有这些东西,因为计算机看到+不会认为是应该做加法的。这需要编译器转换为机器码也就是cpu能够识别的指令集。 
 
-php执行源码时的整个过程为:
+php 执行源码时的整个过程为:
 
-首先按照zend_language_scanner.l 中定义的, 将源码 中的echo、if之类的语言结构转换成类似的T_ECHO、T_IF这些token,并且会去掉源码 中的空格,注释这些与程序逻辑无关的字符,就形成了一些简短的表达式,这就是词法 分析阶段。
+首先按照 zend_language_scanner.l 中定义的, 将源码 中的echo、if之类的语言结构转换成类似的T_ECHO、T_IF这些token,并且会去掉源码 中的空格,注释这些与程序逻辑无关的字符,就形成了一些简短的表达式,这就是词法 分析阶段。
 
 然后会按照zend_vm_opcodes.h中定义的,将这些token转换为op code。然后一条一行的执行这些op code。 
 
@@ -347,7 +347,7 @@ return T_EXIT;
 
 很明显,php做词法分析时,无论遇到exit还是die,都会返回T_EXIT这个token。从这里就可以证明,die和exit,再php内部处理是完全一样的。
 
-也可以用下列php代码来确定:
+也可以用下列 php 代码来确定:
 
 ``` php
 <?php
@@ -360,11 +360,23 @@ var_dump(token_get_all(“<?php die;exit;?>”));
 
 ##### 其他说法
 
-die()停止程序运行,输出内容
-exit是停止程序运行,不输出内容
-return是返回值
-die是遇到错误才停止 exit是直接停止,并且不运行后续代码,exit()可以显示内容。
-return就是纯粹的返回值了,但是也不会运行后续代码 exit(0):正常运行程序并退出程序; exit(1):非正常运行导致退出程序; return():返回函数,若在主函数中,则会退出函数并返回一值。
+- die()停止程序运行,输出内容
+
+- exit是停止程序运行,不输出内容
+
+- return是返回值
+
+- die是遇到错误才停止
+
+- exit是直接停止,并且不运行后续代码
+
+- exit()可以显示内容
+
+- return就是纯粹的返回值了,但是也不会运行后续代码
+
+- exit(0)正常运行程序并退出程序; exit(1):非正常运行导致退出程序
+
+- return():返回函数,若在主函数中,则会退出函数并返回一值
           
 详细说:
 
@@ -378,4 +390,140 @@ return就是纯粹的返回值了,但是也不会运行后续代码 exit(0):正�
 
 5.return用于结束一个函数的执行,将函数的执行信息传出个其他调用函数使用;exit函 数是退出应用程序,删除进程使用的内存空间,并将应用程序的一个状态返回给OS,这 个状态标识了应用程序的一些运行信息,这个信息和机器和操作系统有关,一般是 0 为 正常退出,非0 为非正常退出。
 
-6. 非主函数中调用return和exit效果很明显,但是在main函数中调用return和exit的现象 就很模糊,多数情况下现象都是一致的
+6.非主函数中调用return和exit效果很明显,但是在main函数中调用return和exit的现象 就很模糊,多数情况下现象都是一致的
+
+- **编码规范**
+
+PEAR PSR-0~7 每种框架都有自己的编码规范。
+
+
+- __[PEAR](http://pear.php.net/index.php)__
+
+- __[PECL](http://pecl.php.net/)__
+
+- **PHP 的全局变量**
+
+PHP 的全局变量和 C 语言有一点点不同,在 C 语言中,全局变量在函数内部可以非被局部变量覆盖。这可能引起一些问题,有些人可能不经意间修改了全局变量。
+
+PHP 中全局变量在函数中使用时必须申明变量为全局。
+
+- PHP 权限管理
+	
+	- <https://en.wikipedia.org/wiki/Role-based_access_control>
+
+	- <http://blog.51yip.com/php/983.html>
+
+- PHP 换行
+
+分析:浏览器识别不了\n或\r\n,这两个换行符是文本换行符,文本文件有效。
+
+在网页中查 看HTML源代码可以发现代码 `\n` 成功实如果需要将结果输出到浏览器或打印到显示器,代码中使用 `</br>`; 如果只是在源代码中换行,则使用 `\n` 或 `\r\n`。
+
+- PHP 跳转
+
+	- php 函数跳转
+
+	缺点,header 头之前不能有输出,跳转后的程序继续执行,可用exit中断执行后面的程序。
+
+	```
+	header("Location: 网址");    //直接跳转
+	header("refresh:3;url=http://axgle.za.net");    //三秒后跳转
+	```
+
+	- 利用 meta
+	
+	``` html
+	echo "<meta http-equiv=refresh content='0; url=网址'>";
+	```
+
+#### PHP 文件操作
+
+- 魔术常量: `__FILE__`
+
+- 获得当前脚本的文件路径: `dirname( __FILE__ )`
+
+- 获得文件名: `basename( $path )` 默认带后缀, 可以选择不带后缀: `basename( $path, ".ext" )`
+
+- 返回一个关联数组包含有 path 的信息: `pathinfo( $path )`
+
+- UNIX/WINDOWS 路径统一: `str_replace( '\\', '/', ( __FILE__ ) )`
+
+- dirname()
+
+- basename()
+
+- extension()
+
+- filename()
+
+- 通过关联数组获得某个属性值: `pathinfo( $path )[ extension ]`
+
+- 返回规范化的绝对路径名: `realpath( $path )`
+
+
+#### PHP Mailer
+
+- [使用 PHPMailer 发送邮件](http://blog.wpjam.com/m/phpmailer/)
+
+- [PHP mail()函数实现发送邮件的方法](http://developer.51cto.com/art/200912/167942.htm)
+
+- [关于 PHP邮件发送](http://www.cnblogs.com/sinllychen/p/3243034.html)
+
+- [phpmailer(GitHub)](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting)
+
+#### PHP 防盗链
+
+``` php
+$from = parse_url($_SERVER['HTTP_REFERER']);
+if ($from['host']!='xxx.com' && $from['host']!='www.xxx.com')
+	die('你丫在盗链');
+```
+
+#### PHP 中 SESSION 丢失(不能跨页面传递)解决办法
+
+一般来说,使 SESSION 丢失有以下几点:
+
+1、客户端禁用了 cookie
+
+2、浏览器无法存取 cookie
+
+3、php.ini中的 `session.use_trans_sid=0` 或编译时没有打开 `–enable-trans-sid` 选项
+
+
+Session 储存于服务器端(默认以文件方式存储),根据客户端提供的 session id 来得到用户的文件, 取得变量的值,session id 可以使用客户端的 Cookie 或者 Http1.1 协议的 Query_String (就是访问的URL的“?”后面的部分)来传送给服务器,然后服务器读取 Session 的目录。
+
+也就是说,session id 是取得存储在服务上的session变量的身份证。
+
+当代码session_start();运行的时候, 在服务器上产生了一个 session 文件,随之也产生了与之唯一对应的一个 session id, 定义 session 变量以一定形式存储在刚才产生的 session 文件中。
+
+通过 session id, 可以取出定义的变量。跨页后, 为了使用 session, 你必须又执行 session_start(); 
+
+将又会产生一个session文件,与之对应产生相应的 session id,用这个session id是取不出前面提到的第一个session文件中的变量的, 因为这个session id 不是打开它的“钥匙”。
+
+如果在 session_start(); 之前加代码 session_id($session id); 将不产生新的 session 文件, 直接读取与这个id对应的session文件。
+
+PHP中 的 session 在默认情况下是使用客户端的 Cookie 来保存 session id 的, 所以当客户端的 cookie 出现问题的时候就会影响 session 了。
+
+必须注意的是: 
+
+session 不一定必须依赖 cookie, 这也是 session 相比 cookie 的高明之处。
+
+当客户端的 Cookie 被禁用或出现问题时, PHP 会自动把 session id 附着在URL中, 这样再通过session id 就能跨页使用session变量了。
+
+但这种附着也是有一定条件的, 即: php.ini 中的 `session.use_trans_sid = 1`
+或者编译时打开打开了 `–enable-trans-sid`选项。
+
+明白了以上的道理, 现在我们来抛开 cookie 使用 session, 主要途径有三条: 
+
+1、设置php.ini中的session.use_trans_sid = 1或者编译时打开打开了–enable-trans-sid选项, 让PHP自动跨页传递session id。
+
+2、手动通过URL传值、隐藏表单传递 session id。
+
+3、用文件、数据库等形式保存 session_id, 在跨页过程中手动调用。
+
+其他可能性：读写权限，比如：session_save_path = /tmp，可以尝试： `chmod 0664 /tmp`
+
+
+#### 参考
+
+- [用Nginx给网站做一个简单的防盗链](http://www.qixing318.com/article/use- nginx-to-do-a-simple-anti-daolian-website.html)
