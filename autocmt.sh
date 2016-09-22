@@ -1,4 +1,4 @@
-cd /data/__cjli__/lamchuanjiang.github.io
+cd /cjli/lamchuanjiang.github.io
 
 git add -A
 git commit -m "jekyll post"
