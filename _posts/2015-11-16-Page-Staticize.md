@@ -168,9 +168,9 @@ ob_clean();
 # 定义一个数组模仿数据库
 $database = array(
 		'title' => "Page Staticize" ,
-		'author' => "lamChuanJiang" ,
+		'author' => "ckwongloy" ,
 		'copyright' => 'CC BY-NC-ND 3.0' ,
-		'email' => 'lamchuanjiang@gmail.com'
+		'email' => 'ckwongloy@gmail.com'
 	) ;
 
 # 1. 取数据
@@ -285,7 +285,7 @@ header( "Refresh:3; index.shtml" ) ;
 </head>
 <body>
 	<!-- 这里的内容属于纯静态内容 -->
-	<h1>latest 3 by lamChuanJiang</h1>
+	<h1>latest 3 by ckwongloy</h1>
 	<!-- 而这里的内容确实通过 Ajax 异步加载过来的, 属于局部动态化内容 -->
 	<ul id="article">
 	</ul>
@@ -329,19 +329,19 @@ setInterval( update_article, 3000 ) ;
 # 定义一个数组模仿数据库
 # 这里的字段名不能相同, 否则以最后一个相同的字段为准
 $database = array(
-	'lamChuanJiang0' => array(
+	'ckwongloy0' => array(
 			'title' => "Page Staticize Introduction" ,
 			'author' => "li" ,
 			'copyright' => 'CC BY-NC-ND 3.0' ,
-			'email' => 'lamchuanjiang@gmail.com'
+			'email' => 'ckwongloy@gmail.com'
 		) ,
-	'lamChuanJiang1' => array(
+	'ckwongloy1' => array(
 			'title' => "Page Staticize with AJAX" ,
 			'author' => "lam" ,
 			'copyright' => 'CC BY-NC-ND 3.0' ,
 			'email' => 'lamchuanjiang@outlook.com'
 		) ,
-	'lamChuanJiang2' => array(
+	'ckwongloy2' => array(
 			'title' => "Pure Page Staticize" ,
 			'author' => "lcj" ,
 			'copyright' => 'CC BY-NC-ND 3.0' ,

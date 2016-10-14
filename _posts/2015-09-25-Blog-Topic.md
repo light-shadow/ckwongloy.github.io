@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  简谈博客存在的必要性
-category: lamChuanJiang
+category: ckwongloy
 tags: [博客, 浮躁]
 latest: 2014年09月25日 18:41:01
 ---

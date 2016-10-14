@@ -36,7 +36,7 @@ set cursorcolumn
 auto cmd BufNewFile *.py, *.sh exec ":call SetTitle()"
 
 let $author_name = "Li"
-let $author_email = "lamchuanjiang@gmail.com"
+let $author_email = "ckwongloy@gmail.com"
 
 func SetTitle() 
 

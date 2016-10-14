@@ -1,6 +1,6 @@
 ---
 layout: backbone
-title: Keep it simple, stupid, but serviceable. @lamChuanJiang
+title: Keep it simple, stupid, but serviceable. @ckwongloy
 ---
 
 <style>
@@ -20,7 +20,7 @@ title: Keep it simple, stupid, but serviceable. @lamChuanJiang
     <a href="/about_li_zh.html" title="About Li"><span>About</span></a>
     <a href="/resume_zh.html" title="Li's Resume"><span>Resume</span></a>
     <a href="/contact_li.html" title="Li's Contacts and SNS Footprints"><span>Contacts</span></a>
-    <a href="https://github.com/lamChuanJiang/lamchuanjiang.github.io/wiki" target="_blank" title="Point to the most often used website."><span>Pointer</span></a></div>
+    <a href="https://github.com/ckwongloy/ckwongloy.github.io/wiki" target="_blank" title="Point to the most often used website."><span>Pointer</span></a></div>
 </h1>
 
 <h3>
@@ -30,7 +30,7 @@ title: Keep it simple, stupid, but serviceable. @lamChuanJiang
 </h3>
 
 <h3>
-    <a href="https://github.com/lamChuanJiang/" target="_blank" title="Fork me on GitHub">
+    <a href="https://github.com/ckwongloy/" target="_blank" title="Fork me on GitHub">
         <button type="button" class="btn btn-info btn-lg" style="text-shadow: black 5px 3px 3px;font-size: 16px;color: rgb(255,255,255);">
             <span class="fa fa-github-alt"></span>
         </button>

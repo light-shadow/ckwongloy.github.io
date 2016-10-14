@@ -141,7 +141,7 @@ Jekyll/Liquid 注意事项
     url 在 _config.yml 指定，比如：
 
 	```
-	url: "http://lamchuanjiang.github.io" # the base hostname & protocol for your site
+	url: "http://ckwongloy.github.io" # the base hostname & protocol for your site
 	```
 
 	然后在任何页面引用：

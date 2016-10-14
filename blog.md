@@ -1,6 +1,6 @@
 ---
 layout: backbone
-title: Blog Entry @lamChuanJiang
+title: Blog Entry @ckwongloy
 ---
 
 <h1 class="project-name" style="color:white;font-family:'Comic Sans MS';">

@@ -51,7 +51,7 @@ latest: 2015-07-28 17:02:44
 - hello-world.java
 ``` java
 /* ******************
-* lamChuanJiang
+* ckwongloy
 * My First Java Demo * 2015-07-30 18:36:13 * ******************* */ public class Test
 {
 public static void main( String args[] ){
@@ -78,7 +78,7 @@ System.out.println( "Hello World.\nI am Chuanjiang Li." ) ;
 - 金字塔：
 
 ``` java
-/* ************************************** * lamChuanJiang
+/* ************************************** * ckwongloy
 * 循环的应用:打印金字塔 
 * 2015-07-30 18:36:13
 * javac -encoding UTF-8 Test.java

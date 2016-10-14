@@ -401,7 +401,7 @@ paginate_path: "/home/paginate_:num"
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
 <i class="fa fa-bolt"></i>
-Latest 3 by @lamChuanJiang
+Latest 3 by @ckwongloy
 </strong></h2>
 <ul class="post-list">
 {% raw %}{% for post in paginator.posts %}{% endraw %}
@@ -431,7 +431,7 @@ Latest 3 by @lamChuanJiang
 </strong></h1>
 <h4 style="text-align:center;">
 <i class="fa fa-heart"></i>
-<a href="https://github.com/lamChuanJiang" target="_blank" title="Author：@lamChuanJiang">
+<a href="https://github.com/ckwongloy" target="_blank" title="Author：@ckwongloy">
 {% raw %}{% if site.id %}{% endraw %}
 {% raw %}{{ site.id }}{% endraw %}
 {% raw %}{% endif %}{% endraw %}

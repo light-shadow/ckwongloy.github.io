@@ -77,7 +77,7 @@ $smarty->assign( 'title', 'Smarty Test' ) ;
 $arr = array(
 	'article' => 'Using Smarty' ,
 	'copyright' => array(
-			'author' => 'lamChuanJiang' ,
+			'author' => 'ckwongloy' ,
 			'email' => 'lamchuanjinag@gmail.com'
 		)
 	) ;
@@ -174,7 +174,7 @@ $smarty->assign( 'obj', $obj ) ;
 
 ```
 # 使用 Smarty 的脚本中使用
-$smarty->assign( 'url', 'https://lamchuanjiang.github.io/home/tags.html?#php' ) ;
+$smarty->assign( 'url', 'https://ckwongloy.github.io/home/tags.html?#php' ) ;
 
 # 模板文件中使用
 {$url|escape:"url"}
@@ -219,7 +219,7 @@ Smarty 中循环的使用主要是使用 `section`/`sectionelse` 和 `foreach`�
 $article_list = array(
 	array(
 		"title" => '第一篇文章' ,
-		"author" => 'lamChuanJiang' ,
+		"author" => 'ckwongloy' ,
 		"content" => 'Using Smarty'
 	) ,
 	array(
@@ -287,7 +287,7 @@ Smarty 中引入文件只用 `include`，并支持自定义属性。举例说明
 test.tpl:
 
 ```
-{include file="footer.tpl" sitename="lamChuanJiang's Blog"}
+{include file="footer.tpl" sitename="ckwongloy's Blog"}
 ```
 
 其中 `sitename` 就是自定义的属性，可以把自定义属性传递给它引用的模板文件并直接调用。比如在模板文件 footer.tpl 中可以这么直接调用它：
@@ -432,7 +432,7 @@ function smarty_block_test( $params, $content ) {
 
 ```
 # 在使用 Smarty 的脚本中编写
-$smarty->assign( 'str', 'Hello，lamChuanJiang。abcdefghijklmnopqrstuvwxyz' ) ;
+$smarty->assign( 'str', 'Hello，ckwongloy。abcdefghijklmnopqrstuvwxyz' ) ;
 
 # 在模板文件中调用 
 {test replace='true' max=20}

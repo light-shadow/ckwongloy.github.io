@@ -83,7 +83,7 @@ https://wiki.archlinux.org/index.php/GoAgent_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%
 
 如果你要建立多个appid，只需要从步骤4开始再重复操作多次就行了。
 
-> lamchuanjiang@gmail.com
+> ckwongloy@gmail.com
 
 > Appid : gfwlcj, gfwlcj1988
 

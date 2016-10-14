@@ -1,6 +1,6 @@
 ---
 layout: backbone
-title: About Li ( 中文 ) @lamChuanJiang
+title: About Li ( 中文 ) @ckwongloy
 ---
 
 <h2>关于我    

@@ -1,6 +1,6 @@
 ---
 layout: blog_backbone
-title: About This Blog @lamChuanJiang
+title: About This Blog @ckwongloy
 ---
 
 <a href="" name="top"></a>
@@ -34,7 +34,7 @@ Author
 <p style="text-align:center;">
 <strong>
 {{ site.author }}
-<a href="https://github.com/lamChuanJiang" target="_blank" title="Fork @lamChuanJiang on GitHub">
+<a href="https://github.com/ckwongloy" target="_blank" title="Fork @ckwongloy on GitHub">
 @ {{ site.id }}
 <br><br></a></strong>
 <i><b>

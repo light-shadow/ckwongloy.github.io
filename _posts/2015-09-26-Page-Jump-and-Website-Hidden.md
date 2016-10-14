@@ -38,15 +38,15 @@ latest: 2015年09月26日 17:19:48
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>lamchuanJiang.github.io | @lamChuanJiang</title>
+<title>lamchuanJiang.github.io | @ckwongloy</title>
 <!-- 关键代码开始 -->
 <frameset framespacing="0" border="0" rows="0" frameborder="0">
-<frame name="main" src="http://lamchuanjiang.github.io/blog" scrolling="auto" noresize></frameset>
+<frame name="main" src="http://ckwongloy.github.io/blog" scrolling="auto" noresize></frameset>
 <!-- 关键代码结束 -->
 </head>
 <body>
 <!-- 下行可选 -->
-<a href="http://lamchuanjiang.github.io/">Li</a></body></html>
+<a href="http://ckwongloy.github.io/">Li</a></body></html>
 {% endhighlight %}
 
 说明
@@ -58,11 +58,11 @@ latest: 2015年09月26日 17:19:48
 
 一个服务器上的一个网站只有一个内容是上面代码的首页，即被隐藏的网站；而另一个服务器上的另一个网站才是真正有实际内容的网站。
 
-上面的 <http://lamchuanjiang.github.io/blog> 就是网站结构将被隐藏，即该域名下的所有网页的路径都不会展示在浏览器地址栏上，但会显示网页的实际内容，只是网站的组织无法通过浏览器地址栏查看。
+上面的 <http://ckwongloy.github.io/blog> 就是网站结构将被隐藏，即该域名下的所有网页的路径都不会展示在浏览器地址栏上，但会显示网页的实际内容，只是网站的组织无法通过浏览器地址栏查看。
 
-但知道网站结构的人仍然可以通过输入一些内部网页地址访问，如：<http://lamchuanjiang.github.io/about_li_zh.html>，所以这只是一个障眼法。
+但知道网站结构的人仍然可以通过输入一些内部网页地址访问，如：<http://ckwongloy.github.io/about_li_zh.html>，所以这只是一个障眼法。
 
-而存放上述代码的 index.html 首页将隐藏自身内容，并通过 index.html 的首页功能自动跳转到 <http://lamchuanjiang.github.io/blog>。
+而存放上述代码的 index.html 首页将隐藏自身内容，并通过 index.html 的首页功能自动跳转到 <http://ckwongloy.github.io/blog>。
 
 注意
 -

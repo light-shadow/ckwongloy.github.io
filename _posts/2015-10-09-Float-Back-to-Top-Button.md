@@ -49,7 +49,7 @@ Javascript
 -
 
 {% highlight Javascript linenos %}
-<script src="http://lamchuanjiang.github.io/js/jquery-2.1.4.min.js"></script>
+<script src="http://ckwongloy.github.io/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
 	$( function (){
 	    $( "#back-to-top" ).click( function (){

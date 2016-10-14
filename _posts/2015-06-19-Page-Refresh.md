@@ -88,10 +88,10 @@ document.referrer; // 前一个页面的URL
 把如下代码加入 `<head>` 区域中
 
 {% highlight HTML %}
-<meta http-equiv="refresh" content="20;url=http:lamchuanjiang.github.io">
+<meta http-equiv="refresh" content="20;url=http:ckwongloy.github.io">
 {% endhighlight %}
 
-其中20指隔20秒后跳转到 *http:lamchuanjiang.github.io* 页面。
+其中20指隔20秒后跳转到 *http:ckwongloy.github.io* 页面。
 
 3、 **JS 刷新框架**
 

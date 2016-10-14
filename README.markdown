@@ -1,5 +1,5 @@
 
-**Homepage** + **Blog** @_lamChuanJiang_
+**Homepage** + **Blog** @_ckwongloy_
 -
 
 ### 功能摘要
@@ -28,4 +28,4 @@ The major framework of this homepage is the combination of 3 popular web front-e
 
 4、 Website and source code of this homepage are hosted on the server of  **GitHub**.
 
-##### <http://lamchuanjiang.github.io>
+##### <http://ckwongloy.github.io>

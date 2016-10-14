@@ -275,7 +275,7 @@ Python使用缩进对齐组织代码的执行，所有没有缩进的代码（�
 
 import urllib.request
 
-response = urllib.request.urlopen( "http://lamchuanjiang.github.io" )
+response = urllib.request.urlopen( "http://ckwongloy.github.io" )
 
 print( response.read() )
 ```

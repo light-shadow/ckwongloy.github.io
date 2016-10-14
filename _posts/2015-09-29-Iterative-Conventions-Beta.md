@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 迭代公约 ( 私人定制 Beta 版 )
-category: lamChuanJiang
-tags: [博客, lamChuanJiang]
+category: ckwongloy
+tags: [博客, ckwongloy]
 latest: 2014年09月10日 13:17:34
 ---
 
@@ -55,7 +55,7 @@ Database+ 指的是与数据库有关的，包括数据库原理和数据库应�
 
 存放引起我共鸣的思想，以及有价值的内容。
 
-是从其他地方剪切而来的具有启发、价值的内容、思想 隶属于 lamChuanJiang。
+是从其他地方剪切而来的具有启发、价值的内容、思想 隶属于 ckwongloy。
 
 表现形式主要为引用片段 + 我的点评。
 
@@ -67,7 +67,7 @@ Database+ 指的是与数据库有关的，包括数据库原理和数据库应�
 
 顾名思义，"触角"，指的是兴趣带领我去探索的领域。
 
-+ lamChuanJiang
++ ckwongloy
 
 聚焦博主，存放和博主相关的的东西。目前包括但不限于：博客。
 
@@ -81,7 +81,7 @@ Database+ 指的是与数据库有关的，包括数据库原理和数据库应�
 
 最终用于展示具体分类文章的分类名有：
 
-**Auxiliary、Web、PHP、Programming、 Assembler、Clipboard、Database、English、Excerpt、Tentacle、lamChuanJiang、Undefined**。
+**Auxiliary、Web、PHP、Programming、 Assembler、Clipboard、Database、English、Excerpt、Tentacle、ckwongloy、Undefined**。
 
 ##### **说明**
 
@@ -90,7 +90,7 @@ Database+ 指的是与数据库有关的，包括数据库原理和数据库应�
 系统称谓
 -
 
-+ 计算机名：lamChuanJiang
++ 计算机名：ckwongloy
 
 + 用户名：Li
 

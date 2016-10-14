@@ -67,8 +67,8 @@ Bootstrap 模态框模板
 			<span class="label label-default">项目标签</span>&nbsp<span class="label label-warning">HTML+CSS+Javascript</span>&nbsp<span class="label label-success">前端</span></div>
 
 			<div class="modal-body">
-			 <!-- <h4 class="modal-title" id="myModalLabel">主页地址：<a href='https://lamchuanjiang.github.io'>https://lamchuanjiang.github.io</a></h4> -->
-			 <h4 class="modal-title" id="myModalLabel">主页地址：<a href='https://lamchuanjiang.github.io'>https://lamchuanjiang.github.io</a></h4>
+			 <!-- <h4 class="modal-title" id="myModalLabel">主页地址：<a href='https://ckwongloy.github.io'>https://ckwongloy.github.io</a></h4> -->
+			 <h4 class="modal-title" id="myModalLabel">主页地址：<a href='https://ckwongloy.github.io'>https://ckwongloy.github.io</a></h4>
            <div><span class="label label-danger">说明：</span><br/><br/>很简单的一个个人主页，主要用于简历呈现。<br/><br/>页面主要使用的是 <code>Bootstrap</code>，也用到了 Javascript 框架 <code>JQuery</code> 和一些自定义 CSS 进行样式控制，字符图标采用的是 <code>Font Awesome</code>。整个主页的框架主要就是由以上 3 种前端框架组合构成。<br/><br/>源代码和主页都托管在 GitHub。<br/><br/><span class="label label-danger">遇到的问题：</span><br/><br/>Bootstrap 和 首页导航条、其他页面的面包屑导航条（未使用 Bootstrap 自带面包屑导航）中的样式控制发生冲突<br/><br/><span class="icon icon-hand-right"></span> 通过修改 Bootstrap.min.css 中引起冲突的类选择器顺利解决。</span></div>
          </div>
 

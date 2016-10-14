@@ -140,7 +140,7 @@ jekyll serve
 
 ##### **注意**
 
-放在 GitHub 上的 Jekyll 博客 baseurl 一定只能是类似于 *lamchuanjiang.github.io* 名称的路径，且一个 GitHub 账号只有一个，对应仓库名就是 *xxx.github.io*。
+放在 GitHub 上的 Jekyll 博客 baseurl 一定只能是类似于 *ckwongloy.github.io* 名称的路径，且一个 GitHub 账号只有一个，对应仓库名就是 *xxx.github.io*。
 
 如果 *username.github.io* 路径不是你的博客项目而是放在其他仓库，假设为 *blog* ，那么 baseurl 必须改为 *username.github.io/blog*。
 

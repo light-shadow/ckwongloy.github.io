@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 个人面试经验
-category: lamChuanJiang
+category: ckwongloy
 tags: [求职, 面试, 简历, PHP]
 latest: 2016年02月24日 22:41:44
 ---

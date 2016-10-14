@@ -297,4 +297,4 @@ return $val;
 
 #### 说明
 
-源码摘自我的小项目 _Web Chat_。最新改动及错误修复见 GitHub：[WebChat](https://github.com/lamChuanJiang/LBD/tree/master/web-chat)。
+源码摘自我的小项目 _Web Chat_。最新改动及错误修复见 GitHub：[WebChat](https://github.com/ckwongloy/LBD/tree/master/web-chat)。

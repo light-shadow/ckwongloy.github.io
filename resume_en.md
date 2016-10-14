@@ -1,6 +1,6 @@
 ---
 layout: backbone
-title: Li's Resume ( English ) @lamChuanJiang
+title: Li's Resume ( English ) @ckwongloy
 ---
 
 <h2>Li's Resume    
@@ -25,9 +25,8 @@ title: Li's Resume ( English ) @lamChuanJiang
 <p><i class="fa fa-asterisk"></i> 
 <strong>Phone : </strong><a href="tel:18365263544">183-6526-3544</a></p>
 <p><i class="fa fa-asterisk"></i> 
-<strong>E-mail : </strong><a href="mailto:lamchuanjiang@icloud.com">lamchuanjiang@icloud.com</a> or 
-<a href="mailto:lamchuanjiang@outlook.com">lamchuanjiang@outlook.com</a> or 
-<a href="mailto:lamchuanjiang@gmail.com">lamchuanjiang@gmail.com</a></p>
+<strong>E-mail : </strong><a href="mailto:ckwongloy@icloud.com">ckwongloy@icloud.com</a> or 
+<a href="mailto:ckwongloy@gmail.com">ckwongloy@gmail.com</a></p>
 <p>（<em> More Contacts & SNS Footprints : </em><a href="/contact_li.html">Contacts </a>）</p></div>
 
 <div class="content_font">
@@ -69,7 +68,7 @@ title: Li's Resume ( English ) @lamChuanJiang
 {% include projects/webchat_en.html %}
 
 <p class="content_font">（Source code and more projects please see: <i class="fa fa-hand-o-right"></i> 
-<a href="https://github.com/lamChuanJiang/LBD/" target="_blank"><b>GitHub</b></a>）</p>
+<a href="https://github.com/ckwongloy/LBD/" target="_blank"><b>GitHub</b></a>）</p>
 
 <div class="content_font">
 <h3 class="alert alert-success">

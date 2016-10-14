@@ -48,22 +48,22 @@ Jekyll 会遍历你的网站搜寻要处理的文件。
 	假如 *_config.yml* 中配置了如下内容：
 
 	```
-	title: Chuanjiang Li's Blog | @lamChuanJiang
+	title: Chuanjiang Li's Blog | @ckwongloy
 	description: > # this means to ignore newlines until "baseurl:"
 
 	 1. Quiter you be, more you hear.
 	 
 	 2. Keep it simple, stupid, but serviceable.
 
-	 @lamChuanJiang.
+	 @ckwongloy.
 
-	url: "http://lamchuanjiang.github.io" # the base hostname & protocol for your site
+	url: "http://ckwongloy.github.io" # the base hostname & protocol for your site
 
 	author: Chuanjiang Li
 
-	id: lamChuanJiang
+	id: ckwongloy
 
-	email: lamchuanjiang@gmail.com
+	email: ckwongloy@gmail.com
 	```
 	那么在文章或者页面中就可以引用任意一个变量：
 
@@ -152,7 +152,7 @@ Apache 2.4 配置虚拟目录：在 _httpd.conf_ 中找到 `<IfModule dir_module
 ```
 <IfModule dir_module>
     DirectoryIndex index.php index.html
-    Alias /blog "C:/__SHARE__/Workspace/lamchuanjiang.github.io/_site"
+    Alias /blog "C:/__SHARE__/Workspace/ckwongloy.github.io/_site"
     <Directory "">
     AllowOverride None
     Require all granted
@@ -175,7 +175,7 @@ Apache 2.4 和 Apache 2.2 的权限配置不同，需要注意。其实也不需
 ```
 location / {
     #root   html;
-    root  C:/__SHARE__/Workspace/lamchuanjiang.github.io/_site;
+    root  C:/__SHARE__/Workspace/ckwongloy.github.io/_site;
     index  index.html index.htm index.php;
 }
 ```

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  音乐和歌词、故事与道理
-category: lamChuanJiang
+category: ckwongloy
 tags: [音乐, 歌词, 心路旅程]
 latest: 2014年09月20日 15:11:54
 ---

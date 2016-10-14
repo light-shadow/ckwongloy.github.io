@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 堕落的温床：大学寝室
-category: lamChuanJiang
+category: ckwongloy
 tags: [心路旅程, 大学]
 latest: 2015年09月28日 20:04:24
 ---

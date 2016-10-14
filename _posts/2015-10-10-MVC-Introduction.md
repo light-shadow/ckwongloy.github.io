@@ -170,7 +170,7 @@ $test_controller->show() ;
 
 /**
  * This PHP file contains 3 functions ready for invoking classes M, V, C in a more convenient way 
- * @author    lamChuanJiang
+ * @author    ckwongloy
  * @package   Basic MVC demo
  * @latest    2015-11-25 20:57:32
  */
@@ -236,7 +236,7 @@ function V( $name ) {
 
 /**
  * This PHP file contains some functions in relation to secure
- * @author    lamChuanJiang
+ * @author    ckwongloy
  * @package   Basic MVC demo
  * @latest    2015-11-25 20:57:32
  */

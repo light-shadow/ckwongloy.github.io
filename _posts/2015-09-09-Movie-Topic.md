@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 电影和美剧
-category: lamChuanJiang
+category: ckwongloy
 tags: [电影, 美剧 ]
 latest: 2015年09月09日 12:06:24
 ---

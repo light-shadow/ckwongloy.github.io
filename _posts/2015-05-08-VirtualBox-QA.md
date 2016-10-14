@@ -91,4 +91,4 @@ Share /mnt/share vboxsf rw,gid=110,uid=1100,auto 0 0
 
 ### 参考
 
-+ [VirtualBox 5.0.4 中文参考手册]( https://github.com/lamChuanJiang/VirturalBox-User-Manual-5.0.4-zh)
++ [VirtualBox 5.0.4 中文参考手册]( https://github.com/ckwongloy/VirturalBox-User-Manual-5.0.4-zh)

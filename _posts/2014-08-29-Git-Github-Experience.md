@@ -64,8 +64,8 @@ Git 最基本的使用
 首先必须配置 `user.name` 和 `user.email`，它们将成为 commit 时的签名。主要代码为：
 
 ```
-$ git config --global user.name "lamChuanJiang" 
-$ git config --global user.email "lamchuanjiang@gmail.com" 
+$ git config --global user.name "ckwongloy" 
+$ git config --global user.email "ckwongloy@gmail.com" 
 ```
 
 > 上述代码执行之后，将在 *home directory* 下创建一个 **~/.gitconfig**  文件，里面记录着刚刚设置的用户信息。全局设置属性 `--global` 将会影响此用户建立的每个项目。上述命令不加 `--global` 也可执行，此时创建的是普通用户，新建用户将与全局用户区分，所有用户信息都保存在 ~/.gitconfig  文件中。

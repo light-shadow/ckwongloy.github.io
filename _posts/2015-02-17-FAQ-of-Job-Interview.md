@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 面试常见问题及其回答
-category: lamChuanJiang
+category: ckwongloy
 tags: [求职, 面试]
 latest: 2016年02月23日 19:22:39
 ---

@@ -63,7 +63,7 @@ jsonp( { 'name':'li', 'age':18 } ) ;
 
 - 前端需要改动的地方
 
-还记得在 [_用 JQuery 实现 Ajax_](http://lamchuanjiang.github.io/programming/ajax-with-jquery.html) 中使用 JQuery 实现 Ajax 中有一个参数叫 `dataType` 吗？只需设置 `dataType` 为 `jsonp` ，然后设置 jsonp 的属性值就行了。即客户端真正只需改动的代码如下：
+还记得在 [_用 JQuery 实现 Ajax_](http://ckwongloy.github.io/programming/ajax-with-jquery.html) 中使用 JQuery 实现 Ajax 中有一个参数叫 `dataType` 吗？只需设置 `dataType` 为 `jsonp` ，然后设置 jsonp 的属性值就行了。即客户端真正只需改动的代码如下：
 
 ```
 dataType: "jsonp"

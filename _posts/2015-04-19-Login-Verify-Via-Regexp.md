@@ -575,7 +575,7 @@ select * from user_info where username= "$username" and pwd=md5( "$password" ) ;
 
 ### 说明
 
-源码摘自我的小项目 _Web Chat_。最新改动及错误修复见 GitHub：[WebChat](https://github.com/lamChuanJiang/LBD/tree/master/WebChat)。
+源码摘自我的小项目 _Web Chat_。最新改动及错误修复见 GitHub：[WebChat](https://github.com/ckwongloy/LBD/tree/master/WebChat)。
 
 ### 其他建议
 

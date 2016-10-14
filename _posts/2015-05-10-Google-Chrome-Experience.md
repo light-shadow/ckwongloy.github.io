@@ -166,7 +166,7 @@ Google to Go
 
 + Google Mirror
 
-More see：***[Pointer](https://github.com/lamChuanJiang/lamchuanjiang.github.io/wiki/)***
+More see：***[Pointer](https://github.com/ckwongloy/ckwongloy.github.io/wiki/)***
 
 Google Analytics
 -

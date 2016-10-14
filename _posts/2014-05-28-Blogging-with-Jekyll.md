@@ -98,7 +98,7 @@ baseurl: /blog
 
 其作用是指明 Blog 的根目录。
 
-这里指定为 `/blog` 是因为我的 GitHub 首页 *lamchuanjiang.github.io* 不是博客项目，blog 是我的一个 `gh-pages` 仓库，`/` 代表根，对于 GitHub 来说，只能是 `xxx.github.io`。
+这里指定为 `/blog` 是因为我的 GitHub 首页 *ckwongloy.github.io* 不是博客项目，blog 是我的一个 `gh-pages` 仓库，`/` 代表根，对于 GitHub 来说，只能是 `xxx.github.io`。
 
 #### **2. 用于发布博客文章的 `_posts` 文件夹**
 

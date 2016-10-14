@@ -973,7 +973,7 @@ public void keyTyped(KeyEvent e)
 #### 附录：部分源代码
 
 ``` java
-/* ************************************** * lamChuanJiang
+/* ************************************** * ckwongloy
 * 环形链表解决约瑟夫问题 
 * 2015-08-01 10:29:44
 * javac -encoding UTF-8 Test.java

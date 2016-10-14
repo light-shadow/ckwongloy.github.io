@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于开始使用 Hexo 博客
-category: lamChuanJiang
+category: ckwongloy
 tags: [Hexo, 博客]
 latest: 2016年01月31日 22:46:04
 ---

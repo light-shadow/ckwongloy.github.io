@@ -6,7 +6,7 @@ permalink: /:categories/:title.html
 
 encoding: utf-8
 
-title: Chuanjiang Li's Blog | @lamChuanJiang
+title: Chuanjiang Li's Blog | @ckwongloy
 
 description: > # this means to ignore newlines until "baseurl:"
 
@@ -14,15 +14,15 @@ description: > # this means to ignore newlines until "baseurl:"
  
  2. Keep it simple, stupid, but serviceable.
 
- @lamChuanJiang.
+ @ckwongloy.
 
-url: "http://lamchuanjiang.github.io" # the base hostname & protocol for your site
+url: "http://ckwongloy.github.io" # the base hostname & protocol for your site
 
 author: Chuanjiang Li
 
-id: lamChuanJiang
+id: ckwongloy
 
-email: lamchuanjiang@gmail.com
+email: ckwongloy@gmail.com
 
 # Build settings
 
@@ -51,6 +51,6 @@ gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/home/paginate_:num"
 
-production_url : http://lamchuanjiang.github.io
+production_url : http://ckwongloy.github.io
 
 #exclude: ["css", "image", "js", "fonts"]

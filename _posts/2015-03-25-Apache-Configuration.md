@@ -29,7 +29,7 @@ AddType application/x-httpd-php .php .phtml
 
 ```
 # 非默认路径权限设置
- <Directory C:/lamChuanJiang>
+ <Directory C:/ckwongloy>
 	Options Indexes FollowSymLinks    # 允许以目录形式访问
 	AllowOverride None
 	Require all granted
@@ -39,7 +39,7 @@ AddType application/x-httpd-php .php .phtml
     DirectoryIndex index.html index.php    # 入口脚本
 
     # 为虚拟目录设置别名
-    Alias /li "D:/lamChuanJiang"
+    Alias /li "D:/ckwongloy"
     Alias /blog "E:/Wordpress"
     Alias /fe "F:/Discuz"
 </IfModule>
@@ -231,12 +231,12 @@ CustomLog /var/wwwlogs/a.test.com.log common
 </VirtualHost>
 ```
 
-但是如果在 `<VirtualHost>` 字段中加入虚拟主机映射目录 /home/lamChuanJiang 的权限配置，即 `<Directory />` 区块中的配置，那么当再次访问该虚拟主机的时候，如果目录下找不到首页档案，就会显示整个目录下的文件名称：
+但是如果在 `<VirtualHost>` 字段中加入虚拟主机映射目录 /home/ckwongloy 的权限配置，即 `<Directory />` 区块中的配置，那么当再次访问该虚拟主机的时候，如果目录下找不到首页档案，就会显示整个目录下的文件名称：
 
 ```
 <VirtualHost 192.168.1.127:8000>
 ServerAdmin webmaster@b.test.com
-DocumentRoot /home/lamChuanJiang
+DocumentRoot /home/ckwongloy
 ServerName b.test.com
 ErrorDocument 404  http://www.baidu.com 
 DirectoryIndex index.html index.php index.jsp

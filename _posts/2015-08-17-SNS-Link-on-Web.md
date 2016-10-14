@@ -43,5 +43,5 @@ latest: 2014年09月17日 20:21:40
 ### 网页上直接打开 微信
 
 ```
-<a href="weixin://contacts/profile/lamChuanJiang" title="微信" rel="nofollow"><code>@lamChuanJiang</code></a>
+<a href="weixin://contacts/profile/ckwongloy" title="微信" rel="nofollow"><code>@ckwongloy</code></a>
 ```

@@ -112,7 +112,7 @@ Nginx 在 Windows 上暂时还不能作为服务运行，但是仍然可以被�
 将 nginx.exe 的快捷方式复制到开始菜单文件夹：
 
 ```
-C:\Users\lamChuanJiang\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+C:\Users\ckwongloy\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ```
 
 Nginx 在 Linux 和在 Windows 上的配置都差不多，这里总结下常见的几个：
@@ -131,7 +131,7 @@ Linux 的话如果是通过 `apt-get` 方式安装一般在 `/etc/nginx/sites-en
 
 2、 Windows 下找到 `location /`；Linux 下找到 `server {`
 
-3、 Windows 下找到 `root html;` 然后将 `html` 改为你想要作为 Nginx 服务器上的根目录的路径，比如：`C:/__SHARE__/Workspace/lamchuanjiang.github.io/_site;`
+3、 Windows 下找到 `root html;` 然后将 `html` 改为你想要作为 Nginx 服务器上的根目录的路径，比如：`C:/__SHARE__/Workspace/ckwongloy.github.io/_site;`
 
 需要注意的是末尾的分号 `;` 不能省略。
 

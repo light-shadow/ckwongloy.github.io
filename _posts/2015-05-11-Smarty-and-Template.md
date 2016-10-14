@@ -139,7 +139,7 @@ require_once './class/template.class.php' ;
 $base_dir = str_replace( '\\', '/', dirname( `__FILE__` ) ) ;
 $template = new MiniSmarty( $base_dir.'/source/', $base_dir.'/compiled/' ) ;
 $template->assign( 'title', 'Mini Smarty TEST' ) ;
-$template->assign( 'test', 'Chuanjiang Li @lamChuanJiang' ) ;
+$template->assign( 'test', 'Chuanjiang Li @ckwongloy' ) ;
 $template->get_source( 'test' ) ;
 $template->compile_template() ;
 $template->display() ;

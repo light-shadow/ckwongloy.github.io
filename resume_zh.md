@@ -1,6 +1,6 @@
 ---
 layout: backbone
-title: Li's Resume ( 中文 ) @lamChuanJiang
+title: Li's Resume ( 中文 ) @ckwongloy
 ---
 
 <h2>个人简历    
@@ -29,9 +29,8 @@ title: Li's Resume ( 中文 ) @lamChuanJiang
 <p><i class="fa fa-asterisk"></i> 
 <strong>手机 ：</strong><a href="tel:18365263544">183-6526-3544</a></p>
 <p><i class="fa fa-asterisk"></i> 
-<strong>邮箱 ：</strong><a href="mailto:lamchuanjiang@icloud.com">lamchuanjiang@icloud.com</a> or 
-<a href="mailto:lamchuanjiang@outlook.com">lamchuanjiang@outlook.com</a> or 
-<a href="mailto:lamchuanjiang@gmail.com">lamchuanjiang@gmail.com</a></p>
+<strong>邮箱 ：</strong><a href="mailto:ckwongloy@icloud.com">ckwongloy@icloud.com</a> or 
+<a href="mailto:ckwongloy@gmail.com">ckwongloy@gmail.com</a></p>
 <p>（更多联系方式和 SNS : <a href="/contact_li.html">联系方式和社交足迹 </a>）</p></div>
 
 <div class="content_font">
@@ -75,7 +74,7 @@ title: Li's Resume ( 中文 ) @lamChuanJiang
 {% include projects/webchat_zh.html %}
 
 <p class="content_font">（源码及更多案例详见： <i class="fa fa-hand-o-right"></i> 
-<a href="https://github.com/lamChuanJiang/LBD/" target="_blank"><b>GitHub</b></a>）</p>
+<a href="https://github.com/ckwongloy/LBD/" target="_blank"><b>GitHub</b></a>）</p>
 
 <div class="content_font">
 <h3 class="alert alert-success">

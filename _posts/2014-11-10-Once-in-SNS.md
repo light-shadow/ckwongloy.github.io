@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Once in SNS
-category: lamChuanJiang
+category: ckwongloy
 tags: [SNS, 心路旅程]
 latest: 2015年09月28日 19:51:21
 ---
